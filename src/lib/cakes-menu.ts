@@ -132,7 +132,7 @@ export const cakesMenuKitchenGallery: { id: string; name: string; image: string 
   },
 ];
 
-export const CAKES_MENU_IMAGE = "/images/cakes-menu-board.png";
+export const CAKES_MENU_IMAGE = "/images/cake-menu.avif";
 
 export const CAKES_MENU_DESCRIPTION = `Order ready-made cakes from ${site.name} in ${site.studioCity}, Goa — Regular, Fruit, Premium & Special flavours including Black Forest, Red Velvet, Rasmalai, Rainbow, Bento & Dream cakes. Message Muskan on WhatsApp ${site.phone} for today's availability, size & delivery.`;
 
