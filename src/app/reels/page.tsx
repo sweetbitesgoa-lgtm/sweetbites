@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageHero } from "@/components/ui/PageHero";
+import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
 import { ReelsWall } from "@/components/reels/ReelsWall";
 import { SeoContentSection } from "@/components/seo/SeoContentSection";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -9,6 +9,8 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { reelsSeo } from "@/lib/seo-content";
 import { buildPageMetadata, getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo";
 import { site } from "@/lib/content";
+import { getAllReels } from "@/lib/catalog";
+import { siteMedia } from "@/lib/site-media";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Kitchen reels",
@@ -19,6 +21,12 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 export default function ReelsPage() {
+  const firstReel = getAllReels()[0];
+  const heroPoster = firstReel?.cover ?? siteMedia.heroPoster;
+  const heroAlt = firstReel?.title
+    ? `${firstReel.title} — kitchen reel, ${site.name}`
+    : `Cake decorating reel — ${site.name}, ${site.studioCity}, Goa`;
+
   return (
     <>
       <JsonLd
@@ -30,29 +38,41 @@ export default function ReelsPage() {
           ...(reelsSeo.faqs ? [getFaqPageJsonLd(reelsSeo.faqs)] : []),
         ]}
       />
-      <PageHero
-        title="Behind the Bite — cake reels from Goa"
-        description={`Real decorating videos from sweetbites.me. Tap a reel to view the cake — order on WhatsApp ${site.phone}.`}
+      <SecondaryPageHero
+        label="Video"
+        title="Behind the scenes in the kitchen"
+        description={`Short clips from ${site.studioCity} — piping, stacking, and the moment before a cake leaves for delivery. Tap through to the full cake when you see something you love.`}
+        image={{
+          src: heroPoster,
+          alt: heroAlt,
+          priority: true,
+        }}
       >
         <Button href={getWhatsAppUrl()} variant="whatsapp" external>
-          Order on WhatsApp
+          WhatsApp Muskan
         </Button>
-      </PageHero>
-      <section className="bg-cocoa py-16 sm:py-24">
+        <Button href="/creations" variant="outline" className="rounded-md px-5">
+          Still gallery
+        </Button>
+      </SecondaryPageHero>
+
+      <section className="border-b border-line bg-cream/70 py-14 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <ReelsWall />
-          <p className="mt-10 text-center text-sm text-cream/60">
-            Inspired? Browse{" "}
+          <p className="mt-12 max-w-xl text-sm leading-relaxed text-muted">
+            Prefer still photos?{" "}
             <Link
               href="/creations"
-              className="font-semibold text-gold hover:text-gold-light"
+              className="font-medium text-cocoa underline decoration-terracotta/40 underline-offset-4 hover:decoration-terracotta"
             >
-              all creations at sweetbites.me
-            </Link>
+              Browse the full gallery
+            </Link>{" "}
+            — same cakes, frozen in frame.
           </p>
         </div>
       </section>
-      <SeoContentSection {...reelsSeo} className="bg-blush/30" />
+
+      <SeoContentSection {...reelsSeo} className="border-t border-line bg-surface" />
     </>
   );
 }

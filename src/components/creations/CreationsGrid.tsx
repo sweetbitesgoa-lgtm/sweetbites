@@ -76,7 +76,7 @@ export function CreationsGrid() {
 
       <motion.ul
         layout={!reducedMotion}
-        className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
       >
         <AnimatePresence mode="popLayout">
           {filtered.map((creation) => (
@@ -90,7 +90,7 @@ export function CreationsGrid() {
       </motion.ul>
 
       {filtered.length === 0 && (
-        <p className="mt-12 text-center text-cocoa/60">
+        <p className="mt-12 text-center text-sm text-muted">
           No creations match these filters. Try clearing a filter or search
           again.
         </p>
@@ -119,39 +119,39 @@ function CreationCard({
     >
       <Link
         href={`/creations/${creation.slug}`}
-        className="group block overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-xl"
+        className="group block overflow-hidden rounded-lg bg-surface ring-1 ring-line transition-[box-shadow,ring-color] duration-300 hover:ring-terracotta/25"
       >
-        <div className="relative aspect-[4/3] overflow-hidden">
+        <div className="relative aspect-[4/3] overflow-hidden bg-cream">
           <Image
             src={creation.cover}
             alt={creation.title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             sizes="(max-width: 640px) 100vw, 33vw"
           />
           {tag && (
-            <span className="absolute left-3 top-3 rounded-full bg-cocoa/80 px-3 py-1 text-xs font-medium capitalize text-white backdrop-blur-sm">
+            <span className="absolute left-3 top-3 rounded-md bg-cocoa/85 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-cream backdrop-blur-sm">
               {tag.replace(/-/g, " ")}
             </span>
           )}
           {creation.video && (
             <span
-              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/95 text-cocoa shadow"
+              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-md bg-surface/95 text-cocoa shadow-sm ring-1 ring-line"
               aria-hidden
             >
               ▶
             </span>
           )}
         </div>
-        <div className="p-5">
-          <h3 className="font-display text-xl font-semibold text-cocoa group-hover:text-terracotta transition-colors">
+        <div className="border-t border-line p-5">
+          <h3 className="font-display text-lg font-medium text-cocoa transition-colors group-hover:text-terracotta">
             {creation.title}
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-cocoa/70 line-clamp-2">
+          <p className="mt-2 text-sm leading-relaxed text-muted line-clamp-2">
             {creation.description}
           </p>
-          <p className="mt-3 text-sm font-semibold text-terracotta">
-            View story →
+          <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-terracotta">
+            View cake
           </p>
         </div>
       </Link>

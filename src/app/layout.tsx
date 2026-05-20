@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloating } from "@/components/ui/WhatsAppButton";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { GoogleAnalytics } from "@/components/seo/GoogleAnalytics";
 import { DEFAULT_OG_IMAGE, getLocalBusinessJsonLd, SITE_URL } from "@/lib/seo";
 import { site } from "@/lib/content";
 import "./globals.css";
@@ -64,6 +65,9 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: "pRkENyV45RZRoKR6nD8vZUYDqdxUOSkvgmhxxmHJ_3w",
+  },
 };
 
 export default function RootLayout({
@@ -80,6 +84,7 @@ export default function RootLayout({
         <JsonLd data={getLocalBusinessJsonLd()} />
       </head>
       <body className="min-h-full flex flex-col font-sans antialiased">
+        <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

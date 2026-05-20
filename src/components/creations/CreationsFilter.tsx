@@ -29,10 +29,10 @@ function Chip({
     <button
       type="button"
       onClick={onClick}
-      className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-semibold capitalize transition-colors ${
+      className={`shrink-0 rounded-md px-3 py-1.5 text-xs font-medium capitalize transition-colors ${
         selected
-          ? "bg-terracotta text-white"
-          : "bg-white text-cocoa/80 ring-1 ring-cocoa/10 hover:bg-cream"
+          ? "bg-cocoa text-cream"
+          : "bg-surface text-muted ring-1 ring-line hover:bg-cream hover:text-cocoa"
       }`}
     >
       {label}
@@ -55,14 +55,14 @@ export function CreationsFilter({
           placeholder="Search creations…"
           value={active.q}
           onChange={(e) => onChange({ q: e.target.value })}
-          className="min-w-[200px] flex-1 rounded-full border border-cocoa/15 bg-white px-4 py-2 text-sm text-cocoa outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20"
+          className="min-w-[200px] flex-1 rounded-md border border-line bg-surface px-4 py-2.5 text-sm text-cocoa outline-none transition-shadow placeholder:text-muted/70 focus:border-terracotta/50 focus:ring-2 focus:ring-terracotta/15"
         />
         <Chip
           label="Has reel"
           selected={active.hasVideo}
           onClick={() => onChange({ hasVideo: !active.hasVideo })}
         />
-        <span className="text-sm text-cocoa/50">{resultCount} creations</span>
+        <span className="text-sm tabular-nums text-muted">{resultCount} results</span>
       </div>
 
       <div className="flex flex-wrap gap-2">

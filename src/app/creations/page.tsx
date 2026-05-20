@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
-import { PageHero } from "@/components/ui/PageHero";
+import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
 import { CreationsGrid } from "@/components/creations/CreationsGrid";
 import { SeoContentSection } from "@/components/seo/SeoContentSection";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -11,6 +11,7 @@ import { creationsSeo } from "@/lib/seo-content";
 import { buildPageMetadata, getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo";
 import { getAllCreations } from "@/lib/catalog";
 import { site } from "@/lib/content";
+import { siteMedia } from "@/lib/site-media";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Cake gallery",
@@ -22,11 +23,11 @@ export const metadata: Metadata = buildPageMetadata({
 
 function CreationsFallback() {
   return (
-    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {Array.from({ length: 6 }).map((_, i) => (
         <div
           key={i}
-          className="aspect-[4/3] animate-pulse rounded-2xl bg-cocoa/10"
+          className="aspect-[4/3] animate-pulse rounded-lg bg-cream ring-1 ring-line"
         />
       ))}
     </div>
@@ -47,29 +48,40 @@ export default function CreationsPage() {
           ...(creationsSeo.faqs ? [getFaqPageJsonLd(creationsSeo.faqs)] : []),
         ]}
       />
-      <PageHero
-        title="Custom cake creations in Goa"
-        description={`Explore ${count}+ real cakes at sweetbites.me — birthday, wedding, bento & kids designs by Muskan. Book on WhatsApp ${site.phone}.`}
+      <SecondaryPageHero
+        label="Gallery"
+        title="Cakes we&apos;ve actually made"
+        description={`Every photo here is a real order — ${count}+ designs from birthdays, weddings, bentos, and Goa celebrations. Find one that feels like yours, then message on WhatsApp.`}
+        image={{
+          src: siteMedia.showcaseImage,
+          alt: `Custom cake from the Sweet Bites gallery — ${site.name}, Goa`,
+          priority: true,
+        }}
       >
         <Button href={getWhatsAppUrl()} variant="whatsapp" external>
-          Order on WhatsApp
+          WhatsApp Muskan
         </Button>
-      </PageHero>
-      <section className="bg-cream py-16 sm:py-24">
+        <Button href="/order" variant="outline" className="rounded-md px-5">
+          How to order
+        </Button>
+      </SecondaryPageHero>
+
+      <section className="border-b border-line bg-surface py-14 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <Suspense fallback={<CreationsFallback />}>
             <CreationsGrid />
           </Suspense>
-          <p className="mt-12 text-center text-sm text-cocoa/60">
-            Can&apos;t find the perfect design?{" "}
-            <Link href="/order" className="font-semibold text-terracotta hover:underline">
-              Order on WhatsApp
+          <p className="mt-14 max-w-xl border-t border-line pt-8 text-sm leading-relaxed text-muted">
+            Don&apos;t see the perfect match?{" "}
+            <Link href="/order" className="font-medium text-cocoa underline decoration-terracotta/40 underline-offset-4 hover:decoration-terracotta">
+              Send a reference photo on WhatsApp
             </Link>{" "}
-            with your reference photo — we&apos;ll create something unique.
+            — we&apos;ll sketch something that fits your day and budget.
           </p>
         </div>
       </section>
-      <SeoContentSection {...creationsSeo} />
+
+      <SeoContentSection {...creationsSeo} className="border-t border-line bg-cream/50" />
     </>
   );
 }

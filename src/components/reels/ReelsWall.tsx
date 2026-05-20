@@ -30,7 +30,7 @@ function ReelTile({
   return (
     <Link
       href={href}
-      className="group relative aspect-[9/16] overflow-hidden rounded-2xl bg-cocoa shadow-md"
+      className="group relative aspect-[9/16] overflow-hidden rounded-lg bg-cocoa ring-1 ring-line transition-[ring-color,transform] duration-300 hover:ring-terracotta/30 hover:shadow-lg"
       onMouseEnter={() => videoRef.current?.play().catch(() => {})}
       onMouseLeave={() => {
         const v = videoRef.current;
@@ -50,8 +50,8 @@ function ReelTile({
         poster={reel.cover}
         className="h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-cocoa/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100" />
-      <p className="absolute inset-x-0 bottom-0 p-3 text-xs font-semibold text-white line-clamp-2">
+      <div className="absolute inset-0 bg-gradient-to-t from-cocoa/90 via-cocoa/10 to-transparent opacity-75 transition-opacity group-hover:opacity-95" />
+      <p className="absolute inset-x-0 bottom-0 p-3 text-[11px] font-medium leading-snug text-cream/95 line-clamp-2">
         {reel.title}
       </p>
     </Link>
