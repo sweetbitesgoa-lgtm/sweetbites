@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { site } from "@/lib/content";
 import { getFeaturedCreations } from "@/lib/catalog";
+import { formatCreationImageAlt } from "@/lib/creation-seo";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { fadeUp, staggerContainer, defaultTransition } from "@/lib/motion";
 
@@ -12,6 +13,7 @@ const customerPhotos = getFeaturedCreations(4).map((c) => ({
   image: c.cover,
   caption: c.title,
   href: `/creations/${c.slug}`,
+  alt: formatCreationImageAlt(c),
 }));
 
 export function SocialProof() {
@@ -59,7 +61,7 @@ export function SocialProof() {
               <Link href={photo.href}>
                 <Image
                   src={photo.image}
-                  alt={photo.caption}
+                  alt={photo.alt}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 50vw, 25vw"

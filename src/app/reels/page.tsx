@@ -11,16 +11,11 @@ import { buildPageMetadata, getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/
 import { site } from "@/lib/content";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Cake Decorating Reels Goa — Behind the Bite",
+  title: "Kitchen reels",
   description:
-    `Watch Sweet Bites cake reels at sweetbites.me/reels — Muskan decorating custom cakes in Goa. Order on WhatsApp ${site.phone}.`,
+    "Short clips from Muskan's kitchen — stacking, piping, toppers and the last look before delivery. Watch, then message on WhatsApp if you want a cake like it.",
   path: "/reels",
-  keywords: [
-    "cake decorating video Goa",
-    "sweetbites.me reels",
-    "baker Muskan Goa",
-    "custom cake making video",
-  ],
+  keywords: ["cake decorating Goa", "baker reels"],
 });
 
 export default function ReelsPage() {

@@ -28,20 +28,18 @@ export async function generateMetadata({
   const creation = getCreationBySlug(slug);
   if (!creation) return { title: "Creation not found" };
 
-  const keywords = [
-    `${creation.title} cake Goa`,
-    `${creation.title} sweetbites.me`,
-    ...creation.occasion.map((o) => `${o.replace(/-/g, " ")} cake Goa`),
-    ...creation.format.map((f) => `${f} cake Goa`),
-    `order cake WhatsApp ${site.phoneRaw}`,
-  ];
+  const occasion = creation.occasion[0]?.replace(/-/g, " ") ?? "custom";
 
   return buildPageMetadata({
-    title: `${creation.title} — Custom Cake Goa`,
-    description: creation.description,
+    title: creation.title,
+    description:
+      creation.description.length > 155
+        ? `${creation.description.slice(0, 152)}…`
+        : creation.description,
     path: `/creations/${slug}`,
-    keywords,
+    keywords: [`${creation.title} cake`, `${occasion} cake Goa`],
     ogImage: creation.cover,
+    ogImageAlt: `${creation.title} — ${site.name}, Goa`,
   });
 }
 

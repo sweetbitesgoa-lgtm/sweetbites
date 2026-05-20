@@ -56,6 +56,23 @@ export function getFeaturedCreations(limit = 8): Creation[] {
   return catalog.creations.filter((c) => c.featured).slice(0, limit);
 }
 
+/** Up to `limit` unique cover/gallery URLs for location page hero rotation. */
+export function getLocationHeroImages(limit = 10): string[] {
+  const urls: string[] = [];
+  const seen = new Set<string>();
+
+  for (const creation of catalog.creations) {
+    for (const src of [creation.cover, ...creation.images]) {
+      if (!src || seen.has(src)) continue;
+      seen.add(src);
+      urls.push(src);
+      if (urls.length >= limit) return urls;
+    }
+  }
+
+  return urls;
+}
+
 export function getCreationBySlug(slug: string): Creation | undefined {
   return catalog.creations.find((c) => c.slug === slug);
 }

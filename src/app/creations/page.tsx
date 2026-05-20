@@ -13,16 +13,11 @@ import { getAllCreations } from "@/lib/catalog";
 import { site } from "@/lib/content";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Custom Cake Gallery Goa — 160+ Designs",
+  title: "Cake gallery",
   description:
-    `Browse 160+ birthday, wedding, bento & kids cakes at sweetbites.me. Sweet Bites Goa — order on WhatsApp ${site.phone}. Delivery across Panaji, Margao & Goa.`,
+    "Photos from real orders — birthdays, weddings, kids themes, bento tins and more. Tap a cake you like and WhatsApp Muskan to order something similar.",
   path: "/creations",
-  keywords: [
-    "cake gallery Goa",
-    "birthday cake designs Goa",
-    "sweetbites.me creations",
-    "custom cake photos Goa",
-  ],
+  keywords: ["cake designs Goa", "birthday cake ideas"],
 });
 
 function CreationsFallback() {

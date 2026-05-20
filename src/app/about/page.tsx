@@ -12,16 +12,11 @@ import { aboutSeo } from "@/lib/seo-content";
 import { buildPageMetadata, getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About Muskan — Sweet Bites Goa Baker",
+  title: "About Muskan",
   description:
-    `Meet Muskan, founder of Sweet Bites at sweetbites.me — custom wedding & birthday cakes in Goa. WhatsApp ${site.phone} to order.`,
+    `Sweet Bites is Muskan's home bakery in ${site.studioCity}, South Goa. She designs and decorates every cake herself — message on WhatsApp when you're ready to plan yours.`,
   path: "/about",
-  keywords: [
-    "Muskan cake baker Goa",
-    "Sweet Bites about",
-    "home bakery Panaji",
-    "sweetbites.me Muskan",
-  ],
+  keywords: ["Muskan baker Goa", `home bakery ${site.studioCity}`],
 });
 
 export default function AboutPage() {
@@ -38,7 +33,7 @@ export default function AboutPage() {
       />
       <PageHero
         title="About Sweet Bites & Muskan"
-        description={`Goa's celebration cake studio at ${site.domain} — handcrafted orders via WhatsApp ${site.phone}.`}
+        description={`Goa's celebration cake studio in ${site.studioCity} — ${site.domain} · orders via WhatsApp ${site.phone}.`}
       >
         <Button href={getWhatsAppUrl()} variant="whatsapp" external>
           Order on WhatsApp
@@ -116,7 +111,7 @@ export default function AboutPage() {
               },
               {
                 title: "Goa delivery",
-                text: "Pickup in Panaji or delivery across North & South Goa.",
+                text: `Pickup in ${site.studioCity} or delivery across North & South Goa.`,
               },
             ].map((item) => (
               <div

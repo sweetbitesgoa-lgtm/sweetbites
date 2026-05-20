@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { testimonials } from "@/lib/content";
+import { ReviewsNote } from "@/components/home/ReviewsNote";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { fadeUp, staggerContainer, defaultTransition } from "@/lib/motion";
 
@@ -52,6 +53,8 @@ export function Testimonials() {
             </motion.blockquote>
           ))}
         </motion.div>
+
+        <ReviewsNote />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 export const site = {
   name: "Sweet Bites",
   tagline: "By Muskan",
+  logo: "/images/logo.png",
   domain: "sweetbites.me",
   url: "https://sweetbites.me",
   location: "Goa, India",
@@ -10,39 +11,52 @@ export const site = {
   email: "hello@sweetbites.me",
   phone: "+91 78880 42837",
   phoneRaw: "7888042837",
-  address: "Panaji, North Goa, India",
+  address: "Velim, South Goa, India",
   hours: "Tue – Sun: 10:00 AM – 7:00 PM",
-  mapsUrl: "https://maps.google.com/?q=Panaji+Goa+Sweet+Bites",
+  mapsUrl: "https://maps.google.com/?q=Velim+Goa+Sweet+Bites",
   mapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.589123!2d73.827!3d15.4909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPanaji%2C%20Goa!5e0!3m2!1sen!2sin!4v1",
+    "https://www.google.com/maps?q=Velim,+South+Goa,+India&z=14&hl=en&output=embed",
   stats: { celebrations: 500, rating: 4.9, reviewCount: 120 },
   bookAheadDays: "5–7 days",
+  /** Kitchen location — use in contact/maps; hero & marketing lead with Goa-wide reach */
+  studioCity: "Velim",
+  /** Set when Google Business Profile is live — enables review link in UI */
+  googleBusinessUrl: null as string | null,
 } as const;
-
-export const deliveryAreas = [
-  "Panaji & Taleigao",
-  "Margao & South Goa",
-  "Mapusa & North Goa",
-  "Calangute, Candolim & Baga",
-  "Vasco & Mormugao",
-  "Ponda & interior villages (on request)",
-] as const;
 
 export const seasonalBanner = {
-  active: true,
-  emoji: "🥭",
+  enabled: true,
+  title: "Weekends & wedding dates fill fast",
   message:
-    "Mango season specials — Alphonso layers available March through June",
-  ctaHref: "/order",
-  ctaLabel: "See flavours",
+    "Book custom cakes 5–7 days ahead (longer for tiers & fondant themes). Message on WhatsApp to check your date.",
+  ctaLabel: "Check availability",
 } as const;
 
-export const localIngredients = [
-  "Alphonso mango",
-  "Goan cashew",
-  "Fresh coconut",
-  "Local farm eggs",
-];
+/** Short labels for hero marquee & reach messaging */
+export const goaReach = {
+  eyebrow: "Serving all of Goa",
+  tagline:
+    "North Goa, South Goa, beaches & villages — custom cakes delivered or ready for pickup.",
+  heroTitle: "Custom cakes in Goa for every occasion of yours",
+  heroLead:
+    "Birthday, wedding & bento cakes hand-crafted by Muskan — from Calangute and Mapusa to Margao, Vasco, and beyond.",
+} as const;
+
+/** Major towns & beaches — homepage tags, order page, SEO lists */
+export const deliveryAreas = [
+  "Velim",
+  "Panaji",
+  "Taleigao",
+  "Margao",
+  "Mapusa",
+  "Calangute",
+  "Candolim",
+  "Baga",
+  "Vasco",
+  "Ponda",
+  "Anjuna",
+  "Colva",
+] as const;
 
 export const orderSteps = [
   {
@@ -104,6 +118,38 @@ export const sizes = [
   { label: "Custom tier", serves: "25+ guests", from: "Quote" },
 ];
 
+export const trustPillars = [
+  {
+    title: "Handcrafted by Muskan",
+    description: "One baker designs and decorates every order — no factory line.",
+    icon: "✨",
+  },
+  {
+    title: "Eggless on request",
+    description: "Tell us on WhatsApp and we'll suggest the best flavours.",
+    icon: "🌿",
+  },
+  {
+    title: "160+ real designs",
+    description: "Every photo is a cake we've actually made for Goa customers.",
+    icon: "📸",
+  },
+  {
+    title: "Delivery across Goa",
+    description: `Pickup in ${site.studioCity} · home delivery North & South Goa.`,
+    icon: "🚗",
+  },
+] as const;
+
+export const meetMuskan = {
+  eyebrow: "Meet the baker",
+  title: "Muskan brings your celebration to life",
+  paragraphs: [
+    "Sweet Bites started in a home kitchen in Goa — decorating cakes for friends, then weddings, birthdays, and beach celebrations across the state.",
+    "Every order is still one conversation on WhatsApp, one sketch, and one schedule in Muskan's kitchen. Browse the gallery, share your idea, and she'll reply with an honest quote.",
+  ],
+} as const;
+
 export const testimonials = [
   {
     name: "Priya S.",
@@ -139,7 +185,7 @@ export const faqs = [
   {
     question: "Do you deliver across Goa?",
     answer:
-      "Yes! Pickup from Panaji and delivery across North and South Goa including Margao, Mapusa, Calangute, and Candolim. Delivery fee depends on distance.",
+      "Yes! We deliver across North and South Goa — Margao, Mapusa, Calangute, Candolim, Vasco, beach areas, and more. Pickup is available from our Velim kitchen. Delivery fee depends on distance.",
   },
   {
     question: "Do you make eggless cakes?",
@@ -159,7 +205,7 @@ export const faqs = [
   {
     question: "Where is Sweet Bites located?",
     answer:
-      "We're based in Panaji, North Goa. Studio visits are by appointment Tuesday–Sunday. Orders are placed via WhatsApp at +91 78880 42837.",
+      "Our kitchen is in Velim, South Goa — we serve customers across the state. Studio visits are by appointment Tuesday–Sunday. Orders are placed via WhatsApp at +91 78880 42837.",
   },
 ];
 
@@ -173,7 +219,7 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/creations", label: "Creations" },
   { href: "/reels", label: "Reels" },
-  { href: "/order", label: "Order" },
+  { href: "/order", label: "Book" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { navLinks, site } from "@/lib/content";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,8 +11,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <p className="font-display text-2xl font-semibold">{site.name}</p>
-            <p className="mt-1 text-sm text-gold">{site.tagline}</p>
+            <Logo variant="light" size="md" align="start" />
             <p className="mt-4 text-sm leading-relaxed text-cream/70">
               Custom cakes in Goa — {site.domain}. WhatsApp {site.phone}.
               Handcrafted by Muskan.

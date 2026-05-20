@@ -1,161 +1,272 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import {
   motion,
   useReducedMotion,
   useScroll,
   useTransform,
 } from "framer-motion";
-import { localIngredients, site } from "@/lib/content";
-import { siteMedia } from "@/lib/site-media";
+import { deliveryAreas, goaReach, site } from "@/lib/content";
+import { locationPath } from "@/lib/locations";
+import {
+  pickRandomHeroClip,
+  siteMedia,
+  type HeroClip,
+} from "@/lib/site-media";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
 import { CountUp } from "@/components/ui/CountUp";
-import { FloatingDecor } from "@/components/ui/FloatingDecor";
-import { defaultTransition } from "@/lib/motion";
+import { defaultTransition, staggerContainer } from "@/lib/motion";
+
+const fadeChild = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const marqueeAreas = [...deliveryAreas, ...deliveryAreas];
 
 export function Hero() {
   const reducedMotion = useReducedMotion();
+  const [heroClip, setHeroClip] = useState<HeroClip | null>(null);
   const [videoFailed, setVideoFailed] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    setHeroClip(pickRandomHeroClip());
+    setVideoFailed(false);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
   });
-  const imageY = useTransform(
+  const mediaScale = useTransform(
     scrollYProgress,
     [0, 1],
-    reducedMotion ? [0, 0] : [0, 80],
+    reducedMotion ? [1, 1] : [1, 1.06],
+  );
+  const mediaY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    reducedMotion ? [0, 0] : [0, 60],
   );
 
-  const showVideo = siteMedia.heroVideo && !videoFailed;
+  const poster = heroClip?.poster ?? siteMedia.heroPoster;
+  const showVideo = Boolean(heroClip?.video) && !videoFailed;
 
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-cream pt-8 pb-20 sm:pt-12 sm:pb-28"
+      className="hero-goa relative isolate overflow-hidden bg-cocoa text-cream"
+      aria-label="Welcome"
     >
-      <div className="grain-overlay absolute inset-0 opacity-60" aria-hidden />
-      <FloatingDecor />
-      <div
-        className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-blush/80 blur-3xl"
+      <motion.div
+        className="hero-goa-sky pointer-events-none absolute inset-0"
         aria-hidden
       />
-      <div
-        className="absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-sage-light/60 blur-3xl"
-        aria-hidden
-      />
+      <div className="grain-overlay pointer-events-none absolute inset-0 opacity-30" aria-hidden />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <motion.div
-          initial={reducedMotion ? false : { opacity: 0, y: 32 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={reducedMotion ? { duration: 0 } : defaultTransition}
-        >
-          <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-gold-light px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-sage">
-            <span className="h-1.5 w-1.5 rounded-full bg-terracotta animate-pulse" />
-            Custom cakes · {site.location}
-          </p>
-          <h1 className="font-display text-[2.75rem] font-semibold leading-[1.05] text-cocoa sm:text-5xl lg:text-[3.5rem]">
-            Custom cakes in Goa,
-            <br />
-            crafted for <span className="text-terracotta italic">your</span>
-            <br />
-            sweetest moments
-          </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-cocoa/75">
-            {site.name} {site.tagline} — birthday, wedding, bento & designer cakes
-            hand-made in Panaji. Browse 160+ real creations and book on WhatsApp.
-          </p>
+      <div className="hero-goa-wave pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-cream" aria-hidden />
 
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {localIngredients.map((item) => (
+      {/* Goa reach marquee */}
+      <div className="relative z-20 border-b border-cream/10 bg-cocoa/80 backdrop-blur-sm">
+        <div className="overflow-hidden py-2.5">
+          <ul
+            className={`hero-goa-marquee flex w-max gap-8 px-4 ${reducedMotion ? "" : "animate-marquee"}`}
+            aria-label="Delivery across Goa"
+          >
+            {marqueeAreas.map((area, i) => (
               <li
-                key={item}
-                className="rounded-full border border-sage/20 bg-sage-light/50 px-3 py-1 text-xs font-medium text-sage"
+                key={`${area}-${i}`}
+                className="flex shrink-0 items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/80"
               >
-                {item}
+                <span className="text-gold" aria-hidden>
+                  ◆
+                </span>
+                {area}
               </li>
             ))}
           </ul>
+        </div>
+      </div>
 
-          <p className="mt-4 flex items-center gap-2 text-sm text-terracotta font-medium">
-            <span aria-hidden>📅</span>
-            Book {site.bookAheadDays} ahead for custom designs
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button
-              href={getWhatsAppUrl()}
-              variant="whatsapp"
-              external
-              className="hover:scale-105 active:scale-95"
-            >
-              Start your order
-            </Button>
-            <Button href="/creations" variant="outline" className="hover:scale-105">
-              Browse creations
-            </Button>
-          </div>
-        </motion.div>
-
+      <div className="relative z-10 mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 sm:pb-20 sm:pt-10 lg:px-8 lg:pb-24">
         <motion.div
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
-          style={{ y: imageY }}
+          className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14"
+          variants={staggerContainer}
+          initial={reducedMotion ? false : "hidden"}
+          animate="visible"
         >
+          <motion.div variants={fadeChild} transition={defaultTransition}>
+            <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.28em] text-gold">
+              <span className="h-px w-8 bg-gold/60" aria-hidden />
+              {goaReach.eyebrow}
+            </p>
+
+            <h1 className="mt-4 font-display text-[clamp(2.1rem,5.8vw,3.25rem)] font-semibold leading-[1.06] text-cream">
+              {goaReach.heroTitle}
+            </h1>
+
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-cream/75 sm:text-lg">
+              <span className="font-semibold text-cream">
+                {site.name} {site.tagline}
+              </span>
+              {" — "}
+              {goaReach.heroLead}
+            </p>
+
+            <ul className="mt-6 flex flex-wrap gap-2" aria-label="Delivery areas in Goa">
+              {deliveryAreas.map((place) => (
+                <li key={place}>
+                  <Link
+                    href={locationPath(place.toLowerCase())}
+                    className="inline-block rounded-full border border-gold/30 bg-gold/10 px-3 py-1.5 text-xs font-semibold text-cream transition-colors hover:border-gold hover:bg-gold/20"
+                  >
+                    {place}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <motion.div
+              className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+              variants={fadeChild}
+            >
+              <Button
+                href={getWhatsAppUrl()}
+                variant="whatsapp"
+                external
+                className="w-full justify-center sm:w-auto"
+              >
+                <WhatsAppIcon />
+                Book on WhatsApp
+              </Button>
+              <Button
+                href="/creations"
+                variant="outline"
+                className="w-full justify-center border-cream/25 bg-transparent text-cream hover:border-gold hover:text-gold sm:w-auto"
+              >
+                See 160+ creations
+              </Button>
+            </motion.div>
+
+            <p className="mt-4 text-sm text-cream/50">
+              Book{" "}
+              <span className="font-semibold text-gold">{site.bookAheadDays}</span>{" "}
+              ahead · Pickup in {site.studioCity} · delivery statewide
+            </p>
+          </motion.div>
+
           <motion.div
-            initial={reducedMotion ? false : { opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={
-              reducedMotion
-                ? { duration: 0 }
-                : { ...defaultTransition, delay: 0.2 }
-            }
-            className="relative aspect-[4/5] w-full"
+            className="relative mx-auto w-full max-w-md lg:max-w-none"
+            variants={fadeChild}
+            transition={{ ...defaultTransition, delay: 0.12 }}
           >
-            <div className="blob-mask absolute inset-0 overflow-hidden shadow-2xl shadow-terracotta/15 ring-4 ring-gold/20">
-              {showVideo ? (
+            <motion.div
+              className="hero-goa-arch relative aspect-[4/5] w-full overflow-hidden shadow-[0_40px_80px_-20px_rgba(0,0,0,0.55)] ring-1 ring-gold/30"
+              style={{ scale: mediaScale, y: mediaY }}
+            >
+              {showVideo && heroClip ? (
                 <video
-                  className="h-full w-full object-cover"
+                  key={heroClip.video}
+                  className="absolute inset-0 h-full w-full object-cover"
                   autoPlay
                   muted
                   loop
                   playsInline
-                  poster={siteMedia.heroPoster}
+                  poster={poster}
                   onError={() => setVideoFailed(true)}
                 >
-                  <source src={siteMedia.heroVideo} type="video/mp4" />
+                  <source src={heroClip.video} type="video/mp4" />
                 </video>
               ) : (
                 <Image
-                  src={siteMedia.heroPoster}
-                  alt="Elegant custom tier cake with floral decoration"
+                  src={poster}
+                  alt="Custom celebration cake by Sweet Bites — delivered across Goa"
                   fill
                   className="object-cover"
-                  sizes="(max-width: 1024px) 90vw, 45vw"
+                  sizes="(max-width: 1024px) 90vw, 50vw"
                   priority
                 />
               )}
-            </div>
-            <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white px-5 py-4 shadow-xl sm:-left-8">
-              <p className="font-display text-2xl font-semibold text-terracotta">
-                <CountUp end={site.stats.celebrations} suffix="+" />
-              </p>
-              <p className="text-sm text-cocoa/70">Happy celebrations</p>
-            </div>
-            <div className="absolute -right-2 top-8 rounded-2xl bg-sage px-4 py-3 text-white shadow-lg sm:-right-6">
-              <p className="text-xs font-medium uppercase tracking-wider opacity-90">
-                Rated
-              </p>
-              <p className="font-display text-lg font-semibold">
-                {site.stats.rating} ★
-              </p>
-            </div>
+              <motion.div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-cocoa/70 via-transparent to-cocoa/20"
+                aria-hidden
+              />
+            </motion.div>
+
+            <motion.div
+              className="absolute -bottom-3 left-4 right-4 flex items-stretch justify-between gap-3 rounded-2xl border border-gold/25 bg-cream px-4 py-3 text-cocoa shadow-xl sm:-bottom-5 sm:left-6 sm:right-6 sm:px-5"
+              initial={reducedMotion ? false : { opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, ...defaultTransition }}
+            >
+              <div>
+                <p className="font-display text-2xl font-semibold leading-none text-terracotta">
+                  <CountUp end={site.stats.celebrations} suffix="+" />
+                </p>
+                <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-cocoa/55">
+                  Goa celebrations
+                </p>
+              </div>
+              <span className="w-px self-stretch bg-cocoa/10" aria-hidden />
+              <div className="text-right">
+                <p className="font-display text-2xl font-semibold leading-none text-terracotta">
+                  {site.stats.rating}
+                  <span className="text-gold">★</span>
+                </p>
+                <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-cocoa/55">
+                  {site.stats.reviewCount}+ reviews
+                </p>
+              </div>
+              <span className="w-px self-stretch bg-cocoa/10" aria-hidden />
+              <motion.div
+                className="hidden min-w-[4.5rem] flex-col justify-center text-right sm:flex"
+                animate={reducedMotion ? undefined : { opacity: [0.7, 1, 0.7] }}
+                transition={{ duration: 2.5, repeat: Infinity }}
+              >
+                <p className="text-[10px] font-bold uppercase tracking-wider text-sage">
+                  All Goa
+                </p>
+                <p className="text-xs font-semibold text-cocoa">Delivery</p>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
+
+      <div className="relative z-10 border-t border-cream/10 bg-cream text-cocoa">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
+          <p className="text-center text-sm font-medium text-cocoa/70 sm:text-left">
+            {goaReach.tagline}
+          </p>
+          <Link
+            href={getWhatsAppUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-bold text-terracotta transition-colors hover:text-terracotta-dark"
+          >
+            WhatsApp {site.phone}
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
+      </div>
     </section>
+  );
+}
+
+function WhatsAppIcon() {
+  return (
+    <svg
+      className="h-4 w-4 shrink-0"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
   );
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { getFeaturedCreations } from "@/lib/catalog";
+import { formatCreationImageAlt } from "@/lib/creation-seo";
 import { defaultTransition } from "@/lib/motion";
 
 const stripCreations = getFeaturedCreations(12);
@@ -48,7 +49,7 @@ export function CakeScrollGallery() {
                 <Link href={`/creations/${creation.slug}`}>
                   <Image
                     src={creation.cover}
-                    alt={creation.title}
+                    alt={formatCreationImageAlt(creation)}
                     fill
                     className="object-cover transition-transform hover:scale-105"
                     sizes="256px"

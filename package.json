@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "catalog": "tsx scripts/generate-catalog.ts",
+    "og-image": "tsx scripts/generate-og.ts",
     "media:convert-heic": "tsx scripts/convert-heic.ts"
   },
   "dependencies": {

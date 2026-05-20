@@ -20,7 +20,7 @@ export const homeSeo: SeoPageContent = {
     `Welcome to ${site.name} (${site.tagline}) — a Goa home bakery at ${domain} specialising in custom birthday cakes, wedding tiers, anniversary designs, bento boxes, character cakes for kids, and festive orders across Panaji, Margao, Calangute, Mapusa, and all of North & South Goa.`,
     `Every photo in our Celebration Scrapbook is a real cake Muskan has baked and delivered. Browse 160+ creations, watch Behind the Bite decorating reels, and message us on ${wa} to check your date and get a personalised quote — usually within a few hours on working days.`,
     `We work with Belgian chocolate, Alphonso mango, red velvet, vanilla bean, eggless sponges, and Goan-inspired flavours. Whether you need a Barbie castle, a floral haldi cake, or a minimalist bento for two, we design around your theme, guest count, and budget.`,
-    `Most custom cakes need ${site.bookAheadDays} lead time. Weddings, Christmas, and long weekends fill quickly — book early. Pickup is available from Panaji; we also deliver across Goa with a fee based on distance.`,
+    `Most custom cakes need ${site.bookAheadDays} lead time. Weddings, Christmas, and long weekends fill quickly — book early. Pickup is available from ${site.studioCity}; we also deliver across Goa with a fee based on distance.`,
   ],
   subsections: [
     {
@@ -36,7 +36,7 @@ export const homeSeo: SeoPageContent = {
       ],
     },
   ],
-  listTitle: "Areas we deliver custom cakes in Goa",
+  listTitle: "Major places we deliver in Goa",
   listItems: deliveryAreas,
   faqs: [
     {
@@ -48,9 +48,9 @@ export const homeSeo: SeoPageContent = {
       answer: `Our WhatsApp order line is ${site.phone} (${site.phoneRaw}). Save the number and send your occasion, date, and reference photos anytime.`,
     },
     {
-      question: "Does Sweet Bites deliver outside Panaji?",
+      question: "Does Sweet Bites deliver across Goa?",
       answer:
-        "Yes. We deliver across North Goa (Mapusa, Calangute, Candolim, Baga) and South Goa (Margao, Vasco) as well as pickup in Panaji. Delivery fee is shared in your quote.",
+        `Yes. We deliver across North Goa (Panaji, Mapusa, Calangute, Candolim, Baga) and South Goa (Margao, Vasco, Velim) as well as pickup from our ${site.studioCity} kitchen. Delivery fee is shared in your quote.`,
     },
   ],
 };
@@ -131,12 +131,12 @@ export const reelsSeo: SeoPageContent = {
 };
 
 export const orderSeo: SeoPageContent = {
-  heading: "Order custom cakes in Goa — WhatsApp booking at sweetbites.me",
+  heading: "WhatsApp cake concierge — book at sweetbites.me",
   paragraphs: [
     `Sweet Bites takes all cake orders on ${wa} — no online payment forms. Message ${site.phone} with your occasion, event date, guest count, delivery area in Goa, preferred flavours, and photos from our gallery or your own references.`,
     "Muskan replies with availability, recommended size, and a clear quote (cake + delivery if applicable). Once you approve, we schedule baking and share updates. Payment terms are confirmed on WhatsApp — typically advance for large wedding orders.",
     `Browse flavours below — Belgian chocolate, Alphonso mango, red velvet, vanilla, coffee mocha, coconut pineapple, strawberry cream, and salted caramel. Eggless sponges available. Sizes from 6 inch (6–8 guests, from ₹1,200) to custom multi-tier cakes for 25+ guests.`,
-    `Lead time: ${site.bookAheadDays} for most custom designs. Simple buttercream birthdays may be possible sooner — ask honestly on WhatsApp. We serve Panaji pickup and delivery across Goa; see our contact page for studio hours.`,
+    `Lead time: ${site.bookAheadDays} for most custom designs. Simple buttercream birthdays may be possible sooner — ask honestly on WhatsApp. Pickup from ${site.studioCity} and delivery across Goa; see our contact page for studio hours.`,
   ],
   subsections: [
     {
@@ -173,12 +173,12 @@ export const orderSeo: SeoPageContent = {
 export const contactSeo: SeoPageContent = {
   heading: "Contact Sweet Bites Goa — sweetbites.me | WhatsApp orders",
   paragraphs: [
-    `${site.name} is based in Panaji, North Goa. Our website is ${domain} — browse cakes online anytime, but place orders exclusively via ${wa} at ${site.phone}.`,
-    `Studio hours: ${site.hours}. Closed Mondays. Visits are by appointment so Muskan can focus on active orders — message before you come. For directions, use the map on this page or search Sweet Bites Panaji on Google Maps.`,
+    `${site.name} is based in ${site.studioCity}, South Goa. Our website is ${domain} — browse cakes online anytime, but place orders exclusively via ${wa} at ${site.phone}.`,
+    `Studio hours: ${site.hours}. Closed Mondays. Visits are by appointment so Muskan can focus on active orders — message before you come. For directions, use the map on this page or search Sweet Bites ${site.studioCity} on Google Maps.`,
     `Follow ${site.instagramHandle} on Instagram for new creations, seasonal specials (like Alphonso mango season), and reel previews. Instagram DMs are fine for questions, but WhatsApp is fastest for quotes and booking.`,
     "We do not take cake orders by email. Phone calls are welcome for quick questions; for photos and references, WhatsApp is essential.",
   ],
-  listTitle: "Cake delivery areas from Panaji",
+  listTitle: `Cake delivery — major places in Goa (studio in ${site.studioCity})`,
   listItems: deliveryAreas,
   faqs: [
     {
@@ -201,7 +201,7 @@ export const aboutSeo: SeoPageContent = {
   heading: "About Muskan & Sweet Bites — custom cake baker in Goa",
   paragraphs: [
     `Sweet Bites (${domain}) is Muskan's home bakery in Goa — born from decorating cakes for friends and family and grown through word of mouth across weddings, birthdays, and festive celebrations.`,
-    "Unlike commercial cake factories, every Sweet Bites order is designed and decorated by Muskan herself: one conversation on WhatsApp, one sketch or reference board, one kitchen schedule, one delivery or pickup. That focus is why customers in Panaji, Margao, and resort areas return for their next milestone.",
+    `Unlike commercial cake factories, every Sweet Bites order is designed and decorated by Muskan herself: one conversation on WhatsApp, one sketch or reference board, one kitchen schedule, one delivery or pickup. That focus is why customers in ${site.studioCity}, Margao, Panaji, and resort areas return for their next milestone.`,
     "Ingredients matter: real butter, fresh fruit, quality chocolate, local Alphonso mango in season, and Goan cashew in select recipes. We do not use shortcuts that compromise taste or stability on a hot Goan afternoon.",
     `Today the portfolio at sweetbites.me holds 160+ documented creations — proof of range from kids' character cakes to elegant wedding florals. New designs are added after real orders, not copied from catalogues.`,
   ],
@@ -257,7 +257,7 @@ export function getCreationSeoContent(creation: {
     heading: `Order ${creation.title} — custom ${occ} cake in Goa`,
     paragraphs: [
       `The "${creation.title}" is a ${look} ${fmt} cake for ${occ} events, made by Muskan at Sweet Bites (${domain}). Photos on this page are from a real customer order — your version can match closely or be personalised with different colours, a name plaque, age numbers, or serving size.`,
-      `Sweet Bites serves Goa-wide: Panaji pickup, delivery to Margao, Mapusa, Calangute, Candolim, Vasco, and surrounding areas. We bake eggless sponges on request and offer flavours including chocolate, mango, red velvet, and vanilla.`,
+      `Sweet Bites serves Goa-wide: pickup in ${site.studioCity}, delivery to Panaji, Margao, Mapusa, Calangute, Candolim, Vasco, and surrounding areas. We bake eggless sponges on request and offer flavours including chocolate, mango, red velvet, and vanilla.`,
       `To book this design, tap Order on WhatsApp (${site.phone}) and mention "${creation.title}" or link sweetbites.me/creations/${creation.slug}. Include your event date, guest count, and any changes — we'll confirm availability and send a quote, usually within 24 hours on business days.`,
       `Recommended lead time is ${site.bookAheadDays} for detailed buttercream and fondant work. Rush dates may work for simpler finishes — ask on WhatsApp and we'll give an honest yes or no.`,
       `Why order from Sweet Bites? 160+ proven designs online, process reels showing real skill, transparent WhatsApp quotes, and a baker who treats your celebration personally — not as a production line ticket.`,

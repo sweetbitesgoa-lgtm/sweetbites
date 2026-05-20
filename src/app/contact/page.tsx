@@ -11,16 +11,11 @@ import { contactSeo } from "@/lib/seo-content";
 import { buildPageMetadata, getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact Sweet Bites — sweetbites.me",
+  title: "Contact & studio hours",
   description:
-    `Contact Sweet Bites Goa: WhatsApp ${site.phone}, ${site.domain}. Panaji custom cakes — pickup & delivery. Order online at sweetbites.me.`,
+    `We're in ${site.studioCity}, South Goa, open Tue–Sun. For cake orders, WhatsApp ${site.phone} — it's the fastest way to share photos and get a reply from Muskan.`,
   path: "/contact",
-  keywords: [
-    "Sweet Bites contact",
-    "sweetbites.me WhatsApp",
-    "cake shop Panaji phone",
-    "7888042837 cake order",
-  ],
+  keywords: ["Sweet Bites Velim", "cake shop Goa WhatsApp"],
 });
 
 export default function ContactPage() {
@@ -37,7 +32,7 @@ export default function ContactPage() {
       />
       <PageHero
         title={`Contact us — ${site.domain}`}
-        description={`Cake orders on WhatsApp ${site.phone} only. Studio in Panaji, Goa — ${site.hours}.`}
+        description={`Cake orders on WhatsApp ${site.phone} only. Studio in ${site.studioCity}, Goa — ${site.hours}.`}
       >
         <Button href={getWhatsAppUrl()} variant="whatsapp" external>
           <WhatsAppIconInline className="h-5 w-5" />
@@ -129,11 +124,11 @@ export default function ContactPage() {
       <section className="bg-cocoa/5 py-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-4 font-display text-xl font-semibold text-cocoa">
-            Find Sweet Bites on the map — Panaji, Goa
+            Find Sweet Bites on the map — {site.studioCity}, Goa
           </h2>
           <div className="aspect-[21/9] w-full overflow-hidden rounded-2xl shadow-lg">
             <iframe
-              title="Sweet Bites custom cakes — Panaji Goa location"
+              title={`Sweet Bites custom cakes — ${site.studioCity}, Goa location`}
               src={site.mapsEmbedUrl}
               className="h-full w-full border-0"
               loading="lazy"
