@@ -11,17 +11,21 @@ export const site = {
   email: "hello@sweetbites.me",
   phone: "+91 78880 42837",
   phoneRaw: "7888042837",
-  address: "Velim, South Goa, India",
+  address:
+    "H No 138, behind St. Xavier's High School, Ubdando, Velim, Salcete, Goa 403723",
+  postalCode: "403723",
   hours: "Tue – Sun: 10:00 AM – 7:00 PM",
-  mapsUrl: "https://maps.google.com/?q=Velim+Goa+Sweet+Bites",
+  mapsUrl: "https://maps.app.goo.gl/fEq4RdhR5HrUWfDW9",
   mapsEmbedUrl:
-    "https://www.google.com/maps?q=Velim,+South+Goa,+India&z=14&hl=en&output=embed",
+    "https://www.google.com/maps?q=H+No+138%2C+behind+St+Xavier%27s+High+School%2C+Ubdando%2C+Velim%2C+Salcete%2C+Goa+403723&hl=en&z=16&output=embed",
   stats: { celebrations: 500, rating: 4.9, reviewCount: 120 },
   bookAheadDays: "5–7 days",
   /** Kitchen location — use in contact/maps; hero & marketing lead with Goa-wide reach */
   studioCity: "Velim",
-  /** Set when Google Business Profile is live — enables review link in UI */
-  googleBusinessUrl: null as string | null,
+  /** Google Business Profile — listing (share link); used in JSON-LD sameAs */
+  googleBusinessUrl: "https://share.google/MrlKjwuxDH1hzn5Mn",
+  /** Google reviews — read & leave reviews */
+  googleReviewUrl: "https://g.page/r/CarNtTwBg887EBM/review",
 } as const;
 
 export const seasonalBanner = {
@@ -204,8 +208,7 @@ export const faqs = [
   },
   {
     question: "Where is Sweet Bites located?",
-    answer:
-      "Our kitchen is in Velim, South Goa — we serve customers across the state. Studio visits are by appointment Tuesday–Sunday. Orders are placed via WhatsApp at +91 78880 42837.",
+    answer: `Our kitchen is at ${site.address}. Studio visits are by appointment Tuesday–Sunday. We deliver across Goa — WhatsApp ${site.phone} to book.`,
   },
 ];
 
@@ -218,7 +221,11 @@ export const showcaseSection = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/creations", label: "Creations" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/reels", label: "Reels" },
+  { href: "/locations", label: "Locations" },
+  { href: "/blog", label: "Journal" },
+  { href: "/cakes-menu", label: "Cakes" },
   { href: "/order", label: "Book" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

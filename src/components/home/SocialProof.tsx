@@ -31,17 +31,34 @@ export function SocialProof() {
               description="A glimpse of cakes we've crafted for celebrations across Goa."
             />
           </div>
-          <div className="flex items-center gap-3 rounded-2xl bg-gold-light px-5 py-3">
-            <span className="font-display text-3xl font-bold text-terracotta">
-              {site.stats.rating}
-            </span>
-            <div className="text-left text-sm">
-              <p className="font-semibold text-cocoa">Loved in Goa</p>
-              <p className="text-cocoa/60">
-                {site.stats.reviewCount}+ happy orders
-              </p>
+          {(site.googleReviewUrl ?? site.googleBusinessUrl) ? (
+            <a
+              href={site.googleReviewUrl ?? site.googleBusinessUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-2xl bg-gold-light px-5 py-3 transition-colors hover:bg-gold-light/80"
+            >
+              <span className="font-display text-3xl font-bold text-terracotta">
+                {site.stats.rating}
+              </span>
+              <div className="text-left text-sm">
+                <p className="font-semibold text-cocoa">Loved in Goa</p>
+                <p className="text-cocoa/60">
+                  {site.stats.reviewCount}+ happy orders · Google
+                </p>
+              </div>
+            </a>
+          ) : (
+            <div className="flex items-center gap-3 rounded-2xl bg-gold-light px-5 py-3">
+              <span className="font-display text-3xl font-bold text-terracotta">
+                {site.stats.rating}
+              </span>
+              <div className="text-left text-sm">
+                <p className="font-semibold text-cocoa">Loved in Goa</p>
+                <p className="text-cocoa/60">{site.stats.reviewCount}+ happy orders</p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <motion.div

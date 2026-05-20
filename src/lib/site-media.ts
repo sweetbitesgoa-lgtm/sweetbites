@@ -52,4 +52,7 @@ export const siteMedia = {
     getFeaturedCreations(6)[2]?.cover ??
     featured?.cover ??
     "/images/haldi-design-cake/498586910_18060535466170730_970917338585622900_n..webp",
+  blogBookingHero:
+    "/images/golden-cream-birthday-cake/624880407_18052417967703847_5140043511432543654_n..webp",
+  blogWeddingHero: defaultPoster,
 } as const;

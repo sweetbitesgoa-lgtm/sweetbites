@@ -102,6 +102,7 @@ export function getLocalBusinessJsonLd() {
       streetAddress: site.address,
       addressLocality: site.studioCity,
       addressRegion: "Goa",
+      postalCode: site.postalCode,
       addressCountry: "IN",
     },
     geo: {
@@ -135,7 +136,12 @@ export function getLocalBusinessJsonLd() {
       reviewCount: site.stats.reviewCount,
       bestRating: 5,
     },
-    sameAs: [site.instagram],
+    sameAs: [
+      site.instagram,
+      site.googleBusinessUrl,
+      ...(site.googleReviewUrl ? [site.googleReviewUrl] : []),
+    ],
+    hasMap: site.mapsUrl,
     potentialAction: {
       "@type": "OrderAction",
       target: {

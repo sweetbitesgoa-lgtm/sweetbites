@@ -7,6 +7,7 @@ import { site, testimonials } from "@/lib/content";
 import { siteMedia } from "@/lib/site-media";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
+import { ReviewsNote } from "@/components/home/ReviewsNote";
 import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 import { WhatsAppOrderCard } from "@/components/order/WhatsAppOrderCard";
 import { SeoContentSection } from "@/components/seo/SeoContentSection";
@@ -349,6 +350,7 @@ export function AboutPageView() {
               </li>
             ))}
           </ul>
+          <ReviewsNote />
         </div>
       </section>
 

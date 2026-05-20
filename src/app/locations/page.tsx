@@ -42,6 +42,9 @@ export default function LocationsIndexPage() {
         <Button href={getWhatsAppUrl()} variant="whatsapp" external>
           Order on WhatsApp
         </Button>
+        <Button href={site.mapsUrl} variant="outline" external className="rounded-md px-5">
+          Studio on Maps
+        </Button>
       </PageHero>
 
       <section className="bg-cream py-14 sm:py-20">

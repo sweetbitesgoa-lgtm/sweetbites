@@ -218,9 +218,20 @@ export function Hero() {
                   {site.stats.rating}
                   <span className="text-gold">★</span>
                 </p>
-                <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-cocoa/55">
-                  {site.stats.reviewCount}+ reviews
-                </p>
+                {(site.googleReviewUrl ?? site.googleBusinessUrl) ? (
+                  <a
+                    href={site.googleReviewUrl ?? site.googleBusinessUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-0.5 block text-[10px] font-bold uppercase tracking-wider text-cocoa/55 underline decoration-cocoa/20 underline-offset-2 hover:text-terracotta hover:decoration-terracotta/40"
+                  >
+                    {site.stats.reviewCount}+ reviews
+                  </a>
+                ) : (
+                  <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-cocoa/55">
+                    {site.stats.reviewCount}+ reviews
+                  </p>
+                )}
               </div>
               <span className="w-px self-stretch bg-cocoa/10" aria-hidden />
               <motion.div

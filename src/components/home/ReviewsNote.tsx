@@ -4,15 +4,15 @@ import Link from "next/link";
 import { site } from "@/lib/content";
 
 /**
- * Shown until Google Business Profile exists — avoids fake embeds.
- * Set site.googleBusinessUrl in content.ts to swap for a live reviews link.
+ * Review & listing URLs are set in content.ts (`googleReviewUrl`, `googleBusinessUrl`).
  */
 export function ReviewsNote() {
-  if (site.googleBusinessUrl) {
+  const reviewsHref = site.googleReviewUrl ?? site.googleBusinessUrl;
+  if (reviewsHref) {
     return (
       <p className="mx-auto mt-6 max-w-lg text-center text-sm">
         <a
-          href={site.googleBusinessUrl}
+          href={reviewsHref}
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-terracotta hover:underline"

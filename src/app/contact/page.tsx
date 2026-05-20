@@ -5,6 +5,7 @@ import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 import { WhatsAppOrderCard } from "@/components/order/WhatsAppOrderCard";
+import { ReviewsNote } from "@/components/home/ReviewsNote";
 import { SeoContentSection } from "@/components/seo/SeoContentSection";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { contactSeo } from "@/lib/seo-content";
@@ -147,6 +148,7 @@ export default function ContactPage() {
               allowFullScreen
             />
           </div>
+          <ReviewsNote />
         </div>
       </section>
 

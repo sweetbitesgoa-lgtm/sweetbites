@@ -161,3 +161,133 @@ body {
     radial-gradient(ellipse 90% 60% at 100% 10%, rgba(201, 162, 39, 0.06), transparent 50%),
     linear-gradient(180deg, var(--surface) 0%, var(--cream) 100%);
 }
+
+/* /blog index — editorial hero */
+.blog-index-hero {
+  background:
+    linear-gradient(135deg, #1a0f0c 0%, var(--cocoa) 38%, #3a2218 72%, #2c1810 100%);
+}
+
+.blog-index-hero-grid {
+  background-image:
+    linear-gradient(105deg, transparent 0%, transparent 40%, rgba(201, 162, 39, 0.07) 50%, transparent 62%),
+    repeating-linear-gradient(
+      -12deg,
+      transparent,
+      transparent 48px,
+      rgba(255, 255, 255, 0.02) 48px,
+      rgba(255, 255, 255, 0.02) 49px
+    );
+}
+
+.blog-index-hero-frame {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+    0 40px 80px -36px rgba(0, 0, 0, 0.45);
+}
+
+.blog-index-card {
+  background: linear-gradient(180deg, var(--surface) 0%, rgba(251, 247, 242, 0.5) 100%);
+}
+
+/* Blog article — light “broadsheet” hero (distinct from dark /blog index) */
+.blog-post-hero-wash {
+  background:
+    radial-gradient(ellipse 70% 50% at 0% 0%, rgba(201, 162, 39, 0.12), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 100% 20%, rgba(196, 92, 62, 0.08), transparent 50%),
+    linear-gradient(180deg, var(--cream) 0%, var(--surface) 100%);
+}
+
+.blog-post-hero-photo {
+  transform: rotate(-1.25deg);
+}
+
+@media (min-width: 1024px) {
+  .blog-post-hero-photo {
+    transform: rotate(-2deg) translateX(0.5rem);
+  }
+}
+
+.blog-post-hero-arch {
+  border-radius: 3.5rem 3.5rem 0.75rem 0.75rem;
+}
+
+.blog-post-hero-caption {
+  transform: rotate(-1.25deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-post-hero-photo,
+  .blog-post-hero-caption {
+    transform: none;
+  }
+}
+
+.blog-prose strong {
+  font-weight: 600;
+  color: var(--cocoa);
+}
+
+/* Case studies — index (light) */
+.case-study-index-mosaic-item {
+  box-shadow: 0 16px 40px -24px rgba(44, 24, 16, 0.28);
+}
+
+.case-study-index-mosaic-item:nth-child(2) {
+  transform: rotate(-2deg);
+}
+
+.case-study-index-mosaic-item:nth-child(3) {
+  transform: rotate(1.5deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study-index-mosaic-item:nth-child(2),
+  .case-study-index-mosaic-item:nth-child(3) {
+    transform: none;
+  }
+}
+
+/* Case studies — article hero (dark dossier) */
+.case-study-hero {
+  background:
+    linear-gradient(145deg, #1a0f0c 0%, var(--cocoa) 45%, #3d2418 100%);
+}
+
+.case-study-hero-grid {
+  background-image:
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgba(196, 92, 62, 0.15), transparent 55%),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 32px,
+      rgba(255, 255, 255, 0.015) 32px,
+      rgba(255, 255, 255, 0.015) 33px
+    );
+}
+
+.case-study-hero-frame {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 40px 80px -32px rgba(0, 0, 0, 0.55);
+}
+
+.case-study-card {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--surface) 100%);
+}
+
+/* Ready-made cakes menu — party-board aesthetic */
+.cakes-menu-pattern {
+  background-color: #fff9f4;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c45c3e' fill-opacity='0.06'%3E%3Cpath d='M30 8c-2 0-3 1-3 3v2h6v-2c0-2-1-3-3-3zm-12 14l-2 4h28l-2-4H18zm-6 10v14h36V32H12zm4 18h28v4H16v-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.cakes-menu-board-inner {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(245, 236, 212, 0.9), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(196, 92, 62, 0.08), transparent 50%);
+}
+
+.cakes-menu-page {
+  background-image: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(201, 162, 39, 0.12), transparent 50%);
+}

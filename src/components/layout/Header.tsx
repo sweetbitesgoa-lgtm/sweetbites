@@ -8,8 +8,8 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
 
-const leftNav = navLinks.slice(0, 3);
-const rightNav = navLinks.slice(3);
+const leftNav = navLinks.slice(0, 5); // Home, Creations, Case Studies, Reels, Locations
+const rightNav = navLinks.slice(5);
 
 function isActive(href: string, pathname: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
