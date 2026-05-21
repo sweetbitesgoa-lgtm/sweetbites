@@ -620,7 +620,6 @@ export const OCCASION_FOOTER_LINKS = landings.map((l) => ({
 export const HEADER_OCCASION_LINKS = [
   { href: occasionLandingPath("wedding-cakes-goa"), label: "Wedding" },
   { href: occasionLandingPath("birthday-cakes-goa"), label: "Birthday" },
-  { href: occasionLandingPath("haldi-cakes-goa"), label: "Haldi" },
   { href: occasionLandingPath("kids-birthday-cakes-goa"), label: "Kids" },
   {
     href: occasionLandingPath("anniversary-cakes-goa"),
