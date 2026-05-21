@@ -3,6 +3,7 @@ import { getAllSlugs, getCatalog } from "@/lib/catalog";
 import { getAllLocationSlugs } from "@/lib/locations";
 import { getAllBlogPosts } from "@/lib/blog";
 import { getAllCaseStudies } from "@/lib/case-studies";
+import { getOccasionLandingSlugs } from "@/lib/occasion-landings";
 import { SITE_URL } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -67,7 +68,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${base}/occasions`,
+      lastModified: buildTime,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
   ];
+
+  const occasionRoutes: MetadataRoute.Sitemap = getOccasionLandingSlugs().map((slug) => ({
+    url: `${base}/${slug}`,
+    lastModified: buildTime,
+    changeFrequency: "monthly" as const,
+    priority: 0.83,
+  }));
 
   const blogRoutes: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${base}/blog/${post.slug}`,
@@ -101,6 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
+    ...occasionRoutes,
     ...blogRoutes,
     ...caseStudyRoutes,
     ...locationRoutes,

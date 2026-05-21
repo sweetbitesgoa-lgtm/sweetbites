@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { navLinks, site } from "@/lib/content";
+import { OCCASION_FOOTER_LINKS } from "@/lib/occasion-landings";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
@@ -104,7 +105,7 @@ export function Footer() {
         {/* Main grid */}
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14 lg:grid lg:grid-cols-12 lg:gap-10 lg:px-8 lg:py-16">
           {/* Brand */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <Logo variant="light" size="md" align="start" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/70">
               Handcrafted celebration cakes by Muskan — birthdays, weddings, and
@@ -152,8 +153,18 @@ export function Footer() {
             </ul>
           </div>
 
+          <div className="mt-8 lg:col-span-2 lg:mt-0">
+            <FooterHeading>Occasions</FooterHeading>
+            <ul className="space-y-2.5">
+              <FooterNavLink href="/occasions" label="All occasions" />
+              {OCCASION_FOOTER_LINKS.map((link) => (
+                <FooterNavLink key={link.href} href={link.href} label={link.label} />
+              ))}
+            </ul>
+          </div>
+
           {/* Studio */}
-          <div className="mt-10 border-t border-cream/[0.08] pt-10 lg:col-span-4 lg:mt-0 lg:border-t-0 lg:pt-0">
+          <div className="mt-10 border-t border-cream/[0.08] pt-10 lg:col-span-3 lg:mt-0 lg:border-t-0 lg:pt-0">
             <FooterHeading>Studio</FooterHeading>
             <div className="rounded-xl border border-cream/[0.1] bg-cream/[0.04] p-5 backdrop-blur-sm">
               <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-gold/90">

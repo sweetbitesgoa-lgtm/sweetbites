@@ -15,7 +15,7 @@ export function OccasionCards() {
         <SectionHeading
           eyebrow="Celebrations"
           title="What's the occasion?"
-          description="Tap a category to browse creations made for your moment."
+          description="Tap a category for a Goa ordering guide, gallery picks, and WhatsApp tips."
         />
         <motion.div
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"

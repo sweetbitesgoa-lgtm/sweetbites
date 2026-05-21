@@ -28,3 +28,14 @@ export function getLocationWhatsAppUrl(placeName: string): string {
   const message = `Hi Sweet Bites! I'm in ${placeName}, Goa and would like a custom cake from sweetbites.me.\n\n• Occasion:\n• Date:\n• Guest count:\n• Theme / reference:\n\nThank you!`;
   return getWhatsAppUrl(message);
 }
+
+export function getOccasionLandingWhatsAppUrl(
+  title: string,
+  slug: string,
+  bookingPathId?: BookingPathId,
+): string {
+  if (bookingPathId) return getBookingPathWhatsAppUrl(bookingPathId);
+  const link = `${site.url.replace(/\/$/, "")}/${slug}`;
+  const message = `Hi Sweet Bites! I'd like to order a cake from your ${title} page.\n\nPage: ${link}\n\n• Date:\n• Guest count:\n• Delivery area in Goa:\n• Reference from gallery (optional):\n\nThank you!`;
+  return getWhatsAppUrl(message);
+}
