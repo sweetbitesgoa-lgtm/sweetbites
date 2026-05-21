@@ -43,9 +43,9 @@ export function CaseStudyIndexView({ studies }: CaseStudyIndexViewProps) {
               </span>
             </h1>
             <p className="mt-5 max-w-lg text-[1.0625rem] leading-relaxed text-muted sm:text-lg">
-              Barbie castle tiers, Spiderman sculpts, unicorn horns — the designs other bakers
-              decline. Each story covers the brief, structure, humidity, and handover so you know
-              what booking one really takes.
+              Barbie castles, Spiderman sculpts, wedding tiers, haldi yellows, Ferrero chocolate,
+              rainbow reveals, and surprise bentos — the builds other bakers often decline. Each
+              story covers brief, structure, humidity, and handover.
             </p>
 
             <dl className="mt-8 flex flex-wrap gap-6 border-t border-line pt-6 text-sm">
@@ -67,7 +67,7 @@ export function CaseStudyIndexView({ studies }: CaseStudyIndexViewProps) {
                 <dt className="text-[10px] font-bold uppercase tracking-wider text-muted">
                   Themes
                 </dt>
-                <dd className="mt-1 font-medium text-cocoa">Kids · character · structure</dd>
+                <dd className="mt-1 font-medium text-cocoa">Kids · wedding · premium</dd>
               </div>
             </dl>
 

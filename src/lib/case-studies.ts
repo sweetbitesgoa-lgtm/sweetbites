@@ -23,7 +23,7 @@ export type CaseStudy = {
   blocks: BlogBlock[];
 };
 
-export const CASE_STUDIES_INDEX_DESCRIPTION = `${site.name} case studies — how Muskan delivers near-impossible custom cakes in Goa: Barbie castle cakes, Spiderman character cakes, unicorn horn structures & more. Real briefs, structure, delivery & WhatsApp ${site.phone}.`;
+export const CASE_STUDIES_INDEX_DESCRIPTION = `${site.name} case studies — how Muskan delivers near-impossible custom cakes in Goa: Barbie castle, Spiderman, unicorn, wedding tiers, haldi, Ferrero, rainbow cakes & more. Real briefs, structure, delivery & WhatsApp ${site.phone}.`;
 
 export const CASE_STUDIES_INDEX_KEYWORDS = [
   "custom cake case study Goa",
@@ -32,6 +32,9 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "unicorn cake Goa",
   "wedding cake case study Goa",
   "rasmalai cake Goa",
+  "haldi cake Goa",
+  "Ferrero cake Goa",
+  "rainbow cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -689,6 +692,371 @@ const studies: CaseStudy[] = [
           { href: "/creations/rasmalai-special-cake", label: "Rasmalai gallery", description: "Order a similar design" },
           { href: "/cakes-menu", label: "Ready-made menu", description: "Flavours including rasmalai" },
           { href: "/blog/wedding-cake-delivery-goa-checklist", label: "Wedding delivery guide", description: "Handover tips for big events" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "haldi-cake-goa-case-study",
+    title: "Case study: Haldi cake in Goa — marigold yellow, turmeric timing & a lawn that was not in the brief",
+    excerpt:
+      "Pre-wedding haldi cakes fail when treated like afternoon birthday buttercream. How Muskan planned yellow tones, eggless sponge, and delivery before the turmeric games at a North Goa home.",
+    publishedAt: "2026-06-05",
+    readMinutes: 14,
+    focusKeyword: "haldi cake Goa",
+    keywords: [
+      "haldi cake Goa",
+      "haldi ceremony cake",
+      "pre-wedding cake Muskan",
+      "yellow marigold cake Goa",
+      "eggless haldi cake",
+      "Sweet Bites haldi",
+    ],
+    creationSlug: "haldi-design-cake",
+    difficulty: "Complex · heat + ceremony timing",
+    leadTime: "8–10 days",
+    celebrationType: "Haldi at home · 45 guests",
+    relatedSlugs: ["wedding-cake-goa-case-study", "rasmalai-cake-goa-case-study"],
+    heroImage:
+      "/images/haldi-design-cake/498586910_18060535466170730_970917338585622900_n..webp",
+    heroImageAlt: "Haldi cake Goa — yellow marigold-style ceremony cake by Sweet Bites",
+    heroGalleryHref: "/creations/haldi-design-cake",
+    heroGalleryLabel: "View haldi creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **haldi cake Goa** family books is often their first order with us — days before the white wedding tier. Muskan treats it as its own event: marigold palette, morning light, turmeric nearby, and elders who need eggless sponge. This case study walks through the [Haldi Design Cake](/creations/haldi-design-cake) we delivered near [Mapusa](/locations/mapusa), using the same venue discipline as our [wedding delivery guide](/blog/wedding-cake-delivery-goa-checklist).`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **haldi cake Goa**? Ask bakers how they handle outdoor tables, turmeric games, and eggless requests — not only yellow food colouring.",
+      },
+      {
+        type: "h2",
+        text: "Brief from the bride’s mother",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "WhatsApp thread included our haldi gallery photo, a marigold garland reference, and a firm date — haldi on Thursday, wedding on Sunday. Guest count modest (~45) but the cake table sat on a lawn beside the haldi mat.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Eggless vanilla-cardamom sponge for mixed family diet.",
+          "Fresh cream finish — fondant avoided because of direct sun between 11 AM and 1 PM.",
+          "Writing in English + Devanagari initials — short lines only.",
+          "Second quote requested for [wedding cake](/case-studies/wedding-cake-goa-case-study) in same conversation.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why haldi mornings are harder than they look",
+        id: "why-hard",
+      },
+      {
+        type: "p",
+        text: "Yellow buttercream that looks perfect in a cold kitchen can mute to beige outdoors. Muskan deepens saffron and marigold tones slightly so photos still read festive. Turmeric on hands near the table means simpler toppers — no dangling florals guests will brush.",
+      },
+      {
+        type: "h2",
+        text: "Delivery & table plan",
+        id: "delivery",
+      },
+      {
+        type: "ul",
+        items: [
+          "Venue photo received evening before — Muskan flagged lack of shade; family added umbrella same night.",
+          "Delivery 9:30 AM — before guests in full yellow dress.",
+          "Cake placed on inner veranda first, moved to lawn only for 15-minute photo window.",
+          "WhatsApp photo to mother before anyone cut the first flower garland.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Cake held colour through noon; wedding tier booked in same thread. Read our [haldi tradition guide](/blog/haldi-cake-goa-tradition-guide) or [/haldi-cakes-goa](/haldi-cakes-goa) landing page, then message ${site.phone} with your ceremony date and lawn photos.",
+      },
+      {
+        type: "related",
+        title: "Related",
+        items: [
+          { href: "/haldi-cakes-goa", label: "Haldi cakes guide", description: "Planning & WhatsApp tips" },
+          { href: "/creations/haldi-design-cake", label: "Haldi gallery", description: "Reference photos" },
+          { href: "/wedding-cakes-goa", label: "Wedding cakes", description: "Reception tiers" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ferrero-cake-goa-case-study",
+    title: "Case study: Ferrero Rocher cake in Goa — chocolate shell, hazelnut crunch & a deadline before checkout",
+    excerpt:
+      "Ferrero cakes look like chocolate spheres until weight, humidity, and travel hit. Inside Muskan’s Ferrero special build for a Margao anniversary with a four-hour delivery window.",
+    publishedAt: "2026-06-08",
+    readMinutes: 13,
+    focusKeyword: "Ferrero cake Goa",
+    keywords: [
+      "Ferrero cake Goa",
+      "Ferrero Rocher cake delivery",
+      "chocolate hazelnut cake Muskan",
+      "anniversary chocolate cake Goa",
+      "premium cake Goa",
+      "Sweet Bites Ferrero",
+    ],
+    creationSlug: "ferraro-special-cake",
+    difficulty: "Complex · weight + chocolate stability",
+    leadTime: "7 days",
+    celebrationType: "Anniversary dinner · 12 guests",
+    relatedSlugs: ["rasmalai-cake-goa-case-study", "wedding-cake-goa-case-study"],
+    heroImage:
+      "/images/ferraro-special-cake/655117931_18106640332846451_6047524932188940240_n..webp",
+    heroImageAlt: "Ferrero cake Goa — chocolate Ferrero Rocher style cake by Sweet Bites",
+    heroGalleryHref: "/creations/ferraro-special-cake",
+    heroGalleryLabel: "View Ferrero creation",
+    blocks: [
+      {
+        type: "p",
+        text: `**Ferrero cake Goa** searches spike around anniversaries and premium birthdays — clients want the gold-wrapper look without a cake that collapses in the car. Muskan documents this [Ferrero Special Cake](/creations/ferraro-special-cake) for a couple in [Margao](/locations/margao): hazelnut sponge, chocolate ganache, and Ferrero toppers added only after chill.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Compare **Ferrero cake Goa** bakers on real photos of finished cakes — not stock spheres — and ask how chocolate travels in afternoon heat.",
+      },
+      {
+        type: "h2",
+        text: "Brief: surprise dinner, tight window",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Husband messaged from our [cakes menu](/cakes-menu) Ferrero line and gallery special. Needed eggless-adjacent (wife avoids eggs when possible — Muskan offered dense chocolate hazelnut without eggless label if sponge was standard with egg; client chose standard for texture). Dinner at 7 PM; pickup requested 3 PM from Velim.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch single tier — 12 guests, no leftovers requested.",
+          "Gold ribbon writing — two names, one line.",
+          "Reference: [/creations/ferraro-special-cake](/creations/ferraro-special-cake).",
+          "Also on menu board as Ferrero Rocher ready-made when oven allows.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Chocolate in Goan warmth",
+        id: "chocolate",
+      },
+      {
+        type: "p",
+        text: "Ganache softens faster than buttercream roses. Muskan keeps the cake chilled until handoff, uses a darker chocolate shell for structure, and adds whole Ferrero pieces at the studio door — not the night before. That is why the **Ferrero cake Goa** photo matches what arrived at the restaurant.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Restaurant kept cake in AC back office until dessert; couple sent a thank-you reel clip. Want similar? Message ${site.phone} with date, guest count, and whether pickup or delivery to your Goa town works better.",
+      },
+      {
+        type: "related",
+        title: "Explore",
+        items: [
+          { href: "/creations/ferraro-special-cake", label: "Ferrero gallery" },
+          { href: "/anniversary-cakes-goa", label: "Anniversary guide" },
+          { href: "/cakes-menu", label: "Ready-made menu" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "rainbow-cake-goa-case-study",
+    title: "Case study: Rainbow cake in Goa — hidden layers, buttercream rosettes & a reveal that had to stay secret",
+    excerpt:
+      "Rainbow cakes fail when layers bleed or the outer rosettes melt before the surprise cut. How Muskan built a double-height rainbow for a Calangute birthday with a reveal moment on video.",
+    publishedAt: "2026-06-10",
+    readMinutes: 14,
+    focusKeyword: "rainbow cake Goa",
+    keywords: [
+      "rainbow cake Goa",
+      "rainbow birthday cake delivery",
+      "double layer rainbow cake Muskan",
+      "colourful cake Goa",
+      "Sweet Bites rainbow",
+      "kids rainbow cake Goa",
+    ],
+    creationSlug: "double-layered-rainbow-cake",
+    difficulty: "Near-impossible · colour stability + height",
+    leadTime: "8 days",
+    celebrationType: "10th birthday · beach-adjacent villa",
+    relatedSlugs: ["unicorn-cake-goa-case-study", "barbie-castle-cake-goa-case-study"],
+    heroImage:
+      "/images/double-layered-rainbow-cake/670355391_18093775997170730_3698923811068689438_n..webp",
+    heroImageAlt: "Rainbow cake Goa — double layered rainbow cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/double-layered-rainbow-cake",
+    heroGalleryLabel: "View rainbow creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **rainbow cake Goa** order is often for the reaction at the first slice — which means clean colour boundaries inside and stable rosettes outside. Muskan’s [Double Layered Rainbow Cake](/creations/double-layered-rainbow-cake) for a [Calangute](/locations/calangute) villa party paired with our [reels](/reels) process clip so parents knew what they were booking.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "If you need a **rainbow cake Goa** delivery, ask how colours are built inside versus painted on the outside only.",
+      },
+      {
+        type: "h2",
+        text: "Brief: “Surprise when we cut”",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother wanted neutral white-cream outside so the rainbow stayed secret until knife-through. Ten-year-old, ~22 kids, pool nearby — afternoon party with partial shade on the cake table.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Six thin colour layers per tier — no artificial aftertaste requested.",
+          "Buttercream rosettes outside — piped cold, transported chilled.",
+          "Also listed on [/cakes-menu](/cakes-menu) as Rainbow Cake for ready-made orders.",
+          "Linked [unicorn](/case-studies/unicorn-cake-goa-case-study) gallery for pastel inspiration — chose bolder interior instead.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Build & reveal moment",
+        id: "build",
+      },
+      {
+        type: "ul",
+        items: [
+          "Layers baked day apart to reduce kitchen humidity load.",
+          "Crumb coat white — colour only inside cuts.",
+          "Second tier dowelled; rosettes applied morning-of.",
+          "Delivery early afternoon; cake stayed in villa kitchen until singing.",
+          "Family videoed slice — shared on WhatsApp same evening.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Poolside heat",
+        id: "heat",
+      },
+      {
+        type: "p",
+        text: "Rosettes softened slightly by hour three but held shape for photos that mattered. Muskan’s note: neutral outside + rainbow inside is a strong **rainbow cake Goa** strategy when parties run hot.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Kids reacted on first cut; mother booked a [bento](/blog/bento-cake-goa-order-guide) for school the next week. Message ${site.phone} with date, guest count, and villa or hall photos.",
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/creations/double-layered-rainbow-cake", label: "Rainbow gallery + reel" },
+          { href: "/kids-birthday-cakes-goa", label: "Kids birthday guide" },
+          { href: "/locations/calangute", label: "Calangute delivery" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "bento-cake-goa-case-study",
+    title: "Case study: Bento cake in Goa — surprise tin, midnight message & delivery before office hours",
+    excerpt:
+      "Bento cakes win when the message is short, the tin travels upright, and expectations stay realistic. A Margao anniversary surprise built in one day’s notice — almost.",
+    publishedAt: "2026-06-12",
+    readMinutes: 12,
+    focusKeyword: "bento cake Goa",
+    keywords: [
+      "bento cake Goa",
+      "surprise bento cake delivery",
+      "mini cake Goa Muskan",
+      "anniversary bento cake",
+      "order bento WhatsApp",
+      "Sweet Bites bento",
+    ],
+    creationSlug: "birthday-bento-cake",
+    difficulty: "Rush · small format precision",
+    leadTime: "3 days (rush)",
+    celebrationType: "Anniversary surprise · 2 people",
+    relatedSlugs: ["ferrero-cake-goa-case-study", "rainbow-cake-goa-case-study"],
+    heroImage:
+      "/images/birthday-bento-cake/650632700_17960557692063227_8656779859842787014_n..webp",
+    heroImageAlt: "Bento cake Goa — birthday bento tin cake by Sweet Bites",
+    heroGalleryHref: "/creations/birthday-bento-cake",
+    heroGalleryLabel: "View bento creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **bento cake Goa** order is the opposite of a castle tier — tiny canvas, one message line, and a recipient who must not see the tin early. This case study covers a [Birthday Bento Cake](/creations/birthday-bento-cake) Muskan squeezed in for a [Margao](/locations/margao) anniversary when the husband messaged late but honestly.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Bento cake Goa** works best with a clear flavour, short text, and realistic timing — not a full figurine scene in a 4-inch tin.",
+      },
+      {
+        type: "h2",
+        text: "Brief: Wednesday message, Saturday anniversary",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Client saw our [bento guide](/blog/bento-cake-goa-order-guide) and gallery tin. Needed delivery Saturday 8 AM before wife left for work — eggless chocolate, “5 years” and two initials only.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Flavour: eggless chocolate sponge + light coffee buttercream.",
+          "Colours: blush pink tin wrap aesthetic in photo — matched in buttercream.",
+          "No figurines — handwriting-style piping only.",
+          "Pickup declined; delivery to apartment lobby with security coordination.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why bentos need different rules",
+        id: "rules",
+      },
+      {
+        type: "p",
+        text: "Small surface area shows every smudge; Muskan limits to two colours and one focal message. Tin lid must travel locked — same upright discipline as tier cakes, scaled down.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Delivered 7:45 AM; security held box until husband arrived. Wife’s office WhatsApp photo made Muskan’s week. Planning a small surprise? See [/bento-cakes-goa](/bento-cakes-goa) or message ${site.phone}.",
+      },
+      {
+        type: "related",
+        title: "Related",
+        items: [
+          { href: "/bento-cakes-goa", label: "Bento cakes guide" },
+          { href: "/creations/bento-cake", label: "Classic bento gallery" },
+          { href: "/blog/bento-cake-goa-order-guide", label: "Bento journal" },
         ],
       },
     ],
