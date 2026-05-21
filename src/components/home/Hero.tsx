@@ -119,15 +119,32 @@ export function Hero() {
                 className="flex flex-wrap items-center gap-2 lg:hidden"
                 aria-label="Cake occasions"
               >
-                {HEADER_OCCASION_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="rounded-full border border-gold/35 bg-gold/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:bg-gold/20"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                {HEADER_OCCASION_LINKS.map((link) => {
+                  const thumb = "image" in link ? link.image : undefined;
+                  const thumbAlt = "imageAlt" in link ? link.imageAlt : link.label;
+                  return (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={`inline-flex items-center gap-1.5 rounded-full border border-gold/35 bg-gold/10 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:bg-gold/20 ${
+                        thumb ? "pl-1 pr-3" : "px-3"
+                      }`}
+                    >
+                      {thumb ? (
+                        <span className="relative h-5 w-5 shrink-0 overflow-hidden rounded-full">
+                          <Image
+                            src={thumb}
+                            alt={thumbAlt}
+                            fill
+                            className="object-cover"
+                            sizes="20px"
+                          />
+                        </span>
+                      ) : null}
+                      {link.label}
+                    </Link>
+                  );
+                })}
               </nav>
             </div>
             <p className="mt-3 max-w-lg text-base leading-relaxed text-cream/75 sm:text-lg">

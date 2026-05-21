@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -27,16 +28,25 @@ function OccasionNavLinks({
     <nav aria-label="Cake occasions" className={layout === "column" ? "flex flex-col gap-1" : "flex flex-wrap gap-1.5"}>
       {HEADER_OCCASION_LINKS.map((link) => {
         const active = pathname === link.href;
+        const thumb = "image" in link ? link.image : undefined;
+        const thumbAlt = "imageAlt" in link ? link.imageAlt : link.label;
         return (
           <Link
             key={link.href}
             href={link.href}
-            className={`rounded-full px-2.5 py-1 font-display text-[10px] font-semibold uppercase tracking-[0.12em] transition-colors lg:px-3 lg:py-1.5 lg:text-[11px] ${
+            className={`inline-flex items-center gap-1.5 rounded-full py-1 pl-1 pr-2.5 font-display text-[10px] font-semibold uppercase tracking-[0.12em] transition-colors lg:py-1.5 lg:pr-3 lg:text-[11px] ${
+              thumb ? "bg-cocoa/[0.06] hover:bg-terracotta/10" : "px-2.5 lg:px-3"
+            } ${
               active
-                ? "bg-terracotta/15 text-terracotta"
-                : "bg-cocoa/[0.04] text-cocoa/60 hover:bg-terracotta/10 hover:text-terracotta"
+                ? "text-terracotta ring-1 ring-terracotta/25"
+                : "text-cocoa/60 hover:text-terracotta"
             }`}
           >
+            {thumb ? (
+              <span className="relative h-6 w-6 shrink-0 overflow-hidden rounded-full ring-1 ring-cocoa/10">
+                <Image src={thumb} alt={thumbAlt} fill className="object-cover" sizes="24px" />
+              </span>
+            ) : null}
             {link.label}
           </Link>
         );

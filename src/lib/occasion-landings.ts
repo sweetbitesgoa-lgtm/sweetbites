@@ -408,8 +408,9 @@ const landings: OccasionLanding[] = [
       title: "Anniversary cakes in Goa",
       lead: "Romantic buttercream, gold accents, and personalised writing for years together — Muskan crafts anniversary cakes for home dinners, resorts, and surprise deliveries across Goa.",
       image:
-        "/images/anniversary-peach-cream-cake/557195900_18073537505170730_3370198253031180573_n..webp",
-      imageAlt: "Anniversary cake Goa — peach cream celebration cake by Sweet Bites",
+        "/images/cream-heart-anniversery-cake/482668294_18053699921170730_1765706686871389592_n..webp",
+      imageAlt:
+        "Anniversary cake Goa — cream heart celebration cake by Sweet Bites Muskan",
     },
     intro: [
       `An **anniversary cake Goa** couples love is elegant without being fussy — readable names, stable florals, and flavours that suit a quiet dinner or a family gathering.`,
@@ -621,6 +622,12 @@ export const HEADER_OCCASION_LINKS = [
   { href: occasionLandingPath("birthday-cakes-goa"), label: "Birthday" },
   { href: occasionLandingPath("haldi-cakes-goa"), label: "Haldi" },
   { href: occasionLandingPath("kids-birthday-cakes-goa"), label: "Kids" },
-  { href: occasionLandingPath("anniversary-cakes-goa"), label: "Anniversary" },
+  {
+    href: occasionLandingPath("anniversary-cakes-goa"),
+    label: "Anniversary",
+    image:
+      "/images/cream-heart-anniversery-cake/482668294_18053699921170730_1765706686871389592_n..webp",
+    imageAlt: "Anniversary cake Goa — cream heart cake",
+  },
   { href: occasionLandingPath("bento-cakes-goa"), label: "Bento" },
 ] as const;
