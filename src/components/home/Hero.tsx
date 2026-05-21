@@ -11,6 +11,7 @@ import {
 } from "framer-motion";
 import { deliveryAreas, goaReach, site } from "@/lib/content";
 import { locationPath } from "@/lib/locations";
+import { HEADER_OCCASION_LINKS } from "@/lib/occasion-landings";
 import {
   pickRandomHeroClip,
   siteMedia,
@@ -110,11 +111,26 @@ export function Hero() {
               {goaReach.heroTitle}
             </h1>
 
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-cream/75 sm:text-lg">
-              <span className="font-semibold text-cream">
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4 sm:gap-y-2">
+              <p className="font-display text-lg font-semibold text-cream sm:text-xl">
                 {site.name} {site.tagline}
-              </span>
-              {" — "}
+              </p>
+              <nav
+                className="flex flex-wrap items-center gap-2 lg:hidden"
+                aria-label="Cake occasions"
+              >
+                {HEADER_OCCASION_LINKS.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-full border border-gold/35 bg-gold/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-cream transition-colors hover:border-gold hover:bg-gold/20"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+            <p className="mt-3 max-w-lg text-base leading-relaxed text-cream/75 sm:text-lg">
               {goaReach.heroLead}
             </p>
 

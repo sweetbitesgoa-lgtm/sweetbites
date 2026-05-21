@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navLinks } from "@/lib/content";
+import { HEADER_OCCASION_LINKS } from "@/lib/occasion-landings";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
@@ -13,6 +14,35 @@ const rightNav = navLinks.slice(5);
 
 function isActive(href: string, pathname: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
+}
+
+function OccasionNavLinks({
+  pathname,
+  layout = "row",
+}: {
+  pathname: string;
+  layout?: "row" | "column";
+}) {
+  return (
+    <nav aria-label="Cake occasions" className={layout === "column" ? "flex flex-col gap-1" : "flex flex-wrap gap-1.5"}>
+      {HEADER_OCCASION_LINKS.map((link) => {
+        const active = pathname === link.href;
+        return (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`rounded-full px-2.5 py-1 font-display text-[10px] font-semibold uppercase tracking-[0.12em] transition-colors lg:px-3 lg:py-1.5 lg:text-[11px] ${
+              active
+                ? "bg-terracotta/15 text-terracotta"
+                : "bg-cocoa/[0.04] text-cocoa/60 hover:bg-terracotta/10 hover:text-terracotta"
+            }`}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
+    </nav>
+  );
 }
 
 function NavLink({
@@ -62,6 +92,7 @@ function NavLink({
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const isHome = pathname === "/";
 
   return (
     <header className="sticky top-0 z-40">
@@ -88,8 +119,13 @@ export function Header() {
               ))}
             </nav>
 
-            <div className="flex justify-center px-2 py-1">
+            <div className="flex items-center justify-center gap-3 px-2 py-1 lg:gap-5">
               <Logo size="lg" />
+              {isHome ? (
+                <div className="hidden border-l border-cocoa/10 pl-3 lg:block lg:pl-4">
+                  <OccasionNavLinks pathname={pathname} layout="row" />
+                </div>
+              ) : null}
             </div>
 
             <nav
@@ -152,6 +188,21 @@ export function Header() {
               <p className="mb-3 text-center font-display text-[10px] uppercase tracking-[0.3em] text-cocoa/40">
                 Menu
               </p>
+              {isHome ? (
+                <div className="mb-4 rounded-xl border border-cocoa/8 bg-cocoa/[0.03] px-4 py-3">
+                  <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-cocoa/45">
+                    Occasions
+                  </p>
+                  <OccasionNavLinks pathname={pathname} layout="row" />
+                  <Link
+                    href="/occasions"
+                    className="mt-3 inline-block text-xs font-semibold text-terracotta hover:underline"
+                    onClick={() => setOpen(false)}
+                  >
+                    All occasions →
+                  </Link>
+                </div>
+              ) : null}
               <ul className="flex flex-col gap-1">
                 {navLinks.map((link) => {
                   const active = isActive(link.href, pathname);

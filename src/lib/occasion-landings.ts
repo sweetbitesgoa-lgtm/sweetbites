@@ -614,3 +614,13 @@ export const OCCASION_FOOTER_LINKS = landings.map((l) => ({
   href: occasionLandingPath(l.slug),
   label: l.hero.title.replace(" in Goa", ""),
 }));
+
+/** Short labels for header / hero beside site name */
+export const HEADER_OCCASION_LINKS = [
+  { href: occasionLandingPath("wedding-cakes-goa"), label: "Wedding" },
+  { href: occasionLandingPath("birthday-cakes-goa"), label: "Birthday" },
+  { href: occasionLandingPath("haldi-cakes-goa"), label: "Haldi" },
+  { href: occasionLandingPath("kids-birthday-cakes-goa"), label: "Kids" },
+  { href: occasionLandingPath("anniversary-cakes-goa"), label: "Anniversary" },
+  { href: occasionLandingPath("bento-cakes-goa"), label: "Bento" },
+] as const;
