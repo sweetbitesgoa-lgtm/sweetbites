@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { CakesMenuView } from "@/components/menu/CakesMenuView";
+import {
+  CakesMenuEnrichedAbove,
+  CakesMenuPageHeader,
+} from "@/components/menu/CakesMenuEnrichedSections";
 import { site } from "@/lib/content";
 import {
   CAKES_MENU_DESCRIPTION,
   CAKES_MENU_KEYWORDS,
   CAKES_MENU_IMAGE,
+  cakesMenuFaqs,
   getCakesMenuJsonLd,
 } from "@/lib/cakes-menu";
-import { buildPageMetadata, getBreadcrumbJsonLd } from "@/lib/seo";
+import { buildPageMetadata, getBreadcrumbJsonLd, getFaqPageJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   ...buildPageMetadata({
@@ -31,9 +36,14 @@ export default function CakesMenuPage() {
             { name: "Cakes menu", path: "/cakes-menu" },
           ]),
           getCakesMenuJsonLd(),
+          getFaqPageJsonLd([...cakesMenuFaqs]),
         ]}
       />
-      <CakesMenuView />
+      <div className="cakes-menu-page min-h-screen bg-[#fff9f4] text-cocoa">
+        <CakesMenuPageHeader />
+        <CakesMenuEnrichedAbove />
+        <CakesMenuView />
+      </div>
     </>
   );
 }
