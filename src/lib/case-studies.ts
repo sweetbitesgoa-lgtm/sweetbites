@@ -23,18 +23,22 @@ export type CaseStudy = {
   blocks: BlogBlock[];
 };
 
-export const CASE_STUDIES_INDEX_DESCRIPTION = `${site.name} case studies — how Muskan delivers near-impossible custom cakes in Goa: Barbie castle, Spiderman, unicorn, wedding tiers, haldi, Ferrero, rainbow cakes & more. Real briefs, structure, delivery & WhatsApp ${site.phone}.`;
+export const CASE_STUDIES_INDEX_DESCRIPTION = `${site.name} case studies — how Muskan delivers near-impossible custom cakes in Goa: Barbie castle, Spiderman, Matilda, football, unicorn, wedding tiers, haldi, Ferrero, rabdi, rainbow, anniversary hearts & bentos. Real briefs, structure, delivery & WhatsApp ${site.phone}.`;
 
 export const CASE_STUDIES_INDEX_KEYWORDS = [
   "custom cake case study Goa",
   "Barbie castle cake Goa",
   "Spiderman cake baker Goa",
+  "Matilda cake Goa",
+  "football birthday cake Goa",
   "unicorn cake Goa",
   "wedding cake case study Goa",
   "rasmalai cake Goa",
+  "rabdi cake Goa",
   "haldi cake Goa",
   "Ferrero cake Goa",
   "rainbow cake Goa",
+  "anniversary heart cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -1057,6 +1061,404 @@ const studies: CaseStudy[] = [
           { href: "/bento-cakes-goa", label: "Bento cakes guide" },
           { href: "/creations/bento-cake", label: "Classic bento gallery" },
           { href: "/blog/bento-cake-goa-order-guide", label: "Bento journal" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "matilda-cake-goa-case-study",
+    title: "Case study: Matilda cake in Goa — book stack, chocolate drip & a seven-year-old who knew every scene",
+    excerpt:
+      "Literary kids cakes fail when the book stack leans or the drip sets too soft for delivery. How Muskan built a Matilda-themed birthday cake for a Mapusa society hall — and kept the chocolate curtain intact on laterite roads.",
+    publishedAt: "2026-06-14",
+    readMinutes: 15,
+    focusKeyword: "Matilda cake Goa",
+    keywords: [
+      "Matilda cake Goa",
+      "book cake Goa kids",
+      "literary birthday cake Muskan",
+      "chocolate drip cake delivery",
+      "kids character cake Goa",
+      "Sweet Bites Matilda",
+    ],
+    creationSlug: "matilda-cake",
+    difficulty: "Complex · stacked books + drip timing",
+    leadTime: "8 days",
+    celebrationType: "7th birthday · 35 guests",
+    relatedSlugs: ["spiderman-cake-goa-case-study", "unicorn-cake-goa-case-study"],
+    heroImage:
+      "/images/matilda-cake/572167049_18077596592170730_3871403483041117435_n..webp",
+    heroImageAlt: "Matilda cake Goa — book stack kids birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/matilda-cake",
+    heroGalleryLabel: "View Matilda creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **Matilda cake Goa** parent usually arrives with a still from the film, a stack of book references, and one fear: will the chocolate drip melt before the kids sing? Muskan’s [Matilda Cake](/creations/matilda-cake) for a [Mapusa](/locations/mapusa) society party shows how literary themes get the same structural respect as superheroes — dowelling, drip schedule, and a process [reel](/reels) sent before balance payment.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Why this matters if you are searching Matilda cake Goa",
+        text: "Book-stack toppers are top-heavy. Ask your baker how they travel upright and when drip is applied — not only how pink the buttercream is.",
+      },
+      {
+        type: "h2",
+        text: "Brief: “She has watched Matilda six times”",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother messaged with our gallery link and a photo of stacked vintage books from Pinterest. Daughter turning seven; ~35 kids in a shaded society hall — better than open lawn, but still warm by 4 PM. Eggless sponge requested for classmates.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Two-tier buttercream base — books and Matilda figurine on top board.",
+          "Colours: burgundy, cream, chocolate drip — no airbrush booth on site.",
+          "Writing: “Happy 7th” plus child’s name — confirmed spelling on WhatsApp.",
+          "Linked [kids birthday guide](/kids-birthday-cakes-goa) for lead-time expectations.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Build: when the drip goes on",
+        id: "build",
+      },
+      {
+        type: "p",
+        text: "Muskan pipes book spines in fondant panels day five, assembles stack on a separate board day seven, and applies chocolate drip **morning-of** after chill. Drip too early in Goan humidity = curtain on the table instead of on the cake. That single scheduling choice is half of a successful **Matilda cake Goa** delivery.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "WhatsApp proof",
+        text: `Progress photos on days 3, 5, and morning-of — same transparency as our [Spiderman case study](/case-studies/spiderman-cake-goa-case-study). Message ${site.phone} if you want that visibility.`,
+      },
+      {
+        type: "h2",
+        text: "Delivery & the society hall handoff",
+        id: "delivery",
+      },
+      {
+        type: "ul",
+        items: [
+          "Upright box — books never travel flat.",
+          "Driver route via internal Mapusa roads to avoid long vibration on stack.",
+          "Handoff to father in hall kitchen 75 minutes before kids arrived.",
+          "Cake stayed on steel table away from entrance balloons — no bumper risk.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Girl recognised the book stack immediately; drip held through photos and cake cutting. Family booked a [unicorn](/case-studies/unicorn-cake-goa-case-study) for a cousin three months later. Planning a literary theme? Send date, hall photos, and our creation link on WhatsApp.",
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/creations/matilda-cake", label: "Matilda gallery + reel" },
+          { href: "/kids-birthday-cakes-goa", label: "Kids birthday guide" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Character planning journal" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "football-cake-goa-case-study",
+    title: "Case study: Football birthday cake in Goa — pitch green, goal posts & a Saturday that booked out early",
+    excerpt:
+      "Sports cakes look easy until the ball fondant dents in the car. Muskan’s football design cake for a Vasco society tournament party — structure, buttercream pitch lines, and delivery before the kids’ match ended.",
+    publishedAt: "2026-06-16",
+    readMinutes: 14,
+    focusKeyword: "football birthday cake Goa",
+    keywords: [
+      "football birthday cake Goa",
+      "football cake design Muskan",
+      "sports birthday cake delivery",
+      "boys birthday cake Goa",
+      "soccer cake Goa",
+      "Sweet Bites football cake",
+    ],
+    creationSlug: "football-design-birthday-cake",
+    difficulty: "Medium-high · field lines + ball weight",
+    leadTime: "7 days",
+    celebrationType: "9th birthday · society tournament",
+    relatedSlugs: ["spiderman-cake-goa-case-study", "matilda-cake-goa-case-study"],
+    heroImage:
+      "/images/football-design-birthday-cake/670397450_18093090290170730_8162724405892477661_n..webp",
+    heroImageAlt: "Football birthday cake Goa — green pitch design cake by Sweet Bites",
+    heroGalleryHref: "/creations/football-design-birthday-cake",
+    heroGalleryLabel: "View football creation",
+    blocks: [
+      {
+        type: "p",
+        text: `**Football birthday cake Goa** orders spike every World Cup season — but most families need a cake for a local society tournament, not a TV studio set. Muskan’s [Football Design Birthday Cake](/creations/football-design-birthday-cake) for [Vasco](/locations/vasco) shows how pitch-green buttercream, white line piping, and a fondant ball survive heat when you plan handoff like a match schedule.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **football birthday cake Goa**? Send Muskan a photo of the party venue — open ground vs shaded pavilion changes everything.",
+      },
+      {
+        type: "h2",
+        text: "Brief: cake after the match, not before",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Father coaches U-10; wanted cake ready when kids returned from the ground at 5:30 PM. Theme: green pitch, one goal-post topper, jersey number 9 in white. ~28 kids; standard sponge (not eggless). Message arrived on a Monday for Saturday — tight but honest.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Single 10-inch tier — enough for kids + parents without a second dessert.",
+          "Buttercream field — fondant ball made hollow-ish to reduce weight.",
+          "Colours matched FC Goa scarf photo client sent — not generic neon green.",
+          "Reel on creation page used as reference — saved two revision rounds.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why sports cakes are not “flat rounds with a ball”",
+        id: "why-hard",
+      },
+      {
+        type: "p",
+        text: "White line piping on green buttercream shows every smudge when kids lean in. Muskan chills the tier before lines, uses a guide comb, and keeps the fondant ball in a separate small box until handoff — same discipline as character toppers on **football birthday cake Goa** deliveries to beach areas.",
+      },
+      {
+        type: "h2",
+        text: "Heat & handoff at the pavilion",
+        id: "heat",
+      },
+      {
+        type: "ul",
+        items: [
+          "Delivery 5:00 PM — cake in pavilion store room, not open bench.",
+          "Muskan flagged weak shade in venue photo; family moved table under awning.",
+          "Ball placed on cake on site — zero dents from transport.",
+          "Kids wore muddy boots; cake table roped off with chairs — simple win.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Team photo with cake went to WhatsApp group same evening; coach rebooked a [rainbow](/case-studies/rainbow-cake-goa-case-study) for a younger sibling. Want a pitch-themed cake? Message ${site.phone} with date, guest count, and whether the party is outdoors.",
+      },
+      {
+        type: "related",
+        title: "Explore",
+        items: [
+          { href: "/creations/football-design-birthday-cake", label: "Football gallery + reel" },
+          { href: "/kids-birthday-cakes-goa", label: "Kids birthday guide" },
+          { href: "/birthday-cakes-goa", label: "Birthday cakes Goa" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "rabdi-dream-cake-goa-case-study",
+    title: "Case study: Rabdi dream cake in Goa — desi luxury, slow soak & a wedding-week family dinner",
+    excerpt:
+      "Rabdi cakes fail when the soak is rushed or the rose petals wilt before photos. How Muskan layered rabdi flavour, pistachio crunch, and gold accents for a Ponda home dinner the night before a white wedding tier.",
+    publishedAt: "2026-06-18",
+    readMinutes: 15,
+    focusKeyword: "rabdi cake Goa",
+    keywords: [
+      "rabdi cake Goa",
+      "rabdi dream cake Muskan",
+      "Indian fusion cake Goa",
+      "premium dessert cake Goa",
+      "wedding week cake Goa",
+      "Sweet Bites rabdi",
+    ],
+    creationSlug: "rabdi-dream-cake",
+    difficulty: "Near-impossible · soak timing + heat",
+    leadTime: "10 days",
+    celebrationType: "Pre-wedding family dinner · 60 guests",
+    relatedSlugs: ["rasmalai-cake-goa-case-study", "wedding-cake-goa-case-study"],
+    heroImage:
+      "/images/rabdi-dream-cake/571766742_18077245361170730_3409980196157018422_n..webp",
+    heroImageAlt: "Rabdi dream cake Goa — Indian fusion celebration cake by Sweet Bites",
+    heroGalleryHref: "/creations/rabdi-dream-cake",
+    heroGalleryLabel: "View rabdi dream creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **rabdi cake Goa** family books when they want guests to taste the sweet shop, not just see frosting. Muskan’s [Rabdi Dream Cake](/creations/rabdi-dream-cake) for a [Ponda](/locations/ponda) home dinner — booked in the same WhatsApp thread as a [white wedding tier](/case-studies/wedding-cake-goa-case-study) two days later — shows how desi luxury needs soak time, restrained florals, and honest talk about afternoon humidity.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Rabdi vs rasmalai — what to ask",
+        text: "**Rabdi cake Goa** is richer and slower-soaked; **rasmalai** is lighter and milk-forward. Tell Muskan which dessert your elders actually eat at functions.",
+      },
+      {
+        type: "h2",
+        text: "Brief: family dinner before the big white cake",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Bride’s uncle messaged after loving our [rasmalai case study](/case-studies/rasmalai-cake-goa-case-study). Needed a showpiece for ~60 at home — rabdi flavour, pistachio, rose petals, gold leaf accents. Dinner Thursday; wedding Saturday. Eggless sponge non-negotiable for elders.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Two-tier: cardamom sponge, rabdi soak between layers, light mascarpone-style finish.",
+          "Decor: edible rose, pistachio dust, gold — no heavy fondant blanket.",
+          "Delivery 6 PM — cake cut after dinner, not left on veranda all afternoon.",
+          "Second quote in thread for wedding tier — separate bake schedule, one conversation.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Soak schedule Muskan will not skip",
+        id: "soak",
+      },
+      {
+        type: "p",
+        text: "Rabdi syrup applied in passes — not one flood the night before. Layers rest chilled; finish and florals morning-of. Rush this step and the **rabdi cake Goa** sags in the middle while the top still looks perfect — the failure mode Muskan avoids by blocking oven time like a wedding week, not a casual birthday.",
+      },
+      {
+        type: "h2",
+        text: "Veranda dinner, warm air",
+        id: "heat",
+      },
+      {
+        type: "ul",
+        items: [
+          "Family moved cake from outer veranda to dining room when Muskan flagged 4 PM sun.",
+          "Gold leaf applied at studio — not on site in breeze.",
+          "Uncle sent voice note thank-you in Konkani — reel clip shared next day.",
+          "Wedding tier delivered Saturday without changing soak recipe — flavour matched.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Elders asked for recipe card (Muskan shares flavour notes, not full commercial recipe). Wedding tier booked in same thread. Want desi luxury? Compare [rasmalai](/case-studies/rasmalai-cake-goa-case-study) and rabdi galleries, then message ${site.phone} with guest count and dinner timing.",
+      },
+      {
+        type: "related",
+        title: "Related",
+        items: [
+          { href: "/creations/rabdi-dream-cake", label: "Rabdi dream gallery + reel" },
+          { href: "/wedding-cakes-goa", label: "Wedding cakes guide" },
+          { href: "/cakes-menu", label: "Ready-made menu" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "anniversary-heart-cake-goa-case-study",
+    title: "Case study: Anniversary heart cake in Goa — cream roses, 25 years & a Candolim sunset surprise",
+    excerpt:
+      "Heart cakes tip when dowelling is wrong or names are too long for warm buttercream. Muskan’s cream heart anniversary cake — surprise delivery to a resort villa, short writing, and florals that held through golden hour.",
+    publishedAt: "2026-06-20",
+    readMinutes: 13,
+    focusKeyword: "anniversary heart cake Goa",
+    keywords: [
+      "anniversary heart cake Goa",
+      "heart shaped cake delivery",
+      "cream rose anniversary cake",
+      "couple cake Candolim",
+      "25th anniversary cake Muskan",
+      "Sweet Bites anniversary",
+    ],
+    creationSlug: "cream-heart-anniversery-cake",
+    difficulty: "Complex · heart balance + romantic piping",
+    leadTime: "8 days",
+    celebrationType: "25th anniversary · surprise for 2 + family dinner",
+    relatedSlugs: ["ferrero-cake-goa-case-study", "bento-cake-goa-case-study"],
+    heroImage:
+      "/images/cream-heart-anniversery-cake/482668294_18053699921170730_1765706686871389592_n..webp",
+    heroImageAlt: "Anniversary heart cake Goa — cream heart cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/cream-heart-anniversery-cake",
+    heroGalleryLabel: "View anniversary heart creation",
+    blocks: [
+      {
+        type: "p",
+        text: `An **anniversary heart cake Goa** search is usually urgent and emotional — husband or daughter, a resort in [Candolim](/locations/candolim), and a photo of our [Cream Heart Anniversary Cake](/creations/cream-heart-anniversery-cake). Muskan treats heart shapes like engineering: internal board, centred weight, short writing, and delivery timed for sunset photos before dinner service takes over the villa table.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "For **anniversary heart cake Goa**, send exact names and years on WhatsApp — Muskan will shorten copy if the heart diameter is under 8 inches.",
+      },
+      {
+        type: "h2",
+        text: "Brief: 25 years, daughter organising the surprise",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Daughter in Mumbai coordinated; parents at Candolim villa. Needed cake on balcony at 6:30 PM while parents were on the beach — peach cream, buttercream roses, “25” and first names only. Eggless vanilla for mother. Eight extra slices for villa staff who helped all week.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Heart pan + support board — not a round carved into heart (cleaner edges).",
+          "Flavour: eggless vanilla + peach buttercream — light for warm evening.",
+          "Fresh cream roses — added at studio, not day before.",
+          "Linked [/anniversary-cakes-goa](/anniversary-cakes-goa) guide for daughter’s planning.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why heart cakes need different dowelling",
+        id: "structure",
+      },
+      {
+        type: "p",
+        text: "Points of a heart carry weight unevenly. Muskan uses a centred dowel into the board and keeps rose clusters on the upper curves — not the tip — so transport on coastal roads does not compress the point. That is the difference between a Pinterest heart and a delivered **anniversary heart cake Goa** families actually photograph.",
+      },
+      {
+        type: "h2",
+        text: "Resort handoff & golden hour",
+        id: "delivery",
+      },
+      {
+        type: "ul",
+        items: [
+          "Concierge contact on WhatsApp — cake to villa fridge, not pool deck.",
+          "Driver photo to daughter in Mumbai before parents returned.",
+          "Placed on balcony table 6:20 PM — roses intact in sea breeze.",
+          "Parents’ sunset photo used on Google review same week.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Mother cried; father asked for Muskan’s card for a colleague’s [Ferrero](/case-studies/ferrero-cake-goa-case-study) anniversary. Daughter later ordered a [bento](/case-studies/bento-cake-goa-case-study) for parents’ flight home. Planning a heart cake? Message ${site.phone} with date, resort name, and exact writing.",
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/creations/cream-heart-anniversery-cake", label: "Heart anniversary gallery + reel" },
+          { href: "/anniversary-cakes-goa", label: "Anniversary guide" },
+          { href: "/locations/candolim", label: "Candolim delivery" },
         ],
       },
     ],
