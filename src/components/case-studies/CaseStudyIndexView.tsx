@@ -43,9 +43,9 @@ export function CaseStudyIndexView({ studies }: CaseStudyIndexViewProps) {
               </span>
             </h1>
             <p className="mt-5 max-w-lg text-[1.0625rem] leading-relaxed text-muted sm:text-lg">
-              Barbie castles, Spiderman webs, Matilda book stacks, football pitches, wedding tiers,
-              haldi yellows, Ferrero chocolate, rabdi soak, rainbow reveals, anniversary hearts, and
-              surprise bentos — real briefs from Muskan&apos;s Goa kitchen. Each story walks through
+              Barbie castles, Cocomelon faces, butterfly pastels, chocolate spheres, golden cream
+              milestones, wedding tiers, haldi yellows, Ferrero, rabdi, rainbow reveals, and surprise
+              bentos — real briefs from Muskan&apos;s Goa kitchen. Each story walks through
               what the family asked, what almost went wrong, and how the cake arrived standing up.
             </p>
 

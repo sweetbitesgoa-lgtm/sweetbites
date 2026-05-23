@@ -23,12 +23,15 @@ export type CaseStudy = {
   blocks: BlogBlock[];
 };
 
-export const CASE_STUDIES_INDEX_DESCRIPTION = `${site.name} case studies — how Muskan delivers near-impossible custom cakes in Goa: Barbie castle, Spiderman, Matilda, football, unicorn, wedding tiers, haldi, Ferrero, rabdi, rainbow, anniversary hearts & bentos. Real briefs, structure, delivery & WhatsApp ${site.phone}.`;
+export const CASE_STUDIES_INDEX_DESCRIPTION = `${site.name} case studies — how Muskan delivers near-impossible custom cakes in Goa: Barbie castle, Spiderman, Cocomelon, butterflies, chocolate spheres, golden cream tiers, wedding cakes, haldi, Ferrero, rabdi, rainbow & more. Real briefs, structure, delivery & WhatsApp ${site.phone}.`;
 
 export const CASE_STUDIES_INDEX_KEYWORDS = [
   "custom cake case study Goa",
   "Barbie castle cake Goa",
   "Spiderman cake baker Goa",
+  "Cocomelon cake Goa",
+  "butterfly birthday cake Goa",
+  "chocolate sphere cake Goa",
   "Matilda cake Goa",
   "football birthday cake Goa",
   "unicorn cake Goa",
@@ -39,6 +42,7 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "Ferrero cake Goa",
   "rainbow cake Goa",
   "anniversary heart cake Goa",
+  "golden cream cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -1459,6 +1463,342 @@ const studies: CaseStudy[] = [
           { href: "/creations/cream-heart-anniversery-cake", label: "Heart anniversary gallery + reel" },
           { href: "/anniversary-cakes-goa", label: "Anniversary guide" },
           { href: "/locations/candolim", label: "Candolim delivery" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cocomelon-cake-goa-case-study",
+    title: "Case study: Cocomelon cake in Goa — toddler faces, bright colours & a party that started at 10 AM",
+    excerpt:
+      "Toddler character cakes fail when proportions look wrong or colours fade outdoors. How Muskan built a Cocomelon kids cake for a Panaji apartment party — with a process reel the parents shared before cutting.",
+    publishedAt: "2026-06-22",
+    readMinutes: 14,
+    focusKeyword: "Cocomelon cake Goa",
+    keywords: [
+      "Cocomelon cake Goa",
+      "Cocomelon birthday cake Muskan",
+      "toddler cake delivery Goa",
+      "kids character cake Panaji",
+      "JJ cake Goa",
+      "Sweet Bites Cocomelon",
+    ],
+    creationSlug: "cocomelon-kids-cake",
+    difficulty: "Medium-high · character faces + bright buttercream",
+    leadTime: "7–8 days",
+    celebrationType: "2nd birthday · 20 guests",
+    relatedSlugs: ["spiderman-cake-goa-case-study", "matilda-cake-goa-case-study"],
+    heroImage:
+      "/images/cocomelon-kids-cake/543643115_18071286953170730_6909029689256817591_n..jpg",
+    heroImageAlt: "Cocomelon cake Goa — kids birthday character cake by Sweet Bites",
+    heroGalleryHref: "/creations/cocomelon-kids-cake",
+    heroGalleryLabel: "View Cocomelon creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **Cocomelon cake Goa** order usually means a parent who has heard “JJ” on loop for months and wants the face to look right — not like a generic green circle. Muskan’s [Cocomelon Kids Cake](/creations/cocomelon-kids-cake) for a [Panaji](/locations/panaji) apartment party shows how toddler themes get the same planning as bigger character cakes: face proportions, chilled delivery, and a [reel](/reels) sent before balance payment.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **Cocomelon cake Goa**? Send Muskan a screenshot of the character your child means — and whether the party is indoors — before you lock a Saturday date.",
+      },
+      {
+        type: "h2",
+        text: "Brief: second birthday, small guest list",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother messaged with our gallery Cocomelon photo and a foreign reel where the face looked too flat. Party at home, ~20 people, mostly toddlers. Morning slot 10 AM — cooler than afternoon beach parties but still humid.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Single tier, 8-inch — enough for kids + parents without waste.",
+          "Colours: watermelon red, leaf green, soft yellow — hand-mixed, not neon gel overload.",
+          "Eggless sponge for two allergic cousins — flagged on line one.",
+          "Linked [/kids-birthday-cakes-goa](/kids-birthday-cakes-goa) for lead-time expectations.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Face work Muskan will not rush",
+        id: "face",
+      },
+      {
+        type: "p",
+        text: "Toddler faces need bigger eyes and simpler mouths than Pinterest teen characters. Muskan sketches on paper first, pipes on a separate board, then places the face on the tier morning-of so transport does not smear cheeks. That workflow is why this **Cocomelon cake Goa** matched the gallery photo the parents approved on WhatsApp.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Child pointed at the face and said the name immediately; parents shared the reel in the family group. Aunt booked [Spiderman](/case-studies/spiderman-cake-goa-case-study) for a cousin six weeks later. Message ${site.phone} with date, indoor/outdoor, and our creation link.",
+      },
+      {
+        type: "related",
+        title: "Explore",
+        items: [
+          { href: "/creations/cocomelon-kids-cake", label: "Cocomelon gallery + reel" },
+          { href: "/kids-birthday-cakes-goa", label: "Kids birthday guide" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Character planning journal" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "pink-butterfly-cake-goa-case-study",
+    title: "Case study: Pink butterfly cake in Goa — pastel wings, gold dust & a first birthday in Candolim",
+    excerpt:
+      "Butterfly cakes look delicate until Goa humidity softens wings before photos. Muskan’s pink butterfly birthday cake for a beach-adjacent villa — wafer wings, buttercream roses, and delivery timed for shade.",
+    publishedAt: "2026-06-24",
+    readMinutes: 13,
+    focusKeyword: "butterfly birthday cake Goa",
+    keywords: [
+      "butterfly birthday cake Goa",
+      "pink butterfly cake Muskan",
+      "pastel birthday cake Goa",
+      "first birthday cake Candolim",
+      "girls birthday cake Goa",
+      "Sweet Bites butterfly cake",
+    ],
+    creationSlug: "pink-butterfly-birthday-cake",
+    difficulty: "Complex · wafer wings + pastel stability",
+    leadTime: "8 days",
+    celebrationType: "1st birthday · 30 guests",
+    relatedSlugs: ["unicorn-cake-goa-case-study", "rainbow-cake-goa-case-study"],
+    heroImage:
+      "/images/pink-butterfly-birthday-cake/653406090_18038518757574751_2590818537000039774_n..webp",
+    heroImageAlt: "Pink butterfly birthday cake Goa — pastel cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/pink-butterfly-birthday-cake",
+    heroGalleryLabel: "View butterfly creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **butterfly birthday cake Goa** search often comes from parents who want soft pink, gold dust, and wings that still look crisp in photos — not melted fondant an hour after delivery. This case study follows Muskan’s [Pink Butterfly Birthday Cake](/creations/pink-butterfly-birthday-cake) for a first birthday near [Candolim](/locations/candolim), with the same shade discipline we use on [unicorn](/case-studies/unicorn-cake-goa-case-study) pastels.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Pastel in Goa",
+        text: "We deepen blush and lavender slightly for outdoor **butterfly birthday cake Goa** orders — cameras restore the softness parents expect from Pinterest.",
+      },
+      {
+        type: "h2",
+        text: "Brief: “Soft, not babyish”",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Parents wanted elegant, not cartoon-heavy — butterflies on wires, buttercream roses, gold dust, name on board. Villa lawn with partial shade; party 5 PM. Standard sponge; ~30 guests.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Two-tier visual — one cake tier plus elevated butterfly board for height in photos.",
+          "Wafer wings attached at studio door — not night before.",
+          "Number “1” gold topper — confirmed spelling and font on WhatsApp.",
+          "Second gallery angle shared from [/creations/pink-butterfly-birthday-cake](/creations/pink-butterfly-birthday-cake).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Wings and heat",
+        id: "wings",
+      },
+      {
+        type: "p",
+        text: "Muskan uses dried wafer or thin fondant wings with wire supports — lighter than full fondant sculptures. Cake stayed in villa kitchen until parents moved it to the lawn table under umbrella for 20 minutes of photos. One wing tip softened slightly; still read beautifully on Instagram — honest expectation-setting is part of **butterfly birthday cake Goa** planning.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Grandparents praised elegance; mother rebooked a [rainbow](/case-studies/rainbow-cake-goa-case-study) for an older child. Planning pastels? Message ${site.phone} with venue photos and date.",
+      },
+      {
+        type: "related",
+        title: "Related",
+        items: [
+          { href: "/creations/pink-butterfly-birthday-cake", label: "Butterfly gallery" },
+          { href: "/birthday-cakes-goa", label: "Birthday cakes guide" },
+          { href: "/locations/candolim", label: "Candolim delivery" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "chocolate-sphere-cake-goa-case-study",
+    title: "Case study: Chocolate sphere cake in Goa — round shell, hidden surprise & a corporate send-off",
+    excerpt:
+      "Sphere cakes collapse when the shell is too thin or chocolate travels warm. Muskan’s chocolate sphere for a Panaji office farewell — structure, ganache schedule, and handoff in AC.",
+    publishedAt: "2026-06-26",
+    readMinutes: 14,
+    focusKeyword: "chocolate sphere cake Goa",
+    keywords: [
+      "chocolate sphere cake Goa",
+      "sphere cake delivery Goa",
+      "chocolate surprise cake Muskan",
+      "corporate cake Goa",
+      "premium chocolate cake Goa",
+      "Sweet Bites sphere cake",
+    ],
+    creationSlug: "chocolate-sphere-cake",
+    difficulty: "Near-impossible · sphere weight + chocolate temper",
+    leadTime: "9 days",
+    celebrationType: "Office farewell · 25 colleagues",
+    relatedSlugs: ["ferrero-cake-goa-case-study", "rabdi-dream-cake-goa-case-study"],
+    heroImage:
+      "/images/chocolate-sphere-cake/656803683_18087749065975887_8207759847287124871_n..webp",
+    heroImageAlt: "Chocolate sphere cake Goa — round chocolate celebration cake by Sweet Bites",
+    heroGalleryHref: "/creations/chocolate-sphere-cake",
+    heroGalleryLabel: "View sphere creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **chocolate sphere cake Goa** brief is the adult version of “make it wow” — round shell, crack-to-reveal moment, often for offices or anniversaries. Muskan’s [Chocolate Sphere Cake](/creations/chocolate-sphere-cake) for a [Panaji](/locations/panaji) farewell lunch shows how sphere formats need chocolate thickness, chilled transport, and a reveal plan — not just a Pinterest mould photo.`,
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Different from Ferrero",
+        text: "Our [Ferrero case study](/case-studies/ferrero-cake-goa-case-study) covers hazelnut tiers; **chocolate sphere cake Goa** is about the round shell and crack moment — ask which format fits your event.",
+      },
+      {
+        type: "h2",
+        text: "Brief: colleague farewell, office AC",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "HR messaged with sphere photos from our gallery and a two-day deadline — tight. Colleague leaving; 25 people; lunchroom with AC. Dark chocolate exterior, gold leaf, company colours on base board only.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Sphere ~10-inch visual on stand — not a full ball guests cannot slice.",
+          "Interior: chocolate sponge + ganache — revealed when shell is cracked.",
+          "Delivery 11:30 AM; cake in office kitchen fridge until 1 PM lunch.",
+          "Muskan declined extra floating spheres — stability over Pinterest extras.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Build & crack moment",
+        id: "build",
+      },
+      {
+        type: "p",
+        text: "Shell moulded in passes, chilled between layers. Muskan rehearsed crack technique on video for the organiser — tap with wooden spoon, not knife — so the **chocolate sphere cake Goa** moment looked intentional on camera. Sphere traveled in a custom upright box, same discipline as tier cakes.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Team cracked it together; video went to the colleague on WhatsApp abroad. HR saved Muskan’s number for Diwali hampers and a future [Ferrero](/case-studies/ferrero-cake-goa-case-study) order. Want a sphere? Message ${site.phone} with date, guest count, and whether you have fridge space.",
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/creations/chocolate-sphere-cake", label: "Sphere gallery" },
+          { href: "/cakes-menu", label: "Ready-made menu" },
+          { href: "/locations/panaji", label: "Panaji delivery" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "golden-cream-cake-goa-case-study",
+    title: "Case study: Golden cream birthday cake in Goa — elegant buttercream, 50th gold & a hall full of family",
+    excerpt:
+      "Milestone birthdays need readable gold, stable roses, and portions for 60 without a wedding budget. How Muskan built a golden cream cake for a Margao golden anniversary-style 50th.",
+    publishedAt: "2026-06-28",
+    readMinutes: 13,
+    focusKeyword: "golden cream birthday cake Goa",
+    keywords: [
+      "golden cream birthday cake Goa",
+      "50th birthday cake Goa",
+      "gold buttercream cake Muskan",
+      "elegant birthday cake Margao",
+      "milestone cake delivery Goa",
+      "Sweet Bites golden cake",
+    ],
+    creationSlug: "golden-cream-birthday-cake",
+    difficulty: "Medium · gold tone + large tier portions",
+    leadTime: "8 days",
+    celebrationType: "50th birthday · 60 guests",
+    relatedSlugs: ["anniversary-heart-cake-goa-case-study", "wedding-cake-goa-case-study"],
+    heroImage:
+      "/images/golden-cream-birthday-cake/624880407_18052417967703847_5140043511432543654_n..webp",
+    heroImageAlt: "Golden cream birthday cake Goa — gold buttercream cake by Sweet Bites",
+    heroGalleryHref: "/creations/golden-cream-birthday-cake",
+    heroGalleryLabel: "View golden cream creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **golden cream birthday cake Goa** family books when they want elegance without a full wedding tier — buttercream roses, gold dust, and writing that reads in a crowded hall. Muskan’s [Golden Cream Birthday Cake](/creations/golden-cream-birthday-cake) for a [Margao](/locations/margao) society function shows how milestone palettes differ from kids character work: fewer toppers, more portion planning, honest talk about gold in warm rooms.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "For **golden cream birthday cake Goa**, send guest count early — Muskan sizes tiers so you are not left with three kilos of leftovers or a cake that runs out before cousins are served.",
+      },
+      {
+        type: "h2",
+        text: "Brief: fiftieth, not a wedding",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Daughter organised from Dubai over WhatsApp — references our golden gallery photo and a simpler wedding tier from a cousin’s event. ~60 guests, society hall, evening 7 PM. Eggless option for father; standard for rest.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Two-tier buttercream — gold palette, cream roses, edible gold dust.",
+          "Writing: “50” and first name only — large enough for hall photos.",
+          "Flavour: vanilla-cardamom sponge + light buttercream — not heavy chocolate in heat.",
+          "Delivery coordinated with hall caretaker — cake to side room, not entrance.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Gold that photographs",
+        id: "gold",
+      },
+      {
+        type: "p",
+        text: "Muskan uses edible gold dust and deep buttercream base tones so cameras pick up warmth under hall lights. Roses piped day-of; dust applied at studio. Same shade thinking as [anniversary heart](/case-studies/anniversary-heart-cake-goa-case-study) cakes — readable, not brassy.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Father’s speech mentioned the cake by name; family booked Muskan for a niece’s [wedding](/case-studies/wedding-cake-goa-case-study) six months out. Planning a milestone? See [/birthday-cakes-goa](/birthday-cakes-goa) or message ${site.phone}.",
+      },
+      {
+        type: "related",
+        title: "Related",
+        items: [
+          { href: "/creations/golden-cream-birthday-cake", label: "Golden cream gallery" },
+          { href: "/birthday-cakes-goa", label: "Birthday guide" },
+          { href: "/locations/margao", label: "Margao delivery" },
         ],
       },
     ],
