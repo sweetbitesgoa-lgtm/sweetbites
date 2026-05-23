@@ -18,6 +18,8 @@ export const metadata: Metadata = buildPageMetadata({
     `We're in ${site.studioCity}, South Goa, open Tue–Sun. For cake orders, WhatsApp ${site.phone} — it's the fastest way to share photos and get a reply from Muskan.`,
   path: "/contact",
   keywords: ["Sweet Bites Velim", "cake shop Goa WhatsApp"],
+  ogImage: siteMedia.contactHero,
+  ogImageAlt: `Contact Sweet Bites — custom cakes and WhatsApp orders from ${site.studioCity}, Goa`,
 });
 
 export default function ContactPage() {
@@ -37,8 +39,8 @@ export default function ContactPage() {
         title={`Say hello — ${site.domain}`}
         description={`Orders and quotes go through WhatsApp (${site.phone}) so Muskan can see your photos and reply properly. Studio visits in ${site.studioCity} are by appointment during the hours below.`}
         image={{
-          src: siteMedia.heroPoster,
-          alt: `Muskan at work — Sweet Bites custom cakes, ${site.studioCity}, Goa`,
+          src: siteMedia.contactHero,
+          alt: `Sweet Bites custom cake — message Muskan on WhatsApp from ${site.studioCity}, Goa`,
           priority: true,
         }}
       >

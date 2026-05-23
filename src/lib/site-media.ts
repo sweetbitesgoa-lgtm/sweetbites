@@ -55,4 +55,7 @@ export const siteMedia = {
   blogBookingHero:
     "/images/golden-cream-birthday-cake/624880407_18052417967703847_5140043511432543654_n..webp",
   blogWeddingHero: defaultPoster,
+  /** Contact page hero — warm bento, distinct from about/gallery heroes */
+  contactHero:
+    "/images/bento-cake/491142105_18057367328170730_7039415400764743136_n..webp",
 } as const;
