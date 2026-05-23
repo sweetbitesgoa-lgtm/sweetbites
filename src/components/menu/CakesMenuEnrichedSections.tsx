@@ -72,15 +72,16 @@ export function CakesMenuPageHeader() {
       >
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <CakesMenuBreadcrumb />
-          <div className="relative mb-8 overflow-hidden rounded-2xl cakes-menu-hero-image bg-cream ring-2 ring-terracotta/30 lg:hidden">
-            <div className="relative aspect-[3/4] w-full max-h-[min(480px,75vh)]">
+          <div className="relative mb-8 overflow-hidden rounded-2xl cakes-menu-hero-image ring-2 ring-terracotta/30 lg:hidden">
+            <div className="relative aspect-[4/5] w-full bg-cream">
               <Image
                 src={CAKES_MENU_HERO_IMAGE}
                 alt={CAKES_MENU_HERO_ALT}
                 fill
-                className="object-contain object-center p-1"
+                className="object-cover object-top"
                 sizes="100vw"
                 priority
+                unoptimized
               />
             </div>
             <p className="bg-gradient-to-r from-terracotta to-[#a84830] px-4 py-3 text-center text-[10px] font-bold uppercase tracking-widest text-cream">
@@ -152,15 +153,16 @@ export function CakesMenuPageHeader() {
             </div>
 
             <div className="hidden lg:col-span-5 lg:block">
-              <div className="cakes-menu-hero-image overflow-hidden rounded-2xl bg-cream ring-2 ring-terracotta/30">
-                <div className="relative aspect-[3/4] w-full max-h-[min(520px,68vh)]">
+              <div className="cakes-menu-hero-image overflow-hidden rounded-2xl ring-2 ring-terracotta/30">
+                <div className="relative aspect-[4/5] w-full max-h-[min(560px,70vh)] bg-cream">
                   <Image
                     src={CAKES_MENU_HERO_IMAGE}
                     alt={CAKES_MENU_HERO_ALT}
                     fill
-                    className="object-contain object-center p-2"
+                    className="object-cover object-top"
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     priority
+                    unoptimized
                   />
                 </div>
                 <p className="bg-gradient-to-r from-terracotta to-[#a84830] px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-cream">

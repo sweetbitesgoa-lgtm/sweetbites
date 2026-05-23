@@ -402,7 +402,7 @@ export const cakesMenuExploreLinks = [
 ] as const;
 
 /** Full-colour menu flyer with cake photos — hero & social preview */
-export const CAKES_MENU_HERO_IMAGE = "/images/cake-menu.jpeg";
+export const CAKES_MENU_HERO_IMAGE = "/images/cakes-menu-hero.jpeg";
 
 /** Printed board photo — sidebar next to flavour list */
 export const CAKES_MENU_BOARD_IMAGE = "/images/cakes-menu-board.png";
