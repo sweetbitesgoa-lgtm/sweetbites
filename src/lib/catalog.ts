@@ -250,6 +250,22 @@ export const celebrationPickers = [
     color: "bg-white hover:bg-cream ring-1 ring-cocoa/10",
   },
   {
+    id: "anniversary",
+    label: "Anniversary",
+    emoji: "💕",
+    description: "Hearts, gold & romantic buttercream",
+    href: "/anniversary-cakes-goa",
+    color: "bg-blush/70 hover:bg-blush/60 ring-1 ring-terracotta/10",
+  },
+  {
+    id: "farewell",
+    label: "Farewell & office",
+    emoji: "🎊",
+    description: "Send-offs, milestones & team treats",
+    href: "/creations?occasion=farewell",
+    color: "bg-cream hover:bg-white ring-1 ring-cocoa/10",
+  },
+  {
     id: "slice",
     label: "Slices & treats",
     emoji: "🍰",
