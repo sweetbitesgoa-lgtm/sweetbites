@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactBreadcrumb } from "@/components/contact/ContactBreadcrumb";
+import { ContactQuickStartBand } from "@/components/contact/ContactQuickStartBand";
 import { ContactWhatsAppTemplate } from "@/components/contact/ContactWhatsAppTemplate";
 import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
 import { WhatsAppOrderCard } from "@/components/order/WhatsAppOrderCard";
@@ -54,6 +55,8 @@ export function ContactPageContent() {
           <ContactBreadcrumb />
         </div>
       </div>
+
+      <ContactQuickStartBand />
 
       {contactSeasonalBanner.enabled ? (
         <div className="border-b border-terracotta/15 bg-terracotta/[0.08] px-4 py-3">
@@ -138,13 +141,19 @@ export function ContactPageContent() {
         </div>
       </section>
 
-      <section className="border-b border-line/60 bg-white py-14 sm:py-16">
+      <section
+        id="contact-whatsapp-template"
+        className="scroll-mt-24 border-b border-line/60 bg-white py-14 sm:py-16"
+      >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <ContactWhatsAppTemplate />
         </div>
       </section>
 
-      <section className="border-b border-line/60 bg-cream/40 py-14 sm:py-16">
+      <section
+        id="contact-steps"
+        className="scroll-mt-24 border-b border-line/60 bg-cream/40 py-14 sm:py-16"
+      >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionIntro
             centered
@@ -169,7 +178,10 @@ export function ContactPageContent() {
         </div>
       </section>
 
-      <section className="border-b border-line/60 bg-white py-14 sm:py-16">
+      <section
+        id="contact-occasions"
+        className="scroll-mt-24 border-b border-line/60 bg-white py-14 sm:py-16"
+      >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionIntro
             centered
@@ -224,7 +236,10 @@ export function ContactPageContent() {
         </div>
       </section>
 
-      <section className="border-b border-line bg-surface py-14 sm:py-20 lg:py-24">
+      <section
+        id="contact-studio"
+        className="scroll-mt-24 border-b border-line bg-surface py-14 sm:py-20 lg:py-24"
+      >
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:gap-12 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
           <div className="divide-y divide-line rounded-2xl border border-line bg-cream/40 shadow-sm lg:col-span-5">
             <div className="p-6 sm:p-8">

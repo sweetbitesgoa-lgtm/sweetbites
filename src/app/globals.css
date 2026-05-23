@@ -618,3 +618,9 @@ body {
   box-shadow: 0 20px 40px -24px rgba(44, 24, 16, 0.16);
   border-color: rgba(196, 92, 62, 0.3);
 }
+
+.contact-quick-start {
+  background:
+    radial-gradient(ellipse 80% 60% at 0% 0%, rgba(201, 162, 39, 0.15), transparent 55%),
+    linear-gradient(135deg, #2c1810 0%, var(--cocoa) 50%, #3a2218 100%);
+}
