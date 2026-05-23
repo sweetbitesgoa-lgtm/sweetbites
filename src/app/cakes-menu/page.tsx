@@ -5,9 +5,9 @@ import {
   CakesMenuEnrichedAbove,
   CakesMenuPageHeader,
 } from "@/components/menu/CakesMenuEnrichedSections";
-import { site } from "@/lib/content";
 import {
   CAKES_MENU_DESCRIPTION,
+  CAKES_MENU_HERO_ALT,
   CAKES_MENU_KEYWORDS,
   CAKES_MENU_IMAGE,
   cakesMenuFaqs,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     path: "/cakes-menu",
     keywords: [...CAKES_MENU_KEYWORDS],
     ogImage: CAKES_MENU_IMAGE,
-    ogImageAlt: `${site.name} cakes menu — Regular, Fruit, Premium & Special cakes in Goa`,
+    ogImageAlt: CAKES_MENU_HERO_ALT,
   }),
 };
 

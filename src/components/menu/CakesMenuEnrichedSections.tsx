@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  CAKES_MENU_HERO_ALT,
+  CAKES_MENU_IMAGE,
   cakesMenuAddOns,
   cakesMenuCaseStudySpots,
   cakesMenuMuskanQuote,
@@ -10,6 +12,10 @@ import {
   getReadyMadeCakeWhatsAppUrl,
 } from "@/lib/cakes-menu";
 import { seasonalBanner, site, testimonials } from "@/lib/content";
+import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
+import { Button } from "@/components/ui/Button";
+import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const JUMP_LINKS = [
   { href: "#menu-picks", label: "Muskan's picks" },
@@ -36,6 +42,36 @@ export function CakesMenuPageHeader() {
         </div>
       ) : null}
 
+      <SecondaryPageHero
+        label="Ready-made cakes"
+        title="Printed menu flavours in Goa"
+        description={`Regular, Fruit, Premium & Special — the same board we use in ${site.studioCity}. Tap any flavour below or message Muskan on WhatsApp for today's availability, size, and delivery.`}
+        image={{
+          src: CAKES_MENU_IMAGE,
+          alt: CAKES_MENU_HERO_ALT,
+          priority: true,
+        }}
+      >
+        <nav className="flex flex-wrap gap-2" aria-label="On this page">
+          {JUMP_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="rounded-full border border-line bg-cream/80 px-3 py-1.5 text-xs font-semibold text-cocoa transition-colors hover:border-terracotta/40 hover:text-terracotta"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <Button href={getWhatsAppUrl()} variant="whatsapp" external>
+          <WhatsAppIconInline className="h-5 w-5" />
+          Order on WhatsApp
+        </Button>
+        <Button href="#menu-flavours" variant="outline" className="rounded-md px-5">
+          See all flavours
+        </Button>
+      </SecondaryPageHero>
+
       <div className="border-b border-line/60 bg-cream/80">
         <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 py-4 text-center text-xs font-semibold text-cocoa/70 sm:text-sm">
           <li>
@@ -44,31 +80,6 @@ export function CakesMenuPageHeader() {
           <li>Book {site.bookAheadDays} for custom · menu cakes may be sooner</li>
           <li>Eggless on request</li>
         </ul>
-      </div>
-
-      <div className="border-b border-terracotta/10 bg-white py-6">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="font-display text-2xl font-semibold text-cocoa sm:text-3xl">
-            Ready-made cakes menu — Goa
-          </h1>
-          <p className="mx-auto mt-2 max-w-xl text-sm text-muted">
-            Regular, Fruit, Premium & Special flavours from our printed board — order on WhatsApp.
-          </p>
-          <nav
-            className="mt-5 flex flex-wrap justify-center gap-2"
-            aria-label="On this page"
-          >
-            {JUMP_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="rounded-full border border-line bg-cream/80 px-3 py-1.5 text-xs font-semibold text-cocoa transition-colors hover:border-terracotta/40 hover:text-terracotta"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-        </div>
       </div>
 
       <blockquote className="mx-auto max-w-2xl border-b border-line/60 bg-cream/30 px-4 py-8 text-center sm:px-6">
