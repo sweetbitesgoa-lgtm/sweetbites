@@ -164,6 +164,118 @@ export const contactQuickLinks = [
   { href: "/case-studies", label: "Case studies", description: "How Muskan builds cakes" },
 ] as const;
 
+export const contactEditorialIntro = {
+  eyebrow: "Velim · South Goa · Goa-wide delivery",
+  title: "One WhatsApp thread from first idea to fresh cake",
+  paragraphs: [
+    `Sweet Bites is Muskan's home bakery studio behind St. Xavier's High School in ${site.studioCity} — not a high-street counter. Every celebration cake is sketched, baked, and finished in her kitchen, then handed over for pickup or sent chilled across Goa.`,
+    "Whether you want a menu Black Forest, a marigold haldi drip, or a three-tier wedding showpiece, the path is the same: message on WhatsApp, receive a clear quote, confirm payment, and collect or receive your cake at the agreed time.",
+  ],
+} as const;
+
+export const contactWhatToInclude = [
+  {
+    icon: "📅",
+    title: "Date & time",
+    detail: "When the cake is needed — morning party vs evening reception changes scheduling.",
+  },
+  {
+    icon: "📍",
+    title: "Town in Goa",
+    detail: `Pickup in ${site.studioCity} or delivery to Panaji, Margao, beaches — Muskan confirms the fee upfront.`,
+  },
+  {
+    icon: "👥",
+    title: "Guests or size",
+    detail: "Rough headcount helps Muskan suggest weight, tiers, or a bento instead of a full cake.",
+  },
+  {
+    icon: "🎨",
+    title: "Theme or flavour",
+    detail: "Character, colours, eggless, fondant vs buttercream — even a rough Pinterest photo works.",
+  },
+  {
+    icon: "🔗",
+    title: "Gallery link",
+    detail: `Paste a creation from ${site.domain}/creations so Muskan knows the style you mean.`,
+  },
+  {
+    icon: "🥚",
+    title: "Dietary notes",
+    detail: "Eggless, nut-free, or simpler flavours for kids — ask early so ingredients can be planned.",
+  },
+] as const;
+
+export const contactLeadTimeGuide = [
+  {
+    label: "Bento & simple menu",
+    time: "Often 2–4 days",
+    detail: "Single-tier menu flavours or small bentos when the kitchen has capacity.",
+  },
+  {
+    label: "Custom birthday",
+    time: site.bookAheadDays,
+    detail: "Themed buttercream, characters, and sculpted toppers need proper drying time.",
+  },
+  {
+    label: "Wedding & tiers",
+    time: "2–3 weeks+",
+    detail: "Multi-tier structures, tastings, and delivery windows are planned on WhatsApp.",
+  },
+  {
+    label: "Same-week rush",
+    time: "Ask honestly",
+    detail: "Muskan will say yes only if quality and the oven schedule allow — no false promises.",
+  },
+] as const;
+
+export const contactChannels = [
+  {
+    name: "WhatsApp",
+    href: getWhatsAppUrl(),
+    recommended: true,
+    summary: "Orders, photos, quotes, payment confirmation",
+    detail: `${site.phone} — the only channel Muskan uses to book cakes.`,
+  },
+  {
+    name: "Phone call",
+    href: `tel:+91${site.phoneRaw}`,
+    recommended: false,
+    summary: "Quick questions during studio hours",
+    detail: "Fine for timing or directions — for designs, WhatsApp keeps everything in one thread.",
+  },
+  {
+    name: "Instagram",
+    href: site.instagram,
+    recommended: false,
+    summary: "Inspiration & reels",
+    detail: `${site.instagramHandle} is not monitored for bookings. Save the post, then message on WhatsApp.`,
+  },
+  {
+    name: "Email",
+    href: `mailto:${site.email}`,
+    recommended: false,
+    summary: "General enquiries only",
+    detail: `${site.email} is not checked for cake orders — use WhatsApp so nothing is missed.`,
+  },
+] as const;
+
+export const contactStudioSpotlight = {
+  eyebrow: "The kitchen",
+  title: `Baked in ${site.studioCity}, delivered across Goa`,
+  bullets: [
+    "Appointment-only studio visits so active orders stay on schedule.",
+    "Fresh ingredients — no frozen wholesale slabs; buttercream and sponges baked to order.",
+    "Pickup from Ubdando or chilled delivery to North & South Goa towns.",
+    "Google reviews and gallery photos are all real Sweet Bites work — ask Muskan for similar examples.",
+  ],
+} as const;
+
+export const contactGoaReachNote = {
+  title: "Cake delivery & pickup across Goa",
+  body: `From our ${site.studioCity} kitchen we deliver to Panaji, Taleigao, Margao, Mapusa, Calangute, Candolim, Baga, Vasco, Ponda, Anjuna, Colva, and surrounding villages. Distance and traffic affect timing — Muskan quotes delivery on WhatsApp before you pay.`,
+} as const;
+
 export const contactPageFaqs = [
   {
     question: "What is Sweet Bites phone number?",
@@ -203,6 +315,21 @@ export const contactPageFaqs = [
     question: "Is there parking at the studio?",
     answer:
       "Street parking is usually available near Ubdando, Velim — use Google Maps and message Muskan when you are five minutes away for pickup.",
+  },
+  {
+    question: "Do you make eggless cakes?",
+    answer:
+      "Yes — mention eggless when you message. Muskan will suggest sponges and fillings that work for your date and design.",
+  },
+  {
+    question: "Can I send a Pinterest or Instagram photo?",
+    answer:
+      "Absolutely. Attach the image on WhatsApp with your date and town. Muskan will say what is realistic for your timeline and budget.",
+  },
+  {
+    question: "Do you sell slices or same-day counter cakes?",
+    answer:
+      "We bake to order only — no display counter. Menu flavours from the printed board are made fresh after you confirm on WhatsApp.",
   },
 ] as const;
 

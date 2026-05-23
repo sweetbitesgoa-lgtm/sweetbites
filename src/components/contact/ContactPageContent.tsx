@@ -8,7 +8,11 @@ import { ReviewsNote } from "@/components/home/ReviewsNote";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 import {
+  contactChannels,
+  contactEditorialIntro,
+  contactGoaReachNote,
   contactHeroStats,
+  contactLeadTimeGuide,
   contactMeetMuskan,
   contactMuskanQuote,
   contactOccasionLinks,
@@ -18,7 +22,9 @@ import {
   contactQuickLinks,
   contactResponseSteps,
   contactSeasonalBanner,
+  contactStudioSpotlight,
   contactVisitTips,
+  contactWhatToInclude,
 } from "@/lib/contact-page";
 import { deliveryAreas, site, testimonials, trustPillars } from "@/lib/content";
 import { locationPath } from "@/lib/locations";
@@ -40,16 +46,14 @@ function SectionIntro({
     <div className={centered ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       <p className="contact-eyebrow">{eyebrow}</p>
       <h2 className="contact-section-title mt-2">{title}</h2>
-      {description ? (
-        <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">{description}</p>
-      ) : null}
+      {description ? <p className="contact-lead mt-3">{description}</p> : null}
     </div>
   );
 }
 
 export function ContactPageContent() {
   return (
-    <>
+    <div className="contact-page">
       <div className="contact-hero-mesh border-b border-line">
         <div className="mx-auto max-w-6xl px-4 pt-6 sm:px-6 lg:px-8">
           <ContactBreadcrumb />
@@ -116,7 +120,7 @@ export function ContactPageContent() {
             >
               &ldquo;
             </span>
-            <p className="relative -mt-6 text-lg italic leading-relaxed text-cocoa/85 sm:text-xl">
+            <p className="relative -mt-6 font-display text-xl font-normal italic leading-relaxed tracking-tight text-cocoa/90 sm:text-2xl">
               {contactMuskanQuote.quote}
             </p>
             <footer className="relative mt-4 text-[11px] font-bold uppercase tracking-wider text-terracotta">
@@ -127,7 +131,7 @@ export function ContactPageContent() {
             <p className="contact-eyebrow">{contactMeetMuskan.eyebrow}</p>
             <h2 className="contact-section-title mt-2">{contactMeetMuskan.title}</h2>
             {contactMeetMuskan.paragraphs.map((p) => (
-              <p key={p.slice(0, 24)} className="mt-3 text-sm leading-relaxed text-muted">
+              <p key={p.slice(0, 24)} className="contact-prose mt-3 text-base">
                 {p}
               </p>
             ))}
@@ -141,12 +145,60 @@ export function ContactPageContent() {
         </div>
       </section>
 
+      <section className="contact-editorial-band border-b border-line/60 py-14 sm:py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
+            <div className="lg:col-span-5">
+              <p className="contact-eyebrow">{contactEditorialIntro.eyebrow}</p>
+              <h2 className="contact-display-xl mt-3">{contactEditorialIntro.title}</h2>
+            </div>
+            <div className="space-y-5 lg:col-span-7 lg:pt-2">
+              {contactEditorialIntro.paragraphs.map((p) => (
+                <p key={p.slice(0, 32)} className="contact-prose">
+                  {p}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         id="contact-whatsapp-template"
         className="scroll-mt-24 border-b border-line/60 bg-white py-14 sm:py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <ContactWhatsAppTemplate />
+        </div>
+      </section>
+
+      <section
+        id="contact-include"
+        className="scroll-mt-24 border-b border-line/60 bg-cream/40 py-14 sm:py-16"
+      >
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <SectionIntro
+            centered
+            eyebrow="Before you send"
+            title="What to include in your WhatsApp"
+            description="Six details help Muskan reply with an accurate quote the first time — copy the template above and fill these in."
+          />
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {contactWhatToInclude.map((item) => (
+              <li
+                key={item.title}
+                className="contact-check-card rounded-2xl border border-line p-5 sm:p-6"
+              >
+                <span className="text-2xl" aria-hidden>
+                  {item.icon}
+                </span>
+                <h3 className="mt-3 font-display text-lg font-medium tracking-tight text-cocoa">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{item.detail}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -175,6 +227,36 @@ export function ContactPageContent() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section
+        id="contact-lead-times"
+        className="scroll-mt-24 border-b border-line/60 bg-white py-14 sm:py-16"
+      >
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <SectionIntro
+            centered
+            eyebrow="Planning ahead"
+            title="How far in advance to message"
+            description="Honest lead times — Muskan would rather suggest a simpler design than rush quality."
+          />
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+            {contactLeadTimeGuide.map((row) => (
+              <li
+                key={row.label}
+                className="contact-leadtime-card rounded-2xl border border-line bg-cream/30 p-6"
+              >
+                <p className="text-[11px] font-bold uppercase tracking-wider text-terracotta">
+                  {row.label}
+                </p>
+                <p className="mt-2 font-display text-2xl font-medium tracking-tight text-cocoa">
+                  {row.time}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{row.detail}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -230,6 +312,57 @@ export function ContactPageContent() {
                 >
                   {path.cta} →
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="contact-channels"
+        className="scroll-mt-24 border-b border-line/60 bg-cream/40 py-14 sm:py-16"
+      >
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <SectionIntro
+            centered
+            eyebrow="Reach Muskan"
+            title="WhatsApp, call, Instagram, or email?"
+            description="All roads lead to WhatsApp for cake orders — here's how each channel is used."
+          />
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+            {contactChannels.map((ch) => (
+              <li
+                key={ch.name}
+                className={
+                  ch.recommended
+                    ? "contact-channel-card--recommended rounded-2xl border p-6"
+                    : "rounded-2xl border border-line bg-white p-6"
+                }
+              >
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="font-display text-xl font-medium tracking-tight text-cocoa">
+                    {ch.name}
+                  </h3>
+                  {ch.recommended ? (
+                    <span className="rounded-full bg-[#25D366]/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#1a8f4a]">
+                      Best for orders
+                    </span>
+                  ) : null}
+                </div>
+                <p className="mt-2 text-sm font-semibold text-cocoa">{ch.summary}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{ch.detail}</p>
+                <a
+                  href={ch.href}
+                  target={ch.name === "Phone call" ? undefined : "_blank"}
+                  rel={ch.name === "Phone call" ? undefined : "noopener noreferrer"}
+                  className="mt-4 inline-block text-sm font-semibold text-terracotta hover:underline"
+                >
+                  {ch.name === "WhatsApp"
+                    ? `Open ${site.phone} →`
+                    : ch.name === "Phone call"
+                      ? `Call ${site.phone} →`
+                      : `Open ${ch.name} →`}
+                </a>
               </li>
             ))}
           </ul>
@@ -388,9 +521,31 @@ export function ContactPageContent() {
         </div>
       </section>
 
+      <section className="border-b border-line/60 bg-white py-14 sm:py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+            <div className="lg:col-span-5">
+              <p className="contact-eyebrow">{contactStudioSpotlight.eyebrow}</p>
+              <h2 className="contact-display-lg mt-2">{contactStudioSpotlight.title}</h2>
+            </div>
+            <ul className="space-y-4 lg:col-span-7">
+              {contactStudioSpotlight.bullets.map((bullet) => (
+                <li
+                  key={bullet.slice(0, 24)}
+                  className="flex gap-3 rounded-xl border border-line bg-cream/40 px-4 py-4 text-sm leading-relaxed text-muted sm:text-base"
+                >
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-terracotta" aria-hidden />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-line/60 bg-white py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-display text-xl font-semibold text-cocoa sm:text-2xl">
+          <h2 className="contact-section-title text-center">
             Why families trust Muskan
           </h2>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -412,10 +567,17 @@ export function ContactPageContent() {
         </div>
       </section>
 
+      <section className="border-b border-line/60 bg-cream/30 py-12 sm:py-14">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="contact-section-title">{contactGoaReachNote.title}</h2>
+          <p className="contact-prose mt-4">{contactGoaReachNote.body}</p>
+        </div>
+      </section>
+
       <section className="border-b border-line/60 py-10 sm:py-12">
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-muted">
-            Cake delivery from {site.studioCity} across Goa
+          <p className="text-sm font-semibold uppercase tracking-wider text-muted">
+            Towns we deliver to
           </p>
           <ul className="mt-4 flex flex-wrap justify-center gap-2">
             {deliveryAreas.map((place) => (
@@ -499,10 +661,10 @@ export function ContactPageContent() {
 
       <section className="contact-cta-band py-14 sm:py-16">
         <div className="mx-auto max-w-xl px-4 text-center sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-cream">
+          <h2 className="contact-display-lg text-cream">
             Ready to order your cake?
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-cream/80">
+          <p className="contact-lead mt-3 text-cream/85">
             Message Muskan on WhatsApp with your date and town — she replies during studio hours.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -520,6 +682,6 @@ export function ContactPageContent() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

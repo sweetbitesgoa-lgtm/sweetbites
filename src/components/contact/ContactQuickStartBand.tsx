@@ -6,7 +6,9 @@ import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 
 const JUMP_LINKS = [
   { href: "#contact-whatsapp-template", label: "Message template" },
+  { href: "#contact-include", label: "What to send" },
   { href: "#contact-steps", label: "How it works" },
+  { href: "#contact-lead-times", label: "Lead times" },
   { href: "#contact-occasions", label: "By occasion" },
   { href: "#contact-studio", label: "Studio & map" },
   { href: "#contact-faq-heading", label: "FAQs" },
@@ -21,14 +23,14 @@ export function ContactQuickStartBand() {
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-gold">
               Start here · Sweet Bites Goa
             </p>
-            <h2 className="mt-2 font-display text-2xl font-semibold leading-tight sm:text-3xl">
+            <h2 className="contact-display-lg mt-2 text-cream">
               Message Muskan on WhatsApp
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-cream/75 sm:text-base">
+            <p className="contact-lead mt-3 text-cream/80">
               All cake orders and quotes go through WhatsApp so Muskan can see your photos, date,
               and town. Studio pickup in {site.studioCity} or delivery across Goa.
             </p>
-            <p className="mt-4 font-display text-xl font-semibold text-gold sm:text-2xl">
+            <p className="mt-4 font-display text-2xl font-medium tracking-tight text-gold sm:text-3xl">
               {site.phone}
             </p>
           </div>

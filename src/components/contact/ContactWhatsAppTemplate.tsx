@@ -25,10 +25,10 @@ export function ContactWhatsAppTemplate() {
     <div className="contact-template-card rounded-2xl border border-[#25D366]/25 bg-gradient-to-br from-[#25D366]/[0.08] via-white to-cream p-6 sm:p-8">
       <p className="contact-eyebrow">WhatsApp template</p>
       <h2 className="contact-section-title mt-2">Copy this message to Muskan</h2>
-      <p className="mt-2 text-sm text-muted">
+      <p className="contact-lead mt-2">
         Fill in the blanks, or tap the button to open WhatsApp with this text ready to send.
       </p>
-      <pre className="mt-5 max-h-56 overflow-auto rounded-xl border border-line bg-cream/80 p-4 text-xs leading-relaxed text-cocoa/85 whitespace-pre-wrap">
+      <pre className="mt-5 max-h-56 overflow-auto rounded-xl border border-line bg-cream/80 p-4 font-sans text-[13px] leading-relaxed text-cocoa/90 whitespace-pre-wrap sm:text-sm">
         {contactWhatsAppTemplate}
       </pre>
       <div className="mt-5 flex flex-wrap gap-3">
