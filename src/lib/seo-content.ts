@@ -289,6 +289,31 @@ export function getCreationSeoContent(creation: {
   };
 }
 
+export const cakesMenuSeo: SeoPageContent = {
+  heading: "Ready-made cakes menu in Goa — order on WhatsApp at Sweet Bites",
+  paragraphs: [
+    `Sweet Bites (${domain}) lists ready-made cake flavours on our printed menu board — the same categories you see in our ${site.studioCity} kitchen: Regular, Fruit, Premium, and Special. Order Black Forest, Red Velvet, Rasmalai, Rainbow, Bento, Dream cake, Ferrero Rocher, and more by tapping a flavour on ${domain}/cakes-menu; WhatsApp opens with the name filled in for Muskan.`,
+    `Ready-made cakes suit home birthdays, office treats, and last-minute celebrations when the oven has capacity — often faster than a full custom theme. For character cakes, wedding tiers, or haldi designs, browse our creations gallery or book ${site.bookAheadDays} ahead on the custom order page.`,
+    `Guide prices start around ₹1,200 for a 6-inch cake (6–8 guests). Final quotes depend on size, eggless preference, writing, and delivery across Goa — Panaji, Margao, Calangute, Mapusa, and beyond. Pickup is available from ${site.studioCity}; delivery fees are confirmed on ${wa} before you pay.`,
+  ],
+  subsections: [
+    {
+      title: "Menu categories — Regular, Fruit, Premium & Special",
+      paragraphs: [
+        "Regular cakes include Chocolate Chip, Black Forest, Vanilla, Butterscotch, Mud, Carrot, Red Velvet, and Oreo. Fruit cakes feature Strawberry, Mango, and Blueberry when in season. Premium picks include Ferrero Rocher, Kitkat, Rasmalai, Rabdi, Rainbow, and Ice Cream Cake. Special formats include Bento Cake and Dream Cake for couples and surprises.",
+      ],
+    },
+    {
+      title: "Ready-made vs custom cakes in Goa",
+      paragraphs: [
+        "Choose ready-made when you want a familiar flavour and a shorter lead time. Choose custom when you need themes, tiers, fondant characters, or event-specific colours. Many families order both — a menu cake for the party and a bento for a private surprise — in one WhatsApp thread.",
+      ],
+    },
+  ],
+  listTitle: "Cake delivery areas from our Velim kitchen",
+  listItems: deliveryAreas,
+};
+
 /** @deprecated use getCreationSeoContent */
 export function getCreationSeoParagraphs(creation: Parameters<typeof getCreationSeoContent>[0]): string[] {
   return getCreationSeoContent(creation).paragraphs;

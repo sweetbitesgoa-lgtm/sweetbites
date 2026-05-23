@@ -3,12 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import {
+  CAKES_MENU_HERO_ALT,
+  CAKES_MENU_IMAGE,
   cakesMenuCategories,
+  cakesMenuCategoryMeta,
   cakesMenuExploreLinks,
   cakesMenuFaqs,
   cakesMenuKitchenGallery,
-  CAKES_MENU_IMAGE,
+  getCakesMenuFlavorCount,
   getReadyMadeCakeWhatsAppUrl,
   type CakesMenuCategory,
 } from "@/lib/cakes-menu";
@@ -21,17 +25,32 @@ import { ReviewsNote } from "@/components/home/ReviewsNote";
 
 export function CakesMenuView() {
   const [activeId, setActiveId] = useState(cakesMenuCategories[0]?.id ?? "regular");
+  const reducedMotion = useReducedMotion();
+  const flavorCount = getCakesMenuFlavorCount();
 
   return (
     <>
-      <div
+      <section
         id="menu-flavours"
-        className="scroll-mt-24 mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-10 lg:px-8 lg:py-14"
+        className="scroll-mt-24 border-b border-line/60 py-12 sm:py-16"
+        aria-labelledby="menu-flavours-heading"
       >
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="cakes-menu-eyebrow">Full flavour list</p>
+            <h2 id="menu-flavours-heading" className="cakes-menu-section-title mt-2">
+              {flavorCount} ready-made cakes on our board
+            </h2>
+            <p className="mt-3 text-sm text-muted sm:text-base">
+              Tap a category, then Order — WhatsApp opens with your flavour filled in.
+            </p>
+          </div>
+
+          <div className="mt-12 lg:grid lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
-          <header className="cakes-menu-board relative overflow-hidden rounded-2xl border-2 border-terracotta/25 bg-cream px-6 py-10 shadow-[0_20px_50px_-30px_rgba(196,92,62,0.35)] sm:px-10 sm:py-12">
+          <header className="cakes-menu-board relative overflow-hidden rounded-2xl border-2 border-terracotta/30 px-6 py-10 sm:px-10 sm:py-12">
             <div className="cakes-menu-board-inner pointer-events-none absolute inset-0 opacity-40" aria-hidden />
-            <p className="relative text-center font-display text-[clamp(2.5rem,8vw,4.5rem)] font-semibold uppercase leading-none tracking-tight text-terracotta drop-shadow-sm">
+            <p className="cakes-menu-board-title relative text-center font-display text-[clamp(2.5rem,8vw,4.5rem)] font-semibold uppercase leading-none tracking-tight">
               Cakes
             </p>
             <p className="relative mx-auto mt-4 max-w-md text-center text-sm leading-relaxed text-cocoa/70">
@@ -48,7 +67,7 @@ export function CakesMenuView() {
             </p>
 
             <nav
-              className="relative mt-10 flex flex-wrap justify-center gap-2"
+              className="cakes-menu-sticky-tabs relative z-10 -mx-2 mt-10 flex flex-wrap justify-center gap-2 rounded-2xl border border-terracotta/10 px-3 py-3 sm:mx-0"
               aria-label="Cake categories"
             >
               {cakesMenuCategories.map((cat) => (
@@ -62,23 +81,28 @@ export function CakesMenuView() {
                       block: "nearest",
                     });
                   }}
-                  className={`rounded-full px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
+                  className={`rounded-full px-4 py-2 text-xs font-bold uppercase tracking-wider transition-all ${
                     activeId === cat.id
-                      ? "bg-terracotta text-cream shadow-md shadow-terracotta/25"
-                      : "bg-cream text-cocoa ring-1 ring-terracotta/20 hover:bg-terracotta/10"
+                      ? "bg-terracotta text-cream shadow-md shadow-terracotta/25 scale-[1.02]"
+                      : "bg-white text-cocoa ring-1 ring-terracotta/20 hover:bg-terracotta/10 hover:ring-terracotta/35"
                   }`}
                 >
-                  {cat.title}
+                  <span aria-hidden className="mr-1">
+                    {cakesMenuCategoryMeta[cat.id].emoji}
+                  </span>
+                  {cakesMenuCategoryMeta[cat.id].shortTitle}
                 </button>
               ))}
             </nav>
 
             <div className="relative mt-10 space-y-10">
-              {cakesMenuCategories.map((cat) => (
+              {cakesMenuCategories.map((cat, index) => (
                 <CategoryBlock
                   key={cat.id}
                   category={cat}
                   highlighted={activeId === cat.id}
+                  index={index}
+                  reducedMotion={reducedMotion}
                 />
               ))}
             </div>
@@ -92,28 +116,25 @@ export function CakesMenuView() {
 
         <aside className="mt-10 lg:col-span-5 lg:mt-0">
           <div className="space-y-6 lg:sticky lg:top-28">
-            <div className="overflow-hidden rounded-2xl ring-2 ring-terracotta/20 shadow-xl">
-              <div className="relative aspect-[3/4] bg-cream">
+            <div className="cakes-menu-sidebar-board overflow-hidden rounded-2xl ring-2 ring-terracotta/25">
+              <div className="relative aspect-[4/5] max-h-[280px] bg-cream">
                 <Image
                   src={CAKES_MENU_IMAGE}
-                  alt="Sweet Bites printed cakes menu — Regular, Fruit, Premium and Special flavours in Goa"
+                  alt={CAKES_MENU_HERO_ALT}
                   fill
                   className="object-cover object-center"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  priority
+                  sizes="(max-width: 1024px) 100vw, 35vw"
                 />
               </div>
-              <p className="bg-terracotta px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-cream">
-                In-store menu · {site.name}
+              <p className="bg-gradient-to-r from-terracotta to-[#a84830] px-4 py-2.5 text-center text-[10px] font-bold uppercase tracking-widest text-cream">
+                Printed menu · {site.studioCity}
               </p>
             </div>
 
             {cakesMenuKitchenGallery.length > 0 ? (
-              <div className="rounded-xl border border-line bg-surface p-4">
-                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-muted">
-                  From our kitchen
-                </p>
-                <p className="mt-1 text-xs text-muted">Real orders — tap to open gallery</p>
+              <div className="rounded-2xl border border-line bg-white p-5 shadow-sm">
+                <p className="cakes-menu-eyebrow">From our kitchen</p>
+                <p className="mt-1 text-sm text-muted">Real menu flavours we&apos;ve baked — tap to view</p>
                 <ul className="mt-3 grid grid-cols-3 gap-2">
                   {cakesMenuKitchenGallery.map((item) => (
                     <li key={item.id}>
@@ -184,7 +205,9 @@ export function CakesMenuView() {
             </div>
           </div>
         </aside>
-      </div>
+          </div>
+        </div>
+      </section>
 
       <section className="border-t border-line/60 bg-white py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -195,7 +218,7 @@ export function CakesMenuView() {
             {trustPillars.map((pillar) => (
               <li
                 key={pillar.title}
-                className="rounded-2xl border border-line bg-cream/50 p-5 text-center"
+                className="cakes-menu-pillar-card rounded-2xl border border-line p-5 text-center"
               >
                 <span className="text-2xl" aria-hidden>
                   {pillar.icon}
@@ -276,7 +299,7 @@ export function CakesMenuView() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block rounded-2xl border border-line bg-cream/40 p-5 transition-colors hover:border-terracotta/30 hover:bg-terracotta/[0.04]"
+                  className="cakes-menu-explore-card block rounded-2xl border border-line bg-cream/40 p-5"
                 >
                   <p className="font-display font-semibold text-cocoa">{link.label}</p>
                   <p className="mt-1 text-sm text-muted">{link.description}</p>
@@ -294,23 +317,34 @@ export function CakesMenuView() {
         className="border-t border-line/60 bg-cream/30 py-14 sm:py-16"
         aria-labelledby="menu-faq-heading"
       >
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <h2 id="menu-faq-heading" className="font-display text-xl font-semibold text-cocoa sm:text-2xl">
-            Cakes menu — FAQs
-          </h2>
-          <dl className="mt-8 divide-y divide-line">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="cakes-menu-eyebrow">Help & ordering</p>
+            <h2 id="menu-faq-heading" className="cakes-menu-section-title mt-2">
+              Cakes menu — FAQs
+            </h2>
+            <p className="mt-3 text-sm text-muted sm:text-base">
+              Common questions about ready-made flavours, eggless options, and delivery in Goa.
+            </p>
+          </div>
+          <dl className="mt-10 grid gap-4 sm:grid-cols-2">
             {cakesMenuFaqs.map((faq) => (
-              <div key={faq.question} className="py-5 first:pt-0">
+              <div
+                key={faq.question}
+                className="cakes-menu-faq-card rounded-2xl border border-line p-5 sm:p-6"
+              >
                 <dt className="font-display text-base font-semibold text-cocoa">{faq.question}</dt>
                 <dd className="mt-2 text-sm leading-relaxed text-muted">{faq.answer}</dd>
               </div>
             ))}
           </dl>
-          <ReviewsNote />
+          <div className="mt-10">
+            <ReviewsNote />
+          </div>
         </div>
       </section>
 
-      <section className="border-t border-terracotta/20 bg-terracotta py-12 sm:py-14">
+      <section className="cakes-menu-cta-band border-t border-terracotta/30 py-14 sm:py-16">
         <div className="mx-auto max-w-xl px-4 text-center sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-cream">
             Ready to order?
@@ -331,20 +365,29 @@ export function CakesMenuView() {
 function CategoryBlock({
   category,
   highlighted,
+  index,
+  reducedMotion,
 }: {
   category: CakesMenuCategory;
   highlighted: boolean;
+  index: number;
+  reducedMotion: boolean | null;
 }) {
   return (
-    <section
+    <motion.section
       id={`menu-${category.id}`}
-      className={`scroll-mt-28 transition-opacity duration-300 ${highlighted ? "opacity-100" : "opacity-90"}`}
+      initial={reducedMotion ? false : { opacity: 0, y: 16 }}
+      whileInView={reducedMotion ? undefined : { opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.45, delay: index * 0.05 }}
+      className={`cakes-menu-cat ${cakesMenuCategoryMeta[category.id].accentClass} scroll-mt-28 rounded-xl bg-white/50 px-4 py-6 transition-opacity duration-300 sm:px-6 ${highlighted ? "opacity-100 ring-1 ring-terracotta/15" : "opacity-90"}`}
       aria-labelledby={`heading-${category.id}`}
     >
       <h2
         id={`heading-${category.id}`}
-        className="text-center font-display text-xl font-bold uppercase tracking-[0.12em] text-terracotta sm:text-2xl"
+        className="flex items-center justify-center gap-2 text-center font-display text-xl font-bold uppercase tracking-[0.12em] text-terracotta sm:text-2xl"
       >
+        <span aria-hidden>{cakesMenuCategoryMeta[category.id].emoji}</span>
         {category.title}
       </h2>
       <p className="mt-2 text-center text-xs text-muted">{category.description}</p>
@@ -355,7 +398,7 @@ function CategoryBlock({
           </li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 }
 
@@ -367,17 +410,29 @@ function MenuItemRow({
   categoryTitle: string;
 }) {
   return (
-    <div className="group flex items-center gap-3 rounded-lg border border-transparent bg-cream/60 px-2 py-2 transition-colors hover:border-terracotta/15 hover:bg-white sm:px-3 sm:py-2.5">
+    <div className="cakes-menu-flavour-row group flex items-center gap-3 rounded-xl border border-transparent bg-white/70 px-2 py-2 sm:px-3 sm:py-2.5">
       {item.image && item.creationHref ? (
         <Link
           href={item.creationHref}
           className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg ring-1 ring-line"
         >
-          <Image src={item.image} alt="" fill className="object-cover" sizes="48px" />
+          <Image
+            src={item.image}
+            alt={`${item.name} — Sweet Bites ready-made cake Goa`}
+            fill
+            className="object-cover"
+            sizes="48px"
+          />
         </Link>
       ) : item.image ? (
         <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg ring-1 ring-line">
-          <Image src={item.image} alt="" fill className="object-cover" sizes="48px" />
+          <Image
+            src={item.image}
+            alt={`${item.name} — Sweet Bites ready-made cake Goa`}
+            fill
+            className="object-cover"
+            sizes="48px"
+          />
         </span>
       ) : null}
       <div className="min-w-0 flex-1">

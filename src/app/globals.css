@@ -289,5 +289,220 @@ body {
 }
 
 .cakes-menu-page {
-  background-image: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(201, 162, 39, 0.12), transparent 50%);
+  background-color: #fff9f4;
+  background-image:
+    radial-gradient(ellipse 100% 60% at 0% 0%, rgba(196, 92, 62, 0.07), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 100% 20%, rgba(201, 162, 39, 0.1), transparent 50%),
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(201, 162, 39, 0.08), transparent 50%);
+}
+
+.cakes-menu-hero {
+  position: relative;
+  background:
+    radial-gradient(ellipse 90% 70% at 10% 0%, rgba(196, 92, 62, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 60% at 95% 20%, rgba(201, 162, 39, 0.14), transparent 50%),
+    linear-gradient(165deg, #fffdf9 0%, var(--cream) 45%, #f8efe4 100%);
+}
+
+.cakes-menu-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 40% at 50% 100%, rgba(201, 162, 39, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.cakes-menu-hero-image {
+  box-shadow:
+    0 32px 64px -28px rgba(44, 24, 16, 0.35),
+    0 0 0 1px rgba(196, 92, 62, 0.15);
+}
+
+.cakes-menu-stat {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 236, 212, 0.85));
+  box-shadow: 0 8px 24px -12px rgba(44, 24, 16, 0.12);
+}
+
+.cakes-menu-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.cakes-menu-section-title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--cocoa);
+}
+
+.cakes-menu-pick-card {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.25s ease;
+}
+
+.cakes-menu-pick-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 56px -24px rgba(196, 92, 62, 0.35);
+  border-color: rgba(196, 92, 62, 0.35);
+}
+
+.cakes-menu-occasion-card {
+  background: linear-gradient(145deg, #ffffff 0%, var(--cream) 100%);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.25s ease;
+}
+
+.cakes-menu-occasion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -24px rgba(44, 24, 16, 0.18);
+  border-color: rgba(196, 92, 62, 0.3);
+}
+
+.cakes-menu-board {
+  background: linear-gradient(180deg, #fffef8 0%, var(--cream) 100%);
+  box-shadow:
+    0 24px 60px -28px rgba(196, 92, 62, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.cakes-menu-board-title {
+  background: linear-gradient(135deg, var(--terracotta) 0%, #a84830 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(196, 92, 62, 0.2));
+}
+
+.cakes-menu-flavour-row {
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cakes-menu-flavour-row:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 20px -12px rgba(44, 24, 16, 0.15);
+}
+
+.cakes-menu-cta-band {
+  background: linear-gradient(135deg, #a84830 0%, var(--terracotta) 40%, #c45c3e 100%);
+}
+
+.cakes-menu-explore-card {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.cakes-menu-explore-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 92, 62, 0.35);
+  background: rgba(196, 92, 62, 0.04);
+}
+
+@keyframes cakes-menu-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.cakes-menu-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.cakes-menu-marquee-track {
+  animation: cakes-menu-marquee-scroll 36s linear infinite;
+}
+
+.cakes-menu-marquee-item::before {
+  content: "◆";
+  margin-right: 0.75rem;
+  font-size: 0.45rem;
+  vertical-align: middle;
+  color: var(--terracotta);
+  opacity: 0.65;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cakes-menu-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    gap: 0.75rem 1.25rem;
+  }
+}
+
+.cakes-menu-pick-rank {
+  background: linear-gradient(135deg, var(--terracotta), #a84830);
+  box-shadow: 0 4px 12px -4px rgba(196, 92, 62, 0.5);
+}
+
+.cakes-menu-cat--regular {
+  border-top: 3px solid rgba(74, 103, 65, 0.45);
+}
+
+.cakes-menu-cat--fruit {
+  border-top: 3px solid rgba(196, 92, 62, 0.35);
+}
+
+.cakes-menu-cat--premium {
+  border-top: 3px solid rgba(201, 162, 39, 0.55);
+}
+
+.cakes-menu-cat--special {
+  border-top: 3px solid rgba(196, 92, 62, 0.65);
+}
+
+.cakes-menu-sticky-tabs {
+  background: rgba(255, 254, 248, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px -16px rgba(44, 24, 16, 0.2);
+}
+
+.cakes-menu-faq-card {
+  background: linear-gradient(145deg, #ffffff 0%, var(--cream) 100%);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cakes-menu-faq-card:hover {
+  border-color: rgba(196, 92, 62, 0.28);
+  box-shadow: 0 12px 32px -20px rgba(196, 92, 62, 0.25);
+}
+
+.cakes-menu-pillar-card {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(245, 236, 212, 0.5) 100%);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cakes-menu-pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -24px rgba(44, 24, 16, 0.2);
+}
+
+.cakes-menu-sidebar-board {
+  box-shadow:
+    0 20px 48px -24px rgba(196, 92, 62, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }

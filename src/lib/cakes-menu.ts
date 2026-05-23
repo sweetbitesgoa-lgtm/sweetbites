@@ -20,6 +20,30 @@ export type CakesMenuCategory = {
   items: CakesMenuItem[];
 };
 
+export const cakesMenuCategoryMeta: Record<
+  CakesMenuCategory["id"],
+  { emoji: string; shortTitle: string; accentClass: string }
+> = {
+  regular: { emoji: "🎂", shortTitle: "Regular", accentClass: "cakes-menu-cat--regular" },
+  fruit: { emoji: "🍓", shortTitle: "Fruit", accentClass: "cakes-menu-cat--fruit" },
+  premium: { emoji: "✨", shortTitle: "Premium", accentClass: "cakes-menu-cat--premium" },
+  special: { emoji: "💝", shortTitle: "Special", accentClass: "cakes-menu-cat--special" },
+};
+
+/** Flavour names for hero marquee — bestsellers first */
+export const cakesMenuMarqueeFlavours = [
+  "Rasmalai",
+  "Black Forest",
+  "Ferrero Rocher",
+  "Red Velvet",
+  "Rainbow",
+  "Bento Cake",
+  "Rabdi",
+  "Dream Cake",
+  "Mango",
+  "Butterscotch",
+] as const;
+
 /** Ready-made flavours from Sweet Bites menu board */
 export const cakesMenuCategories: CakesMenuCategory[] = [
   {
@@ -384,7 +408,14 @@ export const CAKES_MENU_IMAGE = CAKES_MENU_HERO_IMAGE;
 
 export const CAKES_MENU_HERO_ALT = `${site.name} printed cakes menu board in Goa — Regular, Fruit, Premium and Special flavours`;
 
-export const CAKES_MENU_DESCRIPTION = `Order ready-made cakes from ${site.name} in ${site.studioCity}, Goa — Regular, Fruit, Premium & Special flavours including Black Forest, Red Velvet, Rasmalai, Rainbow, Bento & Dream cakes. Message Muskan on WhatsApp ${site.phone} for today's availability, size & delivery.`;
+export const CAKES_MENU_PAGE_TITLE =
+  "Ready-made cakes menu Goa — order Black Forest, Rasmalai & bento on WhatsApp";
+
+export const CAKES_MENU_DESCRIPTION = `Order ready-made cakes from ${site.name} in ${site.studioCity}, Goa — ${getCakesMenuFlavorCount()} flavours across Regular, Fruit, Premium & Special including Black Forest, Red Velvet, Rasmalai, Rainbow, Bento & Dream cakes. Message Muskan on WhatsApp ${site.phone} for today's availability, size & delivery across Goa.`;
+
+export function getCakesMenuFlavorCount(): number {
+  return cakesMenuCategories.reduce((total, cat) => total + cat.items.length, 0);
+}
 
 export const CAKES_MENU_KEYWORDS = [
   "ready-made cakes Goa",
@@ -396,6 +427,9 @@ export const CAKES_MENU_KEYWORDS = [
   "premium cake Velim",
   "readymade cake WhatsApp",
   "Sweet Bites cake price",
+  "order cake menu WhatsApp Goa",
+  "printed cake menu Velim",
+  "eggless ready-made cake Goa",
 ] as const;
 
 export function getReadyMadeCakeWhatsAppUrl(
@@ -408,12 +442,30 @@ export function getReadyMadeCakeWhatsAppUrl(
 
 export function getCakesMenuJsonLd(): Record<string, unknown> {
   const base = SITE_URL.replace(/\/$/, "");
+  const menuUrl = `${base}/cakes-menu`;
+  const imageUrl = `${base}${CAKES_MENU_HERO_IMAGE}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "Menu",
-    name: `${site.name} — Ready-made cakes menu`,
+    name: `${site.name} — Ready-made cakes menu Goa`,
     description: CAKES_MENU_DESCRIPTION,
-    url: `${base}/cakes-menu`,
+    url: menuUrl,
+    image: imageUrl,
+    inLanguage: "en-IN",
+    provider: {
+      "@type": "Bakery",
+      "@id": `${base}/#bakery`,
+      name: site.name,
+      url: base,
+      telephone: site.phone,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: site.studioCity,
+        addressRegion: "Goa",
+        addressCountry: "IN",
+      },
+    },
     hasMenuSection: cakesMenuCategories.map((cat) => ({
       "@type": "MenuSection",
       name: cat.title,
@@ -421,8 +473,85 @@ export function getCakesMenuJsonLd(): Record<string, unknown> {
       hasMenuItem: cat.items.map((item) => ({
         "@type": "MenuItem",
         name: item.name,
-        description: `${item.name} — ${cat.title} at ${site.name}, Goa`,
+        description: `${item.name} — ${cat.title} at ${site.name}, Goa. Order on WhatsApp ${site.phone}.`,
+        ...(item.image
+          ? { image: `${base}${item.image}` }
+          : {}),
       })),
     })),
+  };
+}
+
+export function getCakesMenuWebPageJsonLd(): Record<string, unknown> {
+  const base = SITE_URL.replace(/\/$/, "");
+  const url = `${base}/cakes-menu`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    name: CAKES_MENU_PAGE_TITLE,
+    description: CAKES_MENU_DESCRIPTION,
+    url,
+    inLanguage: "en-IN",
+    isPartOf: { "@type": "WebSite", name: site.name, url: base },
+    about: {
+      "@type": "Menu",
+      name: `${site.name} ready-made cakes menu`,
+      url,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${base}${CAKES_MENU_HERO_IMAGE}`,
+      caption: CAKES_MENU_HERO_ALT,
+    },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: base },
+        { "@type": "ListItem", position: 2, name: "Cakes menu", item: url },
+      ],
+    },
+  };
+}
+
+export function getCakesMenuHowToJsonLd(): Record<string, unknown> {
+  const base = SITE_URL.replace(/\/$/, "");
+  const menuUrl = `${base}/cakes-menu`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to order ready-made cakes from ${site.name} in Goa`,
+    description: `Order from the Sweet Bites cakes menu on WhatsApp — pick a flavour, confirm date and delivery, and get a quote from Muskan in ${site.studioCity}.`,
+    image: `${base}${CAKES_MENU_HERO_IMAGE}`,
+    totalTime: "PT5M",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Open the cakes menu",
+        text: `Browse ${getCakesMenuFlavorCount()} flavours at ${menuUrl} — Regular, Fruit, Premium, and Special.`,
+        url: menuUrl,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Tap Order on your flavour",
+        text: "WhatsApp opens with the cake name and menu section filled in.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Add date, town, and size",
+        text: `Tell Muskan your celebration date, pickup in ${site.studioCity} or delivery area in Goa, and guest count if you know it.`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Confirm quote and pay",
+        text: `Muskan replies with availability, eggless options if needed, and final price on ${site.phone}.`,
+      },
+    ],
   };
 }
