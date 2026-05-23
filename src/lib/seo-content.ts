@@ -177,6 +177,7 @@ export const contactSeo: SeoPageContent = {
     `Studio hours: ${site.hours}. Closed Mondays. Visits are by appointment so Muskan can focus on active orders — message before you come. For directions, use the map on this page or search Sweet Bites ${site.studioCity} on Google Maps.`,
     `Follow ${site.instagramHandle} on Instagram for new creations, seasonal specials (like Alphonso mango season), and reel previews. Instagram DMs are fine for questions, but WhatsApp is fastest for quotes and booking.`,
     "We do not take cake orders by email. Phone calls are welcome for quick questions; for photos and references, WhatsApp is essential.",
+    `Use the message template on our contact page to send occasion, date, town, and reference in one go — or browse the ready-made cakes menu at ${domain}/cakes-menu for faster flavour orders.`,
   ],
   listTitle: `Cake delivery — major places in Goa (studio in ${site.studioCity})`,
   listItems: deliveryAreas,

@@ -506,3 +506,115 @@ body {
     0 20px 48px -24px rgba(196, 92, 62, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
+
+/* Contact page */
+.contact-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.contact-section-title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--cocoa);
+}
+
+.contact-quote-band {
+  background: linear-gradient(165deg, #fffdf9 0%, var(--cream) 50%, #f8efe4 100%);
+}
+
+.contact-step-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.contact-step-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -20px rgba(44, 24, 16, 0.15);
+  border-color: rgba(196, 92, 62, 0.25);
+}
+
+.contact-path-card {
+  background: linear-gradient(145deg, #ffffff 0%, var(--cream) 100%);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.contact-path-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -24px rgba(196, 92, 62, 0.2);
+  border-color: rgba(196, 92, 62, 0.3);
+}
+
+.contact-explore-card {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.contact-explore-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(196, 92, 62, 0.3);
+  background: rgba(196, 92, 62, 0.04);
+}
+
+.contact-pillar-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px -24px rgba(44, 24, 16, 0.18);
+}
+
+.contact-faq-card {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact-faq-card:hover {
+  border-color: rgba(196, 92, 62, 0.28);
+  box-shadow: 0 12px 32px -20px rgba(196, 92, 62, 0.2);
+}
+
+.contact-cta-band {
+  background: linear-gradient(135deg, #a84830 0%, var(--terracotta) 45%, #c45c3e 100%);
+}
+
+.contact-hero-mesh {
+  background: linear-gradient(180deg, var(--cream) 0%, #fffdf9 100%);
+}
+
+.contact-stat-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(245, 236, 212, 0.85));
+}
+
+.contact-template-card {
+  box-shadow: 0 20px 48px -28px rgba(37, 211, 102, 0.15);
+}
+
+.contact-occasion-card {
+  background: linear-gradient(145deg, #ffffff 0%, var(--cream) 100%);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.contact-occasion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -24px rgba(44, 24, 16, 0.16);
+  border-color: rgba(196, 92, 62, 0.3);
+}
