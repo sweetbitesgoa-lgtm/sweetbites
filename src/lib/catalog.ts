@@ -77,6 +77,74 @@ export function getCreationBySlug(slug: string): Creation | undefined {
   return catalog.creations.find((c) => c.slug === slug);
 }
 
+function similarityScore(source: Creation, candidate: Creation): number {
+  if (source.slug === candidate.slug) return -1;
+
+  let score = 0;
+  for (const o of source.occasion) {
+    if (candidate.occasion.includes(o)) score += 10;
+  }
+  for (const f of source.format) {
+    if (candidate.format.includes(f)) score += 8;
+  }
+  for (const a of source.aesthetic) {
+    if (candidate.aesthetic.includes(a)) score += 6;
+  }
+  for (const t of source.tags) {
+    if (candidate.tags.includes(t)) score += 3;
+  }
+  if (candidate.featured) score += 1;
+
+  return score;
+}
+
+/** Label for the similar-creations section on detail pages */
+export function getSimilarCreationsHeading(creation: Creation): string {
+  const occasion = creation.occasion[0];
+  if (occasion) {
+    return `More ${occasion.replace(/-/g, " ")} cakes`;
+  }
+  const format = creation.format[0];
+  if (format) {
+    return `More ${format.replace(/-/g, " ")} cakes`;
+  }
+  return "Similar cakes you may like";
+}
+
+/** Related gallery picks — shared occasion/format/tags, featured preferred */
+export function getSimilarCreations(creation: Creation, limit = 4): Creation[] {
+  const scored = catalog.creations
+    .filter((c) => c.slug !== creation.slug)
+    .map((c) => ({ creation: c, score: similarityScore(creation, c) }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || a.creation.title.localeCompare(b.creation.title));
+
+  const picked: Creation[] = scored.map((x) => x.creation).slice(0, limit);
+
+  if (picked.length >= limit) return picked;
+
+  const seen = new Set([creation.slug, ...picked.map((c) => c.slug)]);
+
+  const fillFeatured = catalog.creations.filter(
+    (c) => c.featured && !seen.has(c.slug),
+  );
+  for (const c of fillFeatured) {
+    if (picked.length >= limit) break;
+    picked.push(c);
+    seen.add(c.slug);
+  }
+
+  if (picked.length >= limit) return picked;
+
+  for (const c of catalog.creations) {
+    if (seen.has(c.slug)) continue;
+    picked.push(c);
+    if (picked.length >= limit) break;
+  }
+
+  return picked;
+}
+
 export function getAllSlugs(): string[] {
   return catalog.creations.map((c) => c.slug);
 }

@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import { CreationDetail } from "@/components/creations/CreationDetail";
 import { SeoContentSection } from "@/components/seo/SeoContentSection";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getAllSlugs, getCreationBySlug } from "@/lib/catalog";
+import { getAllSlugs, getCreationBySlug, getSimilarCreations } from "@/lib/catalog";
+import { getCaseStudyByCreationSlug } from "@/lib/case-studies";
+import { SimilarCreations } from "@/components/creations/SimilarCreations";
 import {
   buildPageMetadata,
   getBreadcrumbJsonLd,
@@ -49,6 +51,8 @@ export default async function CreationPage({ params }: PageProps) {
   if (!creation) notFound();
 
   const seo = getCreationSeoContent(creation);
+  const similar = getSimilarCreations(creation, 4);
+  const caseStudy = getCaseStudyByCreationSlug(slug);
 
   return (
     <>
@@ -66,6 +70,7 @@ export default async function CreationPage({ params }: PageProps) {
       <section className="bg-cream min-h-[60vh]">
         <CreationDetail creation={creation} />
       </section>
+      <SimilarCreations current={creation} creations={similar} caseStudy={caseStudy} />
       <SeoContentSection {...seo} className="bg-blush/20" />
     </>
   );

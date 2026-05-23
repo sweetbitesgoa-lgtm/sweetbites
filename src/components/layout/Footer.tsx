@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { navLinks, site } from "@/lib/content";
-import { OCCASION_FOOTER_LINKS } from "@/lib/occasion-landings";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
@@ -150,16 +149,6 @@ export function Footer() {
                 <FooterNavLink key={link.href} href={link.href} label={link.label} />
               ))}
               <FooterNavLink href="/locations/velim" label={`Studio · ${site.studioCity}`} />
-            </ul>
-          </div>
-
-          <div className="mt-8 lg:col-span-2 lg:mt-0">
-            <FooterHeading>Occasions</FooterHeading>
-            <ul className="space-y-2.5">
-              <FooterNavLink href="/occasions" label="All occasions" />
-              {OCCASION_FOOTER_LINKS.map((link) => (
-                <FooterNavLink key={link.href} href={link.href} label={link.label} />
-              ))}
             </ul>
           </div>
 

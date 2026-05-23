@@ -711,17 +711,3 @@ export const OCCASION_FOOTER_LINKS = landings.map((l) => ({
   label: l.hero.title.replace(" in Goa", ""),
 }));
 
-/** Short labels for header / hero beside site name */
-export const HEADER_OCCASION_LINKS = [
-  { href: occasionLandingPath("wedding-cakes-goa"), label: "Wedding" },
-  { href: occasionLandingPath("birthday-cakes-goa"), label: "Birthday" },
-  { href: occasionLandingPath("kids-birthday-cakes-goa"), label: "Kids" },
-  {
-    href: occasionLandingPath("anniversary-cakes-goa"),
-    label: "Anniversary",
-    image:
-      "/images/cream-heart-anniversery-cake/482668294_18053699921170730_1765706686871389592_n..webp",
-    imageAlt: "Anniversary cake Goa — cream heart cake",
-  },
-  { href: occasionLandingPath("bento-cakes-goa"), label: "Bento" },
-] as const;

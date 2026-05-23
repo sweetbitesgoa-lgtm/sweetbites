@@ -1479,6 +1479,10 @@ export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
   return studies.find((s) => s.slug === slug);
 }
 
+export function getCaseStudyByCreationSlug(creationSlug: string): CaseStudy | undefined {
+  return studies.find((s) => s.creationSlug === creationSlug);
+}
+
 export function getRelatedCaseStudies(slug: string, limit = 2): CaseStudy[] {
   const study = getCaseStudyBySlug(slug);
   if (!study) return [];
