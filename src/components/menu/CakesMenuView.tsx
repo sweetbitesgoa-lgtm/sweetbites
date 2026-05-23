@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import {
+  CAKES_MENU_BOARD_IMAGE,
   CAKES_MENU_HERO_ALT,
-  CAKES_MENU_IMAGE,
   cakesMenuCategories,
   cakesMenuCategoryMeta,
   cakesMenuExploreLinks,
@@ -119,8 +119,8 @@ export function CakesMenuView() {
             <div className="cakes-menu-sidebar-board overflow-hidden rounded-2xl ring-2 ring-terracotta/25">
               <div className="relative aspect-[4/5] max-h-[280px] bg-cream">
                 <Image
-                  src={CAKES_MENU_IMAGE}
-                  alt={CAKES_MENU_HERO_ALT}
+                  src={CAKES_MENU_BOARD_IMAGE}
+                  alt={`${site.name} printed cakes menu board in ${site.studioCity}, Goa`}
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 35vw"

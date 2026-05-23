@@ -72,19 +72,19 @@ export function CakesMenuPageHeader() {
       >
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <CakesMenuBreadcrumb />
-          <div className="relative mb-8 overflow-hidden rounded-2xl cakes-menu-hero-image ring-2 ring-terracotta/30 lg:hidden">
-            <div className="relative aspect-[4/5] w-full max-h-[min(440px,72vh)]">
+          <div className="relative mb-8 overflow-hidden rounded-2xl cakes-menu-hero-image bg-cream ring-2 ring-terracotta/30 lg:hidden">
+            <div className="relative aspect-[3/4] w-full max-h-[min(480px,75vh)]">
               <Image
                 src={CAKES_MENU_HERO_IMAGE}
                 alt={CAKES_MENU_HERO_ALT}
                 fill
-                className="object-cover object-center"
+                className="object-contain object-center p-1"
                 sizes="100vw"
                 priority
               />
             </div>
             <p className="bg-gradient-to-r from-terracotta to-[#a84830] px-4 py-3 text-center text-[10px] font-bold uppercase tracking-widest text-cream">
-              Printed menu board · {site.studioCity}, Goa
+              Full cakes menu · {site.studioCity}, Goa
             </p>
           </div>
 
@@ -152,19 +152,19 @@ export function CakesMenuPageHeader() {
             </div>
 
             <div className="hidden lg:col-span-5 lg:block">
-              <div className="cakes-menu-hero-image overflow-hidden rounded-2xl ring-2 ring-terracotta/30">
-                <div className="relative aspect-[3/4] w-full max-h-[min(500px,65vh)]">
+              <div className="cakes-menu-hero-image overflow-hidden rounded-2xl bg-cream ring-2 ring-terracotta/30">
+                <div className="relative aspect-[3/4] w-full max-h-[min(520px,68vh)]">
                   <Image
                     src={CAKES_MENU_HERO_IMAGE}
                     alt={CAKES_MENU_HERO_ALT}
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-center p-2"
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     priority
                   />
                 </div>
                 <p className="bg-gradient-to-r from-terracotta to-[#a84830] px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-cream">
-                  Printed menu board · {site.name}
+                  Full cakes menu · {site.name}
                 </p>
               </div>
             </div>

@@ -401,12 +401,15 @@ export const cakesMenuExploreLinks = [
   },
 ] as const;
 
-/** Printed menu board photo — hero & sidebar */
-export const CAKES_MENU_HERO_IMAGE = "/images/cakes-menu-board.png";
+/** Full-colour menu flyer with cake photos — hero & social preview */
+export const CAKES_MENU_HERO_IMAGE = "/images/cake-menu.jpeg";
 
-export const CAKES_MENU_IMAGE = CAKES_MENU_HERO_IMAGE;
+/** Printed board photo — sidebar next to flavour list */
+export const CAKES_MENU_BOARD_IMAGE = "/images/cakes-menu-board.png";
 
-export const CAKES_MENU_HERO_ALT = `${site.name} printed cakes menu board in Goa — Regular, Fruit, Premium and Special flavours`;
+export const CAKES_MENU_IMAGE = CAKES_MENU_BOARD_IMAGE;
+
+export const CAKES_MENU_HERO_ALT = `${site.name} cakes menu in Goa — Regular, Fruit, Premium and Special flavours with photos of Black Forest, Rainbow, Ferrero, Bento and more`;
 
 export const CAKES_MENU_PAGE_TITLE =
   "Ready-made cakes menu Goa — order Black Forest, Rasmalai & bento on WhatsApp";
