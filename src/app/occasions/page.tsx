@@ -15,7 +15,7 @@ import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Cakes by occasion in Goa",
-  description: `Wedding, birthday, haldi, kids, anniversary & bento cakes in Goa — ${site.name} custom designs from ${site.studioCity}. Browse occasion guides and order on WhatsApp.`,
+  description: `Every celebration deserves a cake that feels personal. ${site.name} guides for wedding, birthday, haldi, kids, anniversary & bento — real photos, Muskan's voice, WhatsApp quotes from ${site.studioCity}.`,
   path: "/occasions",
   keywords: [
     "cake by occasion Goa",
@@ -40,8 +40,8 @@ export default function OccasionsIndexPage() {
         ]}
       />
       <PageHero
-        title="Cakes for every occasion in Goa"
-        description={`Choose your celebration — each guide links to real gallery photos, FAQs, and WhatsApp ordering from Muskan's kitchen in ${site.studioCity}.`}
+        title="Every celebration, one honest baker in Goa"
+        description={`Pick your moment below — wedding tiers, kids characters, haldi yellows, anniversary hearts, or a surprise bento. Each guide is written the way Muskan talks on WhatsApp: real photos, clear lead times, and what to send so you get a quote the same day.`}
       >
         <Button href={getWhatsAppUrl()} variant="whatsapp" external>
           <WhatsAppIconInline className="h-5 w-5" />
@@ -78,10 +78,10 @@ export default function OccasionsIndexPage() {
                       {landing.hero.title}
                     </h2>
                     <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-                      {landing.metaDescription.slice(0, 140)}…
+                      {landing.hero.lead}
                     </p>
                     <span className="mt-4 text-sm font-semibold text-terracotta">
-                      Read guide →
+                      Open {landing.hero.title.replace(" in Goa", "")} guide →
                     </span>
                   </div>
                 </Link>

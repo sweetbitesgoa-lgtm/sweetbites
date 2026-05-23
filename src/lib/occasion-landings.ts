@@ -18,8 +18,13 @@ export type OccasionLanding = {
     image: string;
     imageAlt: string;
   };
+  introHeading: string;
   intro: string[];
+  pullQuote: { text: string; context?: string };
+  whatsappChecklist: string[];
   highlights: { title: string; text: string }[];
+  ideasSectionTitle?: string;
+  ideasSectionLead?: string;
   ideas: { title: string; description: string; href: string; label: string }[];
   relatedLinks: { href: string; label: string; description?: string }[];
   faqs: { question: string; answer: string }[];
@@ -47,28 +52,43 @@ const landings: OccasionLanding[] = [
     hero: {
       badge: "Weddings & receptions",
       title: "Wedding cakes in Goa",
-      lead: `From intimate courthouse celebrations to full reception tiers — Muskan designs and delivers wedding cakes across Goa from our ${site.studioCity} kitchen. Share your date, guest count, and venue on WhatsApp for a clear quote.`,
+      lead: `Your wedding cake should feel like the celebration — not a stressful last-minute errand. Muskan builds tiered reception cakes from our ${site.studioCity} kitchen, plans delivery around your venue, and keeps you in the loop on WhatsApp until the cake is on the table.`,
       image: "/images/wedding-cake/659772208_18092845286170730_8159590204106277210_n..webp",
       imageAlt: "Wedding cake Goa — tiered white reception cake by Sweet Bites",
     },
+    introHeading: "A wedding cake that survives Goa — and your guest list",
     intro: [
-      `A **wedding cake Goa** families trust needs more than white frosting — it needs stable tiers, a delivery plan for your venue, and honest talk about Goan heat. Every design on sweetbites.me is a real cake Muskan has baked, not a stock photo.`,
-      `We coordinate with planners and families in Panaji, beach resorts in Calangute and Candolim, and home receptions in Margao. Browse the gallery, send references, and we reply on WhatsApp with sizes, flavours, and delivery timing.`,
+      "Most couples do not need a cake that looks good only in a studio photo. You need tiers that stay straight through photos, buttercream that holds in warm halls, and a baker who will tell you honestly if your Pinterest board needs one less fondant flower for a beach afternoon.",
+      "Every wedding cake on sweetbites.me is from a real order Muskan has delivered — Panaji halls, Calangute resorts, Margao home receptions, and everything in between. Send your date, guest count, and a venue photo; you get a clear quote, not a vague maybe.",
+      "Eggless sponges, mango in season, gold accents, fresh florals — we match flavour to your family and structure to your timeline. Complex fondant and tall tiers need more lead time; we say that upfront so your wedding week stays calm.",
+    ],
+    pullQuote: {
+      text: "I would rather tell you to simplify one detail than promise a tier that wilts before your first dance. Your photos matter more than my portfolio.",
+      context: "Muskan on wedding delivery in Goa",
+    },
+    whatsappChecklist: [
+      "Wedding or reception date and approximate cutting time",
+      "Guest count (or how many tiers you think you need)",
+      "Venue name and town — plus a photo of where the cake table will sit",
+      "Eggless or flavour preferences for mixed families",
+      "One or two gallery links you love from sweetbites.me",
     ],
     highlights: [
       {
-        title: "Multi-tier structure",
-        text: "Central dowelling, chilled transport, and venue handover notes — see our wedding case study for how we work.",
+        title: "Built for real venues",
+        text: "Dowelling, chilled transport, and handover notes — read our wedding case study for how a three-tier survived a venue change.",
       },
       {
-        title: "Flavour pairing",
-        text: "Vanilla, chocolate, mango in season, and eggless sponges for mixed families.",
+        title: "Flavours guests remember",
+        text: "Vanilla, chocolate, mango when in season, pistachio, and eggless sponges that still taste celebratory.",
       },
       {
-        title: "Lead time",
-        text: `Book ${site.bookAheadDays} minimum; complex fondant and tall tiers need longer — especially peak wedding season.`,
+        title: "Honest lead times",
+        text: `Book ${site.bookAheadDays} minimum; peak Saturdays and full fondant designs fill earlier — we reply honestly if your date is tight.`,
       },
     ],
+    ideasSectionTitle: "Three starting points couples love",
+    ideasSectionLead: "Tap a card, screenshot what you like, and send it on WhatsApp — Muskan will adapt size and style to your guest count.",
     ideas: [
       {
         title: "Reception tier cake",
@@ -122,10 +142,10 @@ const landings: OccasionLanding[] = [
           "Yes — mention eggless on line one. Muskan suggests flavours that hold up for your guest count and venue.",
       },
     ],
-    galleryTitle: "Wedding cake inspiration",
-    galleryLead: "Real reception and celebration cakes from our Goa gallery.",
-    ctaTitle: "Plan your wedding cake on WhatsApp",
-    ctaLead: "Send date, guest count, venue town, and photos you love from our gallery.",
+    galleryTitle: "Wedding cakes families have cut in Goa",
+    galleryLead: "Scroll, tap a design, and send Muskan the link — she quotes tiers, flavours, and delivery in one WhatsApp thread.",
+    ctaTitle: "Let’s plan your wedding cake",
+    ctaLead: "One message with your date and venue photo is enough to start. Muskan replies from Velim with sizes, flavours, and delivery timing you can share with family.",
   },
   {
     slug: "birthday-cakes-goa",
@@ -144,29 +164,44 @@ const landings: OccasionLanding[] = [
     hero: {
       badge: "Birthdays & milestones",
       title: "Birthday cakes in Goa",
-      lead: "Milestone birthdays, surprise parties, and office celebrations — Muskan builds custom birthday cakes with real gallery photos, clear WhatsApp quotes, and delivery across Goa.",
+      lead: "Turning six, turning forty, or surprising Mum at home — Muskan makes birthday cakes that look like your reference photo and arrive upright. Real gallery shots, straight WhatsApp quotes, delivery from Velim to every corner of Goa.",
       image:
         "/images/golden-cream-birthday-cake/624880407_18052417967703847_5140043511432543654_n..webp",
       imageAlt: "Birthday cake Goa — golden cream celebration cake by Sweet Bites",
     },
+    introHeading: "Birthdays deserve a cake you are proud to carry in",
     intro: [
-      `Whether you need a simple buttercream round or a showstopper for a 40th, a **birthday cake Goa** order starts the same way: pick a design from our gallery, message Muskan on WhatsApp with your date and town, and get a quote that includes delivery or Velim pickup.`,
-      `We bake in ${site.studioCity} and serve families in Margao, Mapusa, beach towns, and society halls — with eggless options when you ask early.`,
+      "You should not have to guess the price or pray the writing is spelled right. Pick a cake from our gallery, tell Muskan the date and how many people you are feeding, and get a quote that includes delivery to your society hall, beach villa, or office — or pickup from Velim if you prefer.",
+      "Buttercream rounds with fresh florals, gold number toppers, chocolate syrup finishes, eggless sponges for mixed families — we match the vibe you describe, not a generic catalogue photo from another city.",
+      "Character cakes and big sculpted themes for kids need longer lead times; adult milestones and elegant buttercream often fit in a shorter window. We tell you which bucket your idea falls into before you pay a deposit.",
+    ],
+    pullQuote: {
+      text: "Send me the cake you liked on our site and your party date — I will tell you what is realistic for Goa heat and your timeline, not what looks good on Instagram abroad.",
+      context: "Muskan on birthday orders",
+    },
+    whatsappChecklist: [
+      "Birthday date and time you need the cake ready",
+      "Age or milestone (e.g. 40th, surprise for Mum)",
+      "Rough guest count or cake size you have in mind",
+      "Delivery town or pickup from Velim",
+      "Gallery link or screenshot of a design you love",
     ],
     highlights: [
       {
-        title: "Themes & toppers",
-        text: "Numbers, florals, gold accents, and colour palettes from your reference photos.",
+        title: "Your colours, your words",
+        text: "Numbers, florals, gold leaf, and handwriting-style names — we confirm spelling on WhatsApp before piping.",
       },
       {
-        title: "Sizes for every party",
-        text: "From bento-sized surprises to tiers for 30+ guests — sizes and pricing on WhatsApp.",
+        title: "Right size, no waste",
+        text: "From a bento beside the main cake to tiers for thirty guests — Muskan sizes from your headcount.",
       },
       {
-        title: "Kids vs adults",
-        text: "Character cakes for children are a separate lead time — see our kids birthday page.",
+        title: "Kids themes = more time",
+        text: "Spiderman, Barbie, unicorns — stunning, but a different schedule. See our kids birthday guide when little ones are involved.",
       },
     ],
+    ideasSectionTitle: "Popular birthday paths",
+    ideasSectionLead: "Elegant buttercream, a tin surprise, or a ready-made flavour when the oven has room — choose what fits your party.",
     ideas: [
       {
         title: "Buttercream celebrations",
@@ -214,10 +249,10 @@ const landings: OccasionLanding[] = [
           "Yes — Calangute, Candolim, Baga, Anjuna, Panaji, and more. Delivery fee is confirmed in your quote.",
       },
     ],
-    galleryTitle: "Birthday cake gallery",
-    galleryLead: "Tap a cake to view details — screenshot favourites for WhatsApp.",
-    ctaTitle: "Book your birthday cake",
-    ctaLead: "Message with date, age or milestone, guest count, and your area in Goa.",
+    galleryTitle: "Birthday cakes baked for Goa parties",
+    galleryLead: "Every photo is a real order. Tap one, send it to Muskan, and ask how she would adapt it for your date and guest count.",
+    ctaTitle: "Make their birthday unforgettable",
+    ctaLead: "WhatsApp Muskan with the date, who you are celebrating, and one cake you love from the gallery — she handles the rest.",
   },
   {
     slug: "haldi-cakes-goa",
@@ -236,28 +271,43 @@ const landings: OccasionLanding[] = [
     hero: {
       badge: "Pre-wedding · Haldi",
       title: "Haldi cakes in Goa",
-      lead: "Marigold yellow, gold accents, and gentle flavours for haldi mornings — Muskan designs ceremony cakes that photograph beautifully and survive Goan warmth when you share venue details early.",
+      lead: "Marigold yellow, soft gold, and flavours elders actually enjoy — Muskan makes haldi cakes that glow in morning light and stay dignified when turmeric, sun, and happy chaos arrive together.",
       image: "/images/haldi-design-cake/498586910_18060535466170730_970917338585622900_n..webp",
       imageAlt: "Haldi cake Goa — yellow marigold-style ceremony cake by Sweet Bites",
     },
+    introHeading: "Your haldi cake should feel like the ceremony — not an afterthought",
     intro: [
-      `A **haldi cake Goa** is often booked in the same WhatsApp thread as the main wedding tier — different date, softer palette, and sometimes a smaller guest count at home or a resort lawn.`,
-      `Muskan bakes in ${site.studioCity} and delivers across Goa with the same care as reception cakes: shaded table photos, timing before turmeric games, and eggless sponges when elders need them.`,
+      "Haldi is not a birthday with yellow icing. It is marigold tones, gentle writing, often eggless sponge for mixed families, and a cake table that might sit on a lawn while games happen nearby. Muskan plans colour and timing for that reality.",
+      "Many families book haldi and reception in one WhatsApp thread — different dates, different palettes, two clear quotes. Share photos of where the cake will sit; we have moved tables under shade the night before when outdoor light was too harsh.",
+      "Cardamom-vanilla, mango in season, pistachio — flavours that pair with Indian sweets on the same table. We keep toppers simple when turmeric hands are close, so your photos still look festive without fondant disasters.",
+    ],
+    pullQuote: {
+      text: "Yellow buttercream that looks perfect at 8 AM can look tired by noon outdoors — I deepen marigold tones slightly so your haldi photos still pop.",
+      context: "Muskan on ceremony timing",
+    },
+    whatsappChecklist: [
+      "Haldi date and approximate time the cake should be ready",
+      "Home, resort, or lawn — plus a photo of the cake table area",
+      "Guest count and eggless requirements if any",
+      "Whether you are also booking a reception tier (same thread is fine)",
+      "A yellow design you like from our haldi gallery",
     ],
     highlights: [
       {
-        title: "Ceremony-first colours",
-        text: "Marigold yellow, gold piping, floral accents — not generic birthday palettes.",
+        title: "Marigold, not neon",
+        text: "Ceremony yellows and gold piping — palettes built for photos with garlands and traditional dress.",
       },
       {
-        title: "Morning & afternoon timing",
-        text: "Outdoor haldis need earlier delivery slots and simpler toppers — we advise honestly.",
+        title: "Morning-smart delivery",
+        text: "Outdoor haldis get earlier slots and simpler toppers; we say no to details that wilt before family photos.",
       },
       {
-        title: "Pairs with wedding cake",
-        text: "One conversation can cover haldi + reception dates and separate quotes.",
+        title: "Wedding + haldi together",
+        text: "One honest conversation, two dates, two quotes — flavours can match across both celebrations.",
       },
     ],
+    ideasSectionTitle: "Plan haldi alongside your wedding",
+    ideasSectionLead: "Start with our marigold reference cake, then line up the reception tier in the same WhatsApp chat if you like.",
     ideas: [
       {
         title: "Haldi design cake",
@@ -299,10 +349,10 @@ const landings: OccasionLanding[] = [
           "Yes — mango, cardamom-vanilla, and pistachio are popular for both; Muskan can align flavours across both dates.",
       },
     ],
-    galleryTitle: "Haldi & pre-wedding cakes",
-    galleryLead: "Yellow ceremony designs from our Goa kitchen.",
-    ctaTitle: "Book your haldi cake",
-    ctaLead: "WhatsApp your haldi date, venue town, and guest count.",
+    galleryTitle: "Haldi cakes that photographed beautifully",
+    galleryLead: "Yellow ceremony designs from real Goan homes and resorts — tap to open, then send Muskan your favourite.",
+    ctaTitle: "Book your haldi cake with confidence",
+    ctaLead: "Send the haldi date, a venue photo, and guest count. Muskan replies with colour notes, flavour ideas, and delivery timing before turmeric games begin.",
   },
   {
     slug: "kids-birthday-cakes-goa",
@@ -321,28 +371,43 @@ const landings: OccasionLanding[] = [
     hero: {
       badge: "Kids & characters",
       title: "Kids birthday cakes in Goa",
-      lead: "Character cakes, bright buttercream, and sculpted toppers — Muskan builds kids birthday cakes parents trust for structure, delivery, and honest lead times across Goa.",
+      lead: "When your child says “I want it exactly like the video,” Muskan is the baker parents call — Spiderman, unicorns, Barbie castles, and bright buttercream that survives the party and the drive across Goa.",
       image: "/images/spiderman-cake/619485602_17929184628193772_648480827065862935_n..webp",
       imageAlt: "Kids birthday cake Goa — Spiderman character cake by Sweet Bites",
     },
+    introHeading: "The cake your child points at — built to survive the party",
     intro: [
-      `A **kids birthday cake Goa** brief usually arrives with a screenshot and one non-negotiable: "make it look like this." Muskan replies with what is achievable in your timeline — proportional characters, stable delivery, and eggless options for classmates.`,
-      `Browse Spiderman, unicorn, Barbie, and more in our gallery and case studies before you message — it speeds up quotes and sets realistic expectations.`,
+      "Kids birthday messages usually arrive with a screenshot and wide eyes: make it look like this. Muskan answers with what is achievable in your week — proportional characters, colours that hold in Goan humidity, and delivery that does not tip the webs or turrets.",
+      "Read our case studies for Spiderman, Barbie castle, and unicorn before you message. Parents who do get faster quotes and fewer surprises on structure and lead time.",
+      "Pool parties, society halls, beach villas — share venue photos early. Eggless options for classmates are common; mention them on line one. A bento for school the next day beside the main cake is a favourite add-on.",
+    ],
+    pullQuote: {
+      text: "I will not promise a castle with twelve fragile turrets for next Saturday — I will promise a design your child recognises and a cake that arrives standing up.",
+      context: "Muskan on character cakes",
+    },
+    whatsappChecklist: [
+      "Child’s age and theme (Spiderman, unicorn, Barbie, football, etc.)",
+      "Party date and whether it is a Saturday — those fill first",
+      "Venue town and a photo if it is outdoors or poolside",
+      "Guest count and eggless needs for classmates",
+      "Screenshot from our gallery or case study you want to match",
     ],
     highlights: [
       {
-        title: "Character expertise",
-        text: "Documented case studies for Spiderman, Barbie castle, unicorn & more.",
+        title: "Proof, not promises",
+        text: "Case studies show how Spiderman, Barbie castle, and unicorn cakes were actually built and delivered.",
       },
       {
-        title: "Venue-aware delivery",
-        text: "Pool parties, society halls, and beach homes — share photos early.",
+        title: "Delivery that respects structure",
+        text: "Upright boxes, shaded handover, kitchen drop-off at halls — we plan around kids and crowds.",
       },
       {
-        title: "Bento add-ons",
-        text: "Classmate tins beside the main cake — popular for school-age parties.",
+        title: "Main cake + classmate bento",
+        text: "Big wow cake for the party, small tin for school — one WhatsApp thread, one oven plan.",
       },
     ],
+    ideasSectionTitle: "Themes kids ask for every week",
+    ideasSectionLead: "Open a gallery or case study, screenshot it, and ask Muskan how she would adapt it for your date.",
     ideas: [
       {
         title: "Spiderman & superheroes",
@@ -385,10 +450,10 @@ const landings: OccasionLanding[] = [
           "Yes — mention eggless on WhatsApp; see our eggless flavours guide for sponge options.",
       },
     ],
-    galleryTitle: "Kids & character cakes",
-    galleryLead: "Real theme cakes delivered across Goa.",
-    ctaTitle: "Order a kids birthday cake",
-    ctaLead: "Send child's age, theme, date, and delivery town on WhatsApp.",
+    galleryTitle: "Kids cakes that made it to the party table",
+    galleryLead: "Character and theme cakes from real Goa birthdays — tap, save, and send on WhatsApp.",
+    ctaTitle: "Be the parent with the cake they dreamed of",
+    ctaLead: "Message Muskan with age, theme, date, and town. She replies with lead time, structure notes, and a quote you can approve before the week gets busy.",
   },
   {
     slug: "anniversary-cakes-goa",
@@ -406,30 +471,45 @@ const landings: OccasionLanding[] = [
     hero: {
       badge: "Anniversaries & milestones",
       title: "Anniversary cakes in Goa",
-      lead: "Romantic buttercream, gold accents, and personalised writing for years together — Muskan crafts anniversary cakes for home dinners, resorts, and surprise deliveries across Goa.",
+      lead: "Five years or fifty — Muskan makes anniversary cakes that feel intimate, photograph beautifully by candlelight, and arrive as a surprise your partner did not see coming.",
       image:
         "/images/cream-heart-anniversery-cake/482668294_18053699921170730_1765706686871389592_n..webp",
       imageAlt:
         "Anniversary cake Goa — cream heart celebration cake by Sweet Bites Muskan",
     },
+    introHeading: "Celebrate the years with a cake that feels personal",
     intro: [
-      `An **anniversary cake Goa** couples love is elegant without being fussy — readable names, stable florals, and flavours that suit a quiet dinner or a family gathering.`,
-      `Message Muskan with years, names, date, and whether you need eggless. We deliver from ${site.studioCity} to Panaji, Margao, beaches, and villages statewide.`,
+      "Anniversary cakes should whisper romance, not shout generic red hearts. Peach cream, soft gold, chocolate, fresh florals, and names spelled exactly as you send them — Muskan keeps writing short and readable so it still looks elegant in warm dining rooms.",
+      "Dinner for two on the balcony, family lunch in Margao, resort surprise in Candolim — we deliver from Velim with timing you agree on WhatsApp, including lobby handoffs when only one of you knows.",
+      "A full heart-shaped cake for the table, or a bento tin when you want something small and secret — eggless options when you mention them early. Years together deserve better than a last-minute supermarket round.",
+    ],
+    pullQuote: {
+      text: "For anniversaries I keep messages short on the cake — your names and years should read clearly in a photo, not disappear in swirly script.",
+      context: "Muskan on couple cakes",
+    },
+    whatsappChecklist: [
+      "Anniversary date and time you want the cake delivered or ready",
+      "Names and years exactly as they should appear on the cake",
+      "Dinner for two vs family gathering — guest count helps size",
+      "Delivery address or surprise handoff contact in Goa",
+      "Eggless or flavour preference (chocolate, peach cream, etc.)",
     ],
     highlights: [
       {
-        title: "Personalised writing",
-        text: "Short names and years read better than long cursive in warm rooms.",
+        title: "Names that read in photos",
+        text: "We confirm spelling and size on WhatsApp — no awkward corrections at the table.",
       },
       {
-        title: "Heart & gold styling",
-        text: "Peach cream, chocolate, and floral finishes from our gallery.",
+        title: "Hearts, gold, soft florals",
+        text: "Romantic palettes from our gallery — adapted to your venue and portion size.",
       },
       {
-        title: "Surprise-friendly",
-        text: "Bento-sized cakes work when only two of you are celebrating.",
+        title: "Surprises welcome",
+        text: "Bento tins for two, lobby delivery, early-morning handoffs — tell us the plan.",
       },
     ],
+    ideasSectionTitle: "Romantic sizes for every plan",
+    ideasSectionLead: "Heart cake for the family table, or a bento when it is just the two of you.",
     ideas: [
       {
         title: "Peach cream anniversary",
@@ -472,10 +552,10 @@ const landings: OccasionLanding[] = [
           "Yes — share delivery address and a contact who can receive the cake at the agreed time.",
       },
     ],
-    galleryTitle: "Anniversary cake ideas",
-    galleryLead: "Celebration cakes for couples and families in Goa.",
-    ctaTitle: "Celebrate your anniversary",
-    ctaLead: "WhatsApp your date, names, and delivery area in Goa.",
+    galleryTitle: "Anniversary cakes couples have shared",
+    galleryLead: "Hearts, gold, and cream finishes from real orders — pick one and tell Muskan your years together.",
+    ctaTitle: "Say it with a cake this year",
+    ctaLead: "WhatsApp your date, names, years, and Goa town. Muskan sends a quote and keeps the surprise on track if only you are in the thread.",
   },
   {
     slug: "bento-cakes-goa",
@@ -493,28 +573,43 @@ const landings: OccasionLanding[] = [
     hero: {
       badge: "Bento & mini cakes",
       title: "Bento cakes in Goa",
-      lead: "Small, photogenic cakes in a tin — perfect for couples, surprises, and add-ons beside a main celebration cake. Every bento is baked to order in Velim, not pulled from a shop counter.",
+      lead: "Tiny tin, big emotion — Muskan’s bento cakes are made for beach surprises, desk deliveries, anniversaries for two, and that second sweet beside the main birthday cake. Baked to order in Velim, never sitting on a shop shelf.",
       image: "/images/bento-cake/491142105_18057367328170730_7039415400764743136_n..webp",
       imageAlt: "Bento cake Goa — decorated tin cake by Sweet Bites Muskan",
     },
+    introHeading: "Small cake, huge reaction — the bento way",
     intro: [
-      `A **bento cake Goa** order suits intimate moments: anniversaries on the beach, office desk surprises, or a second sweet for the kids' table. Muskan personalises colours, short messages, and flavours inside a compact tin.`,
-      `Pair a bento with a larger birthday or wedding cake in one WhatsApp thread — we plan oven space once.`,
+      "Bentos are for the moment you want photographed without feeding thirty people. A short message on top, two colours max, flavours you actually like — chocolate, coffee, blush buttercream — in a tin that travels upright like a tier cake, only smaller.",
+      "Husbands messaging on Wednesday for Saturday anniversary, colleagues surprising someone at work, parents adding a classmate tin beside a Spiderman main cake — Muskan plans oven space once if you mention both orders in the same chat.",
+      "Hand-painted detail and long messages do not belong on a four-inch surface; we guide you toward what looks clean and delivers on time. Eggless bentos are common — say so in your first line.",
+    ],
+    pullQuote: {
+      text: "A bento is not a shrunken wedding cake — one clear message, two colours, and a tin that arrives upright. That is how you get the wow face in the photo.",
+      context: "Muskan on bento orders",
+    },
+    whatsappChecklist: [
+      "Date and time you need the bento (morning surprises need early delivery)",
+      "Exact short message for the top — we confirm spelling",
+      "Flavour and eggless yes/no",
+      "Delivery town and address or Velim pickup",
+      "Reference photo from our bento gallery",
     ],
     highlights: [
       {
-        title: "1–6 servings",
-        text: "Ideal when you want photos without days of leftovers.",
+        title: "Perfect portion",
+        text: "One to six servings — celebration without a week of leftovers in the fridge.",
       },
       {
-        title: "Eggless available",
-        text: "Mention dietary needs on your first message.",
+        title: "Surprise-ready",
+        text: "Lobby handoffs, office timing, beach meet-ups — we coordinate on WhatsApp.",
       },
       {
-        title: "Fast lead times",
-        text: `Simple bentos often fit ${site.bookAheadDays}; hand-painted detail needs more notice.`,
+        title: "Pairs with big cakes",
+        text: `Simple bentos often fit ${site.bookAheadDays}; mention both dates if you are ordering a main cake too.`,
       },
     ],
+    ideasSectionTitle: "Bento styles to copy on WhatsApp",
+    ideasSectionLead: "Classic tin, birthday bright, or read the journal guide — then send one screenshot to Muskan.",
     ideas: [
       {
         title: "Classic bento",
@@ -557,10 +652,10 @@ const landings: OccasionLanding[] = [
           "Yes — one WhatsApp conversation can cover both; mention both dates if they differ.",
       },
     ],
-    galleryTitle: "Bento cake gallery",
-    galleryLead: "Mini tin designs from Sweet Bites — screenshot and send on WhatsApp.",
-    ctaTitle: "Order a bento cake",
-    ctaLead: "Message with date, message on top, flavour, and your Goa town.",
+    galleryTitle: "Bento tins that made someone’s day",
+    galleryLead: "Mini cakes from real orders — save your favourite and ask Muskan to match the vibe for your date.",
+    ctaTitle: "Send a bento they will remember",
+    ctaLead: "One WhatsApp with date, message, flavour, and town. Muskan quotes fast and tells you honestly if the design fits a bento canvas.",
   },
 ];
 
