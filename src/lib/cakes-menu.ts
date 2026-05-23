@@ -377,7 +377,10 @@ export const cakesMenuExploreLinks = [
   },
 ] as const;
 
-export const CAKES_MENU_IMAGE = "/images/cake-menu.avif";
+/** Printed menu board photo — hero & sidebar */
+export const CAKES_MENU_HERO_IMAGE = "/images/cakes-menu-board.png";
+
+export const CAKES_MENU_IMAGE = CAKES_MENU_HERO_IMAGE;
 
 export const CAKES_MENU_HERO_ALT = `${site.name} printed cakes menu board in Goa — Regular, Fruit, Premium and Special flavours`;
 

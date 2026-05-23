@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   CAKES_MENU_HERO_ALT,
-  CAKES_MENU_IMAGE,
+  CAKES_MENU_HERO_IMAGE,
   cakesMenuAddOns,
   cakesMenuCaseStudySpots,
   cakesMenuMuskanQuote,
@@ -12,7 +12,6 @@ import {
   getReadyMadeCakeWhatsAppUrl,
 } from "@/lib/cakes-menu";
 import { seasonalBanner, site, testimonials } from "@/lib/content";
-import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
@@ -42,35 +41,80 @@ export function CakesMenuPageHeader() {
         </div>
       ) : null}
 
-      <SecondaryPageHero
-        label="Ready-made cakes"
-        title="Printed menu flavours in Goa"
-        description={`Regular, Fruit, Premium & Special — the same board we use in ${site.studioCity}. Tap any flavour below or message Muskan on WhatsApp for today's availability, size, and delivery.`}
-        image={{
-          src: CAKES_MENU_IMAGE,
-          alt: CAKES_MENU_HERO_ALT,
-          priority: true,
-        }}
-      >
-        <nav className="flex flex-wrap gap-2" aria-label="On this page">
-          {JUMP_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="rounded-full border border-line bg-cream/80 px-3 py-1.5 text-xs font-semibold text-cocoa transition-colors hover:border-terracotta/40 hover:text-terracotta"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
-        <Button href={getWhatsAppUrl()} variant="whatsapp" external>
-          <WhatsAppIconInline className="h-5 w-5" />
-          Order on WhatsApp
-        </Button>
-        <Button href="#menu-flavours" variant="outline" className="rounded-md px-5">
-          See all flavours
-        </Button>
-      </SecondaryPageHero>
+      <section className="about-mesh border-b border-line" aria-labelledby="cakes-menu-hero-heading">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
+          <div className="relative mb-8 overflow-hidden rounded-2xl bg-cream shadow-[0_24px_48px_-28px_rgba(44,24,16,0.25)] ring-2 ring-terracotta/25 lg:hidden">
+            <div className="relative aspect-[3/4] w-full max-h-[min(420px,70vh)]">
+              <Image
+                src={CAKES_MENU_HERO_IMAGE}
+                alt={CAKES_MENU_HERO_ALT}
+                fill
+                className="object-cover object-center"
+                sizes="100vw"
+                priority
+              />
+            </div>
+            <p className="bg-terracotta px-4 py-2.5 text-center text-[10px] font-bold uppercase tracking-widest text-cream">
+              Our printed menu board · {site.name}
+            </p>
+          </div>
+
+          <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
+            <div className="lg:col-span-7">
+              <p className="text-sm font-medium text-muted">Ready-made cakes</p>
+              <h1
+                id="cakes-menu-hero-heading"
+                className="mt-2 font-display text-[clamp(2rem,4.5vw,3rem)] font-medium leading-[1.1] tracking-tight text-cocoa"
+              >
+                Printed menu flavours in Goa
+              </h1>
+              <p className="mt-5 max-w-2xl text-[1.0625rem] leading-relaxed text-muted sm:text-lg">
+                Regular, Fruit, Premium & Special — the same board we use in {site.studioCity}.
+                Tap any flavour below or message Muskan on WhatsApp for today&apos;s availability,
+                size, and delivery.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <nav className="flex w-full flex-wrap gap-2 sm:w-auto" aria-label="On this page">
+                  {JUMP_LINKS.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className="rounded-full border border-line bg-cream/80 px-3 py-1.5 text-xs font-semibold text-cocoa transition-colors hover:border-terracotta/40 hover:text-terracotta"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </nav>
+                <Button href={getWhatsAppUrl()} variant="whatsapp" external>
+                  <WhatsAppIconInline className="h-5 w-5" />
+                  Order on WhatsApp
+                </Button>
+                <Button href="#menu-flavours" variant="outline" className="rounded-md px-5">
+                  See all flavours
+                </Button>
+              </div>
+            </div>
+
+            <div className="hidden lg:col-span-5 lg:block">
+              <div className="overflow-hidden rounded-2xl bg-cream shadow-[0_24px_48px_-28px_rgba(44,24,16,0.25)] ring-2 ring-terracotta/25">
+                <div className="relative aspect-[3/4] w-full max-h-[min(480px,62vh)]">
+                  <Image
+                    src={CAKES_MENU_HERO_IMAGE}
+                    alt={CAKES_MENU_HERO_ALT}
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    priority
+                  />
+                </div>
+                <p className="bg-terracotta px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-cream">
+                  Our printed menu board · {site.name}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="border-b border-line/60 bg-cream/80">
         <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 py-4 text-center text-xs font-semibold text-cocoa/70 sm:text-sm">
