@@ -41,9 +41,9 @@ export const goaReach = {
   eyebrow: "Serving all of Goa",
   tagline:
     "North Goa, South Goa, beaches & villages — custom cakes delivered or ready for pickup.",
-  heroTitle: "Custom cakes in Goa for every occasion of yours",
+  heroTitle: "Cakes that feel personal — because Muskan still bakes every order herself",
   heroLead:
-    "Birthday, wedding & bento cakes hand-crafted by Muskan — from Calangute and Mapusa to Margao, Vasco, and beyond.",
+    "Birthdays, weddings, bentos & last-minute saves across Goa. Message Muskan on WhatsApp with your date and a photo — she replies with an honest yes, a clear price, and a cake worth remembering.",
 } as const;
 
 /** Major towns & beaches — homepage tags, order page, SEO lists */
@@ -146,11 +146,11 @@ export const trustPillars = [
 ] as const;
 
 export const meetMuskan = {
-  eyebrow: "Meet the baker",
-  title: "Muskan brings your celebration to life",
+  eyebrow: "Meet Muskan · founder",
+  title: "The person on WhatsApp is the person piping your cake",
   paragraphs: [
-    "Sweet Bites started in a home kitchen in Goa — decorating cakes for friends, then weddings, birthdays, and beach celebrations across the state.",
-    "Every order is still one conversation on WhatsApp, one sketch, and one schedule in Muskan's kitchen. Browse the gallery, share your idea, and she'll reply with an honest quote.",
+    "Sweet Bites is still a home kitchen in Velim — not a chain, not a call centre. I sketch, bake, and decorate what you see in our gallery.",
+    "Send me your date, your town, and even a messy voice note. I'll tell you what's realistic, what it costs, and when it'll be ready — before you pay. That's how I want every family in Goa to feel: looked after, not sold to.",
   ],
 } as const;
 
@@ -213,9 +213,9 @@ export const faqs = [
 ];
 
 export const showcaseSection = {
-  title: "Every slice tells your story",
+  title: "Real celebrations. Real cakes. No stock photos.",
   subtitle:
-    "From intimate gatherings to grand Goan weddings — crafted with local flavours and heart.",
+    "Every image is something Muskan made for a family in Goa — your cake can look like this too.",
 };
 
 export const navLinks = [

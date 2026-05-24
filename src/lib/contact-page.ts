@@ -100,8 +100,8 @@ export { seasonalBanner as contactSeasonalBanner };
 
 export const contactMuskanQuote = {
   quote:
-    "Message me on WhatsApp with your date and a photo — even a rough idea is enough. I reply during studio hours with an honest yes on timing and a clear price before you confirm.",
-  attribution: "Muskan · Sweet Bites",
+    "You don't need perfect words — you need someone who answers. Message me with your date, town, and a photo. I'll tell you what's possible, what it costs, and when — honestly — before you confirm.",
+  attribution: "Muskan · Founder, Sweet Bites",
 } as const;
 
 export const contactResponseSteps = [

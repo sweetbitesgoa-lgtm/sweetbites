@@ -46,11 +46,14 @@ export function MeetMuskan() {
           >
             {meetMuskan.title}
           </h2>
-          <div className="mt-5 space-y-4 text-cocoa/75 leading-relaxed">
+          <div className="mt-5 space-y-4 text-[1.0625rem] leading-relaxed text-cocoa/80">
             {meetMuskan.paragraphs.map((p) => (
               <p key={p.slice(0, 24)}>{p}</p>
             ))}
           </div>
+          <p className="mt-6 border-l-2 border-terracotta/40 pl-4 font-display text-lg italic leading-snug text-cocoa/90">
+            First person, on purpose — because you deserve to know who&apos;s baking your cake.
+          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/about" variant="primary">
               About {site.name}

@@ -20,6 +20,7 @@ import { OrderGuideTeaser } from "@/components/home/OrderGuideTeaser";
 import { FaqSection } from "@/components/home/FaqSection";
 import { HomeSeoCollapsible } from "@/components/home/HomeSeoCollapsible";
 import { CtaBanner } from "@/components/home/CtaBanner";
+import { FounderVoiceBand } from "@/components/founder/FounderVoiceBand";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { faqs } from "@/lib/content";
 import { homeSeo } from "@/lib/seo-content";
@@ -63,6 +64,7 @@ export default function Home() {
       <OccasionCards />
       <FeaturedCakes />
       <MeetMuskan />
+      <FounderVoiceBand />
       <HowItWorks />
       <PricingBand />
       <LocationSeoBlocks />

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ContactBreadcrumb } from "@/components/contact/ContactBreadcrumb";
+import { FounderPromisesStrip } from "@/components/founder/FounderVoiceBand";
 import { ContactQuickStartBand } from "@/components/contact/ContactQuickStartBand";
+import { muskanFounder } from "@/lib/founder-voice";
 import { ContactWhatsAppTemplate } from "@/components/contact/ContactWhatsAppTemplate";
 import { SecondaryPageHero } from "@/components/layout/SecondaryPageHero";
 import { WhatsAppOrderCard } from "@/components/order/WhatsAppOrderCard";
@@ -153,6 +155,7 @@ export function ContactPageContent() {
               <h2 className="contact-display-xl mt-3">{contactEditorialIntro.title}</h2>
             </div>
             <div className="space-y-5 lg:col-span-7 lg:pt-2">
+              <p className="contact-prose font-medium text-cocoa">{muskanFounder.contactHook}</p>
               {contactEditorialIntro.paragraphs.map((p) => (
                 <p key={p.slice(0, 32)} className="contact-prose">
                   {p}
@@ -543,10 +546,20 @@ export function ContactPageContent() {
         </div>
       </section>
 
+      <section className="border-b border-line/60 bg-cream/30 py-12 sm:py-14">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <p className="contact-eyebrow text-center">Muskan&apos;s promise</p>
+          <h2 className="contact-section-title mt-2 text-center">
+            Why families trust the person behind the phone
+          </h2>
+          <FounderPromisesStrip className="mt-8" />
+        </div>
+      </section>
+
       <section className="border-b border-line/60 bg-white py-12 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="contact-section-title text-center">
-            Why families trust Muskan
+            The numbers behind the kitchen
           </h2>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {trustPillars.map((pillar) => (

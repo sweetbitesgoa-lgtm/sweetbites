@@ -11,6 +11,7 @@ import { ReviewsNote } from "@/components/home/ReviewsNote";
 import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
 import { WhatsAppOrderCard } from "@/components/order/WhatsAppOrderCard";
 import { SeoContentSection } from "@/components/seo/SeoContentSection";
+import { FounderVoiceBand } from "@/components/founder/FounderVoiceBand";
 import { aboutSeo } from "@/lib/seo-content";
 import { fadeUp, staggerContainer, defaultTransition } from "@/lib/motion";
 
@@ -156,6 +157,8 @@ export function AboutPageView() {
           </div>
         </div>
       </header>
+
+      <FounderVoiceBand />
 
       {/* Pull quote — minimal rail, no card chrome */}
       <section className="border-b border-line bg-cream/80 py-16 sm:py-20 lg:py-24">

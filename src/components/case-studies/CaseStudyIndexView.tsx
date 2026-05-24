@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import type { CaseStudy } from "@/lib/case-studies";
 import { site } from "@/lib/content";
+import { muskanFounder } from "@/lib/founder-voice";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppIconInline } from "@/components/ui/WhatsAppButton";
@@ -47,6 +48,9 @@ export function CaseStudyIndexView({ studies }: CaseStudyIndexViewProps) {
               milestones, wedding tiers, haldi yellows, Ferrero, rabdi, rainbow reveals, and surprise
               bentos — real briefs from Muskan&apos;s Goa kitchen. Each story walks through
               what the family asked, what almost went wrong, and how the cake arrived standing up.
+            </p>
+            <p className="mt-4 max-w-lg border-l-2 border-terracotta/30 pl-4 font-display text-base italic leading-snug text-cocoa/85 sm:text-lg">
+              {muskanFounder.homepageQuote}
             </p>
 
             <dl className="mt-8 flex flex-wrap gap-6 border-t border-line pt-6 text-sm">

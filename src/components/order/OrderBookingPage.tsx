@@ -13,6 +13,7 @@ import {
   sizes,
 } from "@/lib/order-booking";
 import { site } from "@/lib/content";
+import { muskanFounder } from "@/lib/founder-voice";
 import {
   getBookingPathWhatsAppUrl,
   getWhatsAppUrl,
@@ -121,16 +122,13 @@ export function OrderBookingPage() {
             >
               <p className="inline-flex items-center gap-2 rounded-full border border-cream/15 bg-cream/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cream/80">
                 <WhatsAppIconInline className="h-3.5 w-3.5 text-[#25D366]" />
-                WhatsApp concierge
+                {muskanFounder.orderHook.eyebrow}
               </p>
               <h1 className="mt-6 font-display text-4xl font-semibold leading-tight sm:text-5xl lg:text-[3.25rem]">
-                Book your cake like a conversation, not a checkout
+                {muskanFounder.orderHook.title}
               </h1>
               <p className="mt-5 max-w-lg text-lg leading-relaxed text-cream/75">
-                Sweet Bites doesn&apos;t use carts or payment forms. Muskan personally
-                quotes, designs, and updates you on{" "}
-                <span className="font-semibold text-cream">WhatsApp</span> — from first
-                idea to delivery day across Goa.
+                {muskanFounder.orderHook.body}
               </p>
               <motion.div
                 className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
