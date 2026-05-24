@@ -43,6 +43,8 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "rainbow cake Goa",
   "anniversary heart cake Goa",
   "golden cream cake Goa",
+  "last-minute birthday cake Goa",
+  "bento birthday cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -1799,6 +1801,114 @@ const studies: CaseStudy[] = [
           { href: "/creations/golden-cream-birthday-cake", label: "Golden cream gallery" },
           { href: "/birthday-cakes-goa", label: "Birthday guide" },
           { href: "/locations/margao", label: "Margao delivery" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "bento-birthday-cake-goa-case-study",
+    title: "Case study: Last-minute bento birthday cake in Goa — 48 hours, beach villa & a party-to-table plan",
+    excerpt:
+      "Parents messaged mid-week for a Saturday poolside party in Calangute. How Muskan turned a tight timeline into a bento birthday cake Goa kids could photograph — plus a larger round cake for cousins.",
+    publishedAt: "2026-07-02",
+    readMinutes: 14,
+    focusKeyword: "last-minute birthday cake Goa",
+    keywords: [
+      "last-minute birthday cake Goa",
+      "bento birthday cake Goa",
+      "rush birthday cake Calangute",
+      "same-week cake delivery Goa",
+      "kids birthday bento Muskan",
+      "Sweet Bites last minute",
+    ],
+    creationSlug: "bento-birthday-cake",
+    difficulty: "Rush · dual format (bento + round)",
+    leadTime: "48 hours",
+    celebrationType: "8th birthday · 18 guests · poolside",
+    relatedSlugs: ["bento-cake-goa-case-study", "golden-cream-cake-goa-case-study"],
+    heroImage:
+      "/images/bento-birthday-cake/550781468_18072158705170730_8642231030514791168_n..webp",
+    heroImageAlt:
+      "Bento birthday cake Goa — last-minute kids celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/bento-birthday-cake",
+    heroGalleryLabel: "View bento birthday creation",
+    blocks: [
+      {
+        type: "p",
+        text: `Most **last-minute birthday cake Goa** stories start with guilt — “we forgot to book,” “school moved the party forward,” “guests are already flying in.” This case study is different because the family did the right thing: they messaged Muskan at [${site.name}](/about) honestly on a Wednesday for a Saturday [Calangute](/locations/calangute) pool party, accepted simpler decoration, and split the order into a hero [bento birthday cake](/creations/bento-birthday-cake) for the birthday child plus a larger round cake for cousins. No fondant characters. No impossible tier stack. Just a plan that fit the oven.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "If you are searching **last-minute birthday cake Goa**, send date + town + guest count first — Muskan replies with what is realistically bakeable, not what looks best on Pinterest.",
+      },
+      {
+        type: "h2",
+        text: "The brief: Wednesday panic, Saturday pool",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother messaged from a rented villa near Calangute with one gallery link to our bento birthday photo, guest count ~18 (mostly kids), and a hard 4 PM poolside reveal. Eggless sponge required for two cousins. She had read our [last-minute birthday guide](/blog/last-minute-birthday-cake-goa-guide) ten minutes earlier.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Hero: bento tin — name, age “8”, pastel buttercream, small sprinkles only.",
+          "Secondary: 1.5 kg round chocolate-vanilla — same palette, simpler top.",
+          "Theme: “colourful birthday” — no licensed character on 48-hour timeline.",
+          "Delivery 3:30 PM; cake to villa kitchen fridge until reveal.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why Muskan said yes (and what she declined)",
+        id: "yes-and-no",
+      },
+      {
+        type: "p",
+        text: "Oven space existed because a wedding tier had shifted to the following week. Muskan agreed to buttercream + sprinkles but declined a unicorn figurine and extra sugar flowers — drying time was not there. That conversation happened in one WhatsApp voice note so expectations stayed clear. Rush orders fail when clients keep adding details after the schedule is locked.",
+      },
+      {
+        type: "h3",
+        text: "Bento + round: one thread, two bakes",
+      },
+      {
+        type: "p",
+        text: "The **bento birthday cake Goa** tin travels upright in a small box; the round cake uses the same upright discipline as our [wedding delivery](/case-studies/wedding-cake-goa-case-study) runs — non-slip base, chilled handover, photo of fridge space before Muskan leaves the studio. Villa host sent a kitchen photo; AC was strong enough.",
+      },
+      {
+        type: "h2",
+        text: "Delivery on tourist-season Saturday roads",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Calangute traffic on Saturday afternoons is unpredictable. Muskan built a 45-minute buffer and asked the client to share live location when the driver crossed Porvorim. Tin and round cake traveled in separate boxes so a tilt on one did not ruin both. Same checklist as our [bento case study](/case-studies/bento-cake-goa-case-study), scaled up for a kids party.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Menu alternative",
+        text: "If even 48 hours feels tight, families sometimes pick a [ready-made menu flavour](/cakes-menu) for the larger cake and only custom-bake the bento — tell Muskan both needs in one message.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: `Birthday girl saw the tin first — photos before swimming. Round cake served after games; eggless cousins had their slice without a second bake. Mother left a Google review mentioning honest timing; father saved Muskan’s number for a future [golden cream milestone](/case-studies/golden-cream-cake-goa-case-study). Need a rush birthday? Read [/blog/last-minute-birthday-cake-goa-guide](/blog/last-minute-birthday-cake-goa-guide) then message ${site.phone}.`,
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/creations/bento-birthday-cake", label: "Bento birthday gallery" },
+          { href: "/blog/last-minute-birthday-cake-goa-guide", label: "Last-minute journal guide" },
+          { href: "/locations/calangute", label: "Calangute delivery" },
         ],
       },
     ],
