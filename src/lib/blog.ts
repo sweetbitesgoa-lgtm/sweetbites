@@ -21,6 +21,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "bento cake Goa",
   "ready-made cakes Goa",
   "haldi cake Goa",
+  "last-minute birthday cake Goa",
+  "same-day cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -144,6 +146,9 @@ export const BLOG_CAKES_MENU_HERO_IMAGE =
 
 export const BLOG_HALDI_HERO_IMAGE =
   "/images/haldi-design-cake/498586910_18060535466170730_970917338585622900_n..webp";
+
+export const BLOG_LAST_MINUTE_HERO_IMAGE =
+  "/images/bento-birthday-cake/550781468_18072158705170730_8642231030514791168_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -964,6 +969,143 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Ready for marigold yellow on your table? Message ${site.phone} with date, venue photos, and guest count — Muskan will guide your **haldi cake Goa** from brief to handover.`,
+      },
+    ],
+  },
+  {
+    slug: "last-minute-birthday-cake-goa-guide",
+    title: "Last-minute birthday cake in Goa — same-week orders that actually work",
+    excerpt:
+      "Forgot to book? Party moved forward? How to ask Muskan honestly for a last-minute birthday cake Goa families still love — menu flavours, bentos, delivery towns, and what cannot be rushed.",
+    publishedAt: "2026-05-26",
+    readMinutes: 11,
+    focusKeyword: "last-minute birthday cake Goa",
+    keywords: [
+      "last-minute birthday cake Goa",
+      "same-day cake Goa",
+      "urgent cake delivery Goa",
+      "birthday cake tomorrow Goa",
+      "quick cake order WhatsApp Goa",
+      "Velim bakery same week",
+    ],
+    relatedSlugs: [
+      "ready-made-cakes-goa-menu-guide",
+      "bento-cake-goa-order-guide",
+      "book-custom-cake-goa-whatsapp",
+    ],
+    heroImage: BLOG_LAST_MINUTE_HERO_IMAGE,
+    heroImageAlt:
+      "Bento birthday cake Goa — last-minute celebration cake by Sweet Bites, order on WhatsApp",
+    heroGalleryHref: "/creations/bento-birthday-cake",
+    heroGalleryLabel: "Bento birthday cake",
+    blocks: [
+      {
+        type: "p",
+        text: `If you are reading this the night before a party — or the morning of — you are not the first family searching for a **last-minute birthday cake Goa** baker who will reply honestly instead of over-promising. At [${site.name}](/about), Muskan would rather say "here is what we can bake today" than deliver a rushed fondant sculpture that collapses in Goan heat. This guide covers what fits a tight timeline, what needs more days, and exactly what to send on WhatsApp at ${site.phone}.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Use this article when you need a **last-minute birthday cake Goa** — same-week, tomorrow, or even today — and want realistic options before you message Muskan.",
+      },
+      {
+        type: "h2",
+        text: "What can Muskan usually do on short notice?",
+        id: "what-fits-short-notice",
+      },
+      {
+        type: "p",
+        text: "Short-notice orders work best when the design is simple and the flavour comes from our [ready-made cakes menu](/cakes-menu). Buttercream writing, fresh fruit, classic sponges, and [bento tins](/blog/bento-cake-goa-order-guide) are the sweet spot for a **same-day cake Goa** ask — not three-tier fondant characters.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Menu flavours:** Black Forest, chocolate, red velvet, mango (in season) — tap Order on [/cakes-menu](/cakes-menu) and add your date.",
+          "**Bento birthdays:** Small tins for home parties — see our [bento birthday cake](/creations/bento-birthday-cake) in the gallery.",
+          "**Simple custom:** One-tier buttercream, a name, a colour theme — often doable within 2–4 days if the oven has space.",
+          "**Eggless:** Possible on short notice — say eggless in line one; read [eggless birthday flavours](/blog/eggless-birthday-cake-goa-flavours) for pairings.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What needs more lead time (even if you beg nicely)",
+        id: "needs-more-time",
+      },
+      {
+        type: "p",
+        text: "Some designs cannot be compressed without hurting quality. Muskan will tell you straight — that honesty saves a birthday meltdown at pickup time.",
+      },
+      {
+        type: "ul",
+        items: [
+          `Sculpted characters and heavy fondant — see our [kids birthday cake guide](/blog/kids-birthday-cake-goa-character-themes); plan ${site.bookAheadDays} when possible.`,
+          "Multi-tier wedding-scale cakes — use the [wedding delivery checklist](/blog/wedding-cake-delivery-goa-checklist) instead.",
+          "Fresh sugar flowers or complex hand-piped scenes — drying time is non-negotiable in humid Goa.",
+          "Peak Saturday evenings in tourist season — message early morning for the best chance.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "The honest WhatsApp message",
+      },
+      {
+        type: "p",
+        text: 'Start with: "Birthday tomorrow / this weekend — is anything simple possible?" Add guest count, eggless yes/no, pickup in [Velim](/locations/velim) or delivery town ([Margao](/locations/margao), [Panaji](/locations/panaji), [Calangute](/locations/calangute), etc.). Attach one gallery photo only if you want a similar vibe — not ten Pinterest boards.',
+      },
+      {
+        type: "h2",
+        text: "Pickup vs delivery on a rush order",
+        id: "pickup-vs-delivery",
+      },
+      {
+        type: "p",
+        text: "Studio pickup from Ubdando is often fastest — you control timing and avoid traffic surprises. Delivery is still possible for a **last-minute birthday cake Goa** order when Muskan confirms driver availability and distance from our kitchen. Check your town on the [locations hub](/locations); fees are quoted before you pay.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Studio hours",
+        text: `We are open ${site.hours} (closed Mondays). You can WhatsApp any day — replies during studio hours. [Contact](/contact) has map, template message, and visit tips.`,
+      },
+      {
+        type: "h2",
+        text: "Three paths that save the party",
+        id: "three-paths",
+      },
+      {
+        type: "p",
+        text: "When the clock is tight, pick one path and commit — switching from custom to menu mid-thread slows everyone down.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Path 1 — Menu flavour:** Fastest. Choose from [/cakes-menu](/cakes-menu), message date + town, confirm price on WhatsApp.",
+          "**Path 2 — Bento surprise:** Perfect for partners, office desks, or kids after school — smaller bake, quicker turnaround.",
+          "**Path 3 — Gallery-inspired simple custom:** Send one [creations](/creations) link like [golden cream birthday](/creations/golden-cream-birthday-cake) and ask for a simplified version.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "After the panic — plan the next birthday properly",
+        id: "plan-next-time",
+      },
+      {
+        type: "p",
+        text: `Once this party is saved, bookmark [how to book a custom cake in Goa](/blog/book-custom-cake-goa-whatsapp) and message ${site.bookAheadDays} ahead next time. Character cakes, wedding-adjacent designs, and resort deliveries all breathe easier with a calendar, not a countdown.`,
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/cakes-menu", label: "Cakes menu", description: "Flavours with one-tap WhatsApp order" },
+          { href: "/creations/bento-birthday-cake", label: "Bento birthday cake", description: "Small tin inspiration" },
+          { href: "/contact", label: "Contact", description: "WhatsApp template & studio map" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Need a cake sooner than you thought? Message ${site.phone} now with your date, town, and how many you are feeding — Muskan will tell you what is realistically possible for your **last-minute birthday cake Goa** without the stress.`,
       },
     ],
   },
