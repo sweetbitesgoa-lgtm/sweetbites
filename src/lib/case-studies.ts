@@ -43,6 +43,9 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "rainbow cake Goa",
   "anniversary heart cake Goa",
   "golden cream cake Goa",
+  "engagement cake Goa",
+  "proposal cake Goa",
+  "peach cream cake Goa",
   "last-minute birthday cake Goa",
   "bento birthday cake Goa",
   "character cake Sweet Bites",
@@ -1909,6 +1912,138 @@ const studies: CaseStudy[] = [
           { href: "/creations/bento-birthday-cake", label: "Bento birthday gallery" },
           { href: "/blog/last-minute-birthday-cake-goa-guide", label: "Last-minute journal guide" },
           { href: "/locations/calangute", label: "Calangute delivery" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "engagement-peach-cream-cake-goa-case-study",
+    title: "Case study: Engagement cake in Goa — peach cream, ring reveal & a Candolim terrace at golden hour",
+    excerpt:
+      "He planned a proposal dinner for two; Muskan designed a peach cream engagement cake Goa that hid the ring moment, survived sea breeze, and became the photo every guest reshared — without stealing the yes.",
+    publishedAt: "2026-07-06",
+    readMinutes: 15,
+    focusKeyword: "engagement cake Goa",
+    keywords: [
+      "engagement cake Goa",
+      "proposal cake Goa",
+      "peach cream cake Goa",
+      "romantic cake delivery Candolim",
+      "ring reveal dessert Goa",
+      "anniversary peach cream Muskan",
+      "Sweet Bites engagement",
+    ],
+    creationSlug: "anniversary-peach-cream-cake",
+    difficulty: "Medium · romantic palette + surprise timing",
+    leadTime: "6 days",
+    celebrationType: "Proposal dinner · 2 guests + staff",
+    relatedSlugs: [
+      "anniversary-heart-cake-goa-case-study",
+      "wedding-cake-goa-case-study",
+      "golden-cream-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/anniversary-peach-cream-cake/557195900_18073537505170730_3370198253031180573_n..webp",
+    heroImageAlt:
+      "Engagement peach cream cake Goa — romantic proposal cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/anniversary-peach-cream-cake",
+    heroGalleryLabel: "Peach cream engagement cake",
+    blocks: [
+      {
+        type: "p",
+        text: `The best **engagement cake Goa** stories are quiet until dessert — then everyone pulls out their phones. This case study follows a proposal dinner Muskan baked for a couple in [Candolim](/locations/candolim): a peach-and-cream heart tier inspired by our [Anniversary Peach Cream Cake](/creations/anniversary-peach-cream-cake), timed for golden hour, coordinated with restaurant staff, and built so the ring moment still felt like the headline.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Planning a **proposal cake Goa** or small engagement dinner? Send venue photos, surprise yes/no, and dessert time — Muskan designs delivery around the reveal, not just the frosting.",
+      },
+      {
+        type: "h2",
+        text: "The brief: “She cannot suspect the cake either”",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: `A groom messaged from a friend's WhatsApp — partner thought they were celebrating a work promotion. Terrace table for two, 7:30 PM, ocean breeze. He wanted blush peach, soft gold, fresh roses, initials only, and a cake small enough that staff could hide it until mains cleared. He had read our [engagement cake journal](/blog/engagement-cake-goa-proposal-guide) and sent our gallery peach cream link.`,
+      },
+      {
+        type: "ul",
+        items: [
+          "6-inch heart-tier illusion on round base — serves 4–6 (staff tasted leftovers).",
+          "Flavour: peach compote + vanilla-cardamom sponge + light buttercream.",
+          "Eggless sponge for her dietary note — confirmed on line one.",
+          "No topper figurines — ring box stays the hero prop.",
+          "Delivery 6:45 PM to restaurant cold room; plated 8:05 PM by waiter.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Design choices for Goan terraces",
+        id: "design",
+      },
+      {
+        type: "p",
+        text: "Muskan deepened peach tones slightly versus Pinterest swatches — phone cameras wash pastels outdoors. Gold dust on rose petals only, not whole tiers (fingerprints and breeze). Piping stayed low-profile so wind did not snap delicate extensions. Same colour discipline as our [anniversary heart case study](/case-studies/anniversary-heart-cake-goa-case-study), tuned for two people not forty.",
+      },
+      {
+        type: "h3",
+        text: "Why not fondant for this reveal",
+      },
+      {
+        type: "p",
+        text: "Fondant looks crisp in air-conditioned halls; terraces need buttercream flexibility. The client asked for a glossy mirror finish — Muskan offered a compromise: glazed peach gel on one accent heart, buttercream everywhere else. He chose reliability over risk. That honesty is part of why **engagement cake Goa** orders succeed on WhatsApp at ${site.phone}.",
+      },
+      {
+        type: "h2",
+        text: "Coordinating the surprise with the restaurant",
+        id: "coordination",
+      },
+      {
+        type: "p",
+        text: "Muskan called the duty manager after payment confirmation — box dimensions, fridge shelf, who plates dessert. The groom received a checklist: confirm fridge photo, silence phone notifications, tell waiter the cue word. Delivery driver handed to kitchen, not the table — zero walk-through with partner present.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Planning your own reveal",
+        text: "Villa proposals in [Calangute](/locations/calangute) or [Anjuna](/locations/anjuna) follow the same playbook: fridge photo, shaded table, dessert time separate from dinner start. See our [wedding delivery checklist](/blog/wedding-cake-delivery-goa-checklist) for heat and timing logic.",
+      },
+      {
+        type: "h2",
+        text: "Golden hour handover",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Saturday traffic from [Velim](/locations/velim) to Candolim left a 50-minute buffer. Cake traveled upright in a chilled box; non-slip base taped inside. Restaurant sent a WhatsApp photo of the fridge shelf — Muskan approved before the driver left. At 8:05 PM the waiter placed the cake, stepped back, and the groom opened the ring box beside it.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — and the wedding thread",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: `She said yes before the second bite — photos used our cake and the ring in one frame. The couple opened a second WhatsApp thread for a [wedding cake](/case-studies/wedding-cake-goa-case-study) nine months out; Muskan referenced this peach palette for the haldi brief later. Family members ordered a [golden cream milestone](/case-studies/golden-cream-cake-goa-case-study) for the engagement party the following weekend.`,
+      },
+      {
+        type: "h2",
+        text: "Order a similar engagement cake",
+        id: "order-similar",
+      },
+      {
+        type: "p",
+        text: `Send date, town, guest count, and whether it is a secret. Browse [/anniversary-cakes-goa](/anniversary-cakes-goa) for romantic guides, or message ${site.phone} with a link to [peach cream](/creations/anniversary-peach-cream-cake) — Muskan will quote size, eggless options, and delivery before you pay.`,
+      },
+      {
+        type: "related",
+        title: "Keep exploring",
+        items: [
+          { href: "/blog/engagement-cake-goa-proposal-guide", label: "Engagement journal guide", description: "Proposal vs party sizing" },
+          { href: "/creations/anniversary-peach-cream-cake", label: "Peach cream gallery", description: "Reference for WhatsApp" },
+          { href: "/wedding-cakes-goa", label: "Wedding cakes Goa", description: "Plan the next celebration" },
         ],
       },
     ],
