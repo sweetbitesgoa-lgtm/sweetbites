@@ -23,6 +23,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "haldi cake Goa",
   "last-minute birthday cake Goa",
   "same-day cake Goa",
+  "engagement cake Goa",
+  "proposal cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -149,6 +151,9 @@ export const BLOG_HALDI_HERO_IMAGE =
 
 export const BLOG_LAST_MINUTE_HERO_IMAGE =
   "/images/bento-birthday-cake/550781468_18072158705170730_8642231030514791168_n..webp";
+
+export const BLOG_ENGAGEMENT_HERO_IMAGE =
+  "/images/anniversary-peach-cream-cake/557195900_18073537505170730_3370198253031180573_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -1106,6 +1111,160 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Need a cake sooner than you thought? Message ${site.phone} now with your date, town, and how many you are feeding — Muskan will tell you what is realistically possible for your **last-minute birthday cake Goa** without the stress.`,
+      },
+    ],
+  },
+  {
+    slug: "engagement-cake-goa-proposal-guide",
+    title: "Engagement cakes in Goa — proposal nights, ring reveals & designs that photograph like love",
+    excerpt:
+      "Beach dinner, villa surprise, or family lunch — how to plan an engagement cake Goa guests will talk about: flavours, size, secrecy on WhatsApp, delivery to Candolim, Panaji & beyond, and pairing with your wedding cake later.",
+    publishedAt: "2026-07-05",
+    readMinutes: 13,
+    focusKeyword: "engagement cake Goa",
+    keywords: [
+      "engagement cake Goa",
+      "proposal cake Goa",
+      "ring reveal cake Goa",
+      "romantic cake delivery Goa",
+      "anniversary engagement cake Muskan",
+      "beach proposal cake Candolim",
+      "custom engagement cake Velim",
+    ],
+    relatedSlugs: [
+      "wedding-cake-delivery-goa-checklist",
+      "haldi-cake-goa-tradition-guide",
+      "book-custom-cake-goa-whatsapp",
+    ],
+    heroImage: BLOG_ENGAGEMENT_HERO_IMAGE,
+    heroImageAlt:
+      "Engagement peach cream cake Goa — romantic celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/anniversary-peach-cream-cake",
+    heroGalleryLabel: "Peach cream engagement style",
+    blocks: [
+      {
+        type: "p",
+        text: `An **engagement cake Goa** moment is rarely loud — it is a held breath: candles on a terrace in [Panaji](/locations/panaji), a ring box beside dessert in [Candolim](/locations/candolim), or both families meeting for the first time over something beautiful on the table. At [${site.name}](/about), Muskan designs engagement and proposal cakes that feel intimate, photograph cleanly in golden hour, and still survive Goan warmth. This guide is for couples (and the friend planning the surprise) who want clarity before WhatsApp — not Pinterest panic.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword · read this first",
+        text: "Searching **engagement cake Goa** or **proposal cake Goa**? Send your date, venue town, guest count, and whether the ring moment is secret — Muskan plans delivery and design around surprise, not just aesthetics.",
+      },
+      {
+        type: "h2",
+        text: "Proposal cake vs engagement party cake — two different stories",
+        id: "proposal-vs-party",
+      },
+      {
+        type: "p",
+        text: "A **proposal cake Goa** dinner for two might be a [bento tin](/blog/bento-cake-goa-order-guide) with initials, a single heart tier, or a small [cream heart design](/creations/cream-heart-cake) — subtle enough that the ring stays the star. An engagement party for thirty needs height, portions, and a palette that matches sarees, florals, or your villa decor.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Just the two of you:** bento, 6-inch heart, or peach-cream like our [anniversary peach cream](/creations/anniversary-peach-cream-cake) gallery cake.",
+          "**Family lunch (15–40 guests):** one-tier or two-tier buttercream — gold dust, fresh florals, minimal writing.",
+          "**Beach / pool venue:** lighter colours, stable buttercream, delivery timed before sunset glare — see [wedding delivery tips](/blog/wedding-cake-delivery-goa-checklist) for heat logic.",
+          "**After haldi, before wedding:** pair with our [haldi cake guide](/blog/haldi-cake-goa-tradition-guide) so colours do not clash across events.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Design ideas that look expensive but bake reliably",
+        id: "design-ideas",
+      },
+      {
+        type: "p",
+        text: "Muskan's engagement portfolio leans romantic, not cluttered: blush and gold, fresh roses, pearl dots, delicate piping, and short phrases — names, date, or a single line in English or Devanagari. Avoid tiny fondant figurines on outdoor nights; buttercream and fresh flowers forgive humidity better.",
+      },
+      {
+        type: "h3",
+        text: "Flavours couples actually reorder",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Peach cream & vanilla-cardamom** — soft, camera-friendly, pairs with Indian sweets on the side.",
+          "**Belgian chocolate + raspberry** — classic proposal dinner energy.",
+          "**Mango Alphonso (in season)** — very Goa; ask what is ripe that week.",
+          "**Eggless sponges** — common for mixed families; flag on line one of WhatsApp.",
+        ],
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Keep the secret",
+        text: `Planning a surprise? Message Muskan from a friend's number or say "proposal — do not call the partner." She coordinates delivery to restaurant staff, villa hosts, or [Calangute](/locations/calangute) / [Margao](/locations/margao) venues without spoiling the moment.`,
+      },
+      {
+        type: "h2",
+        text: "Timeline: when to book Muskan",
+        id: "timeline",
+      },
+      {
+        type: "p",
+        text: `Simple **engagement cake Goa** designs often fit ${site.bookAheadDays}. Fresh florals, gold-leaf detail, or matching a complex Pinterest board needs longer — especially December–February wedding season. If you also need a [wedding cake](/creations/wedding-cake), start one WhatsApp thread for both dates; Muskan separates quotes and bake schedules clearly.`,
+      },
+      {
+        type: "ul",
+        items: [
+          "2+ weeks: two-tier, fresh flowers, custom topper, delivery to beach resort.",
+          "1 week: single-tier hearts, buttercream roses, studio pickup in [Velim](/locations/velim).",
+          "Rush: ask honestly — bento or menu-style round cake may be possible; see [last-minute birthday guide](/blog/last-minute-birthday-cake-goa-guide) for rush etiquette (same kitchen rules).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What to send on WhatsApp (copy-friendly brief)",
+        id: "whatsapp-brief",
+      },
+      {
+        type: "ul",
+        items: [
+          "Date + time dessert is served (not just dinner start).",
+          "Venue town + indoor/outdoor + photo of table if you have it.",
+          "Guest count and whether the ring moment is a surprise.",
+          "Link to a [creations](/creations) photo you love — or our [/anniversary-cakes-goa](/anniversary-cakes-goa) occasion guide.",
+          "Eggless, nut-free, or alcohol in venue — mention early.",
+        ],
+      },
+      {
+        type: "p",
+        text: `Full booking steps live in [how to book a custom cake in Goa](/blog/book-custom-cake-goa-whatsapp). Use the [contact template](/contact) if you prefer a structured first message.`,
+      },
+      {
+        type: "h2",
+        text: "Delivery across Goa — without melting the moment",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Engagement dinners run late; Muskan schedules handover so buttercream is not sitting in a hot car during traffic. Pickup from Ubdando works for self-managed surprises. Delivery covers North and South Goa — fee confirmed before payment on WhatsApp, same as every [custom cake in Goa](/blog/book-custom-cake-goa-whatsapp) order.",
+      },
+      {
+        type: "h2",
+        text: "Budget: what moves the quote",
+        id: "budget",
+      },
+      {
+        type: "p",
+        text: "Size and servings matter more than the word engagement. A bento surprise and a two-tier party cake are different projects. Gold dust, fresh florals, delivery distance, and eggless sponges each line-item in Muskan's reply — no hidden total at pickup. Homepage [guide prices](/order) are starting points; your quote is personal.",
+      },
+      {
+        type: "related",
+        title: "Plan your celebration",
+        items: [
+          { href: "/anniversary-cakes-goa", label: "Anniversary cakes Goa", description: "Romantic guides & gallery picks" },
+          { href: "/creations/anniversary-peach-cream-cake", label: "Peach cream cake", description: "Engagement-style reference photo" },
+          { href: "/wedding-cakes-goa", label: "Wedding cakes Goa", description: "Book the big day next" },
+          { href: "/contact", label: "Contact Muskan", description: "WhatsApp template & studio map" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Ready to make the table part of the story? Message ${site.phone} with your date, town, and whether it is a secret — Muskan will help you choose an **engagement cake Goa** that feels as intentional as the yes.`,
       },
     ],
   },
