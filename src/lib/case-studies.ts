@@ -1920,7 +1920,7 @@ const studies: CaseStudy[] = [
     slug: "engagement-peach-cream-cake-goa-case-study",
     title: "Case study: Engagement cake in Goa — peach cream, ring reveal & a Candolim terrace at golden hour",
     excerpt:
-      "He planned a proposal dinner for two; Muskan designed a peach cream engagement cake Goa that hid the ring moment, survived sea breeze, and became the photo every guest reshared — without stealing the yes.",
+      "She planned a proposal dinner for two; Muskan designed a peach cream engagement cake Goa that hid the ring moment, survived sea breeze, and became the photo every guest reshared — without stealing the yes.",
     publishedAt: "2026-07-06",
     readMinutes: 15,
     focusKeyword: "engagement cake Goa",
