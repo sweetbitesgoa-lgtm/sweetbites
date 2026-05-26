@@ -25,6 +25,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "same-day cake Goa",
   "engagement cake Goa",
   "proposal cake Goa",
+  "chocolate cake Goa",
+  "chocolate cake delivery Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -154,6 +156,9 @@ export const BLOG_LAST_MINUTE_HERO_IMAGE =
 
 export const BLOG_ENGAGEMENT_HERO_IMAGE =
   "/images/anniversary-peach-cream-cake/557195900_18073537505170730_3370198253031180573_n..webp";
+
+export const BLOG_CHOCOLATE_HERO_IMAGE =
+  "/images/chocolate-special-cake/553327698_18073158064170730_6979116362068363965_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -1265,6 +1270,190 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Ready to make the table part of the story? Message ${site.phone} with your date, town, and whether it is a secret — Muskan will help you choose an **engagement cake Goa** that feels as intentional as the yes.`,
+      },
+    ],
+  },
+  {
+    slug: "chocolate-cake-goa-ultimate-guide",
+    title: "Chocolate cake in Goa — 13 styles, honest flavour talk & how to pick the one your guests won't stop eating",
+    excerpt:
+      "Mud cake or mousse? Ganache drip or buttercream swirl? Belgian dark or milk chocolate sponge? The only chocolate cake Goa guide that tells you what actually works in heat, which designs travel safely, and how to order on WhatsApp from a real baker who doesn't hide behind stock photos.",
+    publishedAt: "2026-07-10",
+    readMinutes: 14,
+    focusKeyword: "chocolate cake Goa",
+    keywords: [
+      "chocolate cake Goa",
+      "chocolate cake delivery Goa",
+      "chocolate birthday cake Goa",
+      "chocolate cake order WhatsApp",
+      "best chocolate cake Velim",
+      "chocolate drip cake Goa",
+      "custom chocolate cake Muskan",
+      "chocolate sphere cake Goa",
+      "Ferrero cake Goa",
+      "chocolate cake price Goa",
+    ],
+    relatedSlugs: [
+      "ready-made-cakes-goa-menu-guide",
+      "book-custom-cake-goa-whatsapp",
+      "eggless-birthday-cake-goa-flavours",
+    ],
+    heroImage: BLOG_CHOCOLATE_HERO_IMAGE,
+    heroImageAlt:
+      "Chocolate special cake Goa — Belgian chocolate drip cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/chocolate-special-cake",
+    heroGalleryLabel: "Chocolate special cake",
+    blocks: [
+      {
+        type: "p",
+        text: `"Just chocolate" is never just chocolate. Every week, Muskan receives messages saying exactly that — and within three WhatsApp replies the order becomes specific: dark ganache with a drip, eggless chocolate sponge with coffee buttercream, a [chocolate sphere](/creations/chocolate-sphere-cake) you crack open at the table, or a [Ferrero-topped showpiece](/case-studies/ferrero-cake-goa-case-study) for an anniversary. This guide breaks down every **chocolate cake Goa** style Muskan bakes at [${site.name}](/about), so you can skip the vague "chocolate flavour please" message and send something that gets you an accurate quote faster.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Use this guide when searching **chocolate cake Goa**, **chocolate cake delivery Goa**, or **chocolate birthday cake Goa** — it covers styles, flavour combinations, eggless options, realistic pricing, and how to order on WhatsApp.",
+      },
+      {
+        type: "h2",
+        text: "The chocolate family tree at Sweet Bites",
+        id: "styles",
+      },
+      {
+        type: "p",
+        text: "Not all chocolate cakes come from the same recipe. Here is what Muskan actually bakes — and what each style is best for.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**[Chocolate Cake](/creations/chocolate-cake)** — the starting point. Rich sponge, chocolate buttercream, clean finish. Works for any guest count and any occasion. This is the **chocolate cake Goa** families default to when they want zero risk and maximum satisfaction.",
+          "**[Chocolate Special Cake](/creations/chocolate-special-cake)** — elevated with Belgian couverture, layered ganache, and finishing details that photograph like a magazine. The hero image above is this cake.",
+          "**[Chocolate Heart Birthday](/creations/chocolate-heart-birthday-cake)** — heart-shaped, romantic, great for couples and small parties.",
+          "**[Chocolate Sphere](/creations/chocolate-sphere-cake)** — the crowd-stopper. A hollow chocolate shell you crack open to reveal the cake inside. See our [sphere case study](/case-studies/chocolate-sphere-cake-goa-case-study) for how it travels.",
+          "**[Chocolate Sponge Cake](/creations/chocolate-sponge-cake)** — lighter, airier crumb for guests who prefer softness over density.",
+          "**[Chocolate Syrup Cream](/creations/chocolate-syrup-cream-cake)** — drizzled chocolate syrup over cream frosting. Looks indulgent, tastes less heavy than ganache.",
+          "**[Chocolate Bar Cake](/creations/chocolate-bar-cake)** — loaded with KitKat, Dairy Milk, or Oreo bars around the sides. A favourite for teen birthdays.",
+          "**[Chocolate Tin Cake](/creations/chocolate-tin-cake)** — bento-format. Tiny, personal, [perfect for surprises](/blog/bento-cake-goa-order-guide).",
+          "**[Chocolate Tin Anniversary](/creations/chocolate-tin-anniversary-cake)** — same tin magic, anniversary palette.",
+          "**[Chocolate White Cream](/creations/chocolate-white-cream-cake)** — dual-tone: white cream exterior with hidden chocolate layers inside.",
+          "**[Chocolate Slice Cake](/creations/chocolate-slice-cake)** — pre-portioned, great for office parties and box events.",
+          "**[Blue Chocolate Bar Cake](/creations/blue-chocolate-bar-cake)** — colour-themed chocolate for themed parties that still want chocolate flavour.",
+          "**[Cream Chocolate Birthday](/creations/cream-chocolate-birthday-cake)** — cream-first with chocolate accents. Lighter look, still chocolate soul.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Which chocolate style suits your occasion?",
+        id: "occasion-match",
+      },
+      {
+        type: "p",
+        text: "The right **chocolate cake delivery Goa** order starts with context, not just flavour. Here is how Muskan matches style to moment.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Kids birthday:** [Chocolate Bar Cake](/creations/chocolate-bar-cake) or [Blue Chocolate](/creations/blue-chocolate-bar-cake) — visual excitement, bar toppings, theme colours. See also our [kids birthday cake guide](/blog/kids-birthday-cake-goa-character-themes).",
+          "**Romantic dinner / proposal:** [Chocolate Heart](/creations/chocolate-heart-birthday-cake) or [Chocolate Tin Anniversary](/creations/chocolate-tin-anniversary-cake). Pair with our [engagement cake guide](/blog/engagement-cake-goa-proposal-guide).",
+          "**Family milestone (50th, retirement):** [Chocolate Special](/creations/chocolate-special-cake) — the sophistication guests expect. Similar vibe to our [golden cream case study](/case-studies/golden-cream-cake-goa-case-study).",
+          "**Office celebration:** [Chocolate Slice](/creations/chocolate-slice-cake) or a classic [Chocolate Cake](/creations/chocolate-cake) — easy to portion, no fuss.",
+          '**"Wow" moment at a party:** [Chocolate Sphere](/creations/chocolate-sphere-cake) — crack it live, film it. See [the case study](/case-studies/chocolate-sphere-cake-goa-case-study).',
+          "**Last-minute surprise:** [Chocolate Tin](/creations/chocolate-tin-cake) bento — often doable within 2–4 days. Read [last-minute guide](/blog/last-minute-birthday-cake-goa-guide).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Eggless chocolate — the honest version",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: `Many families search **chocolate cake Goa** with eggless as a silent requirement they forget to mention until payment. Mention it on line one — Muskan adjusts sponge recipe, filling density, and sometimes colour intensity. Belgian chocolate stays the same; what changes is binding and moisture. Our [eggless birthday cake guide](/blog/eggless-birthday-cake-goa-flavours) covers how flavours shift. The short answer: eggless chocolate is one of our strongest categories because the cocoa itself carries so much flavour that nobody feels like they are "settling."`,
+      },
+      {
+        type: "h2",
+        text: "Chocolate + what? Flavour pairings Muskan recommends",
+        id: "flavour-pairings",
+      },
+      {
+        type: "p",
+        text: "Pure chocolate is perfect — and sometimes a pairing elevates it. These are the ones that genuinely work in Goan conditions.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Chocolate + coffee:** mocha sponge, subtle bitterness that adults love.",
+          "**Chocolate + salted caramel:** sweet-salt tension. Ask for the drip to be visible on the exterior.",
+          "**Chocolate + raspberry:** European classic. Fresh berry compote between layers; ask what is seasonal.",
+          "**Chocolate + Ferrero / hazelnut:** premium finish; see our [Ferrero case study](/case-studies/ferrero-cake-goa-case-study).",
+          "**Chocolate + mango (in season):** sounds odd, works beautifully with white chocolate mousse in between.",
+          "**Chocolate + peanut butter:** niche but requested. Works best in cooler months; Muskan will say if conditions suit.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How chocolate cakes survive Goan heat",
+        id: "heat-survival",
+      },
+      {
+        type: "p",
+        text: "This is where most bakeries fail and Muskan does not bluff. Dark ganache sets firmer than white — better for outdoor venues. Buttercream chocolate cakes need shade or AC; pure fondant-over-chocolate feels heavy in humidity. Muskan adjusts cocoa butter ratios, delivery timing, and even cake stand placement advice based on your venue. If you are hosting at a beach or poolside, see our [wedding delivery checklist](/blog/wedding-cake-delivery-goa-checklist) — the heat logic is identical.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Delivery across Goa",
+        text: `Chocolate cakes from our [${site.studioCity} kitchen](/locations/velim) travel in chilled upright boxes. Delivery covers [Panaji](/locations/panaji), [Margao](/locations/margao), [Calangute](/locations/calangute), [Mapusa](/locations/mapusa), [Vasco](/locations/vasco), [Candolim](/locations/candolim), and more — fee is confirmed on WhatsApp before you pay.`,
+      },
+      {
+        type: "h2",
+        text: "Pricing: what moves a chocolate cake quote",
+        id: "pricing",
+      },
+      {
+        type: "p",
+        text: "A classic [Chocolate Cake](/creations/chocolate-cake) starts at the same guide prices as any sponge on our [/order](/order) page. What raises the quote: Belgian couverture (vs compound chocolate), sphere construction, fresh fruit fillings, bar-loaded exteriors, delivery distance, and eggless adjustments. Muskan itemises everything on WhatsApp — no mystery total at pickup.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**6-inch round:** from ₹1,200 — perfect for home dinners, 6–8 guests.",
+          "**8-inch round:** from ₹1,800 — birthday parties, 10–14 guests.",
+          "**10-inch or custom tier:** from ₹2,500 — milestone events, 18–25+ guests.",
+          "**Bento tin:** ask for quote — smaller format, higher per-gram design cost.",
+          "**Sphere:** structural + mould work priced separately. [Sphere case study](/case-studies/chocolate-sphere-cake-goa-case-study) has details.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to order your chocolate cake on WhatsApp",
+        id: "how-to-order",
+      },
+      {
+        type: "p",
+        text: `Open WhatsApp to ${site.phone} and include: date, guest count, occasion, eggless yes/no, delivery town or pickup, and a link to one of the 13 chocolate creations above. Full steps live in [how to book a custom cake in Goa](/blog/book-custom-cake-goa-whatsapp). For menu-board flavours, tap Order on [/cakes-menu](/cakes-menu).`,
+      },
+      {
+        type: "h3",
+        text: "From the ready-made menu vs custom",
+      },
+      {
+        type: "p",
+        text: "Our [ready-made cakes menu](/blog/ready-made-cakes-goa-menu-guide) includes chocolate mud, chocolate truffle, and oreo chocolate. These are faster than fully custom designs. If you want a gallery-level [Chocolate Special](/creations/chocolate-special-cake) or a [sphere reveal](/creations/chocolate-sphere-cake), that is custom territory — plan ${site.bookAheadDays} ahead.",
+      },
+      {
+        type: "related",
+        title: "Explore chocolate at Sweet Bites",
+        items: [
+          { href: "/creations/chocolate-special-cake", label: "Chocolate Special", description: "Belgian couverture flagship" },
+          { href: "/creations/chocolate-sphere-cake", label: "Chocolate Sphere", description: "Crack-open showstopper" },
+          { href: "/case-studies/ferrero-cake-goa-case-study", label: "Ferrero case study", description: "Hazelnut + gold leaf story" },
+          { href: "/cakes-menu", label: "Cakes menu", description: "Ready-made chocolate flavours" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Every **chocolate cake Goa** order starts with one honest message. Send your date, guest count, and a gallery link to ${site.phone} — Muskan will reply with flavour ideas, eggless adjustments, and a quote you can hold her to. No surprises except the good kind.`,
       },
     ],
   },
