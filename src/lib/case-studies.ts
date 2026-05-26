@@ -48,6 +48,8 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "peach cream cake Goa",
   "last-minute birthday cake Goa",
   "bento birthday cake Goa",
+  "Doraemon cake Goa",
+  "Doraemon birthday cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -2045,6 +2047,174 @@ const studies: CaseStudy[] = [
           { href: "/creations/anniversary-peach-cream-cake", label: "Peach cream gallery", description: "Reference for WhatsApp" },
           { href: "/wedding-cakes-goa", label: "Wedding cakes Goa", description: "Plan the next celebration" },
         ],
+      },
+    ],
+  },
+  {
+    slug: "doraemon-family-cake-goa-case-study",
+    title: "Case study: Doraemon family cake in Goa — five characters, cream piping & a 4-year-old who checked every face",
+    excerpt:
+      "A mother in Margao wanted every Doraemon character on one cake for her son's 4th birthday. Muskan designed a multi-character cream Doraemon cake Goa kids could identify by name — hand-piped on buttercream, no fondant, delivered to a flat with no lift and 22 tiny guests waiting.",
+    publishedAt: "2026-07-12",
+    readMinutes: 13,
+    focusKeyword: "Doraemon cake Goa",
+    keywords: [
+      "Doraemon cake Goa",
+      "Doraemon birthday cake Goa",
+      "Doraemon family cake Goa",
+      "character cake delivery Margao",
+      "kids cartoon cake Goa",
+      "cream character cake Muskan",
+      "Nobita Shizuka cake Goa",
+      "custom kids cake Velim",
+    ],
+    creationSlug: "doremon-family-cake",
+    difficulty: "High · five hand-piped characters on cream",
+    leadTime: "8 days",
+    celebrationType: "4th birthday · 22 kids · apartment party",
+    relatedSlugs: [
+      "cocomelon-cake-goa-case-study",
+      "spiderman-cake-goa-case-study",
+      "barbie-castle-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/doremon-family-cake/496857347_18059681900170730_4573398989023979467_n..webp",
+    heroImageAlt:
+      "Doraemon family cake Goa — five-character cream birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/doremon-family-cake",
+    heroGalleryLabel: "View Doraemon family creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **Doraemon cake Goa** order sounds simple until a four-year-old's mother says, "He will check if Gian is there." Not just Doraemon — Nobita, Shizuka, Suneo, and Gian. Five characters recognisable at preschool-eye level, on cream (not fondant), surviving a third-floor walk-up in [Margao](/locations/margao) with no lift. This case study documents how Muskan at [${site.name}](/about) turned a cartoon-obsessed brief into a cake the birthday boy inspected character by character — and approved.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **Doraemon cake Goa** or **Doraemon birthday cake Goa**? Send Muskan the character names your child loves, age, guest count, and whether cream or fondant — she matches technique to the party environment.",
+      },
+      {
+        type: "h2",
+        text: "The brief: five friends on one tier",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "The WhatsApp message arrived eight days before the party. Mother shared two screenshots from the show, our [Doraemon Family Cake](/creations/doremon-family-cake) gallery link, and a voice note explaining that her son watches the Hindi dub daily and calls characters by name. She was clear: all five friends, not just Doraemon alone. Eggless sponge, chocolate flavour inside, blue-and-white palette outside. Budget was flexible but she preferred cream over fondant — her son does not eat fondant decorations.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round cake — serves 22 kids + 8 adults with thin slices.",
+          "Five characters: Doraemon (centre), Nobita, Shizuka, Suneo, Gian.",
+          "Cream piping only — no fondant, no printed wafer sheets.",
+          "Flavour: eggless chocolate sponge + vanilla buttercream + chocolate ganache drip accent.",
+          "Delivery to 3rd-floor apartment in Margao — no lift.",
+          "Party at 5 PM; cake needed by 4:15 PM for table setup.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why cream piping — not fondant, not prints",
+        id: "cream-vs-fondant",
+      },
+      {
+        type: "p",
+        text: "Fondant gives clean cartoon edges but kids often peel it off. Printed wafer sheets look sharp on Instagram but feel flat in real life. Cream piping sits between the two: it has texture kids touch, colours they recognise, and a surface that is entirely edible without peeling anything away. The trade-off is precision — cream melts faster and lines blur under heat. Muskan compensated with firmer Swiss meringue buttercream for character outlines and softer American buttercream for background fills.",
+      },
+      {
+        type: "h3",
+        text: "Colour mixing for five characters",
+      },
+      {
+        type: "p",
+        text: "Doraemon's blue, Shizuka's pink, Gian's brown, Suneo's yellow, Nobita's orange shirt — each required a separate piping bag. Muskan mixed ten shades before starting: base colours plus skin tone, hair, eyes, and mouth for each character. The palette was tested on parchment under kitchen lighting first, because fluorescent light shifts blue toward teal and would make Doraemon look wrong in apartment lighting.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Character reference tip",
+        text: "Send Muskan a screenshot — not a Pinterest mood board. Cartoon characters have exact colour codes that shift across fan art. The official frame from the show is the safest reference for a **Doraemon birthday cake Goa** that your child will actually recognise.",
+      },
+      {
+        type: "h2",
+        text: "Structure: chocolate inside, cream outside",
+        id: "structure",
+      },
+      {
+        type: "p",
+        text: "Three layers of eggless chocolate sponge, soaked lightly with vanilla syrup, filled with chocolate ganache, crumb-coated in white buttercream, then decorated. The ganache filling adds weight and moisture that kids prefer over dry sponge. Muskan chilled the crumb coat for 40 minutes before character piping — warm cream under piping smears outlines and ruins the face-check moment.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bottom layer: chocolate sponge + ganache.",
+          "Middle layer: chocolate sponge + vanilla cream.",
+          "Top layer: chocolate sponge — flat surface for character piping.",
+          "Crumb coat: white buttercream, chilled to firm.",
+          "Characters: hand-piped with star and round tips, no stencils.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The face-check test",
+        id: "face-check",
+      },
+      {
+        type: "p",
+        text: `Four-year-olds are brutal critics. This child pointed to each character and named them — Gian was confirmed last because his brown shade was darker than the TV version. Muskan had anticipated this: she matched Gian's tone to the 2024 movie poster (slightly warmer brown) rather than the classic series (grey-brown). The mother sent a photo of her son pointing at the cake with the caption "inspector approved." That photo lives in our [Doraemon gallery](/creations/doremon-family-cake).`,
+      },
+      {
+        type: "h2",
+        text: "Delivery: third-floor walk-up in Margao heat",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "No lift means the driver carries the cake upright on a non-slip board, one flight at a time. Muskan pre-chilled the cake to 6°C so it had thermal buffer during the climb. The box was taped shut with ventilation holes — sealed boxes sweat, which ruins cream piping. Delivery time was 4:10 PM, five minutes early; the mother had cleared counter space and a fan was pointed away from the table. Same delivery discipline as our [Cocomelon case study](/case-studies/cocomelon-cake-goa-case-study), different staircase.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Pre-chilled to 6°C at the [Velim](/locations/velim) studio.",
+          "Non-slip board inside box — prevents slide on tilted stairs.",
+          "Ventilation holes in box lid — stops condensation.",
+          "Driver climbed three flights at steady pace; no running.",
+          "Mother sent counter photo beforehand — fan direction confirmed.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Pricing: what multi-character cream cakes cost",
+        id: "pricing",
+      },
+      {
+        type: "p",
+        text: "Character count drives labour, not just size. A single-character [Doraemon Cream Cake](/creations/doremon-cream-cake) is simpler than the five-character family version. Eggless sponge, delivery distance to Margao, and hand-piping time are each line-items Muskan confirms before payment on WhatsApp. Our [/order](/order) page shows starting prices; a five-character cream cake quotes higher than a single-character because piping time nearly triples.",
+      },
+      {
+        type: "h2",
+        text: "Other character cakes at Sweet Bites",
+        id: "other-characters",
+      },
+      {
+        type: "p",
+        text: "If your child loves a different show, the process is identical: send character names, screenshot, and party details. Muskan has delivered [Spiderman](/case-studies/spiderman-cake-goa-case-study), [Cocomelon](/case-studies/cocomelon-cake-goa-case-study), [Barbie Castle](/case-studies/barbie-castle-cake-goa-case-study), [Matilda](/case-studies/matilda-cake-goa-case-study), and [Unicorn](/case-studies/unicorn-cake-goa-case-study) cakes across Goa. Read our [kids birthday cake guide](/blog/kids-birthday-cake-goa-character-themes) for theme planning tips.",
+      },
+      {
+        type: "related",
+        title: "Explore character cakes",
+        items: [
+          { href: "/creations/doremon-family-cake", label: "Doraemon family gallery", description: "Five-character reference photo" },
+          { href: "/creations/doremon-cream-cake", label: "Doraemon cream cake", description: "Single-character version" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Kids cake guide", description: "Theme planning on WhatsApp" },
+          { href: "/contact", label: "Contact Muskan", description: "WhatsApp template & studio map" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Your child has a favourite character and a birthday coming up. Message ${site.phone} with the character names, age, guest count, and party town — Muskan will reply with technique options, eggless notes, and a quote for your **Doraemon cake Goa** (or whichever hero your child inspects at the table).`,
       },
     ],
   },
