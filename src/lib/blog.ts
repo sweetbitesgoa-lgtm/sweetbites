@@ -27,6 +27,9 @@ export const BLOG_INDEX_KEYWORDS = [
   "proposal cake Goa",
   "chocolate cake Goa",
   "chocolate cake delivery Goa",
+  "anniversary cake Goa",
+  "rasmalai cake Goa",
+  "unicorn cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -159,6 +162,15 @@ export const BLOG_ENGAGEMENT_HERO_IMAGE =
 
 export const BLOG_CHOCOLATE_HERO_IMAGE =
   "/images/chocolate-special-cake/553327698_18073158064170730_6979116362068363965_n..webp";
+
+export const BLOG_ANNIVERSARY_HERO_IMAGE =
+  "/images/anniversary-cake/497297871_18060134072170730_8307687261670369862_n..webp";
+
+export const BLOG_RASMALAI_HERO_IMAGE =
+  "/images/rasmalai-cake/655270937_18137507944502855_1170683226125899544_n..webp";
+
+export const BLOG_UNICORN_HERO_IMAGE =
+  "/images/unicorn-cake/572183692_18077522492170730_392051892465413783_n. - Copy - Copy.webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -1454,6 +1466,392 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Every **chocolate cake Goa** order starts with one honest message. Send your date, guest count, and a gallery link to ${site.phone} — Muskan will reply with flavour ideas, eggless adjustments, and a quote you can hold her to. No surprises except the good kind.`,
+      },
+    ],
+  },
+  {
+    slug: "anniversary-cake-goa-complete-guide",
+    title: "Anniversary cakes in Goa — years, flavours, romantic designs & how to surprise without Pinterest stress",
+    excerpt:
+      "First anniversary or golden fifty — how to choose an anniversary cake Goa couples actually finish: heart tiers, peach cream, photo toppers, eggless for family lunch, delivery to Panaji villas & Candolim terraces, and WhatsApp quotes Muskan explains line by line.",
+    publishedAt: "2026-07-14",
+    readMinutes: 13,
+    focusKeyword: "anniversary cake Goa",
+    keywords: [
+      "anniversary cake Goa",
+      "anniversary cake delivery Goa",
+      "romantic cake Goa",
+      "heart anniversary cake",
+      "peach cream anniversary cake",
+      "eggless anniversary cake Goa",
+      "custom anniversary cake Muskan",
+      "anniversary cake price Goa",
+    ],
+    relatedSlugs: [
+      "engagement-cake-goa-proposal-guide",
+      "chocolate-cake-goa-ultimate-guide",
+      "book-custom-cake-goa-whatsapp",
+    ],
+    heroImage: BLOG_ANNIVERSARY_HERO_IMAGE,
+    heroImageAlt:
+      "Anniversary cake Goa — romantic celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/anniversary-cake",
+    heroGalleryLabel: "Anniversary cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `An **anniversary cake Goa** order is rarely about sugar alone — it is about saying "I still choose you" in front of family, on a hotel terrace, or at home after the kids sleep. At [${site.name}](/about), Muskan designs anniversary cakes from quiet heart tins for two to golden tiers for fifty guests. This guide covers styles, flavours, sizing, secrecy, and delivery so your celebration feels personal — not copied from a template board.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **anniversary cake Goa**? Send years celebrated, guest count, venue town, eggless yes/no, and one gallery photo you love — Muskan replies with size, flavour, and delivery before payment.",
+      },
+      {
+        type: "h2",
+        text: "Anniversary styles Muskan bakes most often",
+        id: "styles",
+      },
+      {
+        type: "ul",
+        items: [
+          "**[Anniversary Cake](/creations/anniversary-cake)** — classic romantic buttercream, roses, gold accents, works for 10–30 guests.",
+          "**[Peach cream anniversary](/creations/anniversary-peach-cream-cake)** — blush palette, soft florals; same family as our [engagement case study](/case-studies/engagement-peach-cream-cake-goa-case-study).",
+          "**[Cream heart anniversary](/creations/cream-heart-anniversery-cake)** — intimate dinners, 6–8 servings.",
+          "**[Image anniversary cake](/creations/image-anniversary-cake)** — edible photo of the couple on top — see our [heart anniversary case study](/case-studies/anniversary-heart-cake-goa-case-study).",
+          "**[Chocolate tin anniversary](/creations/chocolate-tin-anniversary-cake)** — surprise format for two at home.",
+          "**[Special anniversary](/creations/special-anniversary-cake)** — milestone years with elevated finishing.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Match the cake to the year — and the room",
+        id: "years",
+      },
+      {
+        type: "p",
+        text: "First anniversaries often want hearts and initials. Ten-year marks lean classic gold. Twenty-five and fifty need height without looking like a wedding repeat — Muskan separates **anniversary cake Goa** palettes from [wedding cakes](/wedding-cakes-goa) so photos do not feel like the wrong event. If you are also planning haldi or engagement soon, read our [engagement journal](/blog/engagement-cake-goa-proposal-guide) so colours stay coordinated.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**1st–3rd year:** bento tin, heart tier, or 6-inch round — serves 4–8.",
+          "**5th–10th year:** 8-inch with roses, gold dust, short message in English or Devanagari.",
+          "**25th / 50th:** two-tier buttercream or [golden cream](/creations/golden-cream-cake) inspiration — book 2+ weeks.",
+          "**Villa dinner for two:** [peach cream](/creations/anniversary-peach-cream-cake) or [chocolate heart](/creations/chocolate-heart-birthday-cake) scaled down.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Flavours couples reorder in Goa",
+        id: "flavours",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Peach cream + vanilla-cardamom** — camera-friendly, pairs with Indian sweets on the side.",
+          "**Belgian chocolate** — see our [chocolate cake guide](/blog/chocolate-cake-goa-ultimate-guide).",
+          "**Rasmalai-inspired sponge** — for families who want mithai soul in cake form — [rasmalai journal](/blog/rasmalai-cake-goa-guide).",
+          "**Eggless sponges** — flag on line one; common for mixed-family lunches.",
+          "**Mango Alphonso (seasonal)** — very Goa for summer anniversaries.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Surprise dinners vs family lunches",
+        id: "surprise",
+      },
+      {
+        type: "p",
+        text: "Surprise orders need a friend's WhatsApp, restaurant fridge coordination, or villa host contact — same playbook as [engagement delivery](/blog/engagement-cake-goa-proposal-guide). Family lunches need portions and eggless notes upfront. Muskan asks for dessert time, not only dinner start, so buttercream is not sitting in a hot car.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Delivery",
+        text: `Anniversary cakes leave our [${site.studioCity} studio](/locations/velim) in upright chilled boxes. [Panaji](/locations/panaji), [Margao](/locations/margao), [Candolim](/locations/candolim), and resort venues follow the same [wedding delivery heat rules](/blog/wedding-cake-delivery-goa-checklist).`,
+      },
+      {
+        type: "h2",
+        text: "How to book on WhatsApp",
+        id: "book",
+      },
+      {
+        type: "p",
+        text: `Message ${site.phone} with date, years celebrated, guest count, town, eggless needs, and a [/creations](/creations) link. Full steps: [book custom cake Goa](/blog/book-custom-cake-goa-whatsapp). Browse [/anniversary-cakes-goa](/anniversary-cakes-goa) for occasion picks.`,
+      },
+      {
+        type: "related",
+        title: "Plan your anniversary",
+        items: [
+          { href: "/anniversary-cakes-goa", label: "Anniversary cakes Goa", description: "Occasion hub & gallery picks" },
+          { href: "/creations/anniversary-peach-cream-cake", label: "Peach cream cake", description: "Romantic reference photo" },
+          { href: "/case-studies/anniversary-heart-cake-goa-case-study", label: "Heart case study", description: "Real couple brief" },
+          { href: "/contact", label: "Contact Muskan", description: "WhatsApp template" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Your years together deserve a cake that feels written for you — not printed for everyone. Send your date and town to ${site.phone}; Muskan will help you choose an **anniversary cake Goa** worth photographing before the first slice.`,
+      },
+    ],
+  },
+  {
+    slug: "rasmalai-cake-goa-guide",
+    title: "Rasmalai cake in Goa — Indian dessert flavours, soaking logic & why families book it twice",
+    excerpt:
+      "Cardamom sponge, saffron milk soak, pistachio finish — the honest rasmalai cake Goa guide: eggless options, wedding and birthday sizing, heat tips, gallery links, and how Muskan balances mithai nostalgia with buttercream that travels.",
+    publishedAt: "2026-07-16",
+    readMinutes: 12,
+    focusKeyword: "rasmalai cake Goa",
+    keywords: [
+      "rasmalai cake Goa",
+      "Indian fusion cake Goa",
+      "mithai cake Goa",
+      "eggless rasmalai cake",
+      "rasmalai birthday cake",
+      "custom rasmalai cake Muskan",
+      "rasmalai cake delivery Goa",
+      "Sweet Bites rasmalai",
+    ],
+    relatedSlugs: [
+      "eggless-birthday-cake-goa-flavours",
+      "haldi-cake-goa-tradition-guide",
+      "ready-made-cakes-goa-menu-guide",
+    ],
+    heroImage: BLOG_RASMALAI_HERO_IMAGE,
+    heroImageAlt:
+      "Rasmalai cake Goa — Indian fusion celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/rasmalai-cake",
+    heroGalleryLabel: "Rasmalai cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **rasmalai cake Goa** order usually starts with nostalgia — "like the sweet shop, but for a birthday." At [${site.name}](/about), Muskan builds rasmalai-inspired layers: cardamom sponge, milk soak, light cream, pistachio and saffron accents. It is not a slab of mithai on sponge; it is engineered to slice cleanly, survive Goan warmth better than heavy ganache, and photograph gold-white on Indian celebration tables. This guide explains both gallery styles — [Rasmalai Cake](/creations/rasmalai-cake) and [Rasmalai Special](/creations/rasmalai-special-cake) — and how to order without over-soaking or under-flavouring.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Rasmalai cake Goa** searches spike around birthdays, haldi, and family milestones. Tell Muskan guest count, eggless needs, and whether you want light soak or richer mithai intensity.",
+      },
+      {
+        type: "h2",
+        text: "Two rasmalai cakes in the gallery — which to pick",
+        id: "which-style",
+      },
+      {
+        type: "ul",
+        items: [
+          "**[Rasmalai Cake](/creations/rasmalai-cake)** — elegant white-gold finish, balanced soak, great for adults who want familiar flavour without heaviness.",
+          "**[Rasmalai Special Cake](/creations/rasmalai-special-cake)** — more decorative finishing, popular for milestones — see our [rasmalai case study](/case-studies/rasmalai-cake-goa-case-study) for structure notes.",
+          "**[Rabdi dream cake](/creations/rabdi-dream-cake)** — cousin flavour family if you want thicker milk notes — [rabdi case study](/case-studies/rabdi-dream-cake-goa-case-study).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What makes rasmalai cake different from vanilla sponge",
+        id: "difference",
+      },
+      {
+        type: "p",
+        text: "Standard birthday sponge is neutral; **rasmalai cake Goa** layers carry cardamom, reduced milk soak, and sometimes saffron thread on top. Muskan controls soak volume per tier so the base does not collapse — the failure mode at bakeries that pour syrup like a home experiment. Eggless sponges work well here because cardamom and milk carry flavour when eggs are absent; read our [eggless flavours guide](/blog/eggless-birthday-cake-goa-flavours).",
+      },
+      {
+        type: "h2",
+        text: "Best occasions for rasmalai cake",
+        id: "occasions",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Parents' birthdays** — familiar taste across generations.",
+          "**Haldi & pre-wedding lunches** — pairs with yellow decor; see [haldi cake guide](/blog/haldi-cake-goa-tradition-guide).",
+          "**Office milestones** — slices cleanly; less messy than chocolate drip in AC halls.",
+          "**Kids parties with Indian menu** — often eggless; moderate sweetness vs character cakes.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Heat, travel, and serving time",
+        id: "heat",
+      },
+      {
+        type: "p",
+        text: "Milk-soaked sponges need fridge time before display, then shade or AC for outdoor venues. Muskan schedules delivery closer to dessert than to dinner start — same discipline as [wedding cake delivery](/blog/wedding-cake-delivery-goa-checklist). For [Margao](/locations/margao) and [Panaji](/locations/panaji) home parties, a kitchen fridge photo before delivery prevents surprises.",
+      },
+      {
+        type: "h2",
+        text: "Menu board vs fully custom rasmalai",
+        id: "menu-vs-custom",
+      },
+      {
+        type: "p",
+        text: "Our [cakes menu](/cakes-menu) may list mithai-adjacent flavours on faster timelines. Gallery **[Rasmalai Special](/creations/rasmalai-special-cake)** designs need custom lead time — usually ${site.bookAheadDays} minimum, longer during wedding season. The [ready-made menu guide](/blog/ready-made-cakes-goa-menu-guide) explains when to pick menu vs gallery reference.",
+      },
+      {
+        type: "h2",
+        text: "WhatsApp brief for rasmalai orders",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Date + guest count + eggless yes/no.",
+          "Link to rasmalai-cake or rasmalai-special-cake gallery photo.",
+          "Indoor/outdoor venue and dessert time.",
+          "Light vs rich soak preference (Muskan will recommend).",
+          "Delivery town or [Velim pickup](/locations/velim).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Explore Indian fusion cakes",
+        items: [
+          { href: "/creations/rasmalai-special-cake", label: "Rasmalai special", description: "Milestone finishing" },
+          { href: "/case-studies/rasmalai-cake-goa-case-study", label: "Rasmalai case study", description: "Soak & structure story" },
+          { href: "/cakes-menu", label: "Cakes menu", description: "Faster flavour picks" },
+          { href: "/order", label: "Book a cake", description: "Lead times & deposits" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Want mithai memory in cake form? Message ${site.phone} with your date and a gallery link — Muskan will quote a **rasmalai cake Goa** your family recognises on the first bite.`,
+      },
+    ],
+  },
+  {
+    slug: "unicorn-cake-goa-order-guide",
+    title: "Unicorn cakes in Goa — rainbow buttercream, horn structure & birthday magic that survives pool parties",
+    excerpt:
+      "Pastel mane, gold horn, sprinkles that photograph — the unicorn cake Goa guide for parents: sizing for 15 kids, cream vs fondant, eggless sponges, delivery to Calangute villas, and WhatsApp briefs Muskan uses for real gallery unicorns.",
+    publishedAt: "2026-07-18",
+    readMinutes: 13,
+    focusKeyword: "unicorn cake Goa",
+    keywords: [
+      "unicorn cake Goa",
+      "unicorn birthday cake Goa",
+      "rainbow unicorn cake",
+      "kids unicorn cake delivery",
+      "pastel birthday cake Goa",
+      "eggless unicorn cake",
+      "custom unicorn cake Muskan",
+      "unicorn cake price Goa",
+    ],
+    relatedSlugs: [
+      "kids-birthday-cake-goa-character-themes",
+      "bento-cake-goa-order-guide",
+      "eggless-birthday-cake-goa-flavours",
+    ],
+    heroImage: BLOG_UNICORN_HERO_IMAGE,
+    heroImageAlt:
+      "Unicorn cake Goa — pastel rainbow kids birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/unicorn-cake",
+    heroGalleryLabel: "Unicorn cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `The **unicorn cake Goa** message usually arrives with a screenshot, a child saying "rainbow," and a party date that feels tomorrow. At [${site.name}](/about), Muskan has baked unicorns for home parties, school celebrations, and poolside birthdays from [Velim](/locations/velim) to [Calangute](/locations/calangute) — buttercream manes, structured horns, edible glitter that survives photos without looking grey in humid air. This guide is for parents who want the magic without the meltdown — sizing, technique, eggless notes, and honest timelines.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **unicorn cake Goa** or **unicorn birthday cake Goa**? Send child's age, guest count, eggless needs, and one gallery photo — Muskan quotes size and delivery before you pay.",
+      },
+      {
+        type: "h2",
+        text: "What our unicorn cake actually includes",
+        id: "what-includes",
+      },
+      {
+        type: "p",
+        text: "Our [Unicorn Cake](/creations/unicorn-cake) gallery design uses pastel rainbow buttercream, a gold-accent horn, lash details, and sprinkle texture kids touch immediately. It is not a licensed character mould — it is Muskan's unicorn silhouette parents reference on WhatsApp. For multi-colour layers inside, pair with [double layered rainbow](/creations/double-layered-rainbow-cake) inspiration or our [rainbow case study](/case-studies/rainbow-cake-goa-case-study).",
+      },
+      {
+        type: "h2",
+        text: "Cream unicorn vs fondant unicorn — what Muskan recommends",
+        id: "cream-vs-fondant",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Buttercream mane (recommended):** softer look, faster drying in Goa, kids eat everything.",
+          "**Fondant horn & ears:** possible for sharp edges; Muskan limits fondant volume outdoors.",
+          "**Printed wafer faces:** fast but flat — we steer parents toward piped eyes for photos.",
+          "**Bento unicorn:** smaller format — see [bento guide](/blog/bento-cake-goa-order-guide) and [bento case study](/case-studies/bento-cake-goa-case-study).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Sizing for kids parties",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**10–12 kids:** 6-inch unicorn + cupcakes optional.",
+          "**15–20 kids:** 8-inch hero cake — most common **unicorn birthday cake Goa** order.",
+          "**25+ kids:** 8-inch unicorn + [menu round](/cakes-menu) backup cake same palette.",
+          "**Twins / joint party:** two small unicorns or one tier split colours — message early.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Eggless, nuts, and sweetness",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: "Many unicorn parties need eggless sponge for classmates. Mention on line one — Muskan adjusts moisture and colour stability. Nut-free classrooms are common; flag restrictions before piping starts. Flavour pairings that work: vanilla, strawberry cream, light chocolate — details in our [eggless birthday guide](/blog/eggless-birthday-cake-goa-flavours).",
+      },
+      {
+        type: "h2",
+        text: "Pool parties, gardens, and Goan heat",
+        id: "heat",
+      },
+      {
+        type: "p",
+        text: "Pastel buttercream softens faster than dark chocolate in sun. Muskan pre-chills, delivers close to cake-cutting, and asks for shaded tables — same rules as [last-minute pool parties](/blog/last-minute-birthday-cake-goa-guide). Avoid setting the unicorn facing direct afternoon glare for photos.",
+      },
+      {
+        type: "h2",
+        text: "Timeline and character alternatives",
+        id: "timeline",
+      },
+      {
+        type: "p",
+        text: `Simple unicorn designs often fit ${site.bookAheadDays}. Extra sugar flowers, double tiers, or matching cupcakes need longer. If your child switches from unicorn to [Spiderman](/case-studies/spiderman-cake-goa-case-study) or [Barbie](/case-studies/barbie-castle-cake-goa-case-study) three days before the party, message immediately — our [kids character guide](/blog/kids-birthday-cake-goa-character-themes) explains what can change on short notice.`,
+      },
+      {
+        type: "h2",
+        text: "WhatsApp message template",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Child's age + party date + time cake is cut.",
+          "Guest count + eggless / nut-free notes.",
+          "Link to [/creations/unicorn-cake](/creations/unicorn-cake).",
+          "Delivery town or pickup — [contact](/contact) for studio map.",
+          "Indoor / pool / garden venue.",
+        ],
+      },
+      {
+        type: "related",
+        title: "Kids celebration picks",
+        items: [
+          { href: "/creations/unicorn-cake", label: "Unicorn gallery", description: "Reference on WhatsApp" },
+          { href: "/case-studies/unicorn-cake-goa-case-study", label: "Unicorn case study", description: "Real party brief" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Character cake guide", description: "Theme planning" },
+          { href: "/order", label: "Book a cake", description: "Lead times" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Ready for the horn photo moment? Message ${site.phone} with date, guest count, and the unicorn gallery link — Muskan will plan a **unicorn cake Goa** your child recognises before the candles go on.`,
       },
     ],
   },
