@@ -50,6 +50,10 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "bento birthday cake Goa",
   "Doraemon cake Goa",
   "Doraemon birthday cake Goa",
+  "photo cake Goa",
+  "edible image cake Goa",
+  "chocolate bar cake Goa",
+  "mermaid cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -2215,6 +2219,352 @@ const studies: CaseStudy[] = [
       {
         type: "p",
         text: `Your child has a favourite character and a birthday coming up. Message ${site.phone} with the character names, age, guest count, and party town — Muskan will reply with technique options, eggless notes, and a quote for your **Doraemon cake Goa** (or whichever hero your child inspects at the table).`,
+      },
+    ],
+  },
+  {
+    slug: "photo-cake-goa-case-study",
+    title: "Case study: Photo cake in Goa — edible print, sharp faces & a 60th birthday that made Dad cry",
+    excerpt:
+      "Blurry prints and peeling sheets ruin photo cakes. How Muskan delivered a photo cake Goa family trusted: high-res file check, eggless sponge, buttercream frame, delivery to a Ponda hall, and a gallery image-cake reference the son sent at midnight.",
+    publishedAt: "2026-07-15",
+    readMinutes: 14,
+    focusKeyword: "photo cake Goa",
+    keywords: [
+      "photo cake Goa",
+      "edible image cake Goa",
+      "picture cake Goa",
+      "custom photo cake Muskan",
+      "anniversary photo cake Goa",
+      "birthday photo cake delivery",
+      "image cake Goa",
+    ],
+    creationSlug: "image-cake",
+    difficulty: "Medium · print quality + humidity control",
+    leadTime: "7 days",
+    celebrationType: "60th birthday · 45 guests · hall",
+    relatedSlugs: [
+      "anniversary-heart-cake-goa-case-study",
+      "golden-cream-cake-goa-case-study",
+      "engagement-peach-cream-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/image-cake/494774540_18058822700170730_1726010468788488612_n..webp",
+    heroImageAlt:
+      "Photo cake Goa — edible image print celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/image-cake",
+    heroGalleryLabel: "View image cake creation",
+    blocks: [
+      {
+        type: "p",
+        text: `A **photo cake Goa** order is emotional before it is technical — a father's portrait at sixty, a couple on their tenth anniversary, a child who wants their dog on buttercream. At [${site.name}](/about), Muskan bakes [Image Cake](/creations/image-cake) designs with edible sheets that stay sharp in humid halls when the file, frame, and fridge timing are right. This case study follows a son in [Ponda](/locations/ponda) who messaged at midnight with a phone photo and needed a cake that would not embarrass him in front of forty-five relatives.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **photo cake Goa** or **edible image cake Goa**? Send the highest-resolution photo you have (original file, not a WhatsApp-forwarded blur) plus date, guest count, and venue type.",
+      },
+      {
+        type: "h2",
+        text: "The brief: one good photo, one chance",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "The client wanted his father's portrait on an 8-inch round — eggless vanilla sponge, chocolate buttercream border, gold ribbon piping. He had a cropped JPEG from Facebook. Muskan asked for the original image from Google Photos or email; the first file was 480px wide and would print fuzzy. The son found a 2400px scan from an old album photo on WhatsApp — acceptable after Muskan checked contrast and face size on screen.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round — serves ~20 generous slices; second tray of [menu cupcakes](/cakes-menu) for extra guests.",
+          "Edible print centred; buttercream frame hides sheet edges.",
+          "Message on board: \"60 & still our hero\" in English.",
+          "Hall in Ponda — AC on, dessert at 9 PM after speeches.",
+          "Delivery 7:45 PM; cake in venue fridge until reveal.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why print quality matters more than decoration",
+        id: "print-quality",
+      },
+      {
+        type: "p",
+        text: "Cheap **picture cake Goa** orders fail when bakeries accept any screenshot. Muskan rejects files that will look pixelated — she would rather delay one day than deliver a face guests cannot recognise. For anniversaries, our [image anniversary cake](/creations/image-anniversary-cake) follows the same file checklist; the [anniversary heart case study](/case-studies/anniversary-heart-cake-goa-case-study) shows a different romantic layout without a full photo top.",
+      },
+      {
+        type: "h3",
+        text: "File checklist Muskan sends on WhatsApp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Original photo — not a screenshot of Instagram.",
+          "Face at least 30% of crop area for portrait cakes.",
+          "Good contrast — very dark photos lose detail on edible ink.",
+          "Tell us if you need eggless sponge for the whole cake.",
+          "Avoid busy backgrounds unless you want them printed too.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Buttercream frame vs bare print edge",
+        id: "frame",
+      },
+      {
+        type: "p",
+        text: "Edible sheets sit on fondant or buttercream. Muskan uses a buttercream border on **photo cake Goa** orders so the sheet edge is not visible in photos — guests see portrait + gold piping, not a white rectangle seam. The frame colour matched the hall's maroon tablecloth; the son sent a table photo on day three of planning.",
+      },
+      {
+        type: "h2",
+        text: "Humidity in a Ponda hall",
+        id: "humidity",
+      },
+      {
+        type: "p",
+        text: "AC halls are kinder than beach terraces but doors still open. Muskan pre-chilled the cake, delivered in a sealed box with ventilation holes, and asked the venue to keep it in the fridge until speeches ended. Same discipline as [wedding tier delivery](/case-studies/wedding-cake-goa-case-study) — dessert time drives handover, not dinner start.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — and the reorder",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "The father cried before cutting; the print stayed sharp in every photo. Two cousins asked for Muskan's number for a [golden cream milestone](/case-studies/golden-cream-cake-goa-case-study) the following month. The son later ordered a smaller [image cake](/creations/image-cake) for his mother's birthday with the same file workflow — second order took half the planning time.",
+      },
+      {
+        type: "related",
+        title: "Photo & milestone cakes",
+        items: [
+          { href: "/creations/image-cake", label: "Image cake gallery", description: "Reference for WhatsApp" },
+          { href: "/blog/anniversary-cake-goa-complete-guide", label: "Anniversary journal", description: "Romantic sizing tips" },
+          { href: "/anniversary-cakes-goa", label: "Anniversary cakes Goa", description: "Occasion hub" },
+          { href: "/contact", label: "Contact Muskan", description: "Send your photo file" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Have a photo that matters? Message ${site.phone} with the original file, date, and guest count — Muskan will tell you honestly if it will print well for your **photo cake Goa** before you pay.`,
+      },
+    ],
+  },
+  {
+    slug: "chocolate-bar-cake-goa-case-study",
+    title: "Case study: Chocolate bar cake in Goa — KitKat walls, teen birthday energy & a pool party that started late",
+    excerpt:
+      "Teens want chocolate bar cake Goa parents can photograph: real bars on buttercream, eggless sponge, delivery to a Calangute villa pool, and a Muskan plan that survived a delayed party without bars sliding off.",
+    publishedAt: "2026-07-17",
+    readMinutes: 13,
+    focusKeyword: "chocolate bar cake Goa",
+    keywords: [
+      "chocolate bar cake Goa",
+      "KitKat cake Goa",
+      "chocolate birthday cake teens",
+      "eggless chocolate bar cake",
+      "custom chocolate cake Muskan",
+      "Sweet Bites chocolate bar",
+    ],
+    creationSlug: "chocolate-bar-cake",
+    difficulty: "Medium · bar adhesion + heat",
+    leadTime: "6 days",
+    celebrationType: "14th birthday · 16 teens · pool villa",
+    relatedSlugs: [
+      "chocolate-sphere-cake-goa-case-study",
+      "ferrero-cake-goa-case-study",
+      "bento-birthday-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/chocolate-bar-cake/626525648_18171346243384251_8089063330969105323_n..webp",
+    heroImageAlt:
+      "Chocolate bar cake Goa — KitKat style birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/chocolate-bar-cake",
+    heroGalleryLabel: "Chocolate bar cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **chocolate bar cake Goa** brief sounds easy — "stick chocolates on a cake" — until humidity softens buttercream and bars slide during a pool party that starts two hours late. Muskan's [Chocolate Bar Cake](/creations/chocolate-bar-cake) for a fourteen-year-old in [Calangute](/locations/calangute) used chilled ganache bands, bar weight planning, and delivery timed to the real cake-cutting moment, not the invitation time.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Chocolate bar cake Goa** orders need guest count, bar brands you want (KitKat, Dairy Milk, Oreo), eggless yes/no, and whether the party is poolside — Muskan adjusts adhesion and chill time.",
+      },
+      {
+        type: "h2",
+        text: "The brief: teen boy, chocolate everything",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother messaged with our gallery chocolate bar photo and a Pinterest board of drip cakes. Son wanted bars around the sides, chocolate sponge, name in gold, age 14. Party moved from 4 PM to 6 PM the day before — Muskan shifted delivery from 3:30 to 5:45 after confirming villa fridge space.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round + bar wall — serves 16 teens with hungry slices.",
+          "Eggless chocolate sponge — whole cake for classmates.",
+          "KitKat fingers vertical, Dairy Milk squares on top accents.",
+          "Ganache drip limited to back side — less melt facing pool.",
+          "Backup: extra bars in box if one piece shifts during photos.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Structure: why bars slide (and how we prevent it)",
+        id: "structure",
+      },
+      {
+        type: "p",
+        text: "Bars need a firm ring of ganache or chilled buttercream, not soft whipped cream. Muskan chills the cake 45 minutes after bar placement, then transports upright. For **KitKat cake Goa** style walls, she counts bar length around circumference before buying stock — no awkward gaps in photos. See our [chocolate cake journal](/blog/chocolate-cake-goa-ultimate-guide) for sponge options; bars are decoration, not structure.",
+      },
+      {
+        type: "h2",
+        text: "Pool villa heat — delayed party reality",
+        id: "heat",
+      },
+      {
+        type: "p",
+        text: "Pool parties run late; shade moves. Cake stayed in villa kitchen fridge until the boy's friends finished pool photos. Mother sent a fridge photo the morning of delivery — Muskan approved shelf space. Same late-party logic as our [last-minute bento case study](/case-studies/bento-birthday-cake-goa-case-study), different decoration risk.",
+      },
+      {
+        type: "h3",
+        text: "Blue chocolate bar variant",
+      },
+      {
+        type: "p",
+        text: "Families sometimes request colour-themed bars — our [Blue Chocolate Bar Cake](/creations/blue-chocolate-bar-cake) uses the same adhesion method with a different palette. Mention theme colour on line one of WhatsApp.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Bars stayed in place through cutting; teens filmed the drip slice for Instagram. Mother rebooked a [Ferrero](/case-studies/ferrero-cake-goa-case-study) cake for Diwali — less bar weight, same kitchen. Want a bar cake? Message ${site.phone} with date, guest count, and bar preferences.",
+      },
+      {
+        type: "related",
+        title: "Chocolate celebrations",
+        items: [
+          { href: "/creations/chocolate-bar-cake", label: "Chocolate bar gallery" },
+          { href: "/blog/chocolate-cake-goa-ultimate-guide", label: "Chocolate journal", description: "13 styles explained" },
+          { href: "/creations/blue-chocolate-bar-cake", label: "Blue bar cake", description: "Colour-themed variant" },
+          { href: "/order", label: "Book a cake", description: "Lead times" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "mermaid-cake-goa-case-study",
+    title: "Case study: Mermaid cake in Goa — scales, teal ombré & a 5-year-old who only cared about the tail",
+    excerpt:
+      "Mermaid cake Goa orders need scale texture that photographs, buttercream that survives garden shade, and a tail detail kids touch first. Muskan's marmaid-cake design for a Mapusa garden party — eggless vanilla, ombré fins, and delivery past a monsoon shower.",
+    publishedAt: "2026-07-20",
+    readMinutes: 14,
+    focusKeyword: "mermaid cake Goa",
+    keywords: [
+      "mermaid cake Goa",
+      "mermaid birthday cake Goa",
+      "under the sea cake Goa",
+      "teal ombre cake Goa",
+      "girls birthday cake Goa",
+      "eggless mermaid cake",
+      "custom mermaid cake Muskan",
+    ],
+    creationSlug: "marmaid-cake",
+    difficulty: "High · ombré scales + tail sculpt on cream",
+    leadTime: "10 days",
+    celebrationType: "5th birthday · 14 kids · garden",
+    relatedSlugs: [
+      "unicorn-cake-goa-case-study",
+      "pink-butterfly-cake-goa-case-study",
+      "cocomelon-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/marmaid-cake/569391549_18077044856170730_1366736127232657831_n..webp",
+    heroImageAlt:
+      "Mermaid cake Goa — teal ombré kids birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/marmaid-cake",
+    heroGalleryLabel: "Mermaid cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `Between unicorn horns and princess castles, the **mermaid cake Goa** niche is its own Pinterest galaxy — scales, shells, teal ombré, and a tail that must survive five-year-old hands. Muskan's [Mermaid Cake](/creations/marmaid-cake) for a [Mapusa](/locations/mapusa) garden party combined piped scale texture, fondant tail accent (limited volume), and eggless vanilla sponge — then delivered through a short monsoon shower without smearing the ombré.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Mermaid birthday cake Goa** parents should send child's age, guest count, indoor vs garden, and whether they want tail on top or side — Muskan quotes structure and chill time together.",
+      },
+      {
+        type: "h2",
+        text: "The brief: under-the-sea, not under-the-tarp",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother wanted teal-to-purple ombré, scale piping, pearl dots, and a mermaid tail on top. Daughter rejected unicorns that week — mermaid only. Garden in Mapusa, 14 kids, eggless for two classmates, party 4 PM in August humidity. Muskan asked for a shaded table photo; mother moved table under a gazebo after seeing the forecast.",
+      },
+      {
+        type: "ul",
+        items: [
+          "7-inch tall illusion — two layers, scale texture on sides.",
+          "Eggless vanilla sponge + strawberry cream filling (light pink inside).",
+          "Fondant tail accent on top; scales piped in buttercream.",
+          "Shell and pearl sugar details — edible, no plastic picks.",
+          "Matching six cupcakes for younger cousins — same palette.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Scale texture without fondant covering the whole cake",
+        id: "scales",
+      },
+      {
+        type: "p",
+        text: "Full fondant mermaids look sharp but kids peel them. Muskan piped scale arcs with a small petal tip in three teal shades — ombré on the cake, not in a mixing bowl only. The technique matches our [unicorn case study](/case-studies/unicorn-cake-goa-case-study) buttercream-first philosophy: most of what guests eat is cream and sponge, not modelling paste.",
+      },
+      {
+        type: "h2",
+        text: "Garden shade, monsoon buffer, and fridge timing",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Delivery left [Velim](/locations/velim) at 3:20 PM through light rain — box sealed, cake upright. Driver handed to mother at door; cake went straight to kitchen fridge until 3:55 PM. Gazebo table, fan away from cake. Muskan's [pink butterfly case study](/case-studies/pink-butterfly-cake-goa-case-study) used similar garden rules; mermaid ombré is more sensitive to water droplets on exposed top.",
+      },
+      {
+        type: "h2",
+        text: "Unicorn vs mermaid — when parents hesitate",
+        id: "unicorn-vs-mermaid",
+      },
+      {
+        type: "p",
+        text: "Same age group, same party size — different hero. Read our [unicorn cake journal](/blog/unicorn-cake-goa-order-guide) and [kids character guide](/blog/kids-birthday-cake-goa-character-themes). Muskan can sketch both palettes on WhatsApp from gallery links before you commit.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — tail touched first",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "The birthday girl touched the tail before candles — mother laughed, photos still looked styled. Two school parents ordered [Cocomelon](/case-studies/cocomelon-cake-goa-case-study) and a smaller [bento mermaid](/creations/bento-cake) follow-up. Want a mermaid? Message ${site.phone} with date, garden/indoor, and gallery link.",
+      },
+      {
+        type: "related",
+        title: "Girls birthday themes",
+        items: [
+          { href: "/creations/marmaid-cake", label: "Mermaid gallery", description: "Teal ombré reference" },
+          { href: "/blog/unicorn-cake-goa-order-guide", label: "Unicorn journal", description: "Compare themes" },
+          { href: "/case-studies/pink-butterfly-cake-goa-case-study", label: "Butterfly case study", description: "Garden party notes" },
+          { href: "/contact", label: "Contact Muskan", description: "WhatsApp template" },
+        ],
       },
     ],
   },
