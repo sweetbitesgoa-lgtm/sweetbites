@@ -30,6 +30,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "anniversary cake Goa",
   "rasmalai cake Goa",
   "unicorn cake Goa",
+  "photo cake Goa",
+  "edible image cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -171,6 +173,9 @@ export const BLOG_RASMALAI_HERO_IMAGE =
 
 export const BLOG_UNICORN_HERO_IMAGE =
   "/images/unicorn-cake/572183692_18077522492170730_392051892465413783_n. - Copy - Copy.webp";
+
+export const BLOG_PHOTO_HERO_IMAGE =
+  "/images/image-cake/494774540_18058822700170730_1726010468788488612_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -1852,6 +1857,175 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Ready for the horn photo moment? Message ${site.phone} with date, guest count, and the unicorn gallery link — Muskan will plan a **unicorn cake Goa** your child recognises before the candles go on.`,
+      },
+    ],
+  },
+  {
+    slug: "photo-cake-goa-order-guide",
+    title: "Photo cakes in Goa — edible prints that stay sharp, file tips & when Muskan says no",
+    excerpt:
+      "Dad's portrait, your wedding still, a pet who passed — the honest photo cake Goa guide: resolution rules, eggless sponges, anniversary vs birthday sizing, hall humidity, and how to order on WhatsApp without a blurry disaster on the table.",
+    publishedAt: "2026-07-22",
+    readMinutes: 12,
+    focusKeyword: "photo cake Goa",
+    keywords: [
+      "photo cake Goa",
+      "edible image cake Goa",
+      "picture cake Goa",
+      "custom photo cake Muskan",
+      "photo cake delivery Goa",
+      "anniversary photo cake",
+      "birthday photo cake Goa",
+      "image cake order WhatsApp",
+    ],
+    relatedSlugs: [
+      "anniversary-cake-goa-complete-guide",
+      "book-custom-cake-goa-whatsapp",
+      "eggless-birthday-cake-goa-flavours",
+    ],
+    heroImage: BLOG_PHOTO_HERO_IMAGE,
+    heroImageAlt:
+      "Photo cake Goa — edible image print cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/image-cake",
+    heroGalleryLabel: "Image cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **photo cake Goa** order is personal before it is pretty. Muskan at [${site.name}](/about) has printed fathers turning sixty, couples on decade anniversaries, and children holding their first puppy — on [Image Cake](/creations/image-cake) and [Image Anniversary Cake](/creations/image-anniversary-cake) designs where the face still looks like the person when the room goes quiet. This guide explains what makes edible prints work in Goan humidity, which photos fail (and why), and how to message so your quote is accurate the first time.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **photo cake Goa** or **edible image cake Goa**? Send the original photo file (not a forwarded WhatsApp blur), date, guest count, eggless yes/no, and indoor vs outdoor venue.",
+      },
+      {
+        type: "h2",
+        text: "Photo cake vs character cake — know the difference",
+        id: "photo-vs-character",
+      },
+      {
+        type: "p",
+        text: "Character cakes use piped or moulded designs — see our [kids character guide](/blog/kids-birthday-cake-goa-character-themes). **Picture cake Goa** orders use edible ink on a thin sheet placed on buttercream or fondant. Your real photo is the design. Muskan checks every file before accepting payment; she would rather say \"send a better photo\" than deliver a pixelated face.",
+      },
+      {
+        type: "h2",
+        text: "File rules that decide print quality",
+        id: "file-rules",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Send the original** — from camera roll, Google Photos download, or email attachment.",
+          "**Avoid Instagram screenshots** — compression destroys faces at cake size.",
+          "**Portrait crops:** face should fill roughly one-third of the frame for 8-inch rounds.",
+          "**Contrast matters** — very dark photos lose cheek detail on edible ink.",
+          "**Rights & respect:** only send photos you own or have permission to print.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Our [photo cake case study](/case-studies/photo-cake-goa-case-study) walks through a 60th birthday in [Ponda](/locations/ponda) where the son first sent a 480px Facebook crop — Muskan waited for a 2400px scan before baking.",
+      },
+      {
+        type: "h2",
+        text: "Birthday photo cakes vs anniversary photo cakes",
+        id: "occasions",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Milestone birthdays (40, 50, 60):** 8-inch round, buttercream border, short message on board — see [image cake](/creations/image-cake).",
+          "**Anniversaries:** romantic frame, gold accents, peach or cream palette — [image anniversary](/creations/image-anniversary-cake) or [anniversary journal](/blog/anniversary-cake-goa-complete-guide).",
+          "**Couples at home:** smaller [cream heart](/creations/cream-heart-cake) with photo topper option — ask Muskan.",
+          "**Kids with pet photos:** eggless common; simpler borders survive little hands.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Eggless, flavour, and what guests actually eat",
+        id: "flavour",
+      },
+      {
+        type: "p",
+        text: "The edible sheet is thin; flavour comes from sponge and buttercream beneath. Eggless vanilla and chocolate are the most requested for **photo cake Goa** family lunches. Muskan matches sweetness to mixed-age tables — details in our [eggless birthday guide](/blog/eggless-birthday-cake-goa-flavours). The print itself is not egg-based; always mention eggless sponge separately.",
+      },
+      {
+        type: "h2",
+        text: "Buttercream frame — hiding the sheet edge",
+        id: "frame",
+      },
+      {
+        type: "p",
+        text: "Bare print edges photograph badly. Muskan pipes a buttercream border in your tablecloth or decor colours so guests see portrait + finishing, not a white rectangle seam. For anniversaries, gold ribbon piping is common; for birthdays, name and age on the board.",
+      },
+      {
+        type: "h2",
+        text: "Heat, halls, and fridge timing",
+        id: "heat",
+      },
+      {
+        type: "p",
+        text: "Edible ink softens in humidity if the cake sits out during long speeches. AC halls in [Margao](/locations/margao), [Panaji](/locations/panaji), and [Mapusa](/locations/mapusa) still need fridge time until dessert. Muskan delivers closer to cutting than to dinner start — same logic as [wedding cake delivery](/blog/wedding-cake-delivery-goa-checklist). Beach terraces need shade; she will say if a photo cake is the wrong format outdoors.",
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "When Muskan suggests a different design",
+        text: "If your only file is too small, Muskan may offer piped initials, a [golden cream](/creations/golden-cream-cake) milestone cake, or waiting one day while you source a better scan — honesty beats a blurry tribute.",
+      },
+      {
+        type: "h2",
+        text: "Sizing and backup portions",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**6-inch:** intimate dinner, 6–8 slices.",
+          "**8-inch:** most photo cakes — 14–18 slices.",
+          "**10-inch or tier:** large family events — book 2+ weeks.",
+          "**Cupcakes with mini prints:** office parties — ask availability.",
+          "**Extra menu cake:** when guest count exceeds photo cake slices — [cakes menu](/cakes-menu).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Pricing — what moves the quote",
+        id: "pricing",
+      },
+      {
+        type: "p",
+        text: "Print setup, size, buttercream frame complexity, eggless sponge, and delivery distance each line-item on WhatsApp. Photo cakes are not cheaper because they look simple — file prep and print alignment take skill. [/order](/order) shows starting sizes; your quote is personal.",
+      },
+      {
+        type: "h2",
+        text: "WhatsApp brief (copy-friendly)",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Attach original photo file + say occasion (birthday / anniversary).",
+          "Date + dessert time + venue town + indoor/outdoor.",
+          "Guest count + eggless yes/no.",
+          "Link to [image cake](/creations/image-cake) if you love a layout.",
+          "Full booking steps: [custom cake WhatsApp guide](/blog/book-custom-cake-goa-whatsapp).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Photo & milestone cakes",
+        items: [
+          { href: "/case-studies/photo-cake-goa-case-study", label: "Photo cake case study", description: "60th birthday Ponda story" },
+          { href: "/creations/image-anniversary-cake", label: "Image anniversary cake", description: "Romantic photo layout" },
+          { href: "/case-studies/anniversary-heart-cake-goa-case-study", label: "Heart case study", description: "Non-photo romantic option" },
+          { href: "/contact", label: "Contact Muskan", description: "Send your file here" },
+        ],
+      },
+      {
+        type: "p",
+        text: `The photo on the cake should look like someone you love — not a guess. Message ${site.phone} with the best file you have; Muskan will tell you straight if it will print well for your **photo cake Goa** before you pay.`,
       },
     ],
   },
