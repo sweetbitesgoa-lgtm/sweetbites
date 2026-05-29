@@ -54,6 +54,9 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "edible image cake Goa",
   "chocolate bar cake Goa",
   "mermaid cake Goa",
+  "cake bouquet Goa",
+  "cupcake bouquet Goa",
+  "sweet bouquet cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -2564,6 +2567,148 @@ const studies: CaseStudy[] = [
           { href: "/blog/unicorn-cake-goa-order-guide", label: "Unicorn journal", description: "Compare themes" },
           { href: "/case-studies/pink-butterfly-cake-goa-case-study", label: "Butterfly case study", description: "Garden party notes" },
           { href: "/contact", label: "Contact Muskan", description: "WhatsApp template" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "sweet-bouquet-cake-goa-case-study",
+    title: "Case study: Cake bouquet in Goa — cupcake roses, office surprise & a delivery that beat flower shops",
+    excerpt:
+      "He wanted flowers but she is diabetic — Muskan built a sweet bouquet Goa office surprise: buttercream roses on cupcakes, structural wrap, Panaji handoff before lunch, and a cake bouquet that photographed like florals without wilting in AC.",
+    publishedAt: "2026-07-24",
+    readMinutes: 13,
+    focusKeyword: "cake bouquet Goa",
+    keywords: [
+      "cake bouquet Goa",
+      "cupcake bouquet Goa",
+      "sweet bouquet cake Goa",
+      "cupcake bouquet delivery Goa",
+      "birthday bouquet cake Muskan",
+      "alternative to flowers cake Goa",
+      "Sweet Bites bouquet",
+    ],
+    creationSlug: "sweet-bouquet",
+    difficulty: "Medium · structure + transport upright",
+    leadTime: "5 days",
+    celebrationType: "Wife's birthday · office surprise · 12 colleagues",
+    relatedSlugs: [
+      "bento-cake-goa-case-study",
+      "anniversary-heart-cake-goa-case-study",
+      "engagement-peach-cream-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/sweet-bouquet/626555743_18150211366447228_3216976923459080994_n..webp",
+    heroImageAlt:
+      "Cake bouquet Goa — cupcake sweet bouquet by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/sweet-bouquet",
+    heroGalleryLabel: "Sweet bouquet gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **cake bouquet Goa** order is what happens when flowers are beautiful but the person you love does not want sugar from a random shop box — they want thought. Muskan's [Sweet Bouquet](/creations/sweet-bouquet) for a [Panaji](/locations/panaji) office surprise replaced a rose delivery with buttercream roses on cupcakes, wrapped like florals, handed to reception before lunch. No wilting. No vase. Every stem edible.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **cake bouquet Goa** or **cupcake bouquet Goa**? Send occasion, how many people will share, delivery address type (office/home), and whether you need eggless cupcakes.",
+      },
+      {
+        type: "h2",
+        text: "The brief: flowers, but make them cake",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Husband messaged four days before his wife's birthday. She manages a small team; twelve people in the office. Flowers were the default plan until he remembered she prefers small portions and less sugary frosting than supermarket cupcakes. He sent our sweet bouquet gallery photo and asked: \"Can this reach her desk without tipping?\"",
+      },
+      {
+        type: "ul",
+        items: [
+          "12 cupcake \"stems\" in a bouquet wrap — one per colleague plus her.",
+          "Buttercream roses in blush and cream — not neon bakery pink.",
+          "Eggless vanilla sponge on half the cupcakes — flagged for two colleagues.",
+          "Message card: \"Happy birthday — sweeter than Monday meetings.\"",
+          "Delivery 11:45 AM to office reception; surprise before 12:30 lunch.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Structure: why bouquet cakes fail in transit",
+        id: "structure",
+      },
+      {
+        type: "p",
+        text: "A **cupcake bouquet Goa** collapses when cupcakes are only skewered without a base box. Muskan builds an internal support board, wraps stems in food-safe paper, and tapes the cluster inside a tall upright box — same discipline as tier cakes. Each cupcake is chilled before assembly so buttercream roses firm up. The [Sweet Bouquet](/creations/sweet-bouquet) video in our gallery shows the finished height; transport is always upright, never flat.",
+      },
+      {
+        type: "h3",
+        text: "Office handoff without spoiling the surprise",
+      },
+      {
+        type: "p",
+        text: "Muskan asked for reception contact name and a \"hold in pantry\" plan. Driver delivered to security, not the birthday woman's desk — colleague met the box at the gate. Husband coordinated the cue word on WhatsApp. Same secrecy logic as our [engagement peach cream case study](/case-studies/engagement-peach-cream-cake-goa-case-study), smaller format.",
+      },
+      {
+        type: "h2",
+        text: "Flavour choices for shared office portions",
+        id: "flavour",
+      },
+      {
+        type: "p",
+        text: "Office **cake bouquet Goa** orders need flavours coworkers will actually eat. Muskan used eggless vanilla and light chocolate on alternating cupcakes — not heavy red velvet in afternoon heat. For home surprises, mango or [rasmalai-inspired](/blog/rasmalai-cake-goa-guide) notes are popular; offices lean classic.",
+      },
+      {
+        type: "h2",
+        text: "When a bouquet beats a round cake",
+        id: "when-bouquet",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Office with no cutting knife** — everyone grabs a cupcake stem.",
+          "**Smaller guest count (8–15)** — no leftover half cake in the fridge.",
+          "**Flower alternative** — photos look floral; recipient is not stuck with a vase.",
+          "**Add-on to a dinner cake** — pair with a [bento tin](/case-studies/bento-cake-goa-case-study) at home later.",
+          "**Mother's Day / Valentine's** — message Muskan early; March and February book fast.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Delivery in Panaji traffic",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Mid-morning delivery from [Velim](/locations/velim) avoided lunch-hour congestion. Box traveled front-seat upright with non-slip base. Reception sent a pantry photo — AC on, shelf clear. Muskan will not release a bouquet without confirming upright storage; **cupcake bouquet delivery Goa** fails when clients say \"just leave at desk\" in sun.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — colleagues asked for the number",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "The team photo looked like a luxury flower delivery until someone bit a rose. Two colleagues messaged for [anniversary heart](/case-studies/anniversary-heart-cake-goa-case-study) orders the same week. Husband booked a [peach cream dinner cake](/creations/anniversary-peach-cream-cake) for that night — bouquet for office, round cake for home.",
+      },
+      {
+        type: "h2",
+        text: "Order a similar cake bouquet",
+        id: "order",
+      },
+      {
+        type: "p",
+        text: `Send date, delivery town, how many cupcakes, eggless count, and office vs home handoff. Browse [/creations/sweet-bouquet](/creations/sweet-bouquet) or message ${site.phone} — Muskan quotes structure, flavours, and delivery before payment.`,
+      },
+      {
+        type: "related",
+        title: "Surprise celebrations",
+        items: [
+          { href: "/creations/sweet-bouquet", label: "Sweet bouquet gallery", description: "Video & reference photo" },
+          { href: "/blog/anniversary-cake-goa-complete-guide", label: "Anniversary journal", description: "Pair bouquet + dinner cake" },
+          { href: "/blog/bento-cake-goa-order-guide", label: "Bento guide", description: "Small second surprise" },
+          { href: "/contact", label: "Contact Muskan", description: "Office delivery brief" },
         ],
       },
     ],
