@@ -57,6 +57,10 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "cake bouquet Goa",
   "cupcake bouquet Goa",
   "sweet bouquet cake Goa",
+  "flamingo cake Goa",
+  "Boss Baby cake Goa",
+  "car birthday cake Goa",
+  "minicar cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -2709,6 +2713,333 @@ const studies: CaseStudy[] = [
           { href: "/blog/anniversary-cake-goa-complete-guide", label: "Anniversary journal", description: "Pair bouquet + dinner cake" },
           { href: "/blog/bento-cake-goa-order-guide", label: "Bento guide", description: "Small second surprise" },
           { href: "/contact", label: "Contact Muskan", description: "Office delivery brief" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "flamingo-cake-goa-case-study",
+    title: "Case study: Flamingo cake in Goa — tropical pink, pool party & buttercream that survived splash zone",
+    excerpt:
+      "Flamingo pool float on Pinterest, real party by the water in Candolim — Muskan built a flamingo cake Goa with piped pink feathers, gold accents, eggless sponge, and delivery timed after the kids left the splash zone.",
+    publishedAt: "2026-08-02",
+    readMinutes: 13,
+    focusKeyword: "flamingo cake Goa",
+    keywords: [
+      "flamingo cake Goa",
+      "flamingo birthday cake Goa",
+      "tropical birthday cake Goa",
+      "pool party cake Candolim",
+      "pink flamingo cake Muskan",
+      "girls birthday cake Goa",
+    ],
+    creationSlug: "flamingo-cake",
+    difficulty: "Medium · tropical palette + outdoor timing",
+    leadTime: "7 days",
+    celebrationType: "7th birthday · 18 kids · pool villa",
+    relatedSlugs: [
+      "pink-butterfly-cake-goa-case-study",
+      "mermaid-cake-goa-case-study",
+      "unicorn-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/flamingo-cake/655187695_18066879632644223_3948263265025615855_n..jpg",
+    heroImageAlt:
+      "Flamingo cake Goa — tropical pink birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/flamingo-cake",
+    heroGalleryLabel: "Flamingo cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **flamingo cake Goa** brief usually arrives with pool floats and pink sunglasses — the cake has to match the vibe without melting beside a splash zone. Muskan's [Flamingo Cake](/creations/flamingo-cake) for a [Candolim](/locations/candolim) villa party used piped feather texture, gold beak accents, and eggless vanilla sponge — delivered after swim time, displayed under gazebo shade. The gallery video shows the finished height; this case study explains the timing that made it work.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **flamingo birthday cake Goa**? Send pool vs indoor, guest count, eggless needs, and cake-cutting time separate from swim start.",
+      },
+      {
+        type: "h2",
+        text: "The brief: tropical theme, zero fondant peel",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother wanted flamingo pink, gold details, name and age 7 — no fondant characters kids would peel. Eighteen kids, eggless for three classmates, party at rented villa with pool. She linked our flamingo gallery and a photo of pink tableware.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round — serves 18 kids with modest slices.",
+          "Piped feather arcs in three pinks + gold dust on beak accent.",
+          "Eggless vanilla sponge + strawberry cream filling.",
+          "Cake reveal 4:30 PM — pool session ends 4 PM sharp.",
+          "Gazebo table, fan pointed away from cake stand.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Flamingo vs butterfly vs mermaid — picking the pink theme",
+        id: "theme-choice",
+      },
+      {
+        type: "p",
+        text: "Same age, same palette family — different hero. [Pink butterfly](/case-studies/pink-butterfly-cake-goa-case-study) suits gardens; [mermaid](/case-studies/mermaid-cake-goa-case-study) suits teal ombré; **flamingo cake Goa** fits pool and tropical briefs. Muskan sends palette swatches on WhatsApp when parents hesitate between three Pinterest boards.",
+      },
+      {
+        type: "h2",
+        text: "Pool party timing — the part bakeries skip",
+        id: "timing",
+      },
+      {
+        type: "p",
+        text: "Chlorine splash and afternoon sun destroy buttercream faster than hall AC. Muskan refused delivery at 2 PM when kids were still in the pool — cake would sit wilting for two hours. Driver arrived 4:15 PM; cake stayed in kitchen fridge until 4:25 PM. Same late-handover logic as [last-minute bento pool party](/case-studies/bento-birthday-cake-goa-case-study).",
+      },
+      {
+        type: "h2",
+        text: "Structure and colour under Goan light",
+        id: "colour",
+      },
+      {
+        type: "p",
+        text: "Phone cameras wash pastels outdoors. Muskan deepened pink one shade versus screen swatch so **flamingo birthday cake Goa** photos still read pink, not white. Gold beak accent used sparingly — fingerprints show on humid afternoons.",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Candles lit at 4:35 PM; pool towels still damp in background — photos looked styled anyway. Aunt booked a [unicorn](/case-studies/unicorn-cake-goa-case-study) for September. Want flamingo? Message ${site.phone} with pool/indoor and cutting time.",
+      },
+      {
+        type: "related",
+        title: "Tropical girls birthdays",
+        items: [
+          { href: "/creations/flamingo-cake", label: "Flamingo gallery", description: "Video reference" },
+          { href: "/case-studies/pink-butterfly-cake-goa-case-study", label: "Butterfly case study", description: "Garden pink theme" },
+          { href: "/blog/unicorn-cake-goa-order-guide", label: "Unicorn journal", description: "Compare themes" },
+          { href: "/contact", label: "Contact Muskan", description: "Pool party brief" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "boss-baby-cake-goa-case-study",
+    title: "Case study: Boss Baby cake in Goa — suit piping, briefcase detail & a first birthday that meant business",
+    excerpt:
+      "Corporate joke theme for a one-year-old — Muskan delivered a Boss Baby cake Goa with cream suit piping, tiny tie, eggless sponge for family lunch in Vasco, and a design cute enough for photos without licensing headaches.",
+    publishedAt: "2026-08-04",
+    readMinutes: 12,
+    focusKeyword: "Boss Baby cake Goa",
+    keywords: [
+      "Boss Baby cake Goa",
+      "Boss Baby birthday cake",
+      "first birthday cake Goa",
+      "character cake Vasco",
+      "cream character cake Muskan",
+      "kids theme cake Goa",
+    ],
+    creationSlug: "boss-baby-cake",
+    difficulty: "Medium · character likeness in cream",
+    leadTime: "8 days",
+    celebrationType: "1st birthday · 25 family · home lunch",
+    relatedSlugs: [
+      "doraemon-family-cake-goa-case-study",
+      "cocomelon-cake-goa-case-study",
+      "barbie-castle-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/boss-baby-cake/496302600_18059405171170730_3121435538125923088_n..webp",
+    heroImageAlt:
+      "Boss Baby cake Goa — character first birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/boss-baby-cake",
+    heroGalleryLabel: "Boss Baby gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **Boss Baby cake Goa** order is half joke, half milestone — Dad wears a suit sticker; baby turns one; the cake needs a tie and attitude. Muskan's [Boss Baby Cake](/creations/boss-baby-cake) for a [Vasco](/locations/vasco) family lunch used buttercream suit piping and a cream face silhouette — not licensed moulds, not wafer print — so the design photographs clearly and stays fully edible.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Boss Baby birthday cake** parents should send gallery link, age, guest count, eggless yes/no, and whether grandparents prefer less saturated colours.",
+      },
+      {
+        type: "h2",
+        text: "The brief: \"he already runs the house\"",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Parents messaged with our Boss Baby gallery photo and a theme: white shirt, blue tie, briefcase motif on board. First birthday — mostly adults eating, baby smashes a cupcake separately. Eggless sponge for Jain relatives; 25 slices needed.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round hero + 6 smash cupcakes matching palette.",
+          "Cream-piped suit + tie; face kept simple for first birthday photos.",
+          "Eggless vanilla sponge + light chocolate buttercream.",
+          "Message: \"CEO of Cuteness — Year 1\" on board.",
+          "Home delivery [Vasco](/locations/vasco) — ground floor, no stairs drama.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Character cakes without fondant armour",
+        id: "technique",
+      },
+      {
+        type: "p",
+        text: "Licensed character cakes often mean fondant slabs kids discard. Muskan piped the **Boss Baby cake Goa** look in cream — same philosophy as [Doraemon family piping](/case-studies/doraemon-family-cake-goa-case-study). Parents get recognisable theme; guests eat everything except the board message.",
+      },
+      {
+        type: "h2",
+        text: "First birthday sizing — hero cake vs smash cupcake",
+        id: "sizing",
+      },
+      {
+        type: "p",
+        text: "One-year-olds destroy a cupcake, not a tier. Muskan paired an 8-inch family cake with smash cupcakes so adults had clean slices and baby had a photo moment. [Bento tins](/blog/bento-cake-goa-order-guide) work for smaller guest counts.",
+      },
+      {
+        type: "h2",
+        text: "Delivery and home lunch timing",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Sunday lunch 1 PM; cake delivered 12:30 PM into kitchen fridge. Relatives arrived early — mother sent fridge photo morning-of. No outdoor heat issue; simpler than [Spiderman pool parties](/case-studies/spiderman-cake-goa-case-study).",
+      },
+      {
+        type: "h2",
+        text: "Outcome",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Grandfather posed with cake wearing his real tie. Cousin ordered [Cocomelon](/case-studies/cocomelon-cake-goa-case-study) two months later. Message ${site.phone} with age and gallery link for your **Boss Baby cake Goa** quote.",
+      },
+      {
+        type: "related",
+        title: "Character first birthdays",
+        items: [
+          { href: "/creations/boss-baby-cake", label: "Boss Baby gallery", description: "WhatsApp reference" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Kids cake guide", description: "Theme planning" },
+          { href: "/case-studies/doraemon-family-cake-goa-case-study", label: "Doraemon case study", description: "Cream piping story" },
+          { href: "/order", label: "Book a cake", description: "Lead times" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "minicar-cake-goa-case-study",
+    title: "Case study: Car birthday cake in Goa — minicar cream design, boy turns 6 & a Mapusa lane too narrow for drama",
+    excerpt:
+      "He wanted a race car, not a cartoon — Muskan built a minicar cake Goa with buttercream body lines, eggless chocolate sponge, delivery down a narrow Mapusa lane, and a six-year-old who vroomed before cutting.",
+    publishedAt: "2026-08-06",
+    readMinutes: 13,
+    focusKeyword: "car birthday cake Goa",
+    keywords: [
+      "car birthday cake Goa",
+      "minicar cake Goa",
+      "boys birthday cake Goa",
+      "car theme cake Muskan",
+      "eggless car cake Goa",
+      "custom kids cake Mapusa",
+    ],
+    creationSlug: "minicar-cake",
+    difficulty: "Medium · sculpted cream lines + narrow delivery",
+    leadTime: "6 days",
+    celebrationType: "6th birthday · 12 kids · home party",
+    relatedSlugs: [
+      "football-cake-goa-case-study",
+      "spiderman-cake-goa-case-study",
+      "bento-birthday-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/minicar-cake/622922953_18064333613280185_3167700282500130972_n..jpg",
+    heroImageAlt:
+      "Minicar cake Goa — car birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/minicar-cake",
+    heroGalleryLabel: "Minicar cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `After [football](/case-studies/football-cake-goa-case-study) and [Spiderman](/case-studies/spiderman-cake-goa-case-study), the **car birthday cake Goa** brief is refreshingly simple — wheels, body lines, maybe a number plate with age. Muskan's [Minicar Cake](/creations/minicar-cake) for a six-year-old in [Mapusa](/locations/mapusa) used buttercream sculpting on eggless chocolate sponge, red and black palette, gallery video as WhatsApp reference — delivered down a lane too narrow for parking drama.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **minicar cake Goa** or **car theme birthday cake**? Send child's age, favourite colour, eggless yes/no, and whether delivery is narrow lane / apartment.",
+      },
+      {
+        type: "h2",
+        text: "The brief: real car energy, not cartoon",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Father said no characters — only cars. Son wanted red, black wheels, age 6 on a plate. Twelve kids, home party 5 PM, eggless chocolate inside. Mother sent minicar gallery link and asked if [Minicar Cream Cake](/creations/minicar-cream-cake) or sculpted version — chose sculpted for photos.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch carved illusion — hood and cabin piped in buttercream.",
+          "Eggless chocolate sponge + vanilla cream — kids prefer moist crumb.",
+          "Oreo wheels — stable, edible, photographed well.",
+          "Name on board; age on piped number plate.",
+          "Lane delivery — driver walked final 40 metres upright box in hand.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Minicar vs football vs character — boys theme math",
+        id: "themes",
+      },
+      {
+        type: "p",
+        text: "Sports themes need field green; characters need face accuracy. **Car birthday cake Goa** orders focus on silhouette and colour — faster than five-character [Doraemon](/case-studies/doraemon-family-cake-goa-case-study) piping. Read [kids character guide](/blog/kids-birthday-cake-goa-character-themes) if your child switches themes mid-week.",
+      },
+      {
+        type: "h2",
+        text: "Narrow lane delivery in Mapusa",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Muskan asks for lane photos when GPS pins look tight. Driver parked on main road, walked box upright — non-slip base, pre-chilled cake. Mother met at corner. Same walk-up discipline as [Doraemon Margao stairs](/case-studies/doraemon-family-cake-goa-case-study), flat ground instead of flights.",
+      },
+      {
+        type: "h2",
+        text: "Eggless chocolate for classmates",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: "Half the class eggless — whole cake built eggless to avoid slice confusion. Muskan notes this on invoice and box label. [Eggless flavours guide](/blog/eggless-birthday-cake-goa-flavours) explains why chocolate works well without eggs.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — vroom before knife",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Birthday boy made engine sounds for thirty seconds before cutting — parents got the video. Neighbour booked [bento birthday](/case-studies/bento-birthday-cake-goa-case-study) for a smaller party. Want a car cake? Message ${site.phone} with gallery link and lane delivery notes.",
+      },
+      {
+        type: "related",
+        title: "Boys birthday themes",
+        items: [
+          { href: "/creations/minicar-cake", label: "Minicar gallery", description: "Video reference" },
+          { href: "/creations/minicar-cream-cake", label: "Minicar cream", description: "Simpler variant" },
+          { href: "/case-studies/football-cake-goa-case-study", label: "Football case study", description: "Sports theme story" },
+          { href: "/contact", label: "Contact Muskan", description: "Mapusa delivery brief" },
         ],
       },
     ],

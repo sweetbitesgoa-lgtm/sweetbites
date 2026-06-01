@@ -32,6 +32,9 @@ export const BLOG_INDEX_KEYWORDS = [
   "unicorn cake Goa",
   "photo cake Goa",
   "edible image cake Goa",
+  "cake bouquet Goa",
+  "mermaid cake Goa",
+  "Doraemon cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -176,6 +179,15 @@ export const BLOG_UNICORN_HERO_IMAGE =
 
 export const BLOG_PHOTO_HERO_IMAGE =
   "/images/image-cake/494774540_18058822700170730_1726010468788488612_n..webp";
+
+export const BLOG_BOUQUET_HERO_IMAGE =
+  "/images/sweet-bouquet/626555743_18150211366447228_3216976923459080994_n..webp";
+
+export const BLOG_MERMAID_HERO_IMAGE =
+  "/images/marmaid-cake/569391549_18077044856170730_1366736127232657831_n..webp";
+
+export const BLOG_DORAEMON_HERO_IMAGE =
+  "/images/doremon-family-cake/496857347_18059681900170730_4573398989023979467_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -2026,6 +2038,370 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `The photo on the cake should look like someone you love — not a guess. Message ${site.phone} with the best file you have; Muskan will tell you straight if it will print well for your **photo cake Goa** before you pay.`,
+      },
+    ],
+  },
+  {
+    slug: "cake-bouquet-goa-order-guide",
+    title: "Cake bouquets in Goa — cupcake roses, office surprises & when flowers should be edible",
+    excerpt:
+      "Twelve stems, buttercream roses, upright delivery to Panaji offices — the cake bouquet Goa guide: structure, eggless cupcakes, surprise handoffs, Mother's Day timing, and how Muskan builds sweet bouquets that photograph like florals.",
+    publishedAt: "2026-07-26",
+    readMinutes: 11,
+    focusKeyword: "cake bouquet Goa",
+    keywords: [
+      "cake bouquet Goa",
+      "cupcake bouquet Goa",
+      "sweet bouquet cake Goa",
+      "cupcake bouquet delivery Goa",
+      "birthday bouquet cake",
+      "office surprise cake Goa",
+      "alternative to flowers cake",
+    ],
+    relatedSlugs: [
+      "bento-cake-goa-order-guide",
+      "anniversary-cake-goa-complete-guide",
+      "book-custom-cake-goa-whatsapp",
+    ],
+    heroImage: BLOG_BOUQUET_HERO_IMAGE,
+    heroImageAlt:
+      "Cake bouquet Goa — cupcake sweet bouquet by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/sweet-bouquet",
+    heroGalleryLabel: "Sweet bouquet gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **cake bouquet Goa** order starts when someone says, "Flowers wilt — she prefers cake." Muskan's [Sweet Bouquet](/creations/sweet-bouquet) wraps buttercream roses on cupcakes like a floral delivery — upright box, stem paper, message card — without the vase problem. This guide covers sizing, office surprises, eggless portions, and delivery rules so your **cupcake bouquet Goa** arrives styled, not sideways.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **cake bouquet Goa**? Send how many people will share, delivery address type (office/home), eggless count, and surprise yes/no — Muskan quotes stems, flavours, and handoff before payment.",
+      },
+      {
+        type: "h2",
+        text: "What a sweet bouquet includes",
+        id: "what-includes",
+      },
+      {
+        type: "ul",
+        items: [
+          "Individual cupcakes on secure stems — not loose in a bag.",
+          "Buttercream rose piping in your palette (blush, cream, gold).",
+          "Wrapped bouquet paper + ribbon + optional message tag.",
+          "Tall upright transport box — see our [bouquet case study](/case-studies/sweet-bouquet-cake-goa-case-study).",
+          "Gallery video at [/creations/sweet-bouquet](/creations/sweet-bouquet) for WhatsApp reference.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "When a bouquet beats a round cake",
+        id: "when-bouquet",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Office birthdays (8–15 people)** — no knife, no half cake left in pantry.",
+          "**Flower alternative** — photos look floral; nothing to throw away.",
+          "**Add-on surprise** — bouquet at work, [bento tin](/blog/bento-cake-goa-order-guide) at home.",
+          "**Mother's Day / Valentine's** — book early; March and February fill fast.",
+          "**Anniversary lunch** — pair with a dinner [anniversary cake](/blog/anniversary-cake-goa-complete-guide) later.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Office delivery without spoiling the surprise",
+        id: "office",
+      },
+      {
+        type: "p",
+        text: "Muskan asks for reception or security contact, pantry fridge photo, and a cue word — driver delivers to gate, not the birthday person's desk. Same secrecy as [engagement reveals](/blog/engagement-cake-goa-proposal-guide). **Cupcake bouquet delivery Goa** fails when clients say \"leave in sun at reception.\"",
+      },
+      {
+        type: "h2",
+        text: "Flavours and eggless cupcakes",
+        id: "flavour",
+      },
+      {
+        type: "p",
+        text: "Office bouquets lean eggless vanilla and light chocolate — easy sharing in AC. Home surprises can add mango or strawberry cream. Flag eggless count on line one; see [eggless birthday guide](/blog/eggless-birthday-cake-goa-flavours).",
+      },
+      {
+        type: "h2",
+        text: "How to order on WhatsApp",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Date + delivery town ([Panaji](/locations/panaji), [Margao](/locations/margao), etc.).",
+          "Stem count = people sharing (usually 10–15).",
+          "Office vs home handoff + surprise yes/no.",
+          "Link to [sweet bouquet](/creations/sweet-bouquet) gallery.",
+          "Full steps: [book custom cake](/blog/book-custom-cake-goa-whatsapp).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Surprise celebrations",
+        items: [
+          { href: "/case-studies/sweet-bouquet-cake-goa-case-study", label: "Bouquet case study", description: "Panaji office story" },
+          { href: "/creations/sweet-bouquet", label: "Sweet bouquet gallery", description: "Video reference" },
+          { href: "/contact", label: "Contact Muskan", description: "Office delivery brief" },
+          { href: "/order", label: "Book a cake", description: "Lead times" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Want flowers that get eaten? Message ${site.phone} with date, stem count, and delivery type — Muskan will plan a **cake bouquet Goa** that survives the elevator ride.`,
+      },
+    ],
+  },
+  {
+    slug: "mermaid-cake-goa-order-guide",
+    title: "Mermaid cakes in Goa — teal ombré scales, tail details & garden parties that need shade",
+    excerpt:
+      "Under-the-sea birthdays without melted tails — the mermaid cake Goa guide: scale piping, buttercream vs fondant, eggless sponges, Mapusa garden timing, and WhatsApp briefs for Muskan's marmaid-cake gallery designs.",
+    publishedAt: "2026-07-28",
+    readMinutes: 12,
+    focusKeyword: "mermaid cake Goa",
+    keywords: [
+      "mermaid cake Goa",
+      "mermaid birthday cake Goa",
+      "under the sea cake Goa",
+      "teal ombre cake Goa",
+      "girls birthday cake Goa",
+      "eggless mermaid cake",
+      "custom mermaid cake Muskan",
+    ],
+    relatedSlugs: [
+      "unicorn-cake-goa-order-guide",
+      "kids-birthday-cake-goa-character-themes",
+      "eggless-birthday-cake-goa-flavours",
+    ],
+    heroImage: BLOG_MERMAID_HERO_IMAGE,
+    heroImageAlt:
+      "Mermaid cake Goa — teal ombré kids birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/marmaid-cake",
+    heroGalleryLabel: "Mermaid cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `Between unicorns and princess castles, **mermaid cake Goa** parents want teal ombré, piped scales, pearl dots, and a tail kids touch before candles. Muskan bakes [Mermaid Cake](/creations/marmaid-cake) designs with buttercream-first philosophy — most of what guests eat is cream and sponge, not heavy fondant. This guide covers sizing, garden heat, eggless notes, and how our [mermaid case study](/case-studies/mermaid-cake-goa-case-study) survived a Mapusa shower.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Mermaid birthday cake Goa** orders need child's age, guest count, garden vs indoor, and eggless yes/no — Muskan quotes structure and chill time together.",
+      },
+      {
+        type: "h2",
+        text: "Mermaid vs unicorn — choosing the theme",
+        id: "mermaid-vs-unicorn",
+      },
+      {
+        type: "p",
+        text: "Same age group, different hero. Read our [unicorn journal](/blog/unicorn-cake-goa-order-guide) for horn-and-mane parties. Mermaid palettes run teal, purple, shell pink — better for \"under the sea\" briefs. Muskan can sketch both from gallery links before you commit.",
+      },
+      {
+        type: "h2",
+        text: "Scale texture without covering the whole cake in fondant",
+        id: "scales",
+      },
+      {
+        type: "p",
+        text: "Piped scale arcs in three teal shades create ombré on the sides — petal tip work, not a fondant sheet kids peel off. Limited fondant on the tail accent only. Same approach as [pink butterfly](/case-studies/pink-butterfly-cake-goa-case-study) garden parties: buttercream survives Goa better outdoors.",
+      },
+      {
+        type: "h2",
+        text: "Sizing for kids parties",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**10–14 kids:** 7-inch mermaid hero + matching cupcakes.",
+          "**15–20 kids:** 8-inch cake — most common order.",
+          "**25+:** 8-inch mermaid + [menu round](/cakes-menu) backup same palette.",
+          "**Bento mermaid:** smaller surprise — [bento guide](/blog/bento-cake-goa-order-guide).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Garden shade, rain, and monsoon buffers",
+        id: "heat",
+      },
+      {
+        type: "p",
+        text: "Ombré buttercream smears if rain hits exposed tops. Muskan pre-chills, delivers close to cutting, asks for gazebo or shaded table photos beforehand. Indoor [Margao](/locations/margao) halls are easier; garden parties need fridge until reveal — see [last-minute pool guide](/blog/last-minute-birthday-cake-goa-guide) for timing logic.",
+      },
+      {
+        type: "h2",
+        text: "Eggless and flavour pairings",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: "Eggless vanilla + strawberry cream inside keeps pink mermaid energy without red food colour overload. Classmate allergies: mention on line one. Details in [eggless birthday guide](/blog/eggless-birthday-cake-goa-flavours).",
+      },
+      {
+        type: "h2",
+        text: "WhatsApp brief",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Age + date + cake-cutting time.",
+          "Guest count + eggless / nut-free notes.",
+          "Link to [/creations/marmaid-cake](/creations/marmaid-cake).",
+          "Garden / pool / indoor venue.",
+          "Character backup if child changes mind — [kids guide](/blog/kids-birthday-cake-goa-character-themes).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Girls birthday themes",
+        items: [
+          { href: "/case-studies/mermaid-cake-goa-case-study", label: "Mermaid case study", description: "Mapusa garden story" },
+          { href: "/creations/marmaid-cake", label: "Mermaid gallery", description: "Teal ombré reference" },
+          { href: "/case-studies/unicorn-cake-goa-case-study", label: "Unicorn case study", description: "Compare themes" },
+          { href: "/order", label: "Book a cake", description: "Lead times" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Planning under-the-sea magic? Message ${site.phone} with date, guest count, and the mermaid gallery link — Muskan will quote a **mermaid cake Goa** worth the tail photo before candles.`,
+      },
+    ],
+  },
+  {
+    slug: "doraemon-cake-goa-order-guide",
+    title: "Doraemon cakes in Goa — Nobita, Shizuka, cream piping & the five-character birthday checklist",
+    excerpt:
+      "Your child names every friend on the show — the Doraemon cake Goa guide: single vs family designs, cream vs fondant, eggless sponges, Margao walk-up delivery, and WhatsApp briefs Muskan uses for gallery doremon cakes.",
+    publishedAt: "2026-07-30",
+    readMinutes: 13,
+    focusKeyword: "Doraemon cake Goa",
+    keywords: [
+      "Doraemon cake Goa",
+      "Doraemon birthday cake Goa",
+      "Doraemon family cake Goa",
+      "Nobita cake Goa",
+      "character cake delivery Goa",
+      "cream Doraemon cake Muskan",
+      "cartoon cake Goa kids",
+    ],
+    relatedSlugs: [
+      "kids-birthday-cake-goa-character-themes",
+      "eggless-birthday-cake-goa-flavours",
+      "book-custom-cake-goa-whatsapp",
+    ],
+    heroImage: BLOG_DORAEMON_HERO_IMAGE,
+    heroImageAlt:
+      "Doraemon family cake Goa — five-character cream birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/doremon-family-cake",
+    heroGalleryLabel: "Doraemon family gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **Doraemon cake Goa** message often says "just Doraemon" — then the child adds Nobita, Shizuka, Suneo, and Gian. At [${site.name}](/about), Muskan pipes cartoon faces in buttercream on [Doraemon Family Cake](/creations/doremon-family-cake) and single-hero [Doraemon Cream Cake](/creations/doremon-cream-cake) designs — no stock moulds, no wafer sheets that look flat in real life. This guide covers character count, cream technique, eggless sponges, and delivery — including how our [Doraemon case study](/case-studies/doraemon-family-cake-goa-case-study) passed a four-year-old's face-by-face inspection.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **Doraemon birthday cake Goa**? Send character names, child's age, guest count, cream vs fondant preference, and eggless yes/no.",
+      },
+      {
+        type: "h2",
+        text: "Single Doraemon vs full family",
+        id: "single-vs-family",
+      },
+      {
+        type: "ul",
+        items: [
+          "**[Doraemon Cream Cake](/creations/doremon-cream-cake)** — one hero, faster timeline, smaller parties.",
+          "**[Doraemon Family Cake](/creations/doremon-family-cake)** — five characters, higher piping labour — see [case study](/case-studies/doraemon-family-cake-goa-case-study).",
+          "**Bento Doraemon** — tiny surprise format — [bento guide](/blog/bento-cake-goa-order-guide).",
+          "**Gallery video** on family creation shows scale before you order.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Cream piping vs fondant vs printed faces",
+        id: "technique",
+      },
+      {
+        type: "p",
+        text: "Kids peel fondant; prints look flat. Muskan recommends buttercream piping with separate colour bags per character — Doraemon blue tested under kitchen light before party lighting. Send a **screenshot from the show**, not fan art, so colours match what your child watches on TV.",
+      },
+      {
+        type: "h2",
+        text: "Sizing and eggless classrooms",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**12–16 kids:** 8-inch with 3–5 characters on top/sides.",
+          "**20+ kids:** 8-inch hero + [menu backup](/cakes-menu) or cupcakes.",
+          "**Eggless whole cake** — common; mention on line one.",
+          "**Nut-free** — flag before piping starts.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Flavour pairings: eggless chocolate or vanilla — [eggless guide](/blog/eggless-birthday-cake-goa-flavours). Character cakes need stable sponge more than exotic fillings.",
+      },
+      {
+        type: "h2",
+        text: "Delivery — stairs, heat, and the face-check moment",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Multi-character cakes travel upright, pre-chilled. Apartments without lifts need extra buffer — our case study climbed three flights in [Margao](/locations/margao). Muskan asks for counter or fridge photos; ventilation holes in boxes prevent condensation smearing piped eyes.",
+      },
+      {
+        type: "h2",
+        text: "Timeline vs other character cakes",
+        id: "timeline",
+      },
+      {
+        type: "p",
+        text: `Five-character cream cakes need ${site.bookAheadDays} minimum — longer during school birthday season. Simpler single Doraemon may fit shorter windows. Also available: [Spiderman](/case-studies/spiderman-cake-goa-case-study), [Cocomelon](/case-studies/cocomelon-cake-goa-case-study), [Barbie](/case-studies/barbie-castle-cake-goa-case-study) — [kids character guide](/blog/kids-birthday-cake-goa-character-themes) compares lead times.`,
+      },
+      {
+        type: "h2",
+        text: "WhatsApp template",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Child's age + party date + cutting time.",
+          "Character list (Doraemon only or full gang).",
+          "Guest count + eggless / nut-free.",
+          "Gallery link: [doremon-family-cake](/creations/doremon-family-cake) or [doremon-cream-cake](/creations/doremon-cream-cake).",
+          "Delivery town or [Velim pickup](/locations/velim).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Character celebrations",
+        items: [
+          { href: "/case-studies/doraemon-family-cake-goa-case-study", label: "Doraemon case study", description: "Five-character Margao story" },
+          { href: "/creations/doremon-cream-cake", label: "Doraemon cream cake", description: "Single-character option" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Kids cake guide", description: "Theme planning" },
+          { href: "/contact", label: "Contact Muskan", description: "WhatsApp template" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Your child will check every face at the table. Message ${site.phone} with character names, age, and guest count — Muskan will quote a **Doraemon cake Goa** they recognise before the first bite.`,
       },
     ],
   },
