@@ -35,6 +35,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "cake bouquet Goa",
   "mermaid cake Goa",
   "Doraemon cake Goa",
+  "flamingo cake Goa",
+  "tropical birthday cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -188,6 +190,9 @@ export const BLOG_MERMAID_HERO_IMAGE =
 
 export const BLOG_DORAEMON_HERO_IMAGE =
   "/images/doremon-family-cake/496857347_18059681900170730_4573398989023979467_n..webp";
+
+export const BLOG_FLAMINGO_HERO_IMAGE =
+  "/images/flamingo-cake/655187695_18066879632644223_3948263265025615855_n..jpg";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -2402,6 +2407,149 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Your child will check every face at the table. Message ${site.phone} with character names, age, and guest count — Muskan will quote a **Doraemon cake Goa** they recognise before the first bite.`,
+      },
+    ],
+  },
+  {
+    slug: "flamingo-cake-goa-order-guide",
+    title: "Flamingo cakes in Goa — tropical pink parties, pool timing & buttercream that beats the splash zone",
+    excerpt:
+      "Pool floats on Pinterest, real cake by the water in Candolim — the flamingo cake Goa guide: feather piping, gold accents, eggless sponges, post-swim delivery timing, and WhatsApp briefs Muskan uses for gallery flamingo designs.",
+    publishedAt: "2026-08-08",
+    readMinutes: 12,
+    focusKeyword: "flamingo cake Goa",
+    keywords: [
+      "flamingo cake Goa",
+      "flamingo birthday cake Goa",
+      "tropical birthday cake Goa",
+      "pool party cake Goa",
+      "pink flamingo cake Muskan",
+      "girls birthday cake Candolim",
+      "custom flamingo cake Velim",
+    ],
+    relatedSlugs: [
+      "unicorn-cake-goa-order-guide",
+      "mermaid-cake-goa-order-guide",
+      "kids-birthday-cake-goa-character-themes",
+    ],
+    heroImage: BLOG_FLAMINGO_HERO_IMAGE,
+    heroImageAlt:
+      "Flamingo cake Goa — tropical pink birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/flamingo-cake",
+    heroGalleryLabel: "Flamingo cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **flamingo cake Goa** order usually arrives with inflatable birds and pink sunglasses — the cake must match the vibe without wilting beside a splash zone. At [${site.name}](/about), Muskan pipes feather texture on [Flamingo Cake](/creations/flamingo-cake) designs with buttercream-first finishing — edible, photogenic, and timed for when kids leave the pool. Our [flamingo case study](/case-studies/flamingo-cake-goa-case-study) documents a Candolim villa party; this guide helps you plan yours before WhatsApp.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **flamingo birthday cake Goa**? Send pool vs indoor, guest count, eggless needs, and cake-cutting time — not just party start time.",
+      },
+      {
+        type: "h2",
+        text: "What a flamingo cake includes at Sweet Bites",
+        id: "what-includes",
+      },
+      {
+        type: "ul",
+        items: [
+          "Piped feather arcs in layered pinks — not a flat printed sheet.",
+          "Gold beak accent and optional name/age on board.",
+          "Eggless vanilla or strawberry cream fillings on request.",
+          "Gallery [video](/creations/flamingo-cake) for WhatsApp reference.",
+          "Buttercream body — kids eat everything, no fondant peel pile.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Flamingo vs unicorn vs mermaid vs butterfly",
+        id: "theme-pick",
+      },
+      {
+        type: "p",
+        text: "Same age group, different hero. [Unicorn](/blog/unicorn-cake-goa-order-guide) for rainbow manes; [mermaid](/blog/mermaid-cake-goa-order-guide) for teal ombré; [pink butterfly](/case-studies/pink-butterfly-cake-goa-case-study) for gardens. **Flamingo cake Goa** wins when the brief says pool, tropical, or flamingo props — Muskan can sketch palettes from gallery links before you commit.",
+      },
+      {
+        type: "h2",
+        text: "Pool parties: timing beats decoration",
+        id: "pool-timing",
+      },
+      {
+        type: "p",
+        text: "Chlorine splash and 3 PM sun soften buttercream faster than hall AC. Muskan schedules delivery after swim time — cake in kitchen fridge until reveal under gazebo shade. Never deliver when kids are still in the pool unless venue has reliable AC pantry. Same rules as [last-minute pool parties](/blog/last-minute-birthday-cake-goa-guide) and our Candolim [case study](/case-studies/flamingo-cake-goa-case-study).",
+      },
+      {
+        type: "h2",
+        text: "Sizing for kids birthdays",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**10–14 kids:** 7-inch flamingo hero.",
+          "**15–20 kids:** 8-inch — most common **flamingo birthday cake Goa** order.",
+          "**25+:** 8-inch hero + [menu round](/cakes-menu) or cupcakes same palette.",
+          "**Cupcake cluster:** flamingo toppers — ask availability on shorter timelines.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Colour under Goan sunlight",
+        id: "colour",
+      },
+      {
+        type: "p",
+        text: "Phone cameras wash pastels outdoors. Muskan deepens pink one shade versus your screen swatch so photos still read tropical, not white. Gold accents stay minimal — fingerprints show in humidity.",
+      },
+      {
+        type: "h2",
+        text: "Eggless, nuts, and classroom rules",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: "Flag eggless on line one — common for mixed families and school parties. Nut-free classrooms need a note before piping. Flavour pairings: vanilla, strawberry cream, light chocolate — see [eggless birthday guide](/blog/eggless-birthday-cake-goa-flavours).",
+      },
+      {
+        type: "h2",
+        text: "Delivery across Goa",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: `Cakes leave our [${site.studioCity} kitchen](/locations/velim) upright and pre-chilled. [Candolim](/locations/candolim), [Calangute](/locations/calangute), [Panaji](/locations/panaji), [Margao](/locations/margao), and villa venues need fridge photos before Muskan confirms handover time.`,
+      },
+      {
+        type: "h2",
+        text: "WhatsApp brief",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Child's age + date + cake-cutting time.",
+          "Pool / garden / indoor venue.",
+          "Guest count + eggless / nut-free.",
+          "Link to [/creations/flamingo-cake](/creations/flamingo-cake).",
+          "Booking steps: [custom cake WhatsApp guide](/blog/book-custom-cake-goa-whatsapp).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Tropical celebrations",
+        items: [
+          { href: "/case-studies/flamingo-cake-goa-case-study", label: "Flamingo case study", description: "Candolim pool party story" },
+          { href: "/creations/flamingo-cake", label: "Flamingo gallery", description: "Video reference" },
+          { href: "/blog/mermaid-cake-goa-order-guide", label: "Mermaid journal", description: "Compare pink themes" },
+          { href: "/contact", label: "Contact Muskan", description: "Pool party brief" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Planning a tropical birthday? Message ${site.phone} with date, guest count, and pool vs indoor — Muskan will quote a **flamingo cake Goa** timed for the splash zone, not against it.`,
       },
     ],
   },

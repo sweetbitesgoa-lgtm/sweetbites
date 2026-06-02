@@ -61,6 +61,9 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "Boss Baby cake Goa",
   "car birthday cake Goa",
   "minicar cake Goa",
+  "rakshabandhan cake Goa",
+  "Rakhi cake Goa",
+  "festival cake Muskan",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -3040,6 +3043,134 @@ const studies: CaseStudy[] = [
           { href: "/creations/minicar-cream-cake", label: "Minicar cream", description: "Simpler variant" },
           { href: "/case-studies/football-cake-goa-case-study", label: "Football case study", description: "Sports theme story" },
           { href: "/contact", label: "Contact Muskan", description: "Mapusa delivery brief" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "rakshabandhan-cake-goa-case-study",
+    title: "Case study: Rakshabandhan cake in Goa — rakhri colours, sibling surprise & a Margao lunch before the flight",
+    excerpt:
+      "She tied rakhi at noon and needed dessert by 2 PM — Muskan baked a rakshabandhan cake Goa with marigold buttercream, eggless cardamom sponge, brother's name in Devanagari, and delivery to a Margao home before he flew out that evening.",
+    publishedAt: "2026-08-10",
+    readMinutes: 13,
+    focusKeyword: "rakshabandhan cake Goa",
+    keywords: [
+      "rakshabandhan cake Goa",
+      "Rakhi cake Goa",
+      "rakhi design cake Muskan",
+      "festival cake delivery Goa",
+      "eggless rakhi cake",
+      "Indian festival cake Goa",
+      "Sweet Bites rakshabandhan",
+    ],
+    creationSlug: "rakshabandhan-design-cake",
+    difficulty: "Medium · festival palette + tight same-day window",
+    leadTime: "5 days",
+    celebrationType: "Rakshabandhan · 20 family · home lunch",
+    relatedSlugs: [
+      "haldi-cake-goa-case-study",
+      "rasmalai-cake-goa-case-study",
+      "golden-cream-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/rakshabandhan-design-cake/653985875_18099188872757844_229305606642926062_n..webp",
+    heroImageAlt:
+      "Rakshabandhan cake Goa — festival design cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/rakshabandhan-design-cake",
+    heroGalleryLabel: "Rakshabandhan cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **rakshabandhan cake Goa** order is about timing as much as colour — rakhi tied in the morning, brother's flight at 7 PM, cousins arriving with mithai, and one dessert that photographs before everyone is too full. Muskan's [Rakshabandhan Design Cake](/creations/rakshabandhan-design-cake) for a [Margao](/locations/margao) family used marigold and cream buttercream, eggless cardamom sponge, and a simple rakhri-thread motif piped on top — festive without looking like a wedding cake.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **rakshabandhan cake Goa** or **Rakhi cake Goa**? Send celebration date, lunch time, guest count, eggless needs, and whether you want names in English or Devanagari.",
+      },
+      {
+        type: "h2",
+        text: "The brief: rakhi morning, flight evening",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Sister messaged five days before Rakshabandhan with our gallery photo and a tight window: family lunch 2 PM, brother leaving for university abroad at 7 PM. Twenty relatives, mixed ages, eggless for elders. She wanted marigold yellow, cream, a rakhri thread loop on top, and brother's name — not childish cartoon, not wedding gold overload.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round — serves 20 with mithai already on the table.",
+          "Eggless cardamom-vanilla sponge + light saffron cream.",
+          "Piped rakhri motif + marigold dots — no plastic toppers.",
+          "Name in Devanagari on board; \"Bhai\" nickname smaller line.",
+          "Delivery 1:30 PM; cake in dining fridge until 2:15 PM dessert.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Festival palette without haldi yellow clash",
+        id: "palette",
+      },
+      {
+        type: "p",
+        text: "Rakshabandhan colours sit close to [haldi](/case-studies/haldi-cake-goa-case-study) yellow — Muskan warmed marigold one step toward orange so photos separate from pre-wedding haldi boards in the family chat. Cream base kept the **rakshabandhan cake Goa** readable indoors. If you also need haldi that season, read our [haldi cake journal](/blog/haldi-cake-goa-tradition-guide) so events do not look identical.",
+      },
+      {
+        type: "h2",
+        text: "Eggless sponge for mixed family tables",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: "Festival lunches often include elders who skip eggs. Muskan baked the whole cake eggless — cardamom carries flavour when eggs are absent. For mithai-style richness, clients sometimes pair with [rasmalai cake](/blog/rasmalai-cake-goa-guide) at a separate event; this order stayed light after heavy sweets.",
+      },
+      {
+        type: "h2",
+        text: "Same-day rhythm: rakhi first, cake second",
+        id: "timing",
+      },
+      {
+        type: "p",
+        text: "Muskan refused 9 AM delivery — buttercream would wait too long before lunch. 1:30 PM handoff let the family complete rakhi photos first. Mother sent fridge photo at 10 AM; shelf cleared. Same dessert-time discipline as [wedding delivery](/blog/wedding-cake-delivery-goa-checklist) — serve time drives schedule, not ceremony start.",
+      },
+      {
+        type: "h2",
+        text: "Delivery in Margao August humidity",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Cake traveled upright from [Velim](/locations/velim), pre-chilled, ventilation holes in box lid. Short monsoon shower en route — driver kept box inside cab, not monsoon bike seat. Indoor lunch with fan away from table; no outdoor pavilion risk.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — airport WhatsApp photo",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Brother sent a cake photo from the airport lounge — half slice packed for him. Aunt booked [golden cream](/case-studies/golden-cream-cake-goa-case-study) for parents' anniversary in November. Muskan's calendar now blocks Rakshabandhan week early — message ${site.phone} two weeks ahead when possible.",
+      },
+      {
+        type: "h2",
+        text: "Order a similar Rakhi cake",
+        id: "order",
+      },
+      {
+        type: "p",
+        text: `Send date, lunch time, guest count, eggless yes/no, and a link to [/creations/rakshabandhan-design-cake](/creations/rakshabandhan-design-cake). Browse [/creations](/creations) for marigold inspiration or ask Muskan to adapt [rasmalai special](/creations/rasmalai-special-cake) flavours for festival week.`,
+      },
+      {
+        type: "related",
+        title: "Festival celebrations",
+        items: [
+          { href: "/creations/rakshabandhan-design-cake", label: "Rakshabandhan gallery", description: "Two reference photos" },
+          { href: "/blog/haldi-cake-goa-tradition-guide", label: "Haldi journal", description: "Colour coordination tips" },
+          { href: "/case-studies/rasmalai-cake-goa-case-study", label: "Rasmalai case study", description: "Mithai-style cake story" },
+          { href: "/contact", label: "Contact Muskan", description: "Festival week booking" },
         ],
       },
     ],
