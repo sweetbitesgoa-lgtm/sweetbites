@@ -64,6 +64,9 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "rakshabandhan cake Goa",
   "Rakhi cake Goa",
   "festival cake Muskan",
+  "farewell cake Goa",
+  "office farewell cake Goa",
+  "corporate cake delivery Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -3171,6 +3174,125 @@ const studies: CaseStudy[] = [
           { href: "/blog/haldi-cake-goa-tradition-guide", label: "Haldi journal", description: "Colour coordination tips" },
           { href: "/case-studies/rasmalai-cake-goa-case-study", label: "Rasmalai case study", description: "Mithai-style cake story" },
           { href: "/contact", label: "Contact Muskan", description: "Festival week booking" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "farewell-cake-goa-case-study",
+    title: "Case study: Farewell cake in Goa — office send-off, navy buttercream & a pantry fridge photo that saved lunch",
+    excerpt:
+      "HR needed a farewell cake Goa for thirty colleagues by Friday — Muskan delivered navy-and-gold buttercream, eggless chocolate inside, Panaji office pantry timing, and a design calmer than a sphere but still worth a team photo.",
+    publishedAt: "2026-08-14",
+    readMinutes: 13,
+    focusKeyword: "farewell cake Goa",
+    keywords: [
+      "farewell cake Goa",
+      "office farewell cake Goa",
+      "corporate cake delivery Panaji",
+      "colleague send-off cake Muskan",
+      "eggless office cake Goa",
+      "custom farewell cake Velim",
+      "Sweet Bites corporate cake",
+    ],
+    creationSlug: "farewell-cake",
+    difficulty: "Medium · corporate palette + office handoff",
+    leadTime: "4 days",
+    celebrationType: "Work farewell · 30 colleagues · office lunch",
+    relatedSlugs: [
+      "chocolate-sphere-cake-goa-case-study",
+      "sweet-bouquet-cake-goa-case-study",
+      "golden-cream-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/farewell-cake/491440347_18058472321170730_7606664070831950751_n..webp",
+    heroImageAlt:
+      "Farewell cake Goa — office send-off cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/farewell-cake",
+    heroGalleryLabel: "Farewell cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **farewell cake Goa** order from HR rarely says "surprise" — it says Friday lunch, thirty portions, logo colours if possible, and a colleague who is embarrassed by loud decorations. Muskan's [Farewell Cake](/creations/farewell-cake) for a [Panaji](/locations/panaji) tech office used navy buttercream, restrained gold lines, eggless chocolate sponge, and delivery into a pantry fridge that HR photographed before Muskan left [Velim](/locations/velim).`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **farewell cake Goa** or **office farewell cake**? Send colleague count, lunch time, pantry/fridge yes/no, eggless needs, and whether you want a message on board only (no edible logo unless you own rights).",
+      },
+      {
+        type: "h2",
+        text: "The brief: Friday lunch, thirty people, calm design",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "HR messaged Monday for Friday — four days. Colleague leaving after five years; team lunch 1 PM; lunchroom AC. They loved our [chocolate sphere](/case-studies/chocolate-sphere-cake-goa-case-study) gallery but needed simpler budget and faster build. Chose farewell style: professional, not cartoon.",
+      },
+      {
+        type: "ul",
+        items: [
+          "10-inch round — thin slices for 30 with cookies on the side.",
+          "Eggless chocolate sponge + vanilla buttercream exterior.",
+          "Navy + gold palette matching company slide deck (photo sent).",
+          "Board message: \"Thank you, Arjun — we'll miss the stand-ups.\"",
+          "Delivery 11:45 AM; cake in office pantry until 12:50 PM.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Sphere vs farewell round — how Muskan advises HR",
+        id: "sphere-vs-round",
+      },
+      {
+        type: "p",
+        text: "**Chocolate sphere cake Goa** moments wow on video but need longer lead time and fridge discipline. Farewell rounds slice faster in open-plan offices, cost less labour, and still photograph well with gold line work. HR picked round; Muskan noted sphere for the next senior exit.",
+      },
+      {
+        type: "h2",
+        text: "Office handoff: pantry photo rule",
+        id: "handoff",
+      },
+      {
+        type: "p",
+        text: "Muskan will not deliver without a pantry or kitchen fridge photo — same rule as [cake bouquet office surprises](/case-studies/sweet-bouquet-cake-goa-case-study). Facilities manager sent shelf dimensions; driver placed cake mid-shelf, upright, door closed. Organiser got a WhatsApp checklist: no early display in warm lunchroom.",
+      },
+      {
+        type: "h2",
+        text: "Eggless for mixed dietary notes",
+        id: "eggless",
+      },
+      {
+        type: "p",
+        text: "Three teammates flagged eggless on the lunch form. Muskan baked the whole **farewell cake Goa** eggless to avoid label confusion — chocolate sponge stays moist without eggs when cocoa is good. [Eggless birthday guide](/blog/eggless-birthday-cake-goa-flavours) explains the same logic for family parties.",
+      },
+      {
+        type: "h2",
+        text: "Delivery across Panaji traffic",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Friday late-morning traffic from Velim to Panaji got a 40-minute buffer. Cake pre-chilled; box with ventilation holes; non-slip base. Handed to security, escorted to pantry — colleague never saw the box walk through open office.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — LinkedIn photo and a Diwali reorder",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Team photo at 1:05 PM; leaving colleague posted on LinkedIn the same day. HR booked [sweet bouquet](/case-studies/sweet-bouquet-cake-goa-case-study) stems for Diwali and asked about [golden cream](/case-studies/golden-cream-cake-goa-case-study) for a founder milestone. Message ${site.phone} with headcount and lunch time for your send-off.",
+      },
+      {
+        type: "related",
+        title: "Office celebrations",
+        items: [
+          { href: "/creations/farewell-cake", label: "Farewell gallery", description: "Reference on WhatsApp" },
+          { href: "/case-studies/chocolate-sphere-cake-goa-case-study", label: "Sphere case study", description: "Premium send-off option" },
+          { href: "/blog/book-custom-cake-goa-whatsapp", label: "Booking guide", description: "First message tips" },
+          { href: "/locations/panaji", label: "Panaji delivery", description: "Office routes" },
         ],
       },
     ],
