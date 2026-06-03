@@ -37,6 +37,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "Doraemon cake Goa",
   "flamingo cake Goa",
   "tropical birthday cake Goa",
+  "rakshabandhan cake Goa",
+  "Rakhi cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -193,6 +195,9 @@ export const BLOG_DORAEMON_HERO_IMAGE =
 
 export const BLOG_FLAMINGO_HERO_IMAGE =
   "/images/flamingo-cake/655187695_18066879632644223_3948263265025615855_n..jpg";
+
+export const BLOG_RAKHI_HERO_IMAGE =
+  "/images/rakshabandhan-design-cake/653985875_18099188872757844_229305606642926062_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -2550,6 +2555,145 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Planning a tropical birthday? Message ${site.phone} with date, guest count, and pool vs indoor — Muskan will quote a **flamingo cake Goa** timed for the splash zone, not against it.`,
+      },
+    ],
+  },
+  {
+    slug: "rakshabandhan-cake-goa-guide",
+    title: "Rakshabandhan cakes in Goa — marigold palettes, Rakhi timing & eggless family lunches that actually work",
+    excerpt:
+      "Rakhi tied in the morning, lunch at 2 PM, brother's flight at night — the rakshabandhan cake Goa guide: festival colours vs haldi, eggless cardamom sponge, dessert timing, gallery designs, and WhatsApp booking before Muskan's festival week fills.",
+    publishedAt: "2026-08-12",
+    readMinutes: 12,
+    focusKeyword: "rakshabandhan cake Goa",
+    keywords: [
+      "rakshabandhan cake Goa",
+      "Rakhi cake Goa",
+      "rakhi design cake Muskan",
+      "festival cake delivery Goa",
+      "eggless rakhi cake",
+      "Indian festival cake Goa",
+      "rakshabandhan cake order WhatsApp",
+    ],
+    relatedSlugs: [
+      "haldi-cake-goa-tradition-guide",
+      "rasmalai-cake-goa-guide",
+      "book-custom-cake-goa-whatsapp",
+    ],
+    heroImage: BLOG_RAKHI_HERO_IMAGE,
+    heroImageAlt:
+      "Rakshabandhan cake Goa — festival design cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/rakshabandhan-design-cake",
+    heroGalleryLabel: "Rakshabandhan cake gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **rakshabandhan cake Goa** order is never "just a yellow cake" — it is tied to rakhi morning, mithai already on the table, cousins photographing everything, and a brother who might leave the same evening. At [${site.name}](/about), Muskan designs [Rakshabandhan Design Cake](/creations/rakshabandhan-design-cake) styles with marigold buttercream, optional rakhri-thread piping, and eggless sponges elders actually eat. Our [Rakshabandhan case study](/case-studies/rakshabandhan-cake-goa-case-study) walks through a Margao lunch before a flight; this guide helps you book earlier.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **rakshabandhan cake Goa** or **Rakhi cake Goa**? Send festival date, lunch/dessert time, guest count, eggless needs, and names in English or Devanagari.",
+      },
+      {
+        type: "h2",
+        text: "What makes a Rakhi cake different from birthday cake",
+        id: "difference",
+      },
+      {
+        type: "p",
+        text: "Birthday cakes chase themes and characters. **Rakhi cake Goa** orders chase timing and respect — dessert after rakhi photos, colours that feel festive not childish, portions after mithai. Muskan keeps piping elegant: marigold dots, cream base, simple thread loop, name on board — not cartoon overload.",
+      },
+      {
+        type: "h2",
+        text: "Colours: marigold, cream, and avoiding haldi confusion",
+        id: "colours",
+      },
+      {
+        type: "p",
+        text: "Rakshabandhan yellow sits close to [haldi](/blog/haldi-cake-goa-tradition-guide) tones. If your family also has pre-wedding haldi, tell Muskan both dates — she warms marigold toward orange so photos stay distinct. See our [haldi case study](/case-studies/haldi-cake-goa-case-study) for how yellow reads on camera outdoors.",
+      },
+      {
+        type: "h2",
+        text: "Flavours that work after mithai",
+        id: "flavours",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Eggless cardamom-vanilla** — most common for mixed-age tables.",
+          "**Light saffron cream** — festive without heavy rabdi sweetness.",
+          "**Rasmalai-inspired** — for separate events; see [rasmalai journal](/blog/rasmalai-cake-goa-guide).",
+          "**Chocolate** — only if kids dominate guest list — [eggless guide](/blog/eggless-birthday-cake-goa-flavours).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Timing: rakhi first, cake when lunch actually serves dessert",
+        id: "timing",
+      },
+      {
+        type: "p",
+        text: "Muskan schedules delivery closer to dessert than to morning rakhi. Early drop-offs wilt buttercream while relatives visit. Send lunch time and flight times if brother is leaving — our case study used 1:30 PM delivery for 2:15 PM dessert. Same discipline as [wedding cake delivery](/blog/wedding-cake-delivery-goa-checklist): dessert hour drives the plan.",
+      },
+      {
+        type: "h2",
+        text: "Sizing when mithai is already on the table",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**12–18 guests:** 8-inch round — thin slices after sweets.",
+          "**20–30 guests:** 8-inch + cupcakes matching palette.",
+          "**Small family only:** 6-inch or [bento tin](/blog/bento-cake-goa-order-guide).",
+          "**Office Rakhi:** consider [cake bouquet](/blog/cake-bouquet-goa-order-guide) stems for colleagues.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Book before festival week fills",
+        id: "book-ahead",
+      },
+      {
+        type: "p",
+        text: `Rakshabandhan week competes with wedding season leftovers in Goa. Two weeks ahead is comfortable; one week may work for simpler [rakshabandhan-design-cake](/creations/rakshabandhan-design-cake) layouts. Rush? Ask honestly — Muskan may suggest menu flavours from [/cakes-menu](/cakes-menu) if the kitchen is full.`,
+      },
+      {
+        type: "callout",
+        variant: "note",
+        title: "Delivery",
+        text: `Festival cakes travel upright from [Velim](/locations/velim) to [Margao](/locations/margao), [Panaji](/locations/panaji), [Mapusa](/locations/mapusa), and more — send a fridge photo before Muskan confirms handoff.`,
+      },
+      {
+        type: "h2",
+        text: "WhatsApp brief",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Festival date + dessert time (not only lunch start).",
+          "Guest count + eggless yes/no.",
+          "Gallery link to [rakshabandhan design](/creations/rakshabandhan-design-cake).",
+          "Names + English or Devanagari preference.",
+          "Steps: [book custom cake Goa](/blog/book-custom-cake-goa-whatsapp).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Festival celebrations",
+        items: [
+          { href: "/case-studies/rakshabandhan-cake-goa-case-study", label: "Rakhi case study", description: "Margao lunch + flight story" },
+          { href: "/creations/rakshabandhan-design-cake", label: "Rakshabandhan gallery", description: "Reference photos" },
+          { href: "/blog/haldi-cake-goa-tradition-guide", label: "Haldi journal", description: "Coordinate yellow events" },
+          { href: "/contact", label: "Contact Muskan", description: "Festival week booking" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Rakhi is once a year — the cake should feel intentional. Message ${site.phone} with date, dessert time, and guest count; Muskan will quote a **rakshabandhan cake Goa** that respects the ceremony and the schedule.`,
       },
     ],
   },
