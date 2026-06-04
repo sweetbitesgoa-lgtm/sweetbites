@@ -67,6 +67,8 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "farewell cake Goa",
   "office farewell cake Goa",
   "corporate cake delivery Goa",
+  "modern anniversary cake Goa",
+  "minimalist anniversary cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -3293,6 +3295,125 @@ const studies: CaseStudy[] = [
           { href: "/case-studies/chocolate-sphere-cake-goa-case-study", label: "Sphere case study", description: "Premium send-off option" },
           { href: "/blog/book-custom-cake-goa-whatsapp", label: "Booking guide", description: "First message tips" },
           { href: "/locations/panaji", label: "Panaji delivery", description: "Office routes" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "modern-anniversary-cake-goa-case-study",
+    title: "Case study: Modern anniversary cake in Goa — 25th dinner, geometric buttercream & an Anjuna terrace at sunset",
+    excerpt:
+      "They did not want a wedding repeat — Muskan designed a modern anniversary cake Goa with clean line work, eggless coffee sponge, twelve villa guests, delivery timed for sunset dessert, and a gallery video the couple sent to family abroad.",
+    publishedAt: "2026-08-18",
+    readMinutes: 14,
+    focusKeyword: "modern anniversary cake Goa",
+    keywords: [
+      "modern anniversary cake Goa",
+      "minimalist anniversary cake Goa",
+      "25th anniversary cake Goa",
+      "anniversary cake Anjuna",
+      "contemporary cake Muskan",
+      "eggless anniversary cake Goa",
+      "villa anniversary cake delivery",
+    ],
+    creationSlug: "modern-design-anniversary",
+    difficulty: "Medium · line precision + terrace timing",
+    leadTime: "10 days",
+    celebrationType: "25th anniversary · 12 guests · villa terrace",
+    relatedSlugs: [
+      "anniversary-heart-cake-goa-case-study",
+      "golden-cream-cake-goa-case-study",
+      "engagement-peach-cream-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/modern-design-anniversary/564525161_18075559883170730_4410692070731136305_n..webp",
+    heroImageAlt:
+      "Modern anniversary cake Goa — contemporary 25th celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/modern-design-anniversary",
+    heroGalleryLabel: "Modern anniversary gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **modern anniversary cake Goa** brief often starts with what the couple does not want — no gold cascade, no three tiers, no looking like their 2018 wedding photos. Muskan's [Modern Design Anniversary Cake](/creations/modern-design-anniversary) for a 25th in [Anjuna](/locations/anjuna) used taupe and blush buttercream, sharp line work, eggless coffee sponge, and delivery timed for sunset dessert on a twelve-person terrace — elegant enough for saris, calm enough for speeches.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Planning a **minimalist anniversary cake Goa**? Send years, guest count, terrace vs hall, eggless needs, and a gallery link — Muskan separates modern line work from [golden cream](/case-studies/golden-cream-cake-goa-case-study) milestones on WhatsApp.",
+      },
+      {
+        type: "h2",
+        text: "The brief: 25 years, twelve seats, no wedding déjà vu",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Daughter organised from Mumbai on WhatsApp — parents' silver anniversary dinner at a rented Anjuna villa. Twelve guests, eggless for both parents, coffee and salted caramel flavours, dessert after sunset photos. They sent our modern anniversary gallery video and said \"exactly this line style, softer blush.\"",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch single tier — serves 12 after a full Goan dinner.",
+          "Eggless coffee sponge + salted caramel buttercream.",
+          "Taupe base, blush accent lines, minimal gold — not full metallic tier.",
+          "Board: \"25 years — still choosing each other\" in English.",
+          "Delivery 6:45 PM; cake in villa fridge until 8:10 PM dessert.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Line work that survives phone cameras",
+        id: "design",
+      },
+      {
+        type: "p",
+        text: "Modern cakes fail when lines wobble or colours clash with sunset orange sky. Muskan piped geometric arcs on a chilled crumb coat — rested 30 minutes before accent lines. She deepened taupe slightly so **modern anniversary cake Goa** photos read neutral, not grey. Compare with romantic [peach cream engagement](/case-studies/engagement-peach-cream-cake-goa-case-study) palettes if you want blush without geometry.",
+      },
+      {
+        type: "h2",
+        text: "Terrace wind and fridge coordination",
+        id: "terrace",
+      },
+      {
+        type: "p",
+        text: "Anjuna sea breeze picks up after 7 PM. Villa host sent fridge and shaded table photos — Muskan approved before driver left [Velim](/locations/velim). Cake traveled upright, pre-chilled; fan pointed away from dessert table. Same dessert-time discipline as [wedding delivery checklist](/blog/wedding-cake-delivery-goa-checklist), scaled for twelve guests.",
+      },
+      {
+        type: "h2",
+        text: "Why not golden cream for this milestone",
+        id: "why-not-golden",
+      },
+      {
+        type: "p",
+        text: "Couple explicitly rejected heavy gold — they had [golden cream](/case-studies/golden-cream-cake-goa-case-study) energy at a family 50th and wanted contrast. Muskan's reply on WhatsApp showed side-by-side gallery links: modern anniversary vs golden birthday. Daughter chose modern in one voice note. Clarity saves rush changes.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — video to family abroad",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Parents cut cake at 8:15 PM with sunset behind — daughter live-streamed to siblings in Dubai. Son booked [anniversary heart](/case-studies/anniversary-heart-cake-goa-case-study) for a first anniversary the following month (smaller, romantic). Read our [modern anniversary journal](/blog/modern-anniversary-cake-goa-guide) before you message.",
+      },
+      {
+        type: "h2",
+        text: "Order a similar modern anniversary cake",
+        id: "order",
+      },
+      {
+        type: "p",
+        text: `Send date, guest count, years, eggless yes/no, and [/creations/modern-design-anniversary](/creations/modern-design-anniversary). Message ${site.phone} — Muskan quotes line work, flavour, and villa delivery before payment.`,
+      },
+      {
+        type: "related",
+        title: "Anniversary milestones",
+        items: [
+          { href: "/blog/modern-anniversary-cake-goa-guide", label: "Modern anniversary journal", description: "Sizing & terrace tips" },
+          { href: "/creations/modern-design-anniversary", label: "Gallery + video", description: "WhatsApp reference" },
+          { href: "/blog/anniversary-cake-goa-complete-guide", label: "Anniversary guide", description: "Classic options too" },
+          { href: "/contact", label: "Contact Muskan", description: "Villa delivery brief" },
         ],
       },
     ],
