@@ -69,6 +69,9 @@ export const CASE_STUDIES_INDEX_KEYWORDS = [
   "corporate cake delivery Goa",
   "modern anniversary cake Goa",
   "minimalist anniversary cake Goa",
+  "light blue birthday cake Goa",
+  "pastel birthday cake Goa",
+  "blue birthday cake Goa",
   "character cake Sweet Bites",
   "impossible cake design Goa",
   "fondant cake Muskan",
@@ -3414,6 +3417,115 @@ const studies: CaseStudy[] = [
           { href: "/creations/modern-design-anniversary", label: "Gallery + video", description: "WhatsApp reference" },
           { href: "/blog/anniversary-cake-goa-complete-guide", label: "Anniversary guide", description: "Classic options too" },
           { href: "/contact", label: "Contact Muskan", description: "Villa delivery brief" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "light-blue-birthday-cake-goa-case-study",
+    title: "Case study: Light blue birthday cake in Goa — pastel hall party, eggless sponge & a three-year-old who only wanted balloons",
+    excerpt:
+      "No cartoon, no fondant figures — Muskan baked a light blue birthday cake Goa for a Panaji hall: sky-blue buttercream, white pearls, eggless vanilla, twenty guests, and delivery timed for AC dessert after games.",
+    publishedAt: "2026-08-22",
+    readMinutes: 12,
+    focusKeyword: "light blue birthday cake Goa",
+    keywords: [
+      "light blue birthday cake Goa",
+      "pastel birthday cake Goa",
+      "blue cake Goa kids",
+      "eggless blue birthday cake",
+      "hall birthday cake Panaji",
+      "calm kids cake Muskan",
+    ],
+    creationSlug: "light-blue-birthday-cake",
+    difficulty: "Easy–medium · pastel precision + hall timing",
+    leadTime: "6 days",
+    celebrationType: "3rd birthday · 20 kids · AC hall",
+    relatedSlugs: [
+      "pink-butterfly-cake-goa-case-study",
+      "unicorn-cake-goa-case-study",
+      "bento-birthday-cake-goa-case-study",
+    ],
+    heroImage:
+      "/images/light-blue-birthday-cake/625107430_18139976260465801_3901213835978370165_n..webp",
+    heroImageAlt:
+      "Light blue birthday cake Goa — pastel kids birthday cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/light-blue-birthday-cake",
+    heroGalleryLabel: "Light blue birthday gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `Some **light blue birthday cake Goa** orders begin with exhaustion — parents tired of character negotiations with a three-year-old who only repeats "balloons." Muskan's [Light Blue Birthday Cake](/creations/light-blue-birthday-cake) for a [Panaji](/locations/panaji) hall party gave sky-blue buttercream, white pearl dots, eggless vanilla sponge, and a name board that matched balloon decor without licensing or fondant figures.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "**Pastel birthday cake Goa** parents should send hall photos, balloon colours, eggless count, and cake-cutting time after games — not when guests arrive.",
+      },
+      {
+        type: "h2",
+        text: "The brief: balloons yes, cartoons no",
+        id: "brief",
+      },
+      {
+        type: "p",
+        text: "Mother messaged with balloon arch photo (sky blue + white) and our gallery light blue cake. Twenty kids, mostly age 2–5, eggless for half the playgroup. Hall AC booked 3–6 PM; cake at 5:15 after games.",
+      },
+      {
+        type: "ul",
+        items: [
+          "8-inch round — serves 20 with small slices + return-party snacks.",
+          "Eggless vanilla sponge + strawberry cream filling (light pink inside).",
+          "Sky-blue exterior, white pearl piping, silver board message.",
+          "No fondant toppers — balloons carry the theme.",
+          "Delivery 4:45 PM; hall manager fridge until 5:10 PM.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why Muskan steered away from unicorn",
+        id: "why-not-unicorn",
+      },
+      {
+        type: "p",
+        text: "Father suggested [unicorn](/case-studies/unicorn-cake-goa-case-study) mid-week. Mother held firm — photos with grandparents needed calm palette. Muskan sent side-by-side gallery links; **light blue birthday cake Goa** stayed the plan. Flexibility without guilt is part of WhatsApp ordering.",
+      },
+      {
+        type: "h2",
+        text: "Pastel buttercream under hall lights",
+        id: "colour",
+      },
+      {
+        type: "p",
+        text: "Fluorescent halls cool blue toward grey. Muskan warmed sky-blue one step and added white pearl contrast so cake read blue in phone photos, not silver. Same colour thinking as [pink butterfly](/case-studies/pink-butterfly-cake-goa-case-study) garden parties, easier indoors.",
+      },
+      {
+        type: "h2",
+        text: "Hall fridge handoff",
+        id: "delivery",
+      },
+      {
+        type: "p",
+        text: "Hall manager sent fridge photo morning-of — Muskan approved shelf. Driver delivered 4:45 PM from [Velim](/locations/velim), upright box, pre-chilled. Games ran long; cake still fine at 5:20 PM because AC held. Outdoor [flamingo pool](/case-studies/flamingo-cake-goa-case-study) rules did not apply — dessert timing still mattered.",
+      },
+      {
+        type: "h2",
+        text: "Outcome — reuse theme next year",
+        id: "outcome",
+      },
+      {
+        type: "p",
+        text: "Grandparents posed with cake and balloons — no character shame. Mother rebooked a [bento tin](/case-studies/bento-birthday-cake-goa-case-study) for a home celebration with cousins. Read [light blue journal](/blog/light-blue-birthday-cake-goa-order-guide) before messaging ${site.phone}.",
+      },
+      {
+        type: "related",
+        title: "Pastel parties",
+        items: [
+          { href: "/blog/light-blue-birthday-cake-goa-order-guide", label: "Light blue journal", description: "Sizing & venue tips" },
+          { href: "/creations/light-blue-birthday-cake", label: "Gallery photo", description: "Reference on WhatsApp" },
+          { href: "/case-studies/pink-butterfly-cake-goa-case-study", label: "Butterfly case study", description: "Garden pastel contrast" },
+          { href: "/contact", label: "Contact Muskan", description: "Hall party brief" },
         ],
       },
     ],

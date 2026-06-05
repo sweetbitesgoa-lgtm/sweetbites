@@ -41,6 +41,8 @@ export const BLOG_INDEX_KEYWORDS = [
   "Rakhi cake Goa",
   "modern anniversary cake Goa",
   "minimalist anniversary cake Goa",
+  "light blue birthday cake Goa",
+  "pastel birthday cake Goa",
   "sweetbites.me journal",
 ] as const;
 
@@ -203,6 +205,9 @@ export const BLOG_RAKHI_HERO_IMAGE =
 
 export const BLOG_MODERN_ANNIVERSARY_HERO_IMAGE =
   "/images/modern-design-anniversary/564525161_18075559883170730_4410692070731136305_n..webp";
+
+export const BLOG_LIGHT_BLUE_HERO_IMAGE =
+  "/images/light-blue-birthday-cake/625107430_18139976260465801_3901213835978370165_n..webp";
 
 export const BLOG_EXPLORE_LINKS = [
   { href: "/creations", label: "Cake gallery", description: "160+ real designs to reference on WhatsApp" },
@@ -2814,6 +2819,122 @@ const posts: BlogPost[] = [
       {
         type: "p",
         text: `Your years together deserve a design that feels current — not copied from someone else's wedding. Message ${site.phone} with date, guest count, and a gallery link; Muskan will quote a **modern anniversary cake Goa** worth the terrace photo.`,
+      },
+    ],
+  },
+  {
+    slug: "light-blue-birthday-cake-goa-order-guide",
+    title: "Light blue birthday cakes in Goa — pastel calm, boys & girls parties & when you skip loud characters",
+    excerpt:
+      "Not every child wants Spiderman — some parents want soft blue buttercream, clean photos, and eggless sponge. The light blue birthday cake Goa guide: sizing, hall vs garden, pairing with cupcakes, and WhatsApp briefs for Muskan's pastel gallery designs.",
+    publishedAt: "2026-08-20",
+    readMinutes: 11,
+    focusKeyword: "light blue birthday cake Goa",
+    keywords: [
+      "light blue birthday cake Goa",
+      "pastel birthday cake Goa",
+      "blue cake Goa kids",
+      "boys birthday cake pastel",
+      "girls birthday cake blue",
+      "eggless pastel cake Muskan",
+      "custom blue cake Velim",
+    ],
+    relatedSlugs: [
+      "kids-birthday-cake-goa-character-themes",
+      "eggless-birthday-cake-goa-flavours",
+      "unicorn-cake-goa-order-guide",
+    ],
+    heroImage: BLOG_LIGHT_BLUE_HERO_IMAGE,
+    heroImageAlt:
+      "Light blue birthday cake Goa — pastel celebration cake by Sweet Bites Muskan",
+    heroGalleryHref: "/creations/light-blue-birthday-cake",
+    heroGalleryLabel: "Light blue birthday gallery",
+    blocks: [
+      {
+        type: "p",
+        text: `A **light blue birthday cake Goa** order is often a relief message — "no characters, just pretty blue." Parents planning calm hall parties, christening-adjacent birthdays, or a three-year-old who loves colour but not cartoons choose Muskan's [Light Blue Birthday Cake](/creations/light-blue-birthday-cake) style: soft buttercream, white accents, name on board, eggless sponge on request. Our [light blue case study](/case-studies/light-blue-birthday-cake-goa-case-study) covers a [Panaji](/locations/panaji) hall party; this guide helps you plan yours.`,
+      },
+      {
+        type: "callout",
+        variant: "tip",
+        title: "Focus keyword",
+        text: "Searching **pastel birthday cake Goa** or **light blue birthday cake Goa**? Send child's age, guest count, hall/indoor vs garden, eggless yes/no, and whether you want matching cupcakes.",
+      },
+      {
+        type: "h2",
+        text: "When pastel blue beats a character cake",
+        id: "when-pastel",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Young toddlers** — colour theme without licensed characters.",
+          "**Mixed family photos** — suits sarees and suits, not just kids decor.",
+          "**Christening / naming day** — soft palette parents reuse year two.",
+          "**Classroom eggless** — simpler than [Doraemon piping](/blog/doraemon-cake-goa-order-guide).",
+          "**Sibling split themes** — blue hero + [unicorn](/blog/unicorn-cake-goa-order-guide) cupcakes for twins.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Blue vs teal vs mermaid — avoid palette fights",
+        id: "palette",
+      },
+      {
+        type: "p",
+        text: "Light sky blue reads different from [mermaid teal](/blog/mermaid-cake-goa-order-guide) or [flamingo pink](/blog/flamingo-cake-goa-order-guide). Send a swatch photo or our gallery link — Muskan matches buttercream to your table linen, not a generic \"baby blue\" tub.",
+      },
+      {
+        type: "h2",
+        text: "Sizing and eggless classrooms",
+        id: "sizing",
+      },
+      {
+        type: "ul",
+        items: [
+          "**10–12 kids:** 6-inch light blue round.",
+          "**15–20 kids:** 8-inch — common **blue birthday cake Goa** order.",
+          "**25+:** 8-inch + [menu backup](/cakes-menu) or cupcakes.",
+          "**Eggless whole cake** — mention on line one; see [eggless guide](/blog/eggless-birthday-cake-goa-flavours).",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Hall parties vs garden heat",
+        id: "venue",
+      },
+      {
+        type: "p",
+        text: "Pastel buttercream holds better in AC halls than afternoon gardens. If outdoors, Muskan delivers closer to cutting and asks for shade — same timing as [pink butterfly garden parties](/case-studies/pink-butterfly-cake-goa-case-study).",
+      },
+      {
+        type: "h2",
+        text: "WhatsApp brief",
+        id: "whatsapp",
+      },
+      {
+        type: "ul",
+        items: [
+          "Age + date + cake-cutting time.",
+          "Guest count + eggless / nut-free.",
+          "Link to [/creations/light-blue-birthday-cake](/creations/light-blue-birthday-cake).",
+          "Hall vs garden + town for delivery.",
+          "Steps: [book custom cake](/blog/book-custom-cake-goa-whatsapp).",
+        ],
+      },
+      {
+        type: "related",
+        title: "Pastel birthdays",
+        items: [
+          { href: "/case-studies/light-blue-birthday-cake-goa-case-study", label: "Light blue case study", description: "Panaji hall story" },
+          { href: "/creations/light-blue-birthday-cake", label: "Gallery photo", description: "WhatsApp reference" },
+          { href: "/blog/kids-birthday-cake-goa-character-themes", label: "Kids cake guide", description: "When to skip characters" },
+          { href: "/order", label: "Book a cake", description: "Lead times" },
+        ],
+      },
+      {
+        type: "p",
+        text: `Soft blue can still feel special. Message ${site.phone} with date, guest count, and venue — Muskan will quote a **light blue birthday cake Goa** that photographs cleanly without cartoon noise.`,
       },
     ],
   },
